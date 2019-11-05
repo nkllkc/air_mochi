@@ -7,13 +7,14 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/nikola/dev/mochi/src/CMakeLists.txt"
-  "/home/nikola/dev/mochi/src/lib/airplay/CMakeLists.txt"
-  "/home/nikola/dev/mochi/src/lib/airplay/curve25519/CMakeLists.txt"
-  "/home/nikola/dev/mochi/src/lib/airplay/ed25519/CMakeLists.txt"
-  "/home/nikola/dev/mochi/src/lib/airplay/playfair/CMakeLists.txt"
-  "/home/nikola/dev/mochi/src/lib/airplay/plist/CMakeLists.txt"
-  "/home/nikola/dev/mochi/src/util/CMakeLists.txt"
+  "/home/nikola/dev/mochi/air_mochi/src/CMakeLists.txt"
+  "/home/nikola/dev/mochi/air_mochi/src/airplay_server/CMakeLists.txt"
+  "/home/nikola/dev/mochi/air_mochi/src/lib/airplay/CMakeLists.txt"
+  "/home/nikola/dev/mochi/air_mochi/src/lib/airplay/curve25519/CMakeLists.txt"
+  "/home/nikola/dev/mochi/air_mochi/src/lib/airplay/ed25519/CMakeLists.txt"
+  "/home/nikola/dev/mochi/air_mochi/src/lib/airplay/playfair/CMakeLists.txt"
+  "/home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/CMakeLists.txt"
+  "/home/nikola/dev/mochi/air_mochi/src/util/CMakeLists.txt"
   "CMakeFiles/3.10.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.10.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.10.2/CMakeSystem.cmake"
@@ -126,6 +127,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "lib/airplay/plist/CMakeFiles/CMakeDirectoryInformation.cmake"
   "lib/airplay/CMakeFiles/CMakeDirectoryInformation.cmake"
   "util/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "airplay_server/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -137,4 +139,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "lib/airplay/plist/CMakeFiles/plist.dir/DependInfo.cmake"
   "lib/airplay/CMakeFiles/airplay.dir/DependInfo.cmake"
   "util/CMakeFiles/util.dir/DependInfo.cmake"
+  "airplay_server/CMakeFiles/airplay_server.dir/DependInfo.cmake"
   )

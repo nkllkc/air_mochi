@@ -1,4 +1,4 @@
-# Install script for directory: /home/nikola/dev/mochi/src/lib/airplay/ed25519
+# Install script for directory: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/ed25519
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

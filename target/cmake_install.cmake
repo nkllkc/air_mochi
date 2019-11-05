@@ -1,4 +1,4 @@
-# Install script for directory: /home/nikola/dev/mochi/src
+# Install script for directory: /home/nikola/dev/mochi/air_mochi/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,12 +39,13 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/nikola/dev/mochi/target/lib/airplay/curve25519/cmake_install.cmake")
-  include("/home/nikola/dev/mochi/target/lib/airplay/ed25519/cmake_install.cmake")
-  include("/home/nikola/dev/mochi/target/lib/airplay/playfair/cmake_install.cmake")
-  include("/home/nikola/dev/mochi/target/lib/airplay/plist/cmake_install.cmake")
-  include("/home/nikola/dev/mochi/target/lib/airplay/cmake_install.cmake")
-  include("/home/nikola/dev/mochi/target/util/cmake_install.cmake")
+  include("/home/nikola/dev/mochi/air_mochi/target/lib/airplay/curve25519/cmake_install.cmake")
+  include("/home/nikola/dev/mochi/air_mochi/target/lib/airplay/ed25519/cmake_install.cmake")
+  include("/home/nikola/dev/mochi/air_mochi/target/lib/airplay/playfair/cmake_install.cmake")
+  include("/home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist/cmake_install.cmake")
+  include("/home/nikola/dev/mochi/air_mochi/target/lib/airplay/cmake_install.cmake")
+  include("/home/nikola/dev/mochi/air_mochi/target/util/cmake_install.cmake")
+  include("/home/nikola/dev/mochi/air_mochi/target/airplay_server/cmake_install.cmake")
 
 endif()
 
@@ -56,5 +57,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/nikola/dev/mochi/target/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/nikola/dev/mochi/air_mochi/target/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/nikola/dev/mochi/src/lib/librtmp/srs_librtmp.h
+/home/nikola/dev/mochi/air_mochi/src/lib/librtmp/srs_librtmp.h
 srs_librtmp.h
 -
 windows.h
@@ -24,15 +24,27 @@ io.h
 fcntl.h
 -
 
-/home/nikola/dev/mochi/src/util/rtmp_connector.cpp
+/home/nikola/dev/mochi/air_mochi/src/util/rtmp_connector.cpp
 rtmp_connector.h
-/home/nikola/dev/mochi/src/util/rtmp_connector.h
+/home/nikola/dev/mochi/air_mochi/src/util/rtmp_connector.h
 iostream
 -
 ../lib/librtmp/srs_librtmp.h
-/home/nikola/dev/mochi/src/lib/librtmp/srs_librtmp.h
+/home/nikola/dev/mochi/air_mochi/src/lib/librtmp/srs_librtmp.h
 
-/home/nikola/dev/mochi/src/util/rtmp_connector.h
+/home/nikola/dev/mochi/air_mochi/src/util/rtmp_connector.h
 ../lib/librtmp/srs_librtmp.h
-/home/nikola/dev/mochi/src/lib/librtmp/srs_librtmp.h
+/home/nikola/dev/mochi/air_mochi/src/lib/librtmp/srs_librtmp.h
+
+/home/nikola/dev/mochi/air_mochi/src/util/util.cpp
+util.h
+/home/nikola/dev/mochi/air_mochi/src/util/util.h
+string
+-
+fstream
+-
+
+/home/nikola/dev/mochi/air_mochi/src/util/util.h
+string
+-
 

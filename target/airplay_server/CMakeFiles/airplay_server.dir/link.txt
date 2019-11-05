@@ -1,0 +1,2 @@
+/usr/bin/ar qc libairplay_server.a  CMakeFiles/airplay_server.dir/airplay_server.cpp.o
+/usr/bin/ranlib libairplay_server.a

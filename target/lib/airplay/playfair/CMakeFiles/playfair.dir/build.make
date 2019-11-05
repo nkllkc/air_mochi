@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nikola/dev/mochi/src
+CMAKE_SOURCE_DIR = /home/nikola/dev/mochi/air_mochi/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nikola/dev/mochi/target
+CMAKE_BINARY_DIR = /home/nikola/dev/mochi/air_mochi/target
 
 # Include any dependencies generated for this target.
 include lib/airplay/playfair/CMakeFiles/playfair.dir/depend.make
@@ -58,17 +58,17 @@ include lib/airplay/playfair/CMakeFiles/playfair.dir/progress.make
 include lib/airplay/playfair/CMakeFiles/playfair.dir/flags.make
 
 lib/airplay/playfair/CMakeFiles/playfair.dir/hand_garble.c.o: lib/airplay/playfair/CMakeFiles/playfair.dir/flags.make
-lib/airplay/playfair/CMakeFiles/playfair.dir/hand_garble.c.o: /home/nikola/dev/mochi/src/lib/airplay/playfair/hand_garble.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/airplay/playfair/CMakeFiles/playfair.dir/hand_garble.c.o"
-	cd /home/nikola/dev/mochi/target/lib/airplay/playfair && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/playfair.dir/hand_garble.c.o   -c /home/nikola/dev/mochi/src/lib/airplay/playfair/hand_garble.c
+lib/airplay/playfair/CMakeFiles/playfair.dir/hand_garble.c.o: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/playfair/hand_garble.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/airplay/playfair/CMakeFiles/playfair.dir/hand_garble.c.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/playfair && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/playfair.dir/hand_garble.c.o   -c /home/nikola/dev/mochi/air_mochi/src/lib/airplay/playfair/hand_garble.c
 
 lib/airplay/playfair/CMakeFiles/playfair.dir/hand_garble.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/playfair.dir/hand_garble.c.i"
-	cd /home/nikola/dev/mochi/target/lib/airplay/playfair && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/src/lib/airplay/playfair/hand_garble.c > CMakeFiles/playfair.dir/hand_garble.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/playfair && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/lib/airplay/playfair/hand_garble.c > CMakeFiles/playfair.dir/hand_garble.c.i
 
 lib/airplay/playfair/CMakeFiles/playfair.dir/hand_garble.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/playfair.dir/hand_garble.c.s"
-	cd /home/nikola/dev/mochi/target/lib/airplay/playfair && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/src/lib/airplay/playfair/hand_garble.c -o CMakeFiles/playfair.dir/hand_garble.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/playfair && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/lib/airplay/playfair/hand_garble.c -o CMakeFiles/playfair.dir/hand_garble.c.s
 
 lib/airplay/playfair/CMakeFiles/playfair.dir/hand_garble.c.o.requires:
 
@@ -82,17 +82,17 @@ lib/airplay/playfair/CMakeFiles/playfair.dir/hand_garble.c.o.provides.build: lib
 
 
 lib/airplay/playfair/CMakeFiles/playfair.dir/modified_md5.c.o: lib/airplay/playfair/CMakeFiles/playfair.dir/flags.make
-lib/airplay/playfair/CMakeFiles/playfair.dir/modified_md5.c.o: /home/nikola/dev/mochi/src/lib/airplay/playfair/modified_md5.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object lib/airplay/playfair/CMakeFiles/playfair.dir/modified_md5.c.o"
-	cd /home/nikola/dev/mochi/target/lib/airplay/playfair && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/playfair.dir/modified_md5.c.o   -c /home/nikola/dev/mochi/src/lib/airplay/playfair/modified_md5.c
+lib/airplay/playfair/CMakeFiles/playfair.dir/modified_md5.c.o: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/playfair/modified_md5.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object lib/airplay/playfair/CMakeFiles/playfair.dir/modified_md5.c.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/playfair && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/playfair.dir/modified_md5.c.o   -c /home/nikola/dev/mochi/air_mochi/src/lib/airplay/playfair/modified_md5.c
 
 lib/airplay/playfair/CMakeFiles/playfair.dir/modified_md5.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/playfair.dir/modified_md5.c.i"
-	cd /home/nikola/dev/mochi/target/lib/airplay/playfair && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/src/lib/airplay/playfair/modified_md5.c > CMakeFiles/playfair.dir/modified_md5.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/playfair && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/lib/airplay/playfair/modified_md5.c > CMakeFiles/playfair.dir/modified_md5.c.i
 
 lib/airplay/playfair/CMakeFiles/playfair.dir/modified_md5.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/playfair.dir/modified_md5.c.s"
-	cd /home/nikola/dev/mochi/target/lib/airplay/playfair && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/src/lib/airplay/playfair/modified_md5.c -o CMakeFiles/playfair.dir/modified_md5.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/playfair && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/lib/airplay/playfair/modified_md5.c -o CMakeFiles/playfair.dir/modified_md5.c.s
 
 lib/airplay/playfair/CMakeFiles/playfair.dir/modified_md5.c.o.requires:
 
@@ -106,17 +106,17 @@ lib/airplay/playfair/CMakeFiles/playfair.dir/modified_md5.c.o.provides.build: li
 
 
 lib/airplay/playfair/CMakeFiles/playfair.dir/omg_hax.c.o: lib/airplay/playfair/CMakeFiles/playfair.dir/flags.make
-lib/airplay/playfair/CMakeFiles/playfair.dir/omg_hax.c.o: /home/nikola/dev/mochi/src/lib/airplay/playfair/omg_hax.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object lib/airplay/playfair/CMakeFiles/playfair.dir/omg_hax.c.o"
-	cd /home/nikola/dev/mochi/target/lib/airplay/playfair && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/playfair.dir/omg_hax.c.o   -c /home/nikola/dev/mochi/src/lib/airplay/playfair/omg_hax.c
+lib/airplay/playfair/CMakeFiles/playfair.dir/omg_hax.c.o: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/playfair/omg_hax.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object lib/airplay/playfair/CMakeFiles/playfair.dir/omg_hax.c.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/playfair && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/playfair.dir/omg_hax.c.o   -c /home/nikola/dev/mochi/air_mochi/src/lib/airplay/playfair/omg_hax.c
 
 lib/airplay/playfair/CMakeFiles/playfair.dir/omg_hax.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/playfair.dir/omg_hax.c.i"
-	cd /home/nikola/dev/mochi/target/lib/airplay/playfair && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/src/lib/airplay/playfair/omg_hax.c > CMakeFiles/playfair.dir/omg_hax.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/playfair && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/lib/airplay/playfair/omg_hax.c > CMakeFiles/playfair.dir/omg_hax.c.i
 
 lib/airplay/playfair/CMakeFiles/playfair.dir/omg_hax.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/playfair.dir/omg_hax.c.s"
-	cd /home/nikola/dev/mochi/target/lib/airplay/playfair && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/src/lib/airplay/playfair/omg_hax.c -o CMakeFiles/playfair.dir/omg_hax.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/playfair && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/lib/airplay/playfair/omg_hax.c -o CMakeFiles/playfair.dir/omg_hax.c.s
 
 lib/airplay/playfair/CMakeFiles/playfair.dir/omg_hax.c.o.requires:
 
@@ -130,17 +130,17 @@ lib/airplay/playfair/CMakeFiles/playfair.dir/omg_hax.c.o.provides.build: lib/air
 
 
 lib/airplay/playfair/CMakeFiles/playfair.dir/playfair.c.o: lib/airplay/playfair/CMakeFiles/playfair.dir/flags.make
-lib/airplay/playfair/CMakeFiles/playfair.dir/playfair.c.o: /home/nikola/dev/mochi/src/lib/airplay/playfair/playfair.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object lib/airplay/playfair/CMakeFiles/playfair.dir/playfair.c.o"
-	cd /home/nikola/dev/mochi/target/lib/airplay/playfair && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/playfair.dir/playfair.c.o   -c /home/nikola/dev/mochi/src/lib/airplay/playfair/playfair.c
+lib/airplay/playfair/CMakeFiles/playfair.dir/playfair.c.o: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/playfair/playfair.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object lib/airplay/playfair/CMakeFiles/playfair.dir/playfair.c.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/playfair && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/playfair.dir/playfair.c.o   -c /home/nikola/dev/mochi/air_mochi/src/lib/airplay/playfair/playfair.c
 
 lib/airplay/playfair/CMakeFiles/playfair.dir/playfair.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/playfair.dir/playfair.c.i"
-	cd /home/nikola/dev/mochi/target/lib/airplay/playfair && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/src/lib/airplay/playfair/playfair.c > CMakeFiles/playfair.dir/playfair.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/playfair && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/lib/airplay/playfair/playfair.c > CMakeFiles/playfair.dir/playfair.c.i
 
 lib/airplay/playfair/CMakeFiles/playfair.dir/playfair.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/playfair.dir/playfair.c.s"
-	cd /home/nikola/dev/mochi/target/lib/airplay/playfair && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/src/lib/airplay/playfair/playfair.c -o CMakeFiles/playfair.dir/playfair.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/playfair && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/lib/airplay/playfair/playfair.c -o CMakeFiles/playfair.dir/playfair.c.s
 
 lib/airplay/playfair/CMakeFiles/playfair.dir/playfair.c.o.requires:
 
@@ -154,17 +154,17 @@ lib/airplay/playfair/CMakeFiles/playfair.dir/playfair.c.o.provides.build: lib/ai
 
 
 lib/airplay/playfair/CMakeFiles/playfair.dir/sap_hash.c.o: lib/airplay/playfair/CMakeFiles/playfair.dir/flags.make
-lib/airplay/playfair/CMakeFiles/playfair.dir/sap_hash.c.o: /home/nikola/dev/mochi/src/lib/airplay/playfair/sap_hash.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object lib/airplay/playfair/CMakeFiles/playfair.dir/sap_hash.c.o"
-	cd /home/nikola/dev/mochi/target/lib/airplay/playfair && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/playfair.dir/sap_hash.c.o   -c /home/nikola/dev/mochi/src/lib/airplay/playfair/sap_hash.c
+lib/airplay/playfair/CMakeFiles/playfair.dir/sap_hash.c.o: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/playfair/sap_hash.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object lib/airplay/playfair/CMakeFiles/playfair.dir/sap_hash.c.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/playfair && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/playfair.dir/sap_hash.c.o   -c /home/nikola/dev/mochi/air_mochi/src/lib/airplay/playfair/sap_hash.c
 
 lib/airplay/playfair/CMakeFiles/playfair.dir/sap_hash.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/playfair.dir/sap_hash.c.i"
-	cd /home/nikola/dev/mochi/target/lib/airplay/playfair && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/src/lib/airplay/playfair/sap_hash.c > CMakeFiles/playfair.dir/sap_hash.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/playfair && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/lib/airplay/playfair/sap_hash.c > CMakeFiles/playfair.dir/sap_hash.c.i
 
 lib/airplay/playfair/CMakeFiles/playfair.dir/sap_hash.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/playfair.dir/sap_hash.c.s"
-	cd /home/nikola/dev/mochi/target/lib/airplay/playfair && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/src/lib/airplay/playfair/sap_hash.c -o CMakeFiles/playfair.dir/sap_hash.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/playfair && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/lib/airplay/playfair/sap_hash.c -o CMakeFiles/playfair.dir/sap_hash.c.s
 
 lib/airplay/playfair/CMakeFiles/playfair.dir/sap_hash.c.o.requires:
 
@@ -195,9 +195,9 @@ lib/airplay/playfair/libplayfair.a: lib/airplay/playfair/CMakeFiles/playfair.dir
 lib/airplay/playfair/libplayfair.a: lib/airplay/playfair/CMakeFiles/playfair.dir/sap_hash.c.o
 lib/airplay/playfair/libplayfair.a: lib/airplay/playfair/CMakeFiles/playfair.dir/build.make
 lib/airplay/playfair/libplayfair.a: lib/airplay/playfair/CMakeFiles/playfair.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C static library libplayfair.a"
-	cd /home/nikola/dev/mochi/target/lib/airplay/playfair && $(CMAKE_COMMAND) -P CMakeFiles/playfair.dir/cmake_clean_target.cmake
-	cd /home/nikola/dev/mochi/target/lib/airplay/playfair && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/playfair.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C static library libplayfair.a"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/playfair && $(CMAKE_COMMAND) -P CMakeFiles/playfair.dir/cmake_clean_target.cmake
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/playfair && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/playfair.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 lib/airplay/playfair/CMakeFiles/playfair.dir/build: lib/airplay/playfair/libplayfair.a
@@ -213,10 +213,10 @@ lib/airplay/playfair/CMakeFiles/playfair.dir/requires: lib/airplay/playfair/CMak
 .PHONY : lib/airplay/playfair/CMakeFiles/playfair.dir/requires
 
 lib/airplay/playfair/CMakeFiles/playfair.dir/clean:
-	cd /home/nikola/dev/mochi/target/lib/airplay/playfair && $(CMAKE_COMMAND) -P CMakeFiles/playfair.dir/cmake_clean.cmake
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/playfair && $(CMAKE_COMMAND) -P CMakeFiles/playfair.dir/cmake_clean.cmake
 .PHONY : lib/airplay/playfair/CMakeFiles/playfair.dir/clean
 
 lib/airplay/playfair/CMakeFiles/playfair.dir/depend:
-	cd /home/nikola/dev/mochi/target && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nikola/dev/mochi/src /home/nikola/dev/mochi/src/lib/airplay/playfair /home/nikola/dev/mochi/target /home/nikola/dev/mochi/target/lib/airplay/playfair /home/nikola/dev/mochi/target/lib/airplay/playfair/CMakeFiles/playfair.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nikola/dev/mochi/air_mochi/target && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nikola/dev/mochi/air_mochi/src /home/nikola/dev/mochi/air_mochi/src/lib/airplay/playfair /home/nikola/dev/mochi/air_mochi/target /home/nikola/dev/mochi/air_mochi/target/lib/airplay/playfair /home/nikola/dev/mochi/air_mochi/target/lib/airplay/playfair/CMakeFiles/playfair.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : lib/airplay/playfair/CMakeFiles/playfair.dir/depend
 

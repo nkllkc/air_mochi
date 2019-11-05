@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nikola/dev/mochi/src
+CMAKE_SOURCE_DIR = /home/nikola/dev/mochi/air_mochi/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nikola/dev/mochi/target
+CMAKE_BINARY_DIR = /home/nikola/dev/mochi/air_mochi/target
 
 # Include any dependencies generated for this target.
 include lib/airplay/CMakeFiles/airplay.dir/depend.make
@@ -58,17 +58,17 @@ include lib/airplay/CMakeFiles/airplay.dir/progress.make
 include lib/airplay/CMakeFiles/airplay.dir/flags.make
 
 lib/airplay/CMakeFiles/airplay.dir/byteutils.c.o: lib/airplay/CMakeFiles/airplay.dir/flags.make
-lib/airplay/CMakeFiles/airplay.dir/byteutils.c.o: /home/nikola/dev/mochi/src/lib/airplay/byteutils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/airplay/CMakeFiles/airplay.dir/byteutils.c.o"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/airplay.dir/byteutils.c.o   -c /home/nikola/dev/mochi/src/lib/airplay/byteutils.c
+lib/airplay/CMakeFiles/airplay.dir/byteutils.c.o: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/byteutils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/airplay/CMakeFiles/airplay.dir/byteutils.c.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/airplay.dir/byteutils.c.o   -c /home/nikola/dev/mochi/air_mochi/src/lib/airplay/byteutils.c
 
 lib/airplay/CMakeFiles/airplay.dir/byteutils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/airplay.dir/byteutils.c.i"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/src/lib/airplay/byteutils.c > CMakeFiles/airplay.dir/byteutils.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/lib/airplay/byteutils.c > CMakeFiles/airplay.dir/byteutils.c.i
 
 lib/airplay/CMakeFiles/airplay.dir/byteutils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/airplay.dir/byteutils.c.s"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/src/lib/airplay/byteutils.c -o CMakeFiles/airplay.dir/byteutils.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/lib/airplay/byteutils.c -o CMakeFiles/airplay.dir/byteutils.c.s
 
 lib/airplay/CMakeFiles/airplay.dir/byteutils.c.o.requires:
 
@@ -82,17 +82,17 @@ lib/airplay/CMakeFiles/airplay.dir/byteutils.c.o.provides.build: lib/airplay/CMa
 
 
 lib/airplay/CMakeFiles/airplay.dir/crypto.c.o: lib/airplay/CMakeFiles/airplay.dir/flags.make
-lib/airplay/CMakeFiles/airplay.dir/crypto.c.o: /home/nikola/dev/mochi/src/lib/airplay/crypto.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object lib/airplay/CMakeFiles/airplay.dir/crypto.c.o"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/airplay.dir/crypto.c.o   -c /home/nikola/dev/mochi/src/lib/airplay/crypto.c
+lib/airplay/CMakeFiles/airplay.dir/crypto.c.o: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/crypto.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object lib/airplay/CMakeFiles/airplay.dir/crypto.c.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/airplay.dir/crypto.c.o   -c /home/nikola/dev/mochi/air_mochi/src/lib/airplay/crypto.c
 
 lib/airplay/CMakeFiles/airplay.dir/crypto.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/airplay.dir/crypto.c.i"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/src/lib/airplay/crypto.c > CMakeFiles/airplay.dir/crypto.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/lib/airplay/crypto.c > CMakeFiles/airplay.dir/crypto.c.i
 
 lib/airplay/CMakeFiles/airplay.dir/crypto.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/airplay.dir/crypto.c.s"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/src/lib/airplay/crypto.c -o CMakeFiles/airplay.dir/crypto.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/lib/airplay/crypto.c -o CMakeFiles/airplay.dir/crypto.c.s
 
 lib/airplay/CMakeFiles/airplay.dir/crypto.c.o.requires:
 
@@ -106,17 +106,17 @@ lib/airplay/CMakeFiles/airplay.dir/crypto.c.o.provides.build: lib/airplay/CMakeF
 
 
 lib/airplay/CMakeFiles/airplay.dir/dnssd.c.o: lib/airplay/CMakeFiles/airplay.dir/flags.make
-lib/airplay/CMakeFiles/airplay.dir/dnssd.c.o: /home/nikola/dev/mochi/src/lib/airplay/dnssd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object lib/airplay/CMakeFiles/airplay.dir/dnssd.c.o"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/airplay.dir/dnssd.c.o   -c /home/nikola/dev/mochi/src/lib/airplay/dnssd.c
+lib/airplay/CMakeFiles/airplay.dir/dnssd.c.o: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/dnssd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object lib/airplay/CMakeFiles/airplay.dir/dnssd.c.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/airplay.dir/dnssd.c.o   -c /home/nikola/dev/mochi/air_mochi/src/lib/airplay/dnssd.c
 
 lib/airplay/CMakeFiles/airplay.dir/dnssd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/airplay.dir/dnssd.c.i"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/src/lib/airplay/dnssd.c > CMakeFiles/airplay.dir/dnssd.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/lib/airplay/dnssd.c > CMakeFiles/airplay.dir/dnssd.c.i
 
 lib/airplay/CMakeFiles/airplay.dir/dnssd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/airplay.dir/dnssd.c.s"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/src/lib/airplay/dnssd.c -o CMakeFiles/airplay.dir/dnssd.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/lib/airplay/dnssd.c -o CMakeFiles/airplay.dir/dnssd.c.s
 
 lib/airplay/CMakeFiles/airplay.dir/dnssd.c.o.requires:
 
@@ -130,17 +130,17 @@ lib/airplay/CMakeFiles/airplay.dir/dnssd.c.o.provides.build: lib/airplay/CMakeFi
 
 
 lib/airplay/CMakeFiles/airplay.dir/fairplay_playfair.c.o: lib/airplay/CMakeFiles/airplay.dir/flags.make
-lib/airplay/CMakeFiles/airplay.dir/fairplay_playfair.c.o: /home/nikola/dev/mochi/src/lib/airplay/fairplay_playfair.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object lib/airplay/CMakeFiles/airplay.dir/fairplay_playfair.c.o"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/airplay.dir/fairplay_playfair.c.o   -c /home/nikola/dev/mochi/src/lib/airplay/fairplay_playfair.c
+lib/airplay/CMakeFiles/airplay.dir/fairplay_playfair.c.o: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/fairplay_playfair.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object lib/airplay/CMakeFiles/airplay.dir/fairplay_playfair.c.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/airplay.dir/fairplay_playfair.c.o   -c /home/nikola/dev/mochi/air_mochi/src/lib/airplay/fairplay_playfair.c
 
 lib/airplay/CMakeFiles/airplay.dir/fairplay_playfair.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/airplay.dir/fairplay_playfair.c.i"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/src/lib/airplay/fairplay_playfair.c > CMakeFiles/airplay.dir/fairplay_playfair.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/lib/airplay/fairplay_playfair.c > CMakeFiles/airplay.dir/fairplay_playfair.c.i
 
 lib/airplay/CMakeFiles/airplay.dir/fairplay_playfair.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/airplay.dir/fairplay_playfair.c.s"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/src/lib/airplay/fairplay_playfair.c -o CMakeFiles/airplay.dir/fairplay_playfair.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/lib/airplay/fairplay_playfair.c -o CMakeFiles/airplay.dir/fairplay_playfair.c.s
 
 lib/airplay/CMakeFiles/airplay.dir/fairplay_playfair.c.o.requires:
 
@@ -154,17 +154,17 @@ lib/airplay/CMakeFiles/airplay.dir/fairplay_playfair.c.o.provides.build: lib/air
 
 
 lib/airplay/CMakeFiles/airplay.dir/http_parser.c.o: lib/airplay/CMakeFiles/airplay.dir/flags.make
-lib/airplay/CMakeFiles/airplay.dir/http_parser.c.o: /home/nikola/dev/mochi/src/lib/airplay/http_parser.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object lib/airplay/CMakeFiles/airplay.dir/http_parser.c.o"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/airplay.dir/http_parser.c.o   -c /home/nikola/dev/mochi/src/lib/airplay/http_parser.c
+lib/airplay/CMakeFiles/airplay.dir/http_parser.c.o: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/http_parser.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object lib/airplay/CMakeFiles/airplay.dir/http_parser.c.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/airplay.dir/http_parser.c.o   -c /home/nikola/dev/mochi/air_mochi/src/lib/airplay/http_parser.c
 
 lib/airplay/CMakeFiles/airplay.dir/http_parser.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/airplay.dir/http_parser.c.i"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/src/lib/airplay/http_parser.c > CMakeFiles/airplay.dir/http_parser.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/lib/airplay/http_parser.c > CMakeFiles/airplay.dir/http_parser.c.i
 
 lib/airplay/CMakeFiles/airplay.dir/http_parser.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/airplay.dir/http_parser.c.s"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/src/lib/airplay/http_parser.c -o CMakeFiles/airplay.dir/http_parser.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/lib/airplay/http_parser.c -o CMakeFiles/airplay.dir/http_parser.c.s
 
 lib/airplay/CMakeFiles/airplay.dir/http_parser.c.o.requires:
 
@@ -178,17 +178,17 @@ lib/airplay/CMakeFiles/airplay.dir/http_parser.c.o.provides.build: lib/airplay/C
 
 
 lib/airplay/CMakeFiles/airplay.dir/http_request.c.o: lib/airplay/CMakeFiles/airplay.dir/flags.make
-lib/airplay/CMakeFiles/airplay.dir/http_request.c.o: /home/nikola/dev/mochi/src/lib/airplay/http_request.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object lib/airplay/CMakeFiles/airplay.dir/http_request.c.o"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/airplay.dir/http_request.c.o   -c /home/nikola/dev/mochi/src/lib/airplay/http_request.c
+lib/airplay/CMakeFiles/airplay.dir/http_request.c.o: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/http_request.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object lib/airplay/CMakeFiles/airplay.dir/http_request.c.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/airplay.dir/http_request.c.o   -c /home/nikola/dev/mochi/air_mochi/src/lib/airplay/http_request.c
 
 lib/airplay/CMakeFiles/airplay.dir/http_request.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/airplay.dir/http_request.c.i"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/src/lib/airplay/http_request.c > CMakeFiles/airplay.dir/http_request.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/lib/airplay/http_request.c > CMakeFiles/airplay.dir/http_request.c.i
 
 lib/airplay/CMakeFiles/airplay.dir/http_request.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/airplay.dir/http_request.c.s"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/src/lib/airplay/http_request.c -o CMakeFiles/airplay.dir/http_request.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/lib/airplay/http_request.c -o CMakeFiles/airplay.dir/http_request.c.s
 
 lib/airplay/CMakeFiles/airplay.dir/http_request.c.o.requires:
 
@@ -202,17 +202,17 @@ lib/airplay/CMakeFiles/airplay.dir/http_request.c.o.provides.build: lib/airplay/
 
 
 lib/airplay/CMakeFiles/airplay.dir/http_response.c.o: lib/airplay/CMakeFiles/airplay.dir/flags.make
-lib/airplay/CMakeFiles/airplay.dir/http_response.c.o: /home/nikola/dev/mochi/src/lib/airplay/http_response.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object lib/airplay/CMakeFiles/airplay.dir/http_response.c.o"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/airplay.dir/http_response.c.o   -c /home/nikola/dev/mochi/src/lib/airplay/http_response.c
+lib/airplay/CMakeFiles/airplay.dir/http_response.c.o: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/http_response.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object lib/airplay/CMakeFiles/airplay.dir/http_response.c.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/airplay.dir/http_response.c.o   -c /home/nikola/dev/mochi/air_mochi/src/lib/airplay/http_response.c
 
 lib/airplay/CMakeFiles/airplay.dir/http_response.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/airplay.dir/http_response.c.i"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/src/lib/airplay/http_response.c > CMakeFiles/airplay.dir/http_response.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/lib/airplay/http_response.c > CMakeFiles/airplay.dir/http_response.c.i
 
 lib/airplay/CMakeFiles/airplay.dir/http_response.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/airplay.dir/http_response.c.s"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/src/lib/airplay/http_response.c -o CMakeFiles/airplay.dir/http_response.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/lib/airplay/http_response.c -o CMakeFiles/airplay.dir/http_response.c.s
 
 lib/airplay/CMakeFiles/airplay.dir/http_response.c.o.requires:
 
@@ -226,17 +226,17 @@ lib/airplay/CMakeFiles/airplay.dir/http_response.c.o.provides.build: lib/airplay
 
 
 lib/airplay/CMakeFiles/airplay.dir/httpd.c.o: lib/airplay/CMakeFiles/airplay.dir/flags.make
-lib/airplay/CMakeFiles/airplay.dir/httpd.c.o: /home/nikola/dev/mochi/src/lib/airplay/httpd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object lib/airplay/CMakeFiles/airplay.dir/httpd.c.o"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/airplay.dir/httpd.c.o   -c /home/nikola/dev/mochi/src/lib/airplay/httpd.c
+lib/airplay/CMakeFiles/airplay.dir/httpd.c.o: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/httpd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object lib/airplay/CMakeFiles/airplay.dir/httpd.c.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/airplay.dir/httpd.c.o   -c /home/nikola/dev/mochi/air_mochi/src/lib/airplay/httpd.c
 
 lib/airplay/CMakeFiles/airplay.dir/httpd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/airplay.dir/httpd.c.i"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/src/lib/airplay/httpd.c > CMakeFiles/airplay.dir/httpd.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/lib/airplay/httpd.c > CMakeFiles/airplay.dir/httpd.c.i
 
 lib/airplay/CMakeFiles/airplay.dir/httpd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/airplay.dir/httpd.c.s"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/src/lib/airplay/httpd.c -o CMakeFiles/airplay.dir/httpd.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/lib/airplay/httpd.c -o CMakeFiles/airplay.dir/httpd.c.s
 
 lib/airplay/CMakeFiles/airplay.dir/httpd.c.o.requires:
 
@@ -250,17 +250,17 @@ lib/airplay/CMakeFiles/airplay.dir/httpd.c.o.provides.build: lib/airplay/CMakeFi
 
 
 lib/airplay/CMakeFiles/airplay.dir/logger.c.o: lib/airplay/CMakeFiles/airplay.dir/flags.make
-lib/airplay/CMakeFiles/airplay.dir/logger.c.o: /home/nikola/dev/mochi/src/lib/airplay/logger.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object lib/airplay/CMakeFiles/airplay.dir/logger.c.o"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/airplay.dir/logger.c.o   -c /home/nikola/dev/mochi/src/lib/airplay/logger.c
+lib/airplay/CMakeFiles/airplay.dir/logger.c.o: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/logger.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object lib/airplay/CMakeFiles/airplay.dir/logger.c.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/airplay.dir/logger.c.o   -c /home/nikola/dev/mochi/air_mochi/src/lib/airplay/logger.c
 
 lib/airplay/CMakeFiles/airplay.dir/logger.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/airplay.dir/logger.c.i"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/src/lib/airplay/logger.c > CMakeFiles/airplay.dir/logger.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/lib/airplay/logger.c > CMakeFiles/airplay.dir/logger.c.i
 
 lib/airplay/CMakeFiles/airplay.dir/logger.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/airplay.dir/logger.c.s"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/src/lib/airplay/logger.c -o CMakeFiles/airplay.dir/logger.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/lib/airplay/logger.c -o CMakeFiles/airplay.dir/logger.c.s
 
 lib/airplay/CMakeFiles/airplay.dir/logger.c.o.requires:
 
@@ -274,17 +274,17 @@ lib/airplay/CMakeFiles/airplay.dir/logger.c.o.provides.build: lib/airplay/CMakeF
 
 
 lib/airplay/CMakeFiles/airplay.dir/mirror_buffer.c.o: lib/airplay/CMakeFiles/airplay.dir/flags.make
-lib/airplay/CMakeFiles/airplay.dir/mirror_buffer.c.o: /home/nikola/dev/mochi/src/lib/airplay/mirror_buffer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object lib/airplay/CMakeFiles/airplay.dir/mirror_buffer.c.o"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/airplay.dir/mirror_buffer.c.o   -c /home/nikola/dev/mochi/src/lib/airplay/mirror_buffer.c
+lib/airplay/CMakeFiles/airplay.dir/mirror_buffer.c.o: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/mirror_buffer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object lib/airplay/CMakeFiles/airplay.dir/mirror_buffer.c.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/airplay.dir/mirror_buffer.c.o   -c /home/nikola/dev/mochi/air_mochi/src/lib/airplay/mirror_buffer.c
 
 lib/airplay/CMakeFiles/airplay.dir/mirror_buffer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/airplay.dir/mirror_buffer.c.i"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/src/lib/airplay/mirror_buffer.c > CMakeFiles/airplay.dir/mirror_buffer.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/lib/airplay/mirror_buffer.c > CMakeFiles/airplay.dir/mirror_buffer.c.i
 
 lib/airplay/CMakeFiles/airplay.dir/mirror_buffer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/airplay.dir/mirror_buffer.c.s"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/src/lib/airplay/mirror_buffer.c -o CMakeFiles/airplay.dir/mirror_buffer.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/lib/airplay/mirror_buffer.c -o CMakeFiles/airplay.dir/mirror_buffer.c.s
 
 lib/airplay/CMakeFiles/airplay.dir/mirror_buffer.c.o.requires:
 
@@ -298,17 +298,17 @@ lib/airplay/CMakeFiles/airplay.dir/mirror_buffer.c.o.provides.build: lib/airplay
 
 
 lib/airplay/CMakeFiles/airplay.dir/netutils.c.o: lib/airplay/CMakeFiles/airplay.dir/flags.make
-lib/airplay/CMakeFiles/airplay.dir/netutils.c.o: /home/nikola/dev/mochi/src/lib/airplay/netutils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object lib/airplay/CMakeFiles/airplay.dir/netutils.c.o"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/airplay.dir/netutils.c.o   -c /home/nikola/dev/mochi/src/lib/airplay/netutils.c
+lib/airplay/CMakeFiles/airplay.dir/netutils.c.o: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/netutils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object lib/airplay/CMakeFiles/airplay.dir/netutils.c.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/airplay.dir/netutils.c.o   -c /home/nikola/dev/mochi/air_mochi/src/lib/airplay/netutils.c
 
 lib/airplay/CMakeFiles/airplay.dir/netutils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/airplay.dir/netutils.c.i"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/src/lib/airplay/netutils.c > CMakeFiles/airplay.dir/netutils.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/lib/airplay/netutils.c > CMakeFiles/airplay.dir/netutils.c.i
 
 lib/airplay/CMakeFiles/airplay.dir/netutils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/airplay.dir/netutils.c.s"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/src/lib/airplay/netutils.c -o CMakeFiles/airplay.dir/netutils.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/lib/airplay/netutils.c -o CMakeFiles/airplay.dir/netutils.c.s
 
 lib/airplay/CMakeFiles/airplay.dir/netutils.c.o.requires:
 
@@ -322,17 +322,17 @@ lib/airplay/CMakeFiles/airplay.dir/netutils.c.o.provides.build: lib/airplay/CMak
 
 
 lib/airplay/CMakeFiles/airplay.dir/pairing.c.o: lib/airplay/CMakeFiles/airplay.dir/flags.make
-lib/airplay/CMakeFiles/airplay.dir/pairing.c.o: /home/nikola/dev/mochi/src/lib/airplay/pairing.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object lib/airplay/CMakeFiles/airplay.dir/pairing.c.o"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/airplay.dir/pairing.c.o   -c /home/nikola/dev/mochi/src/lib/airplay/pairing.c
+lib/airplay/CMakeFiles/airplay.dir/pairing.c.o: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/pairing.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object lib/airplay/CMakeFiles/airplay.dir/pairing.c.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/airplay.dir/pairing.c.o   -c /home/nikola/dev/mochi/air_mochi/src/lib/airplay/pairing.c
 
 lib/airplay/CMakeFiles/airplay.dir/pairing.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/airplay.dir/pairing.c.i"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/src/lib/airplay/pairing.c > CMakeFiles/airplay.dir/pairing.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/lib/airplay/pairing.c > CMakeFiles/airplay.dir/pairing.c.i
 
 lib/airplay/CMakeFiles/airplay.dir/pairing.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/airplay.dir/pairing.c.s"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/src/lib/airplay/pairing.c -o CMakeFiles/airplay.dir/pairing.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/lib/airplay/pairing.c -o CMakeFiles/airplay.dir/pairing.c.s
 
 lib/airplay/CMakeFiles/airplay.dir/pairing.c.o.requires:
 
@@ -346,17 +346,17 @@ lib/airplay/CMakeFiles/airplay.dir/pairing.c.o.provides.build: lib/airplay/CMake
 
 
 lib/airplay/CMakeFiles/airplay.dir/raop.c.o: lib/airplay/CMakeFiles/airplay.dir/flags.make
-lib/airplay/CMakeFiles/airplay.dir/raop.c.o: /home/nikola/dev/mochi/src/lib/airplay/raop.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object lib/airplay/CMakeFiles/airplay.dir/raop.c.o"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/airplay.dir/raop.c.o   -c /home/nikola/dev/mochi/src/lib/airplay/raop.c
+lib/airplay/CMakeFiles/airplay.dir/raop.c.o: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/raop.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object lib/airplay/CMakeFiles/airplay.dir/raop.c.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/airplay.dir/raop.c.o   -c /home/nikola/dev/mochi/air_mochi/src/lib/airplay/raop.c
 
 lib/airplay/CMakeFiles/airplay.dir/raop.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/airplay.dir/raop.c.i"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/src/lib/airplay/raop.c > CMakeFiles/airplay.dir/raop.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/lib/airplay/raop.c > CMakeFiles/airplay.dir/raop.c.i
 
 lib/airplay/CMakeFiles/airplay.dir/raop.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/airplay.dir/raop.c.s"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/src/lib/airplay/raop.c -o CMakeFiles/airplay.dir/raop.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/lib/airplay/raop.c -o CMakeFiles/airplay.dir/raop.c.s
 
 lib/airplay/CMakeFiles/airplay.dir/raop.c.o.requires:
 
@@ -370,17 +370,17 @@ lib/airplay/CMakeFiles/airplay.dir/raop.c.o.provides.build: lib/airplay/CMakeFil
 
 
 lib/airplay/CMakeFiles/airplay.dir/raop_buffer.c.o: lib/airplay/CMakeFiles/airplay.dir/flags.make
-lib/airplay/CMakeFiles/airplay.dir/raop_buffer.c.o: /home/nikola/dev/mochi/src/lib/airplay/raop_buffer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object lib/airplay/CMakeFiles/airplay.dir/raop_buffer.c.o"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/airplay.dir/raop_buffer.c.o   -c /home/nikola/dev/mochi/src/lib/airplay/raop_buffer.c
+lib/airplay/CMakeFiles/airplay.dir/raop_buffer.c.o: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/raop_buffer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object lib/airplay/CMakeFiles/airplay.dir/raop_buffer.c.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/airplay.dir/raop_buffer.c.o   -c /home/nikola/dev/mochi/air_mochi/src/lib/airplay/raop_buffer.c
 
 lib/airplay/CMakeFiles/airplay.dir/raop_buffer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/airplay.dir/raop_buffer.c.i"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/src/lib/airplay/raop_buffer.c > CMakeFiles/airplay.dir/raop_buffer.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/lib/airplay/raop_buffer.c > CMakeFiles/airplay.dir/raop_buffer.c.i
 
 lib/airplay/CMakeFiles/airplay.dir/raop_buffer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/airplay.dir/raop_buffer.c.s"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/src/lib/airplay/raop_buffer.c -o CMakeFiles/airplay.dir/raop_buffer.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/lib/airplay/raop_buffer.c -o CMakeFiles/airplay.dir/raop_buffer.c.s
 
 lib/airplay/CMakeFiles/airplay.dir/raop_buffer.c.o.requires:
 
@@ -394,17 +394,17 @@ lib/airplay/CMakeFiles/airplay.dir/raop_buffer.c.o.provides.build: lib/airplay/C
 
 
 lib/airplay/CMakeFiles/airplay.dir/raop_ntp.c.o: lib/airplay/CMakeFiles/airplay.dir/flags.make
-lib/airplay/CMakeFiles/airplay.dir/raop_ntp.c.o: /home/nikola/dev/mochi/src/lib/airplay/raop_ntp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object lib/airplay/CMakeFiles/airplay.dir/raop_ntp.c.o"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/airplay.dir/raop_ntp.c.o   -c /home/nikola/dev/mochi/src/lib/airplay/raop_ntp.c
+lib/airplay/CMakeFiles/airplay.dir/raop_ntp.c.o: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/raop_ntp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object lib/airplay/CMakeFiles/airplay.dir/raop_ntp.c.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/airplay.dir/raop_ntp.c.o   -c /home/nikola/dev/mochi/air_mochi/src/lib/airplay/raop_ntp.c
 
 lib/airplay/CMakeFiles/airplay.dir/raop_ntp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/airplay.dir/raop_ntp.c.i"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/src/lib/airplay/raop_ntp.c > CMakeFiles/airplay.dir/raop_ntp.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/lib/airplay/raop_ntp.c > CMakeFiles/airplay.dir/raop_ntp.c.i
 
 lib/airplay/CMakeFiles/airplay.dir/raop_ntp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/airplay.dir/raop_ntp.c.s"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/src/lib/airplay/raop_ntp.c -o CMakeFiles/airplay.dir/raop_ntp.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/lib/airplay/raop_ntp.c -o CMakeFiles/airplay.dir/raop_ntp.c.s
 
 lib/airplay/CMakeFiles/airplay.dir/raop_ntp.c.o.requires:
 
@@ -418,17 +418,17 @@ lib/airplay/CMakeFiles/airplay.dir/raop_ntp.c.o.provides.build: lib/airplay/CMak
 
 
 lib/airplay/CMakeFiles/airplay.dir/raop_rtp.c.o: lib/airplay/CMakeFiles/airplay.dir/flags.make
-lib/airplay/CMakeFiles/airplay.dir/raop_rtp.c.o: /home/nikola/dev/mochi/src/lib/airplay/raop_rtp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object lib/airplay/CMakeFiles/airplay.dir/raop_rtp.c.o"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/airplay.dir/raop_rtp.c.o   -c /home/nikola/dev/mochi/src/lib/airplay/raop_rtp.c
+lib/airplay/CMakeFiles/airplay.dir/raop_rtp.c.o: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/raop_rtp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object lib/airplay/CMakeFiles/airplay.dir/raop_rtp.c.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/airplay.dir/raop_rtp.c.o   -c /home/nikola/dev/mochi/air_mochi/src/lib/airplay/raop_rtp.c
 
 lib/airplay/CMakeFiles/airplay.dir/raop_rtp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/airplay.dir/raop_rtp.c.i"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/src/lib/airplay/raop_rtp.c > CMakeFiles/airplay.dir/raop_rtp.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/lib/airplay/raop_rtp.c > CMakeFiles/airplay.dir/raop_rtp.c.i
 
 lib/airplay/CMakeFiles/airplay.dir/raop_rtp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/airplay.dir/raop_rtp.c.s"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/src/lib/airplay/raop_rtp.c -o CMakeFiles/airplay.dir/raop_rtp.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/lib/airplay/raop_rtp.c -o CMakeFiles/airplay.dir/raop_rtp.c.s
 
 lib/airplay/CMakeFiles/airplay.dir/raop_rtp.c.o.requires:
 
@@ -442,17 +442,17 @@ lib/airplay/CMakeFiles/airplay.dir/raop_rtp.c.o.provides.build: lib/airplay/CMak
 
 
 lib/airplay/CMakeFiles/airplay.dir/raop_rtp_mirror.c.o: lib/airplay/CMakeFiles/airplay.dir/flags.make
-lib/airplay/CMakeFiles/airplay.dir/raop_rtp_mirror.c.o: /home/nikola/dev/mochi/src/lib/airplay/raop_rtp_mirror.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object lib/airplay/CMakeFiles/airplay.dir/raop_rtp_mirror.c.o"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/airplay.dir/raop_rtp_mirror.c.o   -c /home/nikola/dev/mochi/src/lib/airplay/raop_rtp_mirror.c
+lib/airplay/CMakeFiles/airplay.dir/raop_rtp_mirror.c.o: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/raop_rtp_mirror.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object lib/airplay/CMakeFiles/airplay.dir/raop_rtp_mirror.c.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/airplay.dir/raop_rtp_mirror.c.o   -c /home/nikola/dev/mochi/air_mochi/src/lib/airplay/raop_rtp_mirror.c
 
 lib/airplay/CMakeFiles/airplay.dir/raop_rtp_mirror.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/airplay.dir/raop_rtp_mirror.c.i"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/src/lib/airplay/raop_rtp_mirror.c > CMakeFiles/airplay.dir/raop_rtp_mirror.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/lib/airplay/raop_rtp_mirror.c > CMakeFiles/airplay.dir/raop_rtp_mirror.c.i
 
 lib/airplay/CMakeFiles/airplay.dir/raop_rtp_mirror.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/airplay.dir/raop_rtp_mirror.c.s"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/src/lib/airplay/raop_rtp_mirror.c -o CMakeFiles/airplay.dir/raop_rtp_mirror.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/lib/airplay/raop_rtp_mirror.c -o CMakeFiles/airplay.dir/raop_rtp_mirror.c.s
 
 lib/airplay/CMakeFiles/airplay.dir/raop_rtp_mirror.c.o.requires:
 
@@ -466,17 +466,17 @@ lib/airplay/CMakeFiles/airplay.dir/raop_rtp_mirror.c.o.provides.build: lib/airpl
 
 
 lib/airplay/CMakeFiles/airplay.dir/utils.c.o: lib/airplay/CMakeFiles/airplay.dir/flags.make
-lib/airplay/CMakeFiles/airplay.dir/utils.c.o: /home/nikola/dev/mochi/src/lib/airplay/utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object lib/airplay/CMakeFiles/airplay.dir/utils.c.o"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/airplay.dir/utils.c.o   -c /home/nikola/dev/mochi/src/lib/airplay/utils.c
+lib/airplay/CMakeFiles/airplay.dir/utils.c.o: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object lib/airplay/CMakeFiles/airplay.dir/utils.c.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/airplay.dir/utils.c.o   -c /home/nikola/dev/mochi/air_mochi/src/lib/airplay/utils.c
 
 lib/airplay/CMakeFiles/airplay.dir/utils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/airplay.dir/utils.c.i"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/src/lib/airplay/utils.c > CMakeFiles/airplay.dir/utils.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/lib/airplay/utils.c > CMakeFiles/airplay.dir/utils.c.i
 
 lib/airplay/CMakeFiles/airplay.dir/utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/airplay.dir/utils.c.s"
-	cd /home/nikola/dev/mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/src/lib/airplay/utils.c -o CMakeFiles/airplay.dir/utils.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/lib/airplay/utils.c -o CMakeFiles/airplay.dir/utils.c.s
 
 lib/airplay/CMakeFiles/airplay.dir/utils.c.o.requires:
 
@@ -533,9 +533,9 @@ lib/airplay/libairplay.a: lib/airplay/CMakeFiles/airplay.dir/raop_rtp_mirror.c.o
 lib/airplay/libairplay.a: lib/airplay/CMakeFiles/airplay.dir/utils.c.o
 lib/airplay/libairplay.a: lib/airplay/CMakeFiles/airplay.dir/build.make
 lib/airplay/libairplay.a: lib/airplay/CMakeFiles/airplay.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking C static library libairplay.a"
-	cd /home/nikola/dev/mochi/target/lib/airplay && $(CMAKE_COMMAND) -P CMakeFiles/airplay.dir/cmake_clean_target.cmake
-	cd /home/nikola/dev/mochi/target/lib/airplay && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/airplay.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking C static library libairplay.a"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && $(CMAKE_COMMAND) -P CMakeFiles/airplay.dir/cmake_clean_target.cmake
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/airplay.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 lib/airplay/CMakeFiles/airplay.dir/build: lib/airplay/libairplay.a
@@ -564,10 +564,10 @@ lib/airplay/CMakeFiles/airplay.dir/requires: lib/airplay/CMakeFiles/airplay.dir/
 .PHONY : lib/airplay/CMakeFiles/airplay.dir/requires
 
 lib/airplay/CMakeFiles/airplay.dir/clean:
-	cd /home/nikola/dev/mochi/target/lib/airplay && $(CMAKE_COMMAND) -P CMakeFiles/airplay.dir/cmake_clean.cmake
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay && $(CMAKE_COMMAND) -P CMakeFiles/airplay.dir/cmake_clean.cmake
 .PHONY : lib/airplay/CMakeFiles/airplay.dir/clean
 
 lib/airplay/CMakeFiles/airplay.dir/depend:
-	cd /home/nikola/dev/mochi/target && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nikola/dev/mochi/src /home/nikola/dev/mochi/src/lib/airplay /home/nikola/dev/mochi/target /home/nikola/dev/mochi/target/lib/airplay /home/nikola/dev/mochi/target/lib/airplay/CMakeFiles/airplay.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nikola/dev/mochi/air_mochi/target && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nikola/dev/mochi/air_mochi/src /home/nikola/dev/mochi/air_mochi/src/lib/airplay /home/nikola/dev/mochi/air_mochi/target /home/nikola/dev/mochi/air_mochi/target/lib/airplay /home/nikola/dev/mochi/air_mochi/target/lib/airplay/CMakeFiles/airplay.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : lib/airplay/CMakeFiles/airplay.dir/depend
 

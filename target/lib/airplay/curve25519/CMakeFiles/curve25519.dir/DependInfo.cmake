@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/nikola/dev/mochi/src/lib/airplay/curve25519/curve25519-donna.c" "/home/nikola/dev/mochi/target/lib/airplay/curve25519/CMakeFiles/curve25519.dir/curve25519-donna.c.o"
+  "/home/nikola/dev/mochi/air_mochi/src/lib/airplay/curve25519/curve25519-donna.c" "/home/nikola/dev/mochi/air_mochi/target/lib/airplay/curve25519/CMakeFiles/curve25519.dir/curve25519-donna.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

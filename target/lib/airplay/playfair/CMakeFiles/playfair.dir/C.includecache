@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/nikola/dev/mochi/src/lib/airplay/playfair/hand_garble.c
+/home/nikola/dev/mochi/air_mochi/src/lib/airplay/playfair/hand_garble.c
 stdint.h
 -
 stdio.h
 -
 
-/home/nikola/dev/mochi/src/lib/airplay/playfair/modified_md5.c
+/home/nikola/dev/mochi/air_mochi/src/lib/airplay/playfair/modified_md5.c
 stdint.h
 -
 math.h
@@ -26,7 +26,7 @@ assert.h
 string.h
 -
 
-/home/nikola/dev/mochi/src/lib/airplay/playfair/omg_hax.c
+/home/nikola/dev/mochi/air_mochi/src/lib/airplay/playfair/omg_hax.c
 stdio.h
 -
 stdint.h
@@ -36,19 +36,19 @@ stdlib.h
 string.h
 -
 omg_hax.h
-/home/nikola/dev/mochi/src/lib/airplay/playfair/omg_hax.h
+/home/nikola/dev/mochi/air_mochi/src/lib/airplay/playfair/omg_hax.h
 
-/home/nikola/dev/mochi/src/lib/airplay/playfair/omg_hax.h
+/home/nikola/dev/mochi/air_mochi/src/lib/airplay/playfair/omg_hax.h
 
-/home/nikola/dev/mochi/src/lib/airplay/playfair/playfair.c
+/home/nikola/dev/mochi/air_mochi/src/lib/airplay/playfair/playfair.c
 stdint.h
 -
 playfair.h
-/home/nikola/dev/mochi/src/lib/airplay/playfair/playfair.h
+/home/nikola/dev/mochi/air_mochi/src/lib/airplay/playfair/playfair.h
 
-/home/nikola/dev/mochi/src/lib/airplay/playfair/playfair.h
+/home/nikola/dev/mochi/air_mochi/src/lib/airplay/playfair/playfair.h
 
-/home/nikola/dev/mochi/src/lib/airplay/playfair/sap_hash.c
+/home/nikola/dev/mochi/air_mochi/src/lib/airplay/playfair/sap_hash.c
 stdint.h
 -
 stdio.h

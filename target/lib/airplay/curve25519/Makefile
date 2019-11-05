@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nikola/dev/mochi/src
+CMAKE_SOURCE_DIR = /home/nikola/dev/mochi/air_mochi/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nikola/dev/mochi/target
+CMAKE_BINARY_DIR = /home/nikola/dev/mochi/air_mochi/target
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/nikola/dev/mochi/target && $(CMAKE_COMMAND) -E cmake_progress_start /home/nikola/dev/mochi/target/CMakeFiles /home/nikola/dev/mochi/target/lib/airplay/curve25519/CMakeFiles/progress.marks
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f CMakeFiles/Makefile2 lib/airplay/curve25519/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nikola/dev/mochi/target/CMakeFiles 0
+	cd /home/nikola/dev/mochi/air_mochi/target && $(CMAKE_COMMAND) -E cmake_progress_start /home/nikola/dev/mochi/air_mochi/target/CMakeFiles /home/nikola/dev/mochi/air_mochi/target/lib/airplay/curve25519/CMakeFiles/progress.marks
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f CMakeFiles/Makefile2 lib/airplay/curve25519/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nikola/dev/mochi/air_mochi/target/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f CMakeFiles/Makefile2 lib/airplay/curve25519/clean
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f CMakeFiles/Makefile2 lib/airplay/curve25519/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f CMakeFiles/Makefile2 lib/airplay/curve25519/preinstall
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f CMakeFiles/Makefile2 lib/airplay/curve25519/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f CMakeFiles/Makefile2 lib/airplay/curve25519/preinstall
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f CMakeFiles/Makefile2 lib/airplay/curve25519/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/nikola/dev/mochi/target && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/nikola/dev/mochi/air_mochi/target && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib/airplay/curve25519/CMakeFiles/curve25519.dir/rule:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f CMakeFiles/Makefile2 lib/airplay/curve25519/CMakeFiles/curve25519.dir/rule
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f CMakeFiles/Makefile2 lib/airplay/curve25519/CMakeFiles/curve25519.dir/rule
 .PHONY : lib/airplay/curve25519/CMakeFiles/curve25519.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ curve25519: lib/airplay/curve25519/CMakeFiles/curve25519.dir/rule
 
 # fast build rule for target.
 curve25519/fast:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/curve25519/CMakeFiles/curve25519.dir/build.make lib/airplay/curve25519/CMakeFiles/curve25519.dir/build
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/curve25519/CMakeFiles/curve25519.dir/build.make lib/airplay/curve25519/CMakeFiles/curve25519.dir/build
 .PHONY : curve25519/fast
 
 curve25519-donna.o: curve25519-donna.c.o
@@ -131,7 +131,7 @@ curve25519-donna.o: curve25519-donna.c.o
 
 # target to build an object file
 curve25519-donna.c.o:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/curve25519/CMakeFiles/curve25519.dir/build.make lib/airplay/curve25519/CMakeFiles/curve25519.dir/curve25519-donna.c.o
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/curve25519/CMakeFiles/curve25519.dir/build.make lib/airplay/curve25519/CMakeFiles/curve25519.dir/curve25519-donna.c.o
 .PHONY : curve25519-donna.c.o
 
 curve25519-donna.i: curve25519-donna.c.i
@@ -140,7 +140,7 @@ curve25519-donna.i: curve25519-donna.c.i
 
 # target to preprocess a source file
 curve25519-donna.c.i:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/curve25519/CMakeFiles/curve25519.dir/build.make lib/airplay/curve25519/CMakeFiles/curve25519.dir/curve25519-donna.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/curve25519/CMakeFiles/curve25519.dir/build.make lib/airplay/curve25519/CMakeFiles/curve25519.dir/curve25519-donna.c.i
 .PHONY : curve25519-donna.c.i
 
 curve25519-donna.s: curve25519-donna.c.s
@@ -149,7 +149,7 @@ curve25519-donna.s: curve25519-donna.c.s
 
 # target to generate assembly for a file
 curve25519-donna.c.s:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/curve25519/CMakeFiles/curve25519.dir/build.make lib/airplay/curve25519/CMakeFiles/curve25519.dir/curve25519-donna.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/curve25519/CMakeFiles/curve25519.dir/build.make lib/airplay/curve25519/CMakeFiles/curve25519.dir/curve25519-donna.c.s
 .PHONY : curve25519-donna.c.s
 
 # Help Target
@@ -175,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/nikola/dev/mochi/target && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/nikola/dev/mochi/air_mochi/target && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

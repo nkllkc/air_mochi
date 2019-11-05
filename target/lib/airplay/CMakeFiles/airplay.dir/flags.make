@@ -6,5 +6,5 @@ C_FLAGS =
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/nikola/dev/mochi/src/lib/airplay/curve25519 -I/home/nikola/dev/mochi/src/lib/airplay/ed25519 -I/home/nikola/dev/mochi/src/lib/airplay/playfair -I/home/nikola/dev/mochi/src/lib/airplay/plist/plist 
+C_INCLUDES = -I/home/nikola/dev/mochi/air_mochi/src/lib/airplay/curve25519 -I/home/nikola/dev/mochi/air_mochi/src/lib/airplay/ed25519 -I/home/nikola/dev/mochi/air_mochi/src/lib/airplay/playfair -I/home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/plist 
 

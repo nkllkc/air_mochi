@@ -6,5 +6,5 @@ C_FLAGS =
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/nikola/dev/mochi/src/lib/airplay/playfair/. 
+C_INCLUDES = -I/home/nikola/dev/mochi/air_mochi/src/lib/airplay/playfair/. 
 

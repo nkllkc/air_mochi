@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nikola/dev/mochi/src
+CMAKE_SOURCE_DIR = /home/nikola/dev/mochi/air_mochi/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nikola/dev/mochi/target
+CMAKE_BINARY_DIR = /home/nikola/dev/mochi/air_mochi/target
 
 # Include any dependencies generated for this target.
 include util/CMakeFiles/util.dir/depend.make
@@ -58,17 +58,17 @@ include util/CMakeFiles/util.dir/progress.make
 include util/CMakeFiles/util.dir/flags.make
 
 util/CMakeFiles/util.dir/rtmp_connector.cpp.o: util/CMakeFiles/util.dir/flags.make
-util/CMakeFiles/util.dir/rtmp_connector.cpp.o: /home/nikola/dev/mochi/src/util/rtmp_connector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object util/CMakeFiles/util.dir/rtmp_connector.cpp.o"
-	cd /home/nikola/dev/mochi/target/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/util.dir/rtmp_connector.cpp.o -c /home/nikola/dev/mochi/src/util/rtmp_connector.cpp
+util/CMakeFiles/util.dir/rtmp_connector.cpp.o: /home/nikola/dev/mochi/air_mochi/src/util/rtmp_connector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object util/CMakeFiles/util.dir/rtmp_connector.cpp.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/util.dir/rtmp_connector.cpp.o -c /home/nikola/dev/mochi/air_mochi/src/util/rtmp_connector.cpp
 
 util/CMakeFiles/util.dir/rtmp_connector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/util.dir/rtmp_connector.cpp.i"
-	cd /home/nikola/dev/mochi/target/util && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nikola/dev/mochi/src/util/rtmp_connector.cpp > CMakeFiles/util.dir/rtmp_connector.cpp.i
+	cd /home/nikola/dev/mochi/air_mochi/target/util && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/util/rtmp_connector.cpp > CMakeFiles/util.dir/rtmp_connector.cpp.i
 
 util/CMakeFiles/util.dir/rtmp_connector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/util.dir/rtmp_connector.cpp.s"
-	cd /home/nikola/dev/mochi/target/util && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nikola/dev/mochi/src/util/rtmp_connector.cpp -o CMakeFiles/util.dir/rtmp_connector.cpp.s
+	cd /home/nikola/dev/mochi/air_mochi/target/util && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/util/rtmp_connector.cpp -o CMakeFiles/util.dir/rtmp_connector.cpp.s
 
 util/CMakeFiles/util.dir/rtmp_connector.cpp.o.requires:
 
@@ -81,19 +81,45 @@ util/CMakeFiles/util.dir/rtmp_connector.cpp.o.provides: util/CMakeFiles/util.dir
 util/CMakeFiles/util.dir/rtmp_connector.cpp.o.provides.build: util/CMakeFiles/util.dir/rtmp_connector.cpp.o
 
 
+util/CMakeFiles/util.dir/util.cpp.o: util/CMakeFiles/util.dir/flags.make
+util/CMakeFiles/util.dir/util.cpp.o: /home/nikola/dev/mochi/air_mochi/src/util/util.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object util/CMakeFiles/util.dir/util.cpp.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/util && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/util.dir/util.cpp.o -c /home/nikola/dev/mochi/air_mochi/src/util/util.cpp
+
+util/CMakeFiles/util.dir/util.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/util.dir/util.cpp.i"
+	cd /home/nikola/dev/mochi/air_mochi/target/util && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/util/util.cpp > CMakeFiles/util.dir/util.cpp.i
+
+util/CMakeFiles/util.dir/util.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/util.dir/util.cpp.s"
+	cd /home/nikola/dev/mochi/air_mochi/target/util && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/util/util.cpp -o CMakeFiles/util.dir/util.cpp.s
+
+util/CMakeFiles/util.dir/util.cpp.o.requires:
+
+.PHONY : util/CMakeFiles/util.dir/util.cpp.o.requires
+
+util/CMakeFiles/util.dir/util.cpp.o.provides: util/CMakeFiles/util.dir/util.cpp.o.requires
+	$(MAKE) -f util/CMakeFiles/util.dir/build.make util/CMakeFiles/util.dir/util.cpp.o.provides.build
+.PHONY : util/CMakeFiles/util.dir/util.cpp.o.provides
+
+util/CMakeFiles/util.dir/util.cpp.o.provides.build: util/CMakeFiles/util.dir/util.cpp.o
+
+
 # Object files for target util
 util_OBJECTS = \
-"CMakeFiles/util.dir/rtmp_connector.cpp.o"
+"CMakeFiles/util.dir/rtmp_connector.cpp.o" \
+"CMakeFiles/util.dir/util.cpp.o"
 
 # External object files for target util
 util_EXTERNAL_OBJECTS =
 
 util/libutil.a: util/CMakeFiles/util.dir/rtmp_connector.cpp.o
+util/libutil.a: util/CMakeFiles/util.dir/util.cpp.o
 util/libutil.a: util/CMakeFiles/util.dir/build.make
 util/libutil.a: util/CMakeFiles/util.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libutil.a"
-	cd /home/nikola/dev/mochi/target/util && $(CMAKE_COMMAND) -P CMakeFiles/util.dir/cmake_clean_target.cmake
-	cd /home/nikola/dev/mochi/target/util && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/util.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libutil.a"
+	cd /home/nikola/dev/mochi/air_mochi/target/util && $(CMAKE_COMMAND) -P CMakeFiles/util.dir/cmake_clean_target.cmake
+	cd /home/nikola/dev/mochi/air_mochi/target/util && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/util.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 util/CMakeFiles/util.dir/build: util/libutil.a
@@ -101,14 +127,15 @@ util/CMakeFiles/util.dir/build: util/libutil.a
 .PHONY : util/CMakeFiles/util.dir/build
 
 util/CMakeFiles/util.dir/requires: util/CMakeFiles/util.dir/rtmp_connector.cpp.o.requires
+util/CMakeFiles/util.dir/requires: util/CMakeFiles/util.dir/util.cpp.o.requires
 
 .PHONY : util/CMakeFiles/util.dir/requires
 
 util/CMakeFiles/util.dir/clean:
-	cd /home/nikola/dev/mochi/target/util && $(CMAKE_COMMAND) -P CMakeFiles/util.dir/cmake_clean.cmake
+	cd /home/nikola/dev/mochi/air_mochi/target/util && $(CMAKE_COMMAND) -P CMakeFiles/util.dir/cmake_clean.cmake
 .PHONY : util/CMakeFiles/util.dir/clean
 
 util/CMakeFiles/util.dir/depend:
-	cd /home/nikola/dev/mochi/target && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nikola/dev/mochi/src /home/nikola/dev/mochi/src/util /home/nikola/dev/mochi/target /home/nikola/dev/mochi/target/util /home/nikola/dev/mochi/target/util/CMakeFiles/util.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nikola/dev/mochi/air_mochi/target && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nikola/dev/mochi/air_mochi/src /home/nikola/dev/mochi/air_mochi/src/util /home/nikola/dev/mochi/air_mochi/target /home/nikola/dev/mochi/air_mochi/target/util /home/nikola/dev/mochi/air_mochi/target/util/CMakeFiles/util.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : util/CMakeFiles/util.dir/depend
 

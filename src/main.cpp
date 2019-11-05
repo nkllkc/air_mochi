@@ -3,13 +3,38 @@
 
 #include <iostream>
 #include <stdio.h>
+#include <stddef.h>
+#include <signal.h>
+#include <unistd.h>
+#include <vector>
 
-#define DEFAULT_NAME "RPiPlay"
-#define DEFAULT_SHOW_BACKGROUND true
-#define DEFAULT_AUDIO_DEVICE AUDIO_DEVICE_HDMI
-#define DEFAULT_LOW_LATENCY false
-#define DEFAULT_DEBUG_LOG false
-#define DEFAULT_HW_ADDRESS { (char) 0x48, (char) 0x5d, (char) 0x60, (char) 0x7c, (char) 0xee, (char) 0x22 }
+static int running;
+
+static void signal_handler(int sig) {
+    switch (sig) {
+    case SIGINT:
+    case SIGTERM:
+        running = 0;
+        break;
+    }
+}
+
+static void init_signals(void) {
+    struct sigaction sigact;
+
+    sigact.sa_handler = signal_handler;
+    sigemptyset(&sigact.sa_mask);
+    sigact.sa_flags = 0;
+    sigaction(SIGINT, &sigact, NULL);
+    sigaction(SIGTERM, &sigact, NULL);
+}
+
+static int parse_hw_addr(std::string str, std::vector<char> &hw_addr) {
+    for (int i = 0; i < str.length(); i+=3) {
+        hw_addr.push_back((char) stol(str.substr(i), NULL, 16));
+    }
+    return 0;
+}
 
 static srs_rtmp_t t;
 

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nikola/dev/mochi/src
+CMAKE_SOURCE_DIR = /home/nikola/dev/mochi/air_mochi/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nikola/dev/mochi/target
+CMAKE_BINARY_DIR = /home/nikola/dev/mochi/air_mochi/target
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/nikola/dev/mochi/target && $(CMAKE_COMMAND) -E cmake_progress_start /home/nikola/dev/mochi/target/CMakeFiles /home/nikola/dev/mochi/target/lib/airplay/plist/CMakeFiles/progress.marks
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f CMakeFiles/Makefile2 lib/airplay/plist/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nikola/dev/mochi/target/CMakeFiles 0
+	cd /home/nikola/dev/mochi/air_mochi/target && $(CMAKE_COMMAND) -E cmake_progress_start /home/nikola/dev/mochi/air_mochi/target/CMakeFiles /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist/CMakeFiles/progress.marks
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f CMakeFiles/Makefile2 lib/airplay/plist/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nikola/dev/mochi/air_mochi/target/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f CMakeFiles/Makefile2 lib/airplay/plist/clean
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f CMakeFiles/Makefile2 lib/airplay/plist/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f CMakeFiles/Makefile2 lib/airplay/plist/preinstall
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f CMakeFiles/Makefile2 lib/airplay/plist/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f CMakeFiles/Makefile2 lib/airplay/plist/preinstall
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f CMakeFiles/Makefile2 lib/airplay/plist/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/nikola/dev/mochi/target && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/nikola/dev/mochi/air_mochi/target && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib/airplay/plist/CMakeFiles/plist.dir/rule:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f CMakeFiles/Makefile2 lib/airplay/plist/CMakeFiles/plist.dir/rule
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f CMakeFiles/Makefile2 lib/airplay/plist/CMakeFiles/plist.dir/rule
 .PHONY : lib/airplay/plist/CMakeFiles/plist.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ plist: lib/airplay/plist/CMakeFiles/plist.dir/rule
 
 # fast build rule for target.
 plist/fast:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/build
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/build
 .PHONY : plist/fast
 
 base64.o: base64.c.o
@@ -131,7 +131,7 @@ base64.o: base64.c.o
 
 # target to build an object file
 base64.c.o:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/base64.c.o
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/base64.c.o
 .PHONY : base64.c.o
 
 base64.i: base64.c.i
@@ -140,7 +140,7 @@ base64.i: base64.c.i
 
 # target to preprocess a source file
 base64.c.i:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/base64.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/base64.c.i
 .PHONY : base64.c.i
 
 base64.s: base64.c.s
@@ -149,7 +149,7 @@ base64.s: base64.c.s
 
 # target to generate assembly for a file
 base64.c.s:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/base64.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/base64.c.s
 .PHONY : base64.c.s
 
 bplist.o: bplist.c.o
@@ -158,7 +158,7 @@ bplist.o: bplist.c.o
 
 # target to build an object file
 bplist.c.o:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/bplist.c.o
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/bplist.c.o
 .PHONY : bplist.c.o
 
 bplist.i: bplist.c.i
@@ -167,7 +167,7 @@ bplist.i: bplist.c.i
 
 # target to preprocess a source file
 bplist.c.i:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/bplist.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/bplist.c.i
 .PHONY : bplist.c.i
 
 bplist.s: bplist.c.s
@@ -176,7 +176,7 @@ bplist.s: bplist.c.s
 
 # target to generate assembly for a file
 bplist.c.s:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/bplist.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/bplist.c.s
 .PHONY : bplist.c.s
 
 bytearray.o: bytearray.c.o
@@ -185,7 +185,7 @@ bytearray.o: bytearray.c.o
 
 # target to build an object file
 bytearray.c.o:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/bytearray.c.o
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/bytearray.c.o
 .PHONY : bytearray.c.o
 
 bytearray.i: bytearray.c.i
@@ -194,7 +194,7 @@ bytearray.i: bytearray.c.i
 
 # target to preprocess a source file
 bytearray.c.i:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/bytearray.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/bytearray.c.i
 .PHONY : bytearray.c.i
 
 bytearray.s: bytearray.c.s
@@ -203,7 +203,7 @@ bytearray.s: bytearray.c.s
 
 # target to generate assembly for a file
 bytearray.c.s:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/bytearray.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/bytearray.c.s
 .PHONY : bytearray.c.s
 
 cnary.o: cnary.c.o
@@ -212,7 +212,7 @@ cnary.o: cnary.c.o
 
 # target to build an object file
 cnary.c.o:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/cnary.c.o
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/cnary.c.o
 .PHONY : cnary.c.o
 
 cnary.i: cnary.c.i
@@ -221,7 +221,7 @@ cnary.i: cnary.c.i
 
 # target to preprocess a source file
 cnary.c.i:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/cnary.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/cnary.c.i
 .PHONY : cnary.c.i
 
 cnary.s: cnary.c.s
@@ -230,7 +230,7 @@ cnary.s: cnary.c.s
 
 # target to generate assembly for a file
 cnary.c.s:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/cnary.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/cnary.c.s
 .PHONY : cnary.c.s
 
 hashtable.o: hashtable.c.o
@@ -239,7 +239,7 @@ hashtable.o: hashtable.c.o
 
 # target to build an object file
 hashtable.c.o:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/hashtable.c.o
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/hashtable.c.o
 .PHONY : hashtable.c.o
 
 hashtable.i: hashtable.c.i
@@ -248,7 +248,7 @@ hashtable.i: hashtable.c.i
 
 # target to preprocess a source file
 hashtable.c.i:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/hashtable.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/hashtable.c.i
 .PHONY : hashtable.c.i
 
 hashtable.s: hashtable.c.s
@@ -257,7 +257,7 @@ hashtable.s: hashtable.c.s
 
 # target to generate assembly for a file
 hashtable.c.s:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/hashtable.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/hashtable.c.s
 .PHONY : hashtable.c.s
 
 list.o: list.c.o
@@ -266,7 +266,7 @@ list.o: list.c.o
 
 # target to build an object file
 list.c.o:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/list.c.o
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/list.c.o
 .PHONY : list.c.o
 
 list.i: list.c.i
@@ -275,7 +275,7 @@ list.i: list.c.i
 
 # target to preprocess a source file
 list.c.i:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/list.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/list.c.i
 .PHONY : list.c.i
 
 list.s: list.c.s
@@ -284,7 +284,7 @@ list.s: list.c.s
 
 # target to generate assembly for a file
 list.c.s:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/list.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/list.c.s
 .PHONY : list.c.s
 
 node.o: node.c.o
@@ -293,7 +293,7 @@ node.o: node.c.o
 
 # target to build an object file
 node.c.o:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/node.c.o
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/node.c.o
 .PHONY : node.c.o
 
 node.i: node.c.i
@@ -302,7 +302,7 @@ node.i: node.c.i
 
 # target to preprocess a source file
 node.c.i:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/node.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/node.c.i
 .PHONY : node.c.i
 
 node.s: node.c.s
@@ -311,7 +311,7 @@ node.s: node.c.s
 
 # target to generate assembly for a file
 node.c.s:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/node.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/node.c.s
 .PHONY : node.c.s
 
 node_list.o: node_list.c.o
@@ -320,7 +320,7 @@ node_list.o: node_list.c.o
 
 # target to build an object file
 node_list.c.o:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/node_list.c.o
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/node_list.c.o
 .PHONY : node_list.c.o
 
 node_list.i: node_list.c.i
@@ -329,7 +329,7 @@ node_list.i: node_list.c.i
 
 # target to preprocess a source file
 node_list.c.i:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/node_list.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/node_list.c.i
 .PHONY : node_list.c.i
 
 node_list.s: node_list.c.s
@@ -338,7 +338,7 @@ node_list.s: node_list.c.s
 
 # target to generate assembly for a file
 node_list.c.s:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/node_list.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/node_list.c.s
 .PHONY : node_list.c.s
 
 plist.o: plist.c.o
@@ -347,7 +347,7 @@ plist.o: plist.c.o
 
 # target to build an object file
 plist.c.o:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/plist.c.o
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/plist.c.o
 .PHONY : plist.c.o
 
 plist.i: plist.c.i
@@ -356,7 +356,7 @@ plist.i: plist.c.i
 
 # target to preprocess a source file
 plist.c.i:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/plist.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/plist.c.i
 .PHONY : plist.c.i
 
 plist.s: plist.c.s
@@ -365,7 +365,7 @@ plist.s: plist.c.s
 
 # target to generate assembly for a file
 plist.c.s:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/plist.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/plist.c.s
 .PHONY : plist.c.s
 
 ptrarray.o: ptrarray.c.o
@@ -374,7 +374,7 @@ ptrarray.o: ptrarray.c.o
 
 # target to build an object file
 ptrarray.c.o:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/ptrarray.c.o
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/ptrarray.c.o
 .PHONY : ptrarray.c.o
 
 ptrarray.i: ptrarray.c.i
@@ -383,7 +383,7 @@ ptrarray.i: ptrarray.c.i
 
 # target to preprocess a source file
 ptrarray.c.i:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/ptrarray.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/ptrarray.c.i
 .PHONY : ptrarray.c.i
 
 ptrarray.s: ptrarray.c.s
@@ -392,7 +392,7 @@ ptrarray.s: ptrarray.c.s
 
 # target to generate assembly for a file
 ptrarray.c.s:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/ptrarray.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/ptrarray.c.s
 .PHONY : ptrarray.c.s
 
 time64.o: time64.c.o
@@ -401,7 +401,7 @@ time64.o: time64.c.o
 
 # target to build an object file
 time64.c.o:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/time64.c.o
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/time64.c.o
 .PHONY : time64.c.o
 
 time64.i: time64.c.i
@@ -410,7 +410,7 @@ time64.i: time64.c.i
 
 # target to preprocess a source file
 time64.c.i:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/time64.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/time64.c.i
 .PHONY : time64.c.i
 
 time64.s: time64.c.s
@@ -419,7 +419,7 @@ time64.s: time64.c.s
 
 # target to generate assembly for a file
 time64.c.s:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/time64.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/time64.c.s
 .PHONY : time64.c.s
 
 xplist.o: xplist.c.o
@@ -428,7 +428,7 @@ xplist.o: xplist.c.o
 
 # target to build an object file
 xplist.c.o:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/xplist.c.o
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/xplist.c.o
 .PHONY : xplist.c.o
 
 xplist.i: xplist.c.i
@@ -437,7 +437,7 @@ xplist.i: xplist.c.i
 
 # target to preprocess a source file
 xplist.c.i:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/xplist.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/xplist.c.i
 .PHONY : xplist.c.i
 
 xplist.s: xplist.c.s
@@ -446,7 +446,7 @@ xplist.s: xplist.c.s
 
 # target to generate assembly for a file
 xplist.c.s:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/xplist.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/xplist.c.s
 .PHONY : xplist.c.s
 
 # Help Target
@@ -505,6 +505,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/nikola/dev/mochi/target && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/nikola/dev/mochi/air_mochi/target && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nikola/dev/mochi/src
+CMAKE_SOURCE_DIR = /home/nikola/dev/mochi/air_mochi/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nikola/dev/mochi/target
+CMAKE_BINARY_DIR = /home/nikola/dev/mochi/air_mochi/target
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/nikola/dev/mochi/target && $(CMAKE_COMMAND) -E cmake_progress_start /home/nikola/dev/mochi/target/CMakeFiles /home/nikola/dev/mochi/target/lib/airplay/ed25519/CMakeFiles/progress.marks
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f CMakeFiles/Makefile2 lib/airplay/ed25519/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nikola/dev/mochi/target/CMakeFiles 0
+	cd /home/nikola/dev/mochi/air_mochi/target && $(CMAKE_COMMAND) -E cmake_progress_start /home/nikola/dev/mochi/air_mochi/target/CMakeFiles /home/nikola/dev/mochi/air_mochi/target/lib/airplay/ed25519/CMakeFiles/progress.marks
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f CMakeFiles/Makefile2 lib/airplay/ed25519/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nikola/dev/mochi/air_mochi/target/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f CMakeFiles/Makefile2 lib/airplay/ed25519/clean
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f CMakeFiles/Makefile2 lib/airplay/ed25519/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f CMakeFiles/Makefile2 lib/airplay/ed25519/preinstall
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f CMakeFiles/Makefile2 lib/airplay/ed25519/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f CMakeFiles/Makefile2 lib/airplay/ed25519/preinstall
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f CMakeFiles/Makefile2 lib/airplay/ed25519/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/nikola/dev/mochi/target && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/nikola/dev/mochi/air_mochi/target && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib/airplay/ed25519/CMakeFiles/ed25519.dir/rule:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f CMakeFiles/Makefile2 lib/airplay/ed25519/CMakeFiles/ed25519.dir/rule
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f CMakeFiles/Makefile2 lib/airplay/ed25519/CMakeFiles/ed25519.dir/rule
 .PHONY : lib/airplay/ed25519/CMakeFiles/ed25519.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ ed25519: lib/airplay/ed25519/CMakeFiles/ed25519.dir/rule
 
 # fast build rule for target.
 ed25519/fast:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/build
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/build
 .PHONY : ed25519/fast
 
 add_scalar.o: add_scalar.c.o
@@ -131,7 +131,7 @@ add_scalar.o: add_scalar.c.o
 
 # target to build an object file
 add_scalar.c.o:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/add_scalar.c.o
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/add_scalar.c.o
 .PHONY : add_scalar.c.o
 
 add_scalar.i: add_scalar.c.i
@@ -140,7 +140,7 @@ add_scalar.i: add_scalar.c.i
 
 # target to preprocess a source file
 add_scalar.c.i:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/add_scalar.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/add_scalar.c.i
 .PHONY : add_scalar.c.i
 
 add_scalar.s: add_scalar.c.s
@@ -149,7 +149,7 @@ add_scalar.s: add_scalar.c.s
 
 # target to generate assembly for a file
 add_scalar.c.s:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/add_scalar.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/add_scalar.c.s
 .PHONY : add_scalar.c.s
 
 fe.o: fe.c.o
@@ -158,7 +158,7 @@ fe.o: fe.c.o
 
 # target to build an object file
 fe.c.o:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/fe.c.o
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/fe.c.o
 .PHONY : fe.c.o
 
 fe.i: fe.c.i
@@ -167,7 +167,7 @@ fe.i: fe.c.i
 
 # target to preprocess a source file
 fe.c.i:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/fe.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/fe.c.i
 .PHONY : fe.c.i
 
 fe.s: fe.c.s
@@ -176,7 +176,7 @@ fe.s: fe.c.s
 
 # target to generate assembly for a file
 fe.c.s:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/fe.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/fe.c.s
 .PHONY : fe.c.s
 
 ge.o: ge.c.o
@@ -185,7 +185,7 @@ ge.o: ge.c.o
 
 # target to build an object file
 ge.c.o:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/ge.c.o
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/ge.c.o
 .PHONY : ge.c.o
 
 ge.i: ge.c.i
@@ -194,7 +194,7 @@ ge.i: ge.c.i
 
 # target to preprocess a source file
 ge.c.i:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/ge.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/ge.c.i
 .PHONY : ge.c.i
 
 ge.s: ge.c.s
@@ -203,7 +203,7 @@ ge.s: ge.c.s
 
 # target to generate assembly for a file
 ge.c.s:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/ge.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/ge.c.s
 .PHONY : ge.c.s
 
 key_exchange.o: key_exchange.c.o
@@ -212,7 +212,7 @@ key_exchange.o: key_exchange.c.o
 
 # target to build an object file
 key_exchange.c.o:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/key_exchange.c.o
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/key_exchange.c.o
 .PHONY : key_exchange.c.o
 
 key_exchange.i: key_exchange.c.i
@@ -221,7 +221,7 @@ key_exchange.i: key_exchange.c.i
 
 # target to preprocess a source file
 key_exchange.c.i:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/key_exchange.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/key_exchange.c.i
 .PHONY : key_exchange.c.i
 
 key_exchange.s: key_exchange.c.s
@@ -230,7 +230,7 @@ key_exchange.s: key_exchange.c.s
 
 # target to generate assembly for a file
 key_exchange.c.s:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/key_exchange.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/key_exchange.c.s
 .PHONY : key_exchange.c.s
 
 keypair.o: keypair.c.o
@@ -239,7 +239,7 @@ keypair.o: keypair.c.o
 
 # target to build an object file
 keypair.c.o:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/keypair.c.o
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/keypair.c.o
 .PHONY : keypair.c.o
 
 keypair.i: keypair.c.i
@@ -248,7 +248,7 @@ keypair.i: keypair.c.i
 
 # target to preprocess a source file
 keypair.c.i:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/keypair.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/keypair.c.i
 .PHONY : keypair.c.i
 
 keypair.s: keypair.c.s
@@ -257,7 +257,7 @@ keypair.s: keypair.c.s
 
 # target to generate assembly for a file
 keypair.c.s:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/keypair.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/keypair.c.s
 .PHONY : keypair.c.s
 
 sc.o: sc.c.o
@@ -266,7 +266,7 @@ sc.o: sc.c.o
 
 # target to build an object file
 sc.c.o:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/sc.c.o
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/sc.c.o
 .PHONY : sc.c.o
 
 sc.i: sc.c.i
@@ -275,7 +275,7 @@ sc.i: sc.c.i
 
 # target to preprocess a source file
 sc.c.i:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/sc.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/sc.c.i
 .PHONY : sc.c.i
 
 sc.s: sc.c.s
@@ -284,7 +284,7 @@ sc.s: sc.c.s
 
 # target to generate assembly for a file
 sc.c.s:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/sc.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/sc.c.s
 .PHONY : sc.c.s
 
 seed.o: seed.c.o
@@ -293,7 +293,7 @@ seed.o: seed.c.o
 
 # target to build an object file
 seed.c.o:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/seed.c.o
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/seed.c.o
 .PHONY : seed.c.o
 
 seed.i: seed.c.i
@@ -302,7 +302,7 @@ seed.i: seed.c.i
 
 # target to preprocess a source file
 seed.c.i:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/seed.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/seed.c.i
 .PHONY : seed.c.i
 
 seed.s: seed.c.s
@@ -311,7 +311,7 @@ seed.s: seed.c.s
 
 # target to generate assembly for a file
 seed.c.s:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/seed.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/seed.c.s
 .PHONY : seed.c.s
 
 sha512.o: sha512.c.o
@@ -320,7 +320,7 @@ sha512.o: sha512.c.o
 
 # target to build an object file
 sha512.c.o:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/sha512.c.o
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/sha512.c.o
 .PHONY : sha512.c.o
 
 sha512.i: sha512.c.i
@@ -329,7 +329,7 @@ sha512.i: sha512.c.i
 
 # target to preprocess a source file
 sha512.c.i:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/sha512.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/sha512.c.i
 .PHONY : sha512.c.i
 
 sha512.s: sha512.c.s
@@ -338,7 +338,7 @@ sha512.s: sha512.c.s
 
 # target to generate assembly for a file
 sha512.c.s:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/sha512.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/sha512.c.s
 .PHONY : sha512.c.s
 
 sign.o: sign.c.o
@@ -347,7 +347,7 @@ sign.o: sign.c.o
 
 # target to build an object file
 sign.c.o:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/sign.c.o
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/sign.c.o
 .PHONY : sign.c.o
 
 sign.i: sign.c.i
@@ -356,7 +356,7 @@ sign.i: sign.c.i
 
 # target to preprocess a source file
 sign.c.i:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/sign.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/sign.c.i
 .PHONY : sign.c.i
 
 sign.s: sign.c.s
@@ -365,7 +365,7 @@ sign.s: sign.c.s
 
 # target to generate assembly for a file
 sign.c.s:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/sign.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/sign.c.s
 .PHONY : sign.c.s
 
 verify.o: verify.c.o
@@ -374,7 +374,7 @@ verify.o: verify.c.o
 
 # target to build an object file
 verify.c.o:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/verify.c.o
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/verify.c.o
 .PHONY : verify.c.o
 
 verify.i: verify.c.i
@@ -383,7 +383,7 @@ verify.i: verify.c.i
 
 # target to preprocess a source file
 verify.c.i:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/verify.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/verify.c.i
 .PHONY : verify.c.i
 
 verify.s: verify.c.s
@@ -392,7 +392,7 @@ verify.s: verify.c.s
 
 # target to generate assembly for a file
 verify.c.s:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/verify.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/verify.c.s
 .PHONY : verify.c.s
 
 # Help Target
@@ -445,6 +445,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/nikola/dev/mochi/target && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/nikola/dev/mochi/air_mochi/target && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

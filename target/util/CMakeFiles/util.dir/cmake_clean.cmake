@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/util.dir/rtmp_connector.cpp.o"
+  "CMakeFiles/util.dir/util.cpp.o"
   "libutil.pdb"
   "libutil.a"
 )

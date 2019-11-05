@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nikola/dev/mochi/src
+CMAKE_SOURCE_DIR = /home/nikola/dev/mochi/air_mochi/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nikola/dev/mochi/target
+CMAKE_BINARY_DIR = /home/nikola/dev/mochi/air_mochi/target
 
 # Include any dependencies generated for this target.
 include lib/airplay/curve25519/CMakeFiles/curve25519.dir/depend.make
@@ -58,17 +58,17 @@ include lib/airplay/curve25519/CMakeFiles/curve25519.dir/progress.make
 include lib/airplay/curve25519/CMakeFiles/curve25519.dir/flags.make
 
 lib/airplay/curve25519/CMakeFiles/curve25519.dir/curve25519-donna.c.o: lib/airplay/curve25519/CMakeFiles/curve25519.dir/flags.make
-lib/airplay/curve25519/CMakeFiles/curve25519.dir/curve25519-donna.c.o: /home/nikola/dev/mochi/src/lib/airplay/curve25519/curve25519-donna.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/airplay/curve25519/CMakeFiles/curve25519.dir/curve25519-donna.c.o"
-	cd /home/nikola/dev/mochi/target/lib/airplay/curve25519 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/curve25519.dir/curve25519-donna.c.o   -c /home/nikola/dev/mochi/src/lib/airplay/curve25519/curve25519-donna.c
+lib/airplay/curve25519/CMakeFiles/curve25519.dir/curve25519-donna.c.o: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/curve25519/curve25519-donna.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/airplay/curve25519/CMakeFiles/curve25519.dir/curve25519-donna.c.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/curve25519 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/curve25519.dir/curve25519-donna.c.o   -c /home/nikola/dev/mochi/air_mochi/src/lib/airplay/curve25519/curve25519-donna.c
 
 lib/airplay/curve25519/CMakeFiles/curve25519.dir/curve25519-donna.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/curve25519.dir/curve25519-donna.c.i"
-	cd /home/nikola/dev/mochi/target/lib/airplay/curve25519 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/src/lib/airplay/curve25519/curve25519-donna.c > CMakeFiles/curve25519.dir/curve25519-donna.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/curve25519 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/lib/airplay/curve25519/curve25519-donna.c > CMakeFiles/curve25519.dir/curve25519-donna.c.i
 
 lib/airplay/curve25519/CMakeFiles/curve25519.dir/curve25519-donna.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/curve25519.dir/curve25519-donna.c.s"
-	cd /home/nikola/dev/mochi/target/lib/airplay/curve25519 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/src/lib/airplay/curve25519/curve25519-donna.c -o CMakeFiles/curve25519.dir/curve25519-donna.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/curve25519 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/lib/airplay/curve25519/curve25519-donna.c -o CMakeFiles/curve25519.dir/curve25519-donna.c.s
 
 lib/airplay/curve25519/CMakeFiles/curve25519.dir/curve25519-donna.c.o.requires:
 
@@ -91,9 +91,9 @@ curve25519_EXTERNAL_OBJECTS =
 lib/airplay/curve25519/libcurve25519.a: lib/airplay/curve25519/CMakeFiles/curve25519.dir/curve25519-donna.c.o
 lib/airplay/curve25519/libcurve25519.a: lib/airplay/curve25519/CMakeFiles/curve25519.dir/build.make
 lib/airplay/curve25519/libcurve25519.a: lib/airplay/curve25519/CMakeFiles/curve25519.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libcurve25519.a"
-	cd /home/nikola/dev/mochi/target/lib/airplay/curve25519 && $(CMAKE_COMMAND) -P CMakeFiles/curve25519.dir/cmake_clean_target.cmake
-	cd /home/nikola/dev/mochi/target/lib/airplay/curve25519 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/curve25519.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libcurve25519.a"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/curve25519 && $(CMAKE_COMMAND) -P CMakeFiles/curve25519.dir/cmake_clean_target.cmake
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/curve25519 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/curve25519.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 lib/airplay/curve25519/CMakeFiles/curve25519.dir/build: lib/airplay/curve25519/libcurve25519.a
@@ -105,10 +105,10 @@ lib/airplay/curve25519/CMakeFiles/curve25519.dir/requires: lib/airplay/curve2551
 .PHONY : lib/airplay/curve25519/CMakeFiles/curve25519.dir/requires
 
 lib/airplay/curve25519/CMakeFiles/curve25519.dir/clean:
-	cd /home/nikola/dev/mochi/target/lib/airplay/curve25519 && $(CMAKE_COMMAND) -P CMakeFiles/curve25519.dir/cmake_clean.cmake
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/curve25519 && $(CMAKE_COMMAND) -P CMakeFiles/curve25519.dir/cmake_clean.cmake
 .PHONY : lib/airplay/curve25519/CMakeFiles/curve25519.dir/clean
 
 lib/airplay/curve25519/CMakeFiles/curve25519.dir/depend:
-	cd /home/nikola/dev/mochi/target && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nikola/dev/mochi/src /home/nikola/dev/mochi/src/lib/airplay/curve25519 /home/nikola/dev/mochi/target /home/nikola/dev/mochi/target/lib/airplay/curve25519 /home/nikola/dev/mochi/target/lib/airplay/curve25519/CMakeFiles/curve25519.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nikola/dev/mochi/air_mochi/target && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nikola/dev/mochi/air_mochi/src /home/nikola/dev/mochi/air_mochi/src/lib/airplay/curve25519 /home/nikola/dev/mochi/air_mochi/target /home/nikola/dev/mochi/air_mochi/target/lib/airplay/curve25519 /home/nikola/dev/mochi/air_mochi/target/lib/airplay/curve25519/CMakeFiles/curve25519.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : lib/airplay/curve25519/CMakeFiles/curve25519.dir/depend
 

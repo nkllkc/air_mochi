@@ -1,4 +1,4 @@
-# Install script for directory: /home/nikola/dev/mochi/src/lib/airplay/playfair
+# Install script for directory: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/playfair
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

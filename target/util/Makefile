@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nikola/dev/mochi/src
+CMAKE_SOURCE_DIR = /home/nikola/dev/mochi/air_mochi/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nikola/dev/mochi/target
+CMAKE_BINARY_DIR = /home/nikola/dev/mochi/air_mochi/target
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/nikola/dev/mochi/target && $(CMAKE_COMMAND) -E cmake_progress_start /home/nikola/dev/mochi/target/CMakeFiles /home/nikola/dev/mochi/target/util/CMakeFiles/progress.marks
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f CMakeFiles/Makefile2 util/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nikola/dev/mochi/target/CMakeFiles 0
+	cd /home/nikola/dev/mochi/air_mochi/target && $(CMAKE_COMMAND) -E cmake_progress_start /home/nikola/dev/mochi/air_mochi/target/CMakeFiles /home/nikola/dev/mochi/air_mochi/target/util/CMakeFiles/progress.marks
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f CMakeFiles/Makefile2 util/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nikola/dev/mochi/air_mochi/target/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f CMakeFiles/Makefile2 util/clean
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f CMakeFiles/Makefile2 util/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f CMakeFiles/Makefile2 util/preinstall
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f CMakeFiles/Makefile2 util/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f CMakeFiles/Makefile2 util/preinstall
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f CMakeFiles/Makefile2 util/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/nikola/dev/mochi/target && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/nikola/dev/mochi/air_mochi/target && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 util/CMakeFiles/util.dir/rule:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f CMakeFiles/Makefile2 util/CMakeFiles/util.dir/rule
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f CMakeFiles/Makefile2 util/CMakeFiles/util.dir/rule
 .PHONY : util/CMakeFiles/util.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ util: util/CMakeFiles/util.dir/rule
 
 # fast build rule for target.
 util/fast:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f util/CMakeFiles/util.dir/build.make util/CMakeFiles/util.dir/build
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f util/CMakeFiles/util.dir/build.make util/CMakeFiles/util.dir/build
 .PHONY : util/fast
 
 rtmp_connector.o: rtmp_connector.cpp.o
@@ -131,7 +131,7 @@ rtmp_connector.o: rtmp_connector.cpp.o
 
 # target to build an object file
 rtmp_connector.cpp.o:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f util/CMakeFiles/util.dir/build.make util/CMakeFiles/util.dir/rtmp_connector.cpp.o
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f util/CMakeFiles/util.dir/build.make util/CMakeFiles/util.dir/rtmp_connector.cpp.o
 .PHONY : rtmp_connector.cpp.o
 
 rtmp_connector.i: rtmp_connector.cpp.i
@@ -140,7 +140,7 @@ rtmp_connector.i: rtmp_connector.cpp.i
 
 # target to preprocess a source file
 rtmp_connector.cpp.i:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f util/CMakeFiles/util.dir/build.make util/CMakeFiles/util.dir/rtmp_connector.cpp.i
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f util/CMakeFiles/util.dir/build.make util/CMakeFiles/util.dir/rtmp_connector.cpp.i
 .PHONY : rtmp_connector.cpp.i
 
 rtmp_connector.s: rtmp_connector.cpp.s
@@ -149,8 +149,35 @@ rtmp_connector.s: rtmp_connector.cpp.s
 
 # target to generate assembly for a file
 rtmp_connector.cpp.s:
-	cd /home/nikola/dev/mochi/target && $(MAKE) -f util/CMakeFiles/util.dir/build.make util/CMakeFiles/util.dir/rtmp_connector.cpp.s
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f util/CMakeFiles/util.dir/build.make util/CMakeFiles/util.dir/rtmp_connector.cpp.s
 .PHONY : rtmp_connector.cpp.s
+
+util.o: util.cpp.o
+
+.PHONY : util.o
+
+# target to build an object file
+util.cpp.o:
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f util/CMakeFiles/util.dir/build.make util/CMakeFiles/util.dir/util.cpp.o
+.PHONY : util.cpp.o
+
+util.i: util.cpp.i
+
+.PHONY : util.i
+
+# target to preprocess a source file
+util.cpp.i:
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f util/CMakeFiles/util.dir/build.make util/CMakeFiles/util.dir/util.cpp.i
+.PHONY : util.cpp.i
+
+util.s: util.cpp.s
+
+.PHONY : util.s
+
+# target to generate assembly for a file
+util.cpp.s:
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f util/CMakeFiles/util.dir/build.make util/CMakeFiles/util.dir/util.cpp.s
+.PHONY : util.cpp.s
 
 # Help Target
 help:
@@ -164,6 +191,9 @@ help:
 	@echo "... rtmp_connector.o"
 	@echo "... rtmp_connector.i"
 	@echo "... rtmp_connector.s"
+	@echo "... util.o"
+	@echo "... util.i"
+	@echo "... util.s"
 .PHONY : help
 
 
@@ -175,6 +205,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/nikola/dev/mochi/target && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/nikola/dev/mochi/air_mochi/target && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

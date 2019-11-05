@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nikola/dev/mochi/src
+CMAKE_SOURCE_DIR = /home/nikola/dev/mochi/air_mochi/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nikola/dev/mochi/target
+CMAKE_BINARY_DIR = /home/nikola/dev/mochi/air_mochi/target
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nikola/dev/mochi/target/CMakeFiles /home/nikola/dev/mochi/target/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nikola/dev/mochi/air_mochi/target/CMakeFiles /home/nikola/dev/mochi/air_mochi/target/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nikola/dev/mochi/target/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nikola/dev/mochi/air_mochi/target/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -201,6 +201,19 @@ util/fast:
 	$(MAKE) -f util/CMakeFiles/util.dir/build.make util/CMakeFiles/util.dir/build
 .PHONY : util/fast
 
+#=============================================================================
+# Target rules for targets named airplay_server
+
+# Build rule for target.
+airplay_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 airplay_server
+.PHONY : airplay_server
+
+# fast build rule for target.
+airplay_server/fast:
+	$(MAKE) -f airplay_server/CMakeFiles/airplay_server.dir/build.make airplay_server/CMakeFiles/airplay_server.dir/build
+.PHONY : airplay_server/fast
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -243,6 +256,7 @@ help:
 	@echo "... plist"
 	@echo "... airplay"
 	@echo "... util"
+	@echo "... airplay_server"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

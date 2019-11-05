@@ -1,4 +1,4 @@
-# Install script for directory: /home/nikola/dev/mochi/src/util
+# Install script for directory: /home/nikola/dev/mochi/air_mochi/src/util
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

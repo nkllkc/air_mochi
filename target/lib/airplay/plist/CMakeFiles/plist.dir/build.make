@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nikola/dev/mochi/src
+CMAKE_SOURCE_DIR = /home/nikola/dev/mochi/air_mochi/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nikola/dev/mochi/target
+CMAKE_BINARY_DIR = /home/nikola/dev/mochi/air_mochi/target
 
 # Include any dependencies generated for this target.
 include lib/airplay/plist/CMakeFiles/plist.dir/depend.make
@@ -58,17 +58,17 @@ include lib/airplay/plist/CMakeFiles/plist.dir/progress.make
 include lib/airplay/plist/CMakeFiles/plist.dir/flags.make
 
 lib/airplay/plist/CMakeFiles/plist.dir/base64.c.o: lib/airplay/plist/CMakeFiles/plist.dir/flags.make
-lib/airplay/plist/CMakeFiles/plist.dir/base64.c.o: /home/nikola/dev/mochi/src/lib/airplay/plist/base64.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/airplay/plist/CMakeFiles/plist.dir/base64.c.o"
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/plist.dir/base64.c.o   -c /home/nikola/dev/mochi/src/lib/airplay/plist/base64.c
+lib/airplay/plist/CMakeFiles/plist.dir/base64.c.o: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/base64.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object lib/airplay/plist/CMakeFiles/plist.dir/base64.c.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/plist.dir/base64.c.o   -c /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/base64.c
 
 lib/airplay/plist/CMakeFiles/plist.dir/base64.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/plist.dir/base64.c.i"
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/src/lib/airplay/plist/base64.c > CMakeFiles/plist.dir/base64.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/base64.c > CMakeFiles/plist.dir/base64.c.i
 
 lib/airplay/plist/CMakeFiles/plist.dir/base64.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/plist.dir/base64.c.s"
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/src/lib/airplay/plist/base64.c -o CMakeFiles/plist.dir/base64.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/base64.c -o CMakeFiles/plist.dir/base64.c.s
 
 lib/airplay/plist/CMakeFiles/plist.dir/base64.c.o.requires:
 
@@ -82,17 +82,17 @@ lib/airplay/plist/CMakeFiles/plist.dir/base64.c.o.provides.build: lib/airplay/pl
 
 
 lib/airplay/plist/CMakeFiles/plist.dir/bplist.c.o: lib/airplay/plist/CMakeFiles/plist.dir/flags.make
-lib/airplay/plist/CMakeFiles/plist.dir/bplist.c.o: /home/nikola/dev/mochi/src/lib/airplay/plist/bplist.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object lib/airplay/plist/CMakeFiles/plist.dir/bplist.c.o"
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/plist.dir/bplist.c.o   -c /home/nikola/dev/mochi/src/lib/airplay/plist/bplist.c
+lib/airplay/plist/CMakeFiles/plist.dir/bplist.c.o: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/bplist.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object lib/airplay/plist/CMakeFiles/plist.dir/bplist.c.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/plist.dir/bplist.c.o   -c /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/bplist.c
 
 lib/airplay/plist/CMakeFiles/plist.dir/bplist.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/plist.dir/bplist.c.i"
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/src/lib/airplay/plist/bplist.c > CMakeFiles/plist.dir/bplist.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/bplist.c > CMakeFiles/plist.dir/bplist.c.i
 
 lib/airplay/plist/CMakeFiles/plist.dir/bplist.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/plist.dir/bplist.c.s"
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/src/lib/airplay/plist/bplist.c -o CMakeFiles/plist.dir/bplist.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/bplist.c -o CMakeFiles/plist.dir/bplist.c.s
 
 lib/airplay/plist/CMakeFiles/plist.dir/bplist.c.o.requires:
 
@@ -106,17 +106,17 @@ lib/airplay/plist/CMakeFiles/plist.dir/bplist.c.o.provides.build: lib/airplay/pl
 
 
 lib/airplay/plist/CMakeFiles/plist.dir/bytearray.c.o: lib/airplay/plist/CMakeFiles/plist.dir/flags.make
-lib/airplay/plist/CMakeFiles/plist.dir/bytearray.c.o: /home/nikola/dev/mochi/src/lib/airplay/plist/bytearray.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object lib/airplay/plist/CMakeFiles/plist.dir/bytearray.c.o"
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/plist.dir/bytearray.c.o   -c /home/nikola/dev/mochi/src/lib/airplay/plist/bytearray.c
+lib/airplay/plist/CMakeFiles/plist.dir/bytearray.c.o: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/bytearray.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object lib/airplay/plist/CMakeFiles/plist.dir/bytearray.c.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/plist.dir/bytearray.c.o   -c /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/bytearray.c
 
 lib/airplay/plist/CMakeFiles/plist.dir/bytearray.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/plist.dir/bytearray.c.i"
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/src/lib/airplay/plist/bytearray.c > CMakeFiles/plist.dir/bytearray.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/bytearray.c > CMakeFiles/plist.dir/bytearray.c.i
 
 lib/airplay/plist/CMakeFiles/plist.dir/bytearray.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/plist.dir/bytearray.c.s"
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/src/lib/airplay/plist/bytearray.c -o CMakeFiles/plist.dir/bytearray.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/bytearray.c -o CMakeFiles/plist.dir/bytearray.c.s
 
 lib/airplay/plist/CMakeFiles/plist.dir/bytearray.c.o.requires:
 
@@ -130,17 +130,17 @@ lib/airplay/plist/CMakeFiles/plist.dir/bytearray.c.o.provides.build: lib/airplay
 
 
 lib/airplay/plist/CMakeFiles/plist.dir/cnary.c.o: lib/airplay/plist/CMakeFiles/plist.dir/flags.make
-lib/airplay/plist/CMakeFiles/plist.dir/cnary.c.o: /home/nikola/dev/mochi/src/lib/airplay/plist/cnary.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object lib/airplay/plist/CMakeFiles/plist.dir/cnary.c.o"
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/plist.dir/cnary.c.o   -c /home/nikola/dev/mochi/src/lib/airplay/plist/cnary.c
+lib/airplay/plist/CMakeFiles/plist.dir/cnary.c.o: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/cnary.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object lib/airplay/plist/CMakeFiles/plist.dir/cnary.c.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/plist.dir/cnary.c.o   -c /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/cnary.c
 
 lib/airplay/plist/CMakeFiles/plist.dir/cnary.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/plist.dir/cnary.c.i"
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/src/lib/airplay/plist/cnary.c > CMakeFiles/plist.dir/cnary.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/cnary.c > CMakeFiles/plist.dir/cnary.c.i
 
 lib/airplay/plist/CMakeFiles/plist.dir/cnary.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/plist.dir/cnary.c.s"
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/src/lib/airplay/plist/cnary.c -o CMakeFiles/plist.dir/cnary.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/cnary.c -o CMakeFiles/plist.dir/cnary.c.s
 
 lib/airplay/plist/CMakeFiles/plist.dir/cnary.c.o.requires:
 
@@ -154,17 +154,17 @@ lib/airplay/plist/CMakeFiles/plist.dir/cnary.c.o.provides.build: lib/airplay/pli
 
 
 lib/airplay/plist/CMakeFiles/plist.dir/hashtable.c.o: lib/airplay/plist/CMakeFiles/plist.dir/flags.make
-lib/airplay/plist/CMakeFiles/plist.dir/hashtable.c.o: /home/nikola/dev/mochi/src/lib/airplay/plist/hashtable.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object lib/airplay/plist/CMakeFiles/plist.dir/hashtable.c.o"
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/plist.dir/hashtable.c.o   -c /home/nikola/dev/mochi/src/lib/airplay/plist/hashtable.c
+lib/airplay/plist/CMakeFiles/plist.dir/hashtable.c.o: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/hashtable.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object lib/airplay/plist/CMakeFiles/plist.dir/hashtable.c.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/plist.dir/hashtable.c.o   -c /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/hashtable.c
 
 lib/airplay/plist/CMakeFiles/plist.dir/hashtable.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/plist.dir/hashtable.c.i"
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/src/lib/airplay/plist/hashtable.c > CMakeFiles/plist.dir/hashtable.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/hashtable.c > CMakeFiles/plist.dir/hashtable.c.i
 
 lib/airplay/plist/CMakeFiles/plist.dir/hashtable.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/plist.dir/hashtable.c.s"
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/src/lib/airplay/plist/hashtable.c -o CMakeFiles/plist.dir/hashtable.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/hashtable.c -o CMakeFiles/plist.dir/hashtable.c.s
 
 lib/airplay/plist/CMakeFiles/plist.dir/hashtable.c.o.requires:
 
@@ -178,17 +178,17 @@ lib/airplay/plist/CMakeFiles/plist.dir/hashtable.c.o.provides.build: lib/airplay
 
 
 lib/airplay/plist/CMakeFiles/plist.dir/list.c.o: lib/airplay/plist/CMakeFiles/plist.dir/flags.make
-lib/airplay/plist/CMakeFiles/plist.dir/list.c.o: /home/nikola/dev/mochi/src/lib/airplay/plist/list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object lib/airplay/plist/CMakeFiles/plist.dir/list.c.o"
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/plist.dir/list.c.o   -c /home/nikola/dev/mochi/src/lib/airplay/plist/list.c
+lib/airplay/plist/CMakeFiles/plist.dir/list.c.o: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/list.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object lib/airplay/plist/CMakeFiles/plist.dir/list.c.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/plist.dir/list.c.o   -c /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/list.c
 
 lib/airplay/plist/CMakeFiles/plist.dir/list.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/plist.dir/list.c.i"
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/src/lib/airplay/plist/list.c > CMakeFiles/plist.dir/list.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/list.c > CMakeFiles/plist.dir/list.c.i
 
 lib/airplay/plist/CMakeFiles/plist.dir/list.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/plist.dir/list.c.s"
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/src/lib/airplay/plist/list.c -o CMakeFiles/plist.dir/list.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/list.c -o CMakeFiles/plist.dir/list.c.s
 
 lib/airplay/plist/CMakeFiles/plist.dir/list.c.o.requires:
 
@@ -202,17 +202,17 @@ lib/airplay/plist/CMakeFiles/plist.dir/list.c.o.provides.build: lib/airplay/plis
 
 
 lib/airplay/plist/CMakeFiles/plist.dir/node.c.o: lib/airplay/plist/CMakeFiles/plist.dir/flags.make
-lib/airplay/plist/CMakeFiles/plist.dir/node.c.o: /home/nikola/dev/mochi/src/lib/airplay/plist/node.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object lib/airplay/plist/CMakeFiles/plist.dir/node.c.o"
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/plist.dir/node.c.o   -c /home/nikola/dev/mochi/src/lib/airplay/plist/node.c
+lib/airplay/plist/CMakeFiles/plist.dir/node.c.o: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/node.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object lib/airplay/plist/CMakeFiles/plist.dir/node.c.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/plist.dir/node.c.o   -c /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/node.c
 
 lib/airplay/plist/CMakeFiles/plist.dir/node.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/plist.dir/node.c.i"
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/src/lib/airplay/plist/node.c > CMakeFiles/plist.dir/node.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/node.c > CMakeFiles/plist.dir/node.c.i
 
 lib/airplay/plist/CMakeFiles/plist.dir/node.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/plist.dir/node.c.s"
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/src/lib/airplay/plist/node.c -o CMakeFiles/plist.dir/node.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/node.c -o CMakeFiles/plist.dir/node.c.s
 
 lib/airplay/plist/CMakeFiles/plist.dir/node.c.o.requires:
 
@@ -226,17 +226,17 @@ lib/airplay/plist/CMakeFiles/plist.dir/node.c.o.provides.build: lib/airplay/plis
 
 
 lib/airplay/plist/CMakeFiles/plist.dir/node_list.c.o: lib/airplay/plist/CMakeFiles/plist.dir/flags.make
-lib/airplay/plist/CMakeFiles/plist.dir/node_list.c.o: /home/nikola/dev/mochi/src/lib/airplay/plist/node_list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object lib/airplay/plist/CMakeFiles/plist.dir/node_list.c.o"
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/plist.dir/node_list.c.o   -c /home/nikola/dev/mochi/src/lib/airplay/plist/node_list.c
+lib/airplay/plist/CMakeFiles/plist.dir/node_list.c.o: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/node_list.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object lib/airplay/plist/CMakeFiles/plist.dir/node_list.c.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/plist.dir/node_list.c.o   -c /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/node_list.c
 
 lib/airplay/plist/CMakeFiles/plist.dir/node_list.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/plist.dir/node_list.c.i"
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/src/lib/airplay/plist/node_list.c > CMakeFiles/plist.dir/node_list.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/node_list.c > CMakeFiles/plist.dir/node_list.c.i
 
 lib/airplay/plist/CMakeFiles/plist.dir/node_list.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/plist.dir/node_list.c.s"
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/src/lib/airplay/plist/node_list.c -o CMakeFiles/plist.dir/node_list.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/node_list.c -o CMakeFiles/plist.dir/node_list.c.s
 
 lib/airplay/plist/CMakeFiles/plist.dir/node_list.c.o.requires:
 
@@ -250,17 +250,17 @@ lib/airplay/plist/CMakeFiles/plist.dir/node_list.c.o.provides.build: lib/airplay
 
 
 lib/airplay/plist/CMakeFiles/plist.dir/plist.c.o: lib/airplay/plist/CMakeFiles/plist.dir/flags.make
-lib/airplay/plist/CMakeFiles/plist.dir/plist.c.o: /home/nikola/dev/mochi/src/lib/airplay/plist/plist.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object lib/airplay/plist/CMakeFiles/plist.dir/plist.c.o"
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/plist.dir/plist.c.o   -c /home/nikola/dev/mochi/src/lib/airplay/plist/plist.c
+lib/airplay/plist/CMakeFiles/plist.dir/plist.c.o: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/plist.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object lib/airplay/plist/CMakeFiles/plist.dir/plist.c.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/plist.dir/plist.c.o   -c /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/plist.c
 
 lib/airplay/plist/CMakeFiles/plist.dir/plist.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/plist.dir/plist.c.i"
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/src/lib/airplay/plist/plist.c > CMakeFiles/plist.dir/plist.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/plist.c > CMakeFiles/plist.dir/plist.c.i
 
 lib/airplay/plist/CMakeFiles/plist.dir/plist.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/plist.dir/plist.c.s"
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/src/lib/airplay/plist/plist.c -o CMakeFiles/plist.dir/plist.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/plist.c -o CMakeFiles/plist.dir/plist.c.s
 
 lib/airplay/plist/CMakeFiles/plist.dir/plist.c.o.requires:
 
@@ -274,17 +274,17 @@ lib/airplay/plist/CMakeFiles/plist.dir/plist.c.o.provides.build: lib/airplay/pli
 
 
 lib/airplay/plist/CMakeFiles/plist.dir/ptrarray.c.o: lib/airplay/plist/CMakeFiles/plist.dir/flags.make
-lib/airplay/plist/CMakeFiles/plist.dir/ptrarray.c.o: /home/nikola/dev/mochi/src/lib/airplay/plist/ptrarray.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object lib/airplay/plist/CMakeFiles/plist.dir/ptrarray.c.o"
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/plist.dir/ptrarray.c.o   -c /home/nikola/dev/mochi/src/lib/airplay/plist/ptrarray.c
+lib/airplay/plist/CMakeFiles/plist.dir/ptrarray.c.o: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/ptrarray.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object lib/airplay/plist/CMakeFiles/plist.dir/ptrarray.c.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/plist.dir/ptrarray.c.o   -c /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/ptrarray.c
 
 lib/airplay/plist/CMakeFiles/plist.dir/ptrarray.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/plist.dir/ptrarray.c.i"
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/src/lib/airplay/plist/ptrarray.c > CMakeFiles/plist.dir/ptrarray.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/ptrarray.c > CMakeFiles/plist.dir/ptrarray.c.i
 
 lib/airplay/plist/CMakeFiles/plist.dir/ptrarray.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/plist.dir/ptrarray.c.s"
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/src/lib/airplay/plist/ptrarray.c -o CMakeFiles/plist.dir/ptrarray.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/ptrarray.c -o CMakeFiles/plist.dir/ptrarray.c.s
 
 lib/airplay/plist/CMakeFiles/plist.dir/ptrarray.c.o.requires:
 
@@ -298,17 +298,17 @@ lib/airplay/plist/CMakeFiles/plist.dir/ptrarray.c.o.provides.build: lib/airplay/
 
 
 lib/airplay/plist/CMakeFiles/plist.dir/time64.c.o: lib/airplay/plist/CMakeFiles/plist.dir/flags.make
-lib/airplay/plist/CMakeFiles/plist.dir/time64.c.o: /home/nikola/dev/mochi/src/lib/airplay/plist/time64.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object lib/airplay/plist/CMakeFiles/plist.dir/time64.c.o"
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/plist.dir/time64.c.o   -c /home/nikola/dev/mochi/src/lib/airplay/plist/time64.c
+lib/airplay/plist/CMakeFiles/plist.dir/time64.c.o: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/time64.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object lib/airplay/plist/CMakeFiles/plist.dir/time64.c.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/plist.dir/time64.c.o   -c /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/time64.c
 
 lib/airplay/plist/CMakeFiles/plist.dir/time64.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/plist.dir/time64.c.i"
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/src/lib/airplay/plist/time64.c > CMakeFiles/plist.dir/time64.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/time64.c > CMakeFiles/plist.dir/time64.c.i
 
 lib/airplay/plist/CMakeFiles/plist.dir/time64.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/plist.dir/time64.c.s"
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/src/lib/airplay/plist/time64.c -o CMakeFiles/plist.dir/time64.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/time64.c -o CMakeFiles/plist.dir/time64.c.s
 
 lib/airplay/plist/CMakeFiles/plist.dir/time64.c.o.requires:
 
@@ -322,17 +322,17 @@ lib/airplay/plist/CMakeFiles/plist.dir/time64.c.o.provides.build: lib/airplay/pl
 
 
 lib/airplay/plist/CMakeFiles/plist.dir/xplist.c.o: lib/airplay/plist/CMakeFiles/plist.dir/flags.make
-lib/airplay/plist/CMakeFiles/plist.dir/xplist.c.o: /home/nikola/dev/mochi/src/lib/airplay/plist/xplist.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object lib/airplay/plist/CMakeFiles/plist.dir/xplist.c.o"
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/plist.dir/xplist.c.o   -c /home/nikola/dev/mochi/src/lib/airplay/plist/xplist.c
+lib/airplay/plist/CMakeFiles/plist.dir/xplist.c.o: /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/xplist.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object lib/airplay/plist/CMakeFiles/plist.dir/xplist.c.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/plist.dir/xplist.c.o   -c /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/xplist.c
 
 lib/airplay/plist/CMakeFiles/plist.dir/xplist.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/plist.dir/xplist.c.i"
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/src/lib/airplay/plist/xplist.c > CMakeFiles/plist.dir/xplist.c.i
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/xplist.c > CMakeFiles/plist.dir/xplist.c.i
 
 lib/airplay/plist/CMakeFiles/plist.dir/xplist.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/plist.dir/xplist.c.s"
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/src/lib/airplay/plist/xplist.c -o CMakeFiles/plist.dir/xplist.c.s
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist/xplist.c -o CMakeFiles/plist.dir/xplist.c.s
 
 lib/airplay/plist/CMakeFiles/plist.dir/xplist.c.o.requires:
 
@@ -377,9 +377,9 @@ lib/airplay/plist/libplist.a: lib/airplay/plist/CMakeFiles/plist.dir/time64.c.o
 lib/airplay/plist/libplist.a: lib/airplay/plist/CMakeFiles/plist.dir/xplist.c.o
 lib/airplay/plist/libplist.a: lib/airplay/plist/CMakeFiles/plist.dir/build.make
 lib/airplay/plist/libplist.a: lib/airplay/plist/CMakeFiles/plist.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nikola/dev/mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking C static library libplist.a"
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && $(CMAKE_COMMAND) -P CMakeFiles/plist.dir/cmake_clean_target.cmake
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/plist.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking C static library libplist.a"
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && $(CMAKE_COMMAND) -P CMakeFiles/plist.dir/cmake_clean_target.cmake
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/plist.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 lib/airplay/plist/CMakeFiles/plist.dir/build: lib/airplay/plist/libplist.a
@@ -402,10 +402,10 @@ lib/airplay/plist/CMakeFiles/plist.dir/requires: lib/airplay/plist/CMakeFiles/pl
 .PHONY : lib/airplay/plist/CMakeFiles/plist.dir/requires
 
 lib/airplay/plist/CMakeFiles/plist.dir/clean:
-	cd /home/nikola/dev/mochi/target/lib/airplay/plist && $(CMAKE_COMMAND) -P CMakeFiles/plist.dir/cmake_clean.cmake
+	cd /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist && $(CMAKE_COMMAND) -P CMakeFiles/plist.dir/cmake_clean.cmake
 .PHONY : lib/airplay/plist/CMakeFiles/plist.dir/clean
 
 lib/airplay/plist/CMakeFiles/plist.dir/depend:
-	cd /home/nikola/dev/mochi/target && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nikola/dev/mochi/src /home/nikola/dev/mochi/src/lib/airplay/plist /home/nikola/dev/mochi/target /home/nikola/dev/mochi/target/lib/airplay/plist /home/nikola/dev/mochi/target/lib/airplay/plist/CMakeFiles/plist.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nikola/dev/mochi/air_mochi/target && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nikola/dev/mochi/air_mochi/src /home/nikola/dev/mochi/air_mochi/src/lib/airplay/plist /home/nikola/dev/mochi/air_mochi/target /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist /home/nikola/dev/mochi/air_mochi/target/lib/airplay/plist/CMakeFiles/plist.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : lib/airplay/plist/CMakeFiles/plist.dir/depend
 

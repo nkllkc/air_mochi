@@ -4,7 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/nikola/dev/mochi/src/util/rtmp_connector.cpp" "/home/nikola/dev/mochi/target/util/CMakeFiles/util.dir/rtmp_connector.cpp.o"
+  "/home/nikola/dev/mochi/air_mochi/src/util/rtmp_connector.cpp" "/home/nikola/dev/mochi/air_mochi/target/util/CMakeFiles/util.dir/rtmp_connector.cpp.o"
+  "/home/nikola/dev/mochi/air_mochi/src/util/util.cpp" "/home/nikola/dev/mochi/air_mochi/target/util/CMakeFiles/util.dir/util.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
