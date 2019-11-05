@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/air_mochi.dir/main.cpp.o  -o air_mochi lib/airplay/libairplay.a util/libutil.a /usr/lib/gcc/x86_64-linux-gnu/5.5.0/srs_librtmp.a -lpthread lib/airplay/curve25519/libcurve25519.a lib/airplay/ed25519/libed25519.a lib/airplay/playfair/libplayfair.a lib/airplay/plist/libplist.a /usr/lib/x86_64-linux-gnu/libcrypto.so -ldns_sd 

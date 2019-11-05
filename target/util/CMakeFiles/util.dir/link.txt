@@ -1,0 +1,2 @@
+/usr/bin/ar qc libutil.a  CMakeFiles/util.dir/rtmp_connector.cpp.o
+/usr/bin/ranlib libutil.a

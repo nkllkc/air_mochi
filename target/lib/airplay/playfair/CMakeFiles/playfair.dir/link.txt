@@ -1,0 +1,2 @@
+/usr/bin/ar qc libplayfair.a  CMakeFiles/playfair.dir/hand_garble.c.o CMakeFiles/playfair.dir/modified_md5.c.o CMakeFiles/playfair.dir/omg_hax.c.o CMakeFiles/playfair.dir/playfair.c.o CMakeFiles/playfair.dir/sap_hash.c.o
+/usr/bin/ranlib libplayfair.a

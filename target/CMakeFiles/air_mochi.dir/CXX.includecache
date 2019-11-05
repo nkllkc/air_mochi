@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/nikola/dev/mochi/src/lib/librtmp/srs_librtmp.h
+srs_librtmp.h
+-
+windows.h
+-
+sys/types.h
+-
+sys/uio.h
+-
+time.h
+-
+direct.h
+-
+io.h
+-
+fcntl.h
+-
+
+/home/nikola/dev/mochi/src/main.cpp
+lib/librtmp/srs_librtmp.h
+/home/nikola/dev/mochi/src/lib/librtmp/srs_librtmp.h
+util/rtmp_connector.h
+/home/nikola/dev/mochi/src/util/rtmp_connector.h
+iostream
+-
+stdio.h
+-
+
+/home/nikola/dev/mochi/src/util/rtmp_connector.h
+../lib/librtmp/srs_librtmp.h
+/home/nikola/dev/mochi/src/lib/librtmp/srs_librtmp.h
+
