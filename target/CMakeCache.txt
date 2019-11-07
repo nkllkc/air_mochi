@@ -202,8 +202,8 @@ Project_SOURCE_DIR:STATIC=/home/nikola/dev/mochi/air_mochi/src
 //Dependencies for the target
 airplay_LIB_DEPENDS:STATIC=general;pthread;general;curve25519;general;ed25519;general;playfair;general;plist;general;OpenSSL::Crypto;general;dns_sd;
 
-//Dependencies for target
-airplay_server_LIB_DEPENDS:STATIC=
+//Dependencies for the target
+airplay_server_LIB_DEPENDS:STATIC=general;airplay;
 
 //Dependencies for target
 curve25519_LIB_DEPENDS:STATIC=

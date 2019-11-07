@@ -1,12 +1,17 @@
-#include "lib/librtmp/srs_librtmp.h"
-#include "util/rtmp_connector.h"
-
 #include <iostream>
 #include <stdio.h>
 #include <stddef.h>
 #include <signal.h>
 #include <unistd.h>
 #include <vector>
+
+#include "lib/airplay/stream.h"
+#include "lib/airplay/raop.h"
+#include "lib/airplay/dnssd.h"
+#include "lib/librtmp/srs_librtmp.h"
+#include "util/rtmp_connector.h"
+#include "util/util.h"
+#include "airplay_server/airplay_server.h"
 
 static int running;
 
@@ -36,12 +41,27 @@ static int parse_hw_addr(std::string str, std::vector<char> &hw_addr) {
     return 0;
 }
 
-static srs_rtmp_t t;
+static srs_rtmp_t rtmp;
+
+static raop_t* raop;
+static dnssd_t* dnssd;
 
 int main(int argv, const char** args) {
-    int x = AAA;
-    printf("%d\n", x);
-    start_rtmp_connection("rtmp://127.0.0.1:1935/live/mystream", 125.0);
-    // std::cin >> x;
-    stop_rtmp_connection(t);
+    std::vector<char> server_hw_address = DEFAULT_HW_ADDRESS;    
+
+    std::string mac_address = find_mac();
+    if (!mac_address.empty()) {
+        server_hw_address.clear();
+        parse_hw_addr(mac_address, server_hw_address);
+    }
+
+    if (start_airplay_server(raop, dnssd, server_hw_address) != 0) {
+        printf("Couldn't start airplay server.");
+        return 1;
+    }
+
+    running = true;
+    while (running) {
+        sleep(1);
+    }
 }

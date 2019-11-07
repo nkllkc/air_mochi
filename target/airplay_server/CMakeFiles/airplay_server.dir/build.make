@@ -57,9 +57,33 @@ include airplay_server/CMakeFiles/airplay_server.dir/progress.make
 # Include the compile flags for this target's objects.
 include airplay_server/CMakeFiles/airplay_server.dir/flags.make
 
+airplay_server/CMakeFiles/airplay_server.dir/airplay_callbacks.cpp.o: airplay_server/CMakeFiles/airplay_server.dir/flags.make
+airplay_server/CMakeFiles/airplay_server.dir/airplay_callbacks.cpp.o: /home/nikola/dev/mochi/air_mochi/src/airplay_server/airplay_callbacks.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object airplay_server/CMakeFiles/airplay_server.dir/airplay_callbacks.cpp.o"
+	cd /home/nikola/dev/mochi/air_mochi/target/airplay_server && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/airplay_server.dir/airplay_callbacks.cpp.o -c /home/nikola/dev/mochi/air_mochi/src/airplay_server/airplay_callbacks.cpp
+
+airplay_server/CMakeFiles/airplay_server.dir/airplay_callbacks.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/airplay_server.dir/airplay_callbacks.cpp.i"
+	cd /home/nikola/dev/mochi/air_mochi/target/airplay_server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nikola/dev/mochi/air_mochi/src/airplay_server/airplay_callbacks.cpp > CMakeFiles/airplay_server.dir/airplay_callbacks.cpp.i
+
+airplay_server/CMakeFiles/airplay_server.dir/airplay_callbacks.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/airplay_server.dir/airplay_callbacks.cpp.s"
+	cd /home/nikola/dev/mochi/air_mochi/target/airplay_server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nikola/dev/mochi/air_mochi/src/airplay_server/airplay_callbacks.cpp -o CMakeFiles/airplay_server.dir/airplay_callbacks.cpp.s
+
+airplay_server/CMakeFiles/airplay_server.dir/airplay_callbacks.cpp.o.requires:
+
+.PHONY : airplay_server/CMakeFiles/airplay_server.dir/airplay_callbacks.cpp.o.requires
+
+airplay_server/CMakeFiles/airplay_server.dir/airplay_callbacks.cpp.o.provides: airplay_server/CMakeFiles/airplay_server.dir/airplay_callbacks.cpp.o.requires
+	$(MAKE) -f airplay_server/CMakeFiles/airplay_server.dir/build.make airplay_server/CMakeFiles/airplay_server.dir/airplay_callbacks.cpp.o.provides.build
+.PHONY : airplay_server/CMakeFiles/airplay_server.dir/airplay_callbacks.cpp.o.provides
+
+airplay_server/CMakeFiles/airplay_server.dir/airplay_callbacks.cpp.o.provides.build: airplay_server/CMakeFiles/airplay_server.dir/airplay_callbacks.cpp.o
+
+
 airplay_server/CMakeFiles/airplay_server.dir/airplay_server.cpp.o: airplay_server/CMakeFiles/airplay_server.dir/flags.make
 airplay_server/CMakeFiles/airplay_server.dir/airplay_server.cpp.o: /home/nikola/dev/mochi/air_mochi/src/airplay_server/airplay_server.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object airplay_server/CMakeFiles/airplay_server.dir/airplay_server.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object airplay_server/CMakeFiles/airplay_server.dir/airplay_server.cpp.o"
 	cd /home/nikola/dev/mochi/air_mochi/target/airplay_server && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/airplay_server.dir/airplay_server.cpp.o -c /home/nikola/dev/mochi/air_mochi/src/airplay_server/airplay_server.cpp
 
 airplay_server/CMakeFiles/airplay_server.dir/airplay_server.cpp.i: cmake_force
@@ -83,15 +107,17 @@ airplay_server/CMakeFiles/airplay_server.dir/airplay_server.cpp.o.provides.build
 
 # Object files for target airplay_server
 airplay_server_OBJECTS = \
+"CMakeFiles/airplay_server.dir/airplay_callbacks.cpp.o" \
 "CMakeFiles/airplay_server.dir/airplay_server.cpp.o"
 
 # External object files for target airplay_server
 airplay_server_EXTERNAL_OBJECTS =
 
+airplay_server/libairplay_server.a: airplay_server/CMakeFiles/airplay_server.dir/airplay_callbacks.cpp.o
 airplay_server/libairplay_server.a: airplay_server/CMakeFiles/airplay_server.dir/airplay_server.cpp.o
 airplay_server/libairplay_server.a: airplay_server/CMakeFiles/airplay_server.dir/build.make
 airplay_server/libairplay_server.a: airplay_server/CMakeFiles/airplay_server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libairplay_server.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libairplay_server.a"
 	cd /home/nikola/dev/mochi/air_mochi/target/airplay_server && $(CMAKE_COMMAND) -P CMakeFiles/airplay_server.dir/cmake_clean_target.cmake
 	cd /home/nikola/dev/mochi/air_mochi/target/airplay_server && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/airplay_server.dir/link.txt --verbose=$(VERBOSE)
 
@@ -100,6 +126,7 @@ airplay_server/CMakeFiles/airplay_server.dir/build: airplay_server/libairplay_se
 
 .PHONY : airplay_server/CMakeFiles/airplay_server.dir/build
 
+airplay_server/CMakeFiles/airplay_server.dir/requires: airplay_server/CMakeFiles/airplay_server.dir/airplay_callbacks.cpp.o.requires
 airplay_server/CMakeFiles/airplay_server.dir/requires: airplay_server/CMakeFiles/airplay_server.dir/airplay_server.cpp.o.requires
 
 .PHONY : airplay_server/CMakeFiles/airplay_server.dir/requires

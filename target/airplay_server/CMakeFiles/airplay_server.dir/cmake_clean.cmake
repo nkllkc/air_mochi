@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/airplay_server.dir/airplay_callbacks.cpp.o"
   "CMakeFiles/airplay_server.dir/airplay_server.cpp.o"
   "libairplay_server.pdb"
   "libairplay_server.a"

@@ -12,7 +12,7 @@ add_subdirectory(lib/airplay)
 add_subdirectory(util)
 add_subdirectory(airplay_server)
 
-add_compile_options(-O0 -ldl -lstdc++ -lm -lcrypto -lcryptopp -lssl)
+add_compile_options(-O0 -ldl -lstdc++ -lm -lcrypto -lcryptopp -lssl -fpermissive)
 
 add_executable( air_mochi main.cpp )
 target_link_libraries( air_mochi

@@ -7,22 +7,23 @@
 
 #include "../lib/airplay/stream.h"
 #include "../lib/airplay/raop.h"
+#include "../lib/airplay/dnssd.h"
+#include "../airplay_server/airplay_callbacks.h"
 
-
-int start_server(
+int start_airplay_server(
         raop_t *raop,
         dnssd_t *dnssd,
+        std::vector<char> hw_addr, 
         void (*audio_process)(void *, raop_ntp_t *, aac_decode_struct *),
         void (*video_process)(void *, raop_ntp_t *, h264_decode_struct *),
         void (*audio_flush)(void *),
         void (*video_flush)(void *),
         void (*audio_set_volume)(void *, float),
         void (*log_callback)(void *, int, const char *),
-        std::vector<char> hw_addr = DEFAULT_HW_ADDRESS, 
-        std::string name = DEFAULT_NAME, 
-        bool show_background = DEFAULT_SHOW_BACKGROUND,
-        bool low_latency = DEFAULT_LOW_LATENCY, 
-        bool debug_log = DEFAULT_DEBUG_LOG) {
+        std::string name, 
+        bool show_background,
+        bool low_latency, 
+        bool debug_log) {
     raop_callbacks_t raop_cbs;
     memset(&raop_cbs, 0, sizeof(raop_cbs));
     raop_cbs.audio_process = audio_process;
@@ -63,7 +64,7 @@ int start_server(
     return 0;
 }
 
-int stop_server(raop_t *raop, dnssd_t *dnssd) {
+int stop_airplay_server(raop_t *raop, dnssd_t *dnssd) {
     raop_destroy(raop);
     
     dnssd_unregister_raop(dnssd);

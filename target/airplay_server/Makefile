@@ -125,6 +125,33 @@ airplay_server/fast:
 	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f airplay_server/CMakeFiles/airplay_server.dir/build.make airplay_server/CMakeFiles/airplay_server.dir/build
 .PHONY : airplay_server/fast
 
+airplay_callbacks.o: airplay_callbacks.cpp.o
+
+.PHONY : airplay_callbacks.o
+
+# target to build an object file
+airplay_callbacks.cpp.o:
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f airplay_server/CMakeFiles/airplay_server.dir/build.make airplay_server/CMakeFiles/airplay_server.dir/airplay_callbacks.cpp.o
+.PHONY : airplay_callbacks.cpp.o
+
+airplay_callbacks.i: airplay_callbacks.cpp.i
+
+.PHONY : airplay_callbacks.i
+
+# target to preprocess a source file
+airplay_callbacks.cpp.i:
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f airplay_server/CMakeFiles/airplay_server.dir/build.make airplay_server/CMakeFiles/airplay_server.dir/airplay_callbacks.cpp.i
+.PHONY : airplay_callbacks.cpp.i
+
+airplay_callbacks.s: airplay_callbacks.cpp.s
+
+.PHONY : airplay_callbacks.s
+
+# target to generate assembly for a file
+airplay_callbacks.cpp.s:
+	cd /home/nikola/dev/mochi/air_mochi/target && $(MAKE) -f airplay_server/CMakeFiles/airplay_server.dir/build.make airplay_server/CMakeFiles/airplay_server.dir/airplay_callbacks.cpp.s
+.PHONY : airplay_callbacks.cpp.s
+
 airplay_server.o: airplay_server.cpp.o
 
 .PHONY : airplay_server.o
@@ -161,6 +188,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... airplay_server"
 	@echo "... edit_cache"
+	@echo "... airplay_callbacks.o"
+	@echo "... airplay_callbacks.i"
+	@echo "... airplay_callbacks.s"
 	@echo "... airplay_server.o"
 	@echo "... airplay_server.i"
 	@echo "... airplay_server.s"

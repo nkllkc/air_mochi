@@ -82,7 +82,7 @@ all: CMakeFiles/air_mochi.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/air_mochi.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nikola/dev/mochi/air_mochi/target/CMakeFiles 58
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nikola/dev/mochi/air_mochi/target/CMakeFiles 59
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/air_mochi.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nikola/dev/mochi/air_mochi/target/CMakeFiles 0
 .PHONY : CMakeFiles/air_mochi.dir/rule
@@ -127,7 +127,7 @@ lib/airplay/curve25519/preinstall:
 lib/airplay/curve25519/CMakeFiles/curve25519.dir/all:
 	$(MAKE) -f lib/airplay/curve25519/CMakeFiles/curve25519.dir/build.make lib/airplay/curve25519/CMakeFiles/curve25519.dir/depend
 	$(MAKE) -f lib/airplay/curve25519/CMakeFiles/curve25519.dir/build.make lib/airplay/curve25519/CMakeFiles/curve25519.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=24,25 "Built target curve25519"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=25,26 "Built target curve25519"
 .PHONY : lib/airplay/curve25519/CMakeFiles/curve25519.dir/all
 
 # Include target in all.
@@ -182,7 +182,7 @@ lib/airplay/ed25519/preinstall:
 lib/airplay/ed25519/CMakeFiles/ed25519.dir/all:
 	$(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/depend
 	$(MAKE) -f lib/airplay/ed25519/CMakeFiles/ed25519.dir/build.make lib/airplay/ed25519/CMakeFiles/ed25519.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=26,27,28,29,30,31,32,33,34,35,36 "Built target ed25519"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=27,28,29,30,31,32,33,34,35,36,37 "Built target ed25519"
 .PHONY : lib/airplay/ed25519/CMakeFiles/ed25519.dir/all
 
 # Include target in all.
@@ -237,7 +237,7 @@ lib/airplay/playfair/preinstall:
 lib/airplay/playfair/CMakeFiles/playfair.dir/all:
 	$(MAKE) -f lib/airplay/playfair/CMakeFiles/playfair.dir/build.make lib/airplay/playfair/CMakeFiles/playfair.dir/depend
 	$(MAKE) -f lib/airplay/playfair/CMakeFiles/playfair.dir/build.make lib/airplay/playfair/CMakeFiles/playfair.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=37,38,39,40,41,42 "Built target playfair"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=38,39,40,41,42,43 "Built target playfair"
 .PHONY : lib/airplay/playfair/CMakeFiles/playfair.dir/all
 
 # Include target in all.
@@ -292,7 +292,7 @@ lib/airplay/plist/preinstall:
 lib/airplay/plist/CMakeFiles/plist.dir/all:
 	$(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/depend
 	$(MAKE) -f lib/airplay/plist/CMakeFiles/plist.dir/build.make lib/airplay/plist/CMakeFiles/plist.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=43,44,45,46,47,48,49,50,51,52,53,54,55 "Built target plist"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=44,45,46,47,48,49,50,51,52,53,54,55,56 "Built target plist"
 .PHONY : lib/airplay/plist/CMakeFiles/plist.dir/all
 
 # Include target in all.
@@ -405,7 +405,7 @@ util/preinstall:
 util/CMakeFiles/util.dir/all:
 	$(MAKE) -f util/CMakeFiles/util.dir/build.make util/CMakeFiles/util.dir/depend
 	$(MAKE) -f util/CMakeFiles/util.dir/build.make util/CMakeFiles/util.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=56,57,58 "Built target util"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=57,58,59 "Built target util"
 .PHONY : util/CMakeFiles/util.dir/all
 
 # Include target in all.
@@ -457,10 +457,14 @@ airplay_server/preinstall:
 # Target rules for target airplay_server/CMakeFiles/airplay_server.dir
 
 # All Build rule for target.
-airplay_server/CMakeFiles/airplay_server.dir/all:
+airplay_server/CMakeFiles/airplay_server.dir/all: lib/airplay/curve25519/CMakeFiles/curve25519.dir/all
+airplay_server/CMakeFiles/airplay_server.dir/all: lib/airplay/ed25519/CMakeFiles/ed25519.dir/all
+airplay_server/CMakeFiles/airplay_server.dir/all: lib/airplay/playfair/CMakeFiles/playfair.dir/all
+airplay_server/CMakeFiles/airplay_server.dir/all: lib/airplay/plist/CMakeFiles/plist.dir/all
+airplay_server/CMakeFiles/airplay_server.dir/all: lib/airplay/CMakeFiles/airplay.dir/all
 	$(MAKE) -f airplay_server/CMakeFiles/airplay_server.dir/build.make airplay_server/CMakeFiles/airplay_server.dir/depend
 	$(MAKE) -f airplay_server/CMakeFiles/airplay_server.dir/build.make airplay_server/CMakeFiles/airplay_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=22,23 "Built target airplay_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nikola/dev/mochi/air_mochi/target/CMakeFiles --progress-num=22,23,24 "Built target airplay_server"
 .PHONY : airplay_server/CMakeFiles/airplay_server.dir/all
 
 # Include target in all.
@@ -470,7 +474,7 @@ all: airplay_server/CMakeFiles/airplay_server.dir/all
 
 # Build rule for subdir invocation for target.
 airplay_server/CMakeFiles/airplay_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nikola/dev/mochi/air_mochi/target/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nikola/dev/mochi/air_mochi/target/CMakeFiles 54
 	$(MAKE) -f CMakeFiles/Makefile2 airplay_server/CMakeFiles/airplay_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/nikola/dev/mochi/air_mochi/target/CMakeFiles 0
 .PHONY : airplay_server/CMakeFiles/airplay_server.dir/rule

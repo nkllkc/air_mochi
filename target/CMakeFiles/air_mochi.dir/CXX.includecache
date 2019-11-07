@@ -6,6 +6,48 @@
 
 #IncludeRegexTransform: 
 
+/home/nikola/dev/mochi/air_mochi/src/airplay_server/airplay_callbacks.h
+../lib/airplay/stream.h
+/home/nikola/dev/mochi/air_mochi/src/lib/airplay/stream.h
+../lib/airplay/raop.h
+/home/nikola/dev/mochi/air_mochi/src/lib/airplay/raop.h
+
+/home/nikola/dev/mochi/air_mochi/src/airplay_server/airplay_server.h
+string
+-
+vector
+-
+../lib/airplay/stream.h
+/home/nikola/dev/mochi/air_mochi/src/lib/airplay/stream.h
+../lib/airplay/raop.h
+/home/nikola/dev/mochi/air_mochi/src/lib/airplay/raop.h
+../airplay_server/airplay_callbacks.h
+/home/nikola/dev/mochi/air_mochi/src/airplay_server/airplay_callbacks.h
+
+/home/nikola/dev/mochi/air_mochi/src/lib/airplay/dnssd.h
+
+/home/nikola/dev/mochi/air_mochi/src/lib/airplay/logger.h
+
+/home/nikola/dev/mochi/air_mochi/src/lib/airplay/raop.h
+dnssd.h
+/home/nikola/dev/mochi/air_mochi/src/lib/airplay/dnssd.h
+stream.h
+/home/nikola/dev/mochi/air_mochi/src/lib/airplay/stream.h
+raop_ntp.h
+/home/nikola/dev/mochi/air_mochi/src/lib/airplay/raop_ntp.h
+
+/home/nikola/dev/mochi/air_mochi/src/lib/airplay/raop_ntp.h
+stdbool.h
+-
+stdint.h
+-
+logger.h
+/home/nikola/dev/mochi/air_mochi/src/lib/airplay/logger.h
+
+/home/nikola/dev/mochi/air_mochi/src/lib/airplay/stream.h
+stdint.h
+-
+
 /home/nikola/dev/mochi/air_mochi/src/lib/librtmp/srs_librtmp.h
 srs_librtmp.h
 -
@@ -25,10 +67,6 @@ fcntl.h
 -
 
 /home/nikola/dev/mochi/air_mochi/src/main.cpp
-lib/librtmp/srs_librtmp.h
-/home/nikola/dev/mochi/air_mochi/src/lib/librtmp/srs_librtmp.h
-util/rtmp_connector.h
-/home/nikola/dev/mochi/air_mochi/src/util/rtmp_connector.h
 iostream
 -
 stdio.h
@@ -41,8 +79,26 @@ unistd.h
 -
 vector
 -
+lib/airplay/stream.h
+/home/nikola/dev/mochi/air_mochi/src/lib/airplay/stream.h
+lib/airplay/raop.h
+/home/nikola/dev/mochi/air_mochi/src/lib/airplay/raop.h
+lib/airplay/dnssd.h
+/home/nikola/dev/mochi/air_mochi/src/lib/airplay/dnssd.h
+lib/librtmp/srs_librtmp.h
+/home/nikola/dev/mochi/air_mochi/src/lib/librtmp/srs_librtmp.h
+util/rtmp_connector.h
+/home/nikola/dev/mochi/air_mochi/src/util/rtmp_connector.h
+util/util.h
+/home/nikola/dev/mochi/air_mochi/src/util/util.h
+airplay_server/airplay_server.h
+/home/nikola/dev/mochi/air_mochi/src/airplay_server/airplay_server.h
 
 /home/nikola/dev/mochi/air_mochi/src/util/rtmp_connector.h
 ../lib/librtmp/srs_librtmp.h
 /home/nikola/dev/mochi/air_mochi/src/lib/librtmp/srs_librtmp.h
+
+/home/nikola/dev/mochi/air_mochi/src/util/util.h
+string
+-
 

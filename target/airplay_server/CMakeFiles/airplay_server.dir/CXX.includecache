@@ -6,6 +6,18 @@
 
 #IncludeRegexTransform: 
 
+/home/nikola/dev/mochi/air_mochi/src/airplay_server/airplay_callbacks.cpp
+airplay_callbacks.h
+/home/nikola/dev/mochi/air_mochi/src/airplay_server/airplay_callbacks.h
+stdio.h
+-
+
+/home/nikola/dev/mochi/air_mochi/src/airplay_server/airplay_callbacks.h
+../lib/airplay/stream.h
+/home/nikola/dev/mochi/air_mochi/src/lib/airplay/stream.h
+../lib/airplay/raop.h
+/home/nikola/dev/mochi/air_mochi/src/lib/airplay/raop.h
+
 /home/nikola/dev/mochi/air_mochi/src/airplay_server/airplay_server.cpp
 airplay_server.h
 /home/nikola/dev/mochi/air_mochi/src/airplay_server/airplay_server.h
@@ -21,6 +33,10 @@ vector
 /home/nikola/dev/mochi/air_mochi/src/lib/airplay/stream.h
 ../lib/airplay/raop.h
 /home/nikola/dev/mochi/air_mochi/src/lib/airplay/raop.h
+../lib/airplay/dnssd.h
+/home/nikola/dev/mochi/air_mochi/src/lib/airplay/dnssd.h
+../airplay_server/airplay_callbacks.h
+/home/nikola/dev/mochi/air_mochi/src/airplay_server/airplay_callbacks.h
 
 /home/nikola/dev/mochi/air_mochi/src/airplay_server/airplay_server.h
 string
@@ -31,6 +47,8 @@ vector
 /home/nikola/dev/mochi/air_mochi/src/lib/airplay/stream.h
 ../lib/airplay/raop.h
 /home/nikola/dev/mochi/air_mochi/src/lib/airplay/raop.h
+../airplay_server/airplay_callbacks.h
+/home/nikola/dev/mochi/air_mochi/src/airplay_server/airplay_callbacks.h
 
 /home/nikola/dev/mochi/air_mochi/src/lib/airplay/dnssd.h
 

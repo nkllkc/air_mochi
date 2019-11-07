@@ -94,6 +94,7 @@ air_mochi: lib/airplay/libairplay.a
 air_mochi: util/libutil.a
 air_mochi: airplay_server/libairplay_server.a
 air_mochi: /usr/lib/gcc/x86_64-linux-gnu/5.5.0/srs_librtmp.a
+air_mochi: lib/airplay/libairplay.a
 air_mochi: lib/airplay/curve25519/libcurve25519.a
 air_mochi: lib/airplay/ed25519/libed25519.a
 air_mochi: lib/airplay/playfair/libplayfair.a
