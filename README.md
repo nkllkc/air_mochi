@@ -34,7 +34,3 @@ In order to run:
 ```
 
 This rtmp is the same srs_rtmp_t instance created by start_rtmp_connection() and later destoryed by stop_rtmp_connection() methods.
-
-# RPiPlay Architecture Recovery
-
-![RPIPlay ACDC Architecture Recovery](graphviz.svg)
