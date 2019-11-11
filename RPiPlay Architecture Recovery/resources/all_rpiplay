@@ -1,0 +1,530 @@
+digraph G {
+subgraph cluster_1{ 
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+"byteutils.c",  "byteutils.h";
+
+label = "byteutils.ch";
+}
+subgraph cluster_2{ 
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+"crypto.c",  "crypto.h";
+
+label = "crypto.ch";
+}
+subgraph cluster_3{ 
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+"dnssd.c",  "dnssd.h";
+
+label = "dnssd.ch";
+}
+subgraph cluster_4{ 
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+"ed25519/fe.h",  "ed25519/fe.c";
+
+label = "ed25519/fe.ch";
+}
+subgraph cluster_5{ 
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+"ed25519/ge.c",  "ed25519/ge.h",  "ed25519/precomp_data.h";
+
+label = "ed25519/ge.ch";
+}
+subgraph cluster_6{ 
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+"ed25519/sc.h",  "ed25519/sc.c";
+
+label = "ed25519/sc.ch";
+}
+subgraph cluster_7{ 
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+"ed25519/sha512.h",  "ed25519/sha512.c",  "ed25519/fixedint.h",  "ed25519/key_exchange.c",  "ed25519/verify.c",  "ed25519/add_scalar.c",  "ed25519/sign.c",  "ed25519/keypair.c";
+
+label = "ed25519/sha512.ch";
+}
+subgraph cluster_8{ 
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+"fairplay_playfair.c",  "fairplay.h";
+
+label = "fairplay_playfair.ss";
+}
+subgraph cluster_9{ 
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+"http_parser.c",  "http_parser.h";
+
+label = "http_parser.ch";
+}
+subgraph cluster_10{ 
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+"http_request.h",  "http_request.c";
+
+label = "http_request.ch";
+}
+subgraph cluster_11{ 
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+"http_response.h",  "http_response.c";
+
+label = "http_response.ch";
+}
+subgraph cluster_12{ 
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+"httpd.c",  "httpd.h";
+
+label = "httpd.ch";
+}
+subgraph cluster_13{ 
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+"logger.h",  "logger.c";
+
+label = "logger.ch";
+}
+subgraph cluster_14{ 
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+"mirror_buffer.c",  "mirror_buffer.h";
+
+label = "mirror_buffer.ch";
+}
+subgraph cluster_15{ 
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+"netutils.h",  "netutils.c";
+
+label = "netutils.ch";
+}
+subgraph cluster_16{ 
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+"playfair/sap_hash.c",  "curve25519/curve25519-donna.c",  "playfair/hand_garble.c",  "playfair/modified_md5.c";
+
+label = "orphanContainer.ss";
+}
+subgraph cluster_17{ 
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+"pairing.c",  "pairing.h",  "curve25519/curve25519.h",  "ed25519/ed25519.h",  "ed25519/seed.c";
+
+label = "pairing.ch";
+}
+subgraph cluster_18{ 
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+"playfair/omg_hax.c",  "playfair/omg_hax.h";
+
+label = "playfair/omg_hax.ch";
+}
+subgraph cluster_19{ 
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+"playfair/playfair.c",  "playfair/playfair.h";
+
+label = "playfair/playfair.ch";
+}
+subgraph cluster_20{ 
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+"plist/base64.h",  "plist/base64.c";
+
+label = "plist/base64.ch";
+}
+subgraph cluster_21{ 
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+"plist/bytearray.c",  "plist/bytearray.h";
+
+label = "plist/bytearray.ch";
+}
+subgraph cluster_22{ 
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+"plist/hashtable.c",  "plist/hashtable.h";
+
+label = "plist/hashtable.ch";
+}
+subgraph cluster_23{ 
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+"plist/list.c",  "plist/list.h";
+
+label = "plist/list.ch";
+}
+subgraph cluster_24{ 
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+"plist/node.c",  "plist/node.h";
+
+label = "plist/node.ch";
+}
+subgraph cluster_25{ 
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+"plist/node_list.h",  "plist/node_list.c";
+
+label = "plist/node_list.ch";
+}
+subgraph cluster_26{ 
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+"plist/plist.h",  "plist/plist.c";
+
+label = "plist/plist.ch";
+}
+subgraph cluster_27{ 
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+"plist/ptrarray.c",  "plist/ptrarray.h",  "plist/bplist.c";
+
+label = "plist/ptrarray.ch";
+}
+subgraph cluster_28{ 
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+"plist/time64.h",  "plist/time64.c",  "plist/time64_limits.h";
+
+label = "plist/time64.ch";
+}
+subgraph cluster_29{ 
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+"plist/strbuf.h",  "plist/xplist.c",  "plist/object.h",  "plist/cnary.c";
+
+label = "plist/xplist.ss";
+}
+subgraph cluster_30{ 
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+"raop.h",  "raop.c",  "dnssdint.h",  "global.h",  "raop_handlers.h";
+
+label = "raop.ch";
+}
+subgraph cluster_31{ 
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+"raop_buffer.c",  "raop_buffer.h";
+
+label = "raop_buffer.ch";
+}
+subgraph cluster_32{ 
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+"raop_ntp.h",  "raop_ntp.c";
+
+label = "raop_ntp.ch";
+}
+subgraph cluster_33{ 
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+"raop_rtp.h",  "raop_rtp.c";
+
+label = "raop_rtp.ch";
+}
+subgraph cluster_34{ 
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+"raop_rtp_mirror.h",  "raop_rtp_mirror.c",  "compat.h",  "memalign.h",  "sockets.h",  "threads.h",  "stream.h";
+
+label = "raop_rtp_mirror.ch";
+}
+subgraph cluster_35{ 
+style=filled;
+color=lightgrey;
+node [style=filled,color=white];
+"utils.h",  "utils.c";
+
+label = "utils.ch";
+}
+"byteutils.c" -> "byteutils.c" ;
+"byteutils.h" -> "byteutils.c" ;
+"crypto.c" -> "crypto.c" ;
+"crypto.h" -> "crypto.c" ;
+"curve25519/curve25519-donna.c" -> "curve25519/curve25519-donna.c" ;
+"dnssd.c" -> "dnssd.c" ;
+"compat.h" -> "dnssd.c" ;
+"dnssd.h" -> "dnssd.c" ;
+"dnssdint.h" -> "dnssd.c" ;
+"global.h" -> "dnssd.c" ;
+"memalign.h" -> "dnssd.c" ;
+"sockets.h" -> "dnssd.c" ;
+"threads.h" -> "dnssd.c" ;
+"utils.h" -> "dnssd.c" ;
+"ed25519/add_scalar.c" -> "ed25519/add_scalar.c" ;
+"ed25519/ed25519.h" -> "ed25519/add_scalar.c" ;
+"ed25519/fe.h" -> "ed25519/add_scalar.c" ;
+"ed25519/fixedint.h" -> "ed25519/add_scalar.c" ;
+"ed25519/ge.h" -> "ed25519/add_scalar.c" ;
+"ed25519/sc.h" -> "ed25519/add_scalar.c" ;
+"ed25519/sha512.h" -> "ed25519/add_scalar.c" ;
+"ed25519/fe.c" -> "ed25519/fe.c" ;
+"ed25519/fe.h" -> "ed25519/fe.c" ;
+"ed25519/fixedint.h" -> "ed25519/fe.c" ;
+"ed25519/ge.c" -> "ed25519/ge.c" ;
+"ed25519/fe.h" -> "ed25519/ge.c" ;
+"ed25519/fixedint.h" -> "ed25519/ge.c" ;
+"ed25519/ge.h" -> "ed25519/ge.c" ;
+"ed25519/precomp_data.h" -> "ed25519/ge.c" ;
+"ed25519/key_exchange.c" -> "ed25519/key_exchange.c" ;
+"ed25519/ed25519.h" -> "ed25519/key_exchange.c" ;
+"ed25519/fe.h" -> "ed25519/key_exchange.c" ;
+"ed25519/fixedint.h" -> "ed25519/key_exchange.c" ;
+"ed25519/keypair.c" -> "ed25519/keypair.c" ;
+"ed25519/ed25519.h" -> "ed25519/keypair.c" ;
+"ed25519/fe.h" -> "ed25519/keypair.c" ;
+"ed25519/fixedint.h" -> "ed25519/keypair.c" ;
+"ed25519/ge.h" -> "ed25519/keypair.c" ;
+"ed25519/sha512.h" -> "ed25519/keypair.c" ;
+"ed25519/sc.c" -> "ed25519/sc.c" ;
+"ed25519/fixedint.h" -> "ed25519/sc.c" ;
+"ed25519/sc.h" -> "ed25519/sc.c" ;
+"ed25519/seed.c" -> "ed25519/seed.c" ;
+"ed25519/ed25519.h" -> "ed25519/seed.c" ;
+"ed25519/sha512.c" -> "ed25519/sha512.c" ;
+"ed25519/fixedint.h" -> "ed25519/sha512.c" ;
+"ed25519/sha512.h" -> "ed25519/sha512.c" ;
+"ed25519/sign.c" -> "ed25519/sign.c" ;
+"ed25519/ed25519.h" -> "ed25519/sign.c" ;
+"ed25519/fe.h" -> "ed25519/sign.c" ;
+"ed25519/fixedint.h" -> "ed25519/sign.c" ;
+"ed25519/ge.h" -> "ed25519/sign.c" ;
+"ed25519/sc.h" -> "ed25519/sign.c" ;
+"ed25519/sha512.h" -> "ed25519/sign.c" ;
+"ed25519/verify.c" -> "ed25519/verify.c" ;
+"ed25519/ed25519.h" -> "ed25519/verify.c" ;
+"ed25519/fe.h" -> "ed25519/verify.c" ;
+"ed25519/fixedint.h" -> "ed25519/verify.c" ;
+"ed25519/ge.h" -> "ed25519/verify.c" ;
+"ed25519/sc.h" -> "ed25519/verify.c" ;
+"ed25519/sha512.h" -> "ed25519/verify.c" ;
+"fairplay_playfair.c" -> "fairplay_playfair.c" ;
+"fairplay.h" -> "fairplay_playfair.c" ;
+"logger.h" -> "fairplay_playfair.c" ;
+"playfair/playfair.h" -> "fairplay_playfair.c" ;
+"http_parser.c" -> "http_parser.c" ;
+"http_parser.h" -> "http_parser.c" ;
+"http_request.c" -> "http_request.c" ;
+"http_parser.h" -> "http_request.c" ;
+"http_request.h" -> "http_request.c" ;
+"http_response.c" -> "http_response.c" ;
+"compat.h" -> "http_response.c" ;
+"http_response.h" -> "http_response.c" ;
+"memalign.h" -> "http_response.c" ;
+"sockets.h" -> "http_response.c" ;
+"threads.h" -> "http_response.c" ;
+"httpd.c" -> "httpd.c" ;
+"compat.h" -> "httpd.c" ;
+"http_request.h" -> "httpd.c" ;
+"http_response.h" -> "httpd.c" ;
+"httpd.h" -> "httpd.c" ;
+"logger.h" -> "httpd.c" ;
+"memalign.h" -> "httpd.c" ;
+"netutils.h" -> "httpd.c" ;
+"sockets.h" -> "httpd.c" ;
+"threads.h" -> "httpd.c" ;
+"logger.c" -> "logger.c" ;
+"compat.h" -> "logger.c" ;
+"logger.h" -> "logger.c" ;
+"memalign.h" -> "logger.c" ;
+"sockets.h" -> "logger.c" ;
+"threads.h" -> "logger.c" ;
+"mirror_buffer.c" -> "mirror_buffer.c" ;
+"compat.h" -> "mirror_buffer.c" ;
+"crypto.h" -> "mirror_buffer.c" ;
+"dnssd.h" -> "mirror_buffer.c" ;
+"logger.h" -> "mirror_buffer.c" ;
+"memalign.h" -> "mirror_buffer.c" ;
+"mirror_buffer.h" -> "mirror_buffer.c" ;
+"raop.h" -> "mirror_buffer.c" ;
+"raop_ntp.h" -> "mirror_buffer.c" ;
+"raop_rtp.h" -> "mirror_buffer.c" ;
+"sockets.h" -> "mirror_buffer.c" ;
+"stream.h" -> "mirror_buffer.c" ;
+"threads.h" -> "mirror_buffer.c" ;
+"netutils.c" -> "netutils.c" ;
+"compat.h" -> "netutils.c" ;
+"memalign.h" -> "netutils.c" ;
+"sockets.h" -> "netutils.c" ;
+"threads.h" -> "netutils.c" ;
+"pairing.c" -> "pairing.c" ;
+"crypto.h" -> "pairing.c" ;
+"curve25519/curve25519.h" -> "pairing.c" ;
+"ed25519/ed25519.h" -> "pairing.c" ;
+"pairing.h" -> "pairing.c" ;
+"playfair/hand_garble.c" -> "playfair/hand_garble.c" ;
+"playfair/modified_md5.c" -> "playfair/modified_md5.c" ;
+"playfair/omg_hax.c" -> "playfair/omg_hax.c" ;
+"playfair/omg_hax.h" -> "playfair/omg_hax.c" ;
+"playfair/playfair.c" -> "playfair/playfair.c" ;
+"playfair/playfair.h" -> "playfair/playfair.c" ;
+"playfair/sap_hash.c" -> "playfair/sap_hash.c" ;
+"plist/base64.c" -> "plist/base64.c" ;
+"plist/base64.h" -> "plist/base64.c" ;
+"plist/bplist.c" -> "plist/bplist.c" ;
+"plist/bytearray.h" -> "plist/bplist.c" ;
+"plist/hashtable.h" -> "plist/bplist.c" ;
+"plist/node.h" -> "plist/bplist.c" ;
+"plist/object.h" -> "plist/bplist.c" ;
+"plist/plist.h" -> "plist/bplist.c" ;
+"plist/plist.h" -> "plist/bplist.c" ;
+"plist/ptrarray.h" -> "plist/bplist.c" ;
+"plist/bytearray.c" -> "plist/bytearray.c" ;
+"plist/bytearray.h" -> "plist/bytearray.c" ;
+"plist/cnary.c" -> "plist/cnary.c" ;
+"plist/node.h" -> "plist/cnary.c" ;
+"plist/object.h" -> "plist/cnary.c" ;
+"plist/hashtable.c" -> "plist/hashtable.c" ;
+"plist/hashtable.h" -> "plist/hashtable.c" ;
+"plist/list.c" -> "plist/list.c" ;
+"plist/list.h" -> "plist/list.c" ;
+"plist/object.h" -> "plist/list.c" ;
+"plist/node.c" -> "plist/node.c" ;
+"plist/node.h" -> "plist/node.c" ;
+"plist/node_list.h" -> "plist/node.c" ;
+"plist/object.h" -> "plist/node.c" ;
+"plist/node_list.c" -> "plist/node_list.c" ;
+"plist/list.h" -> "plist/node_list.c" ;
+"plist/node.h" -> "plist/node_list.c" ;
+"plist/node_list.h" -> "plist/node_list.c" ;
+"plist/object.h" -> "plist/node_list.c" ;
+"plist/plist.c" -> "plist/plist.c" ;
+"plist/hashtable.h" -> "plist/plist.c" ;
+"plist/node.h" -> "plist/plist.c" ;
+"plist/object.h" -> "plist/plist.c" ;
+"plist/plist.h" -> "plist/plist.c" ;
+"plist/plist.h" -> "plist/plist.c" ;
+"plist/ptrarray.c" -> "plist/ptrarray.c" ;
+"plist/ptrarray.h" -> "plist/ptrarray.c" ;
+"plist/time64.c" -> "plist/time64.c" ;
+"plist/time64.h" -> "plist/time64.c" ;
+"plist/time64_limits.h" -> "plist/time64.c" ;
+"plist/xplist.c" -> "plist/xplist.c" ;
+"plist/base64.h" -> "plist/xplist.c" ;
+"plist/bytearray.h" -> "plist/xplist.c" ;
+"plist/node.h" -> "plist/xplist.c" ;
+"plist/node_list.h" -> "plist/xplist.c" ;
+"plist/object.h" -> "plist/xplist.c" ;
+"plist/plist.h" -> "plist/xplist.c" ;
+"plist/plist.h" -> "plist/xplist.c" ;
+"plist/strbuf.h" -> "plist/xplist.c" ;
+"plist/time64.h" -> "plist/xplist.c" ;
+"raop.c" -> "raop.c" ;
+"compat.h" -> "raop.c" ;
+"dnssd.h" -> "raop.c" ;
+"dnssdint.h" -> "raop.c" ;
+"fairplay.h" -> "raop.c" ;
+"global.h" -> "raop.c" ;
+"http_request.h" -> "raop.c" ;
+"http_response.h" -> "raop.c" ;
+"httpd.h" -> "raop.c" ;
+"logger.h" -> "raop.c" ;
+"memalign.h" -> "raop.c" ;
+"netutils.h" -> "raop.c" ;
+"pairing.h" -> "raop.c" ;
+"plist/plist.h" -> "raop.c" ;
+"plist/plist.h" -> "raop.c" ;
+"raop.h" -> "raop.c" ;
+"raop_handlers.h" -> "raop.c" ;
+"raop_ntp.h" -> "raop.c" ;
+"raop_rtp.h" -> "raop.c" ;
+"raop_rtp_mirror.h" -> "raop.c" ;
+"sockets.h" -> "raop.c" ;
+"stream.h" -> "raop.c" ;
+"threads.h" -> "raop.c" ;
+"utils.h" -> "raop.c" ;
+"raop_buffer.c" -> "raop_buffer.c" ;
+"compat.h" -> "raop_buffer.c" ;
+"crypto.h" -> "raop_buffer.c" ;
+"dnssd.h" -> "raop_buffer.c" ;
+"logger.h" -> "raop_buffer.c" ;
+"memalign.h" -> "raop_buffer.c" ;
+"raop.h" -> "raop_buffer.c" ;
+"raop_buffer.h" -> "raop_buffer.c" ;
+"raop_ntp.h" -> "raop_buffer.c" ;
+"raop_rtp.h" -> "raop_buffer.c" ;
+"sockets.h" -> "raop_buffer.c" ;
+"stream.h" -> "raop_buffer.c" ;
+"threads.h" -> "raop_buffer.c" ;
+"raop_ntp.c" -> "raop_ntp.c" ;
+"byteutils.h" -> "raop_ntp.c" ;
+"compat.h" -> "raop_ntp.c" ;
+"logger.h" -> "raop_ntp.c" ;
+"memalign.h" -> "raop_ntp.c" ;
+"netutils.h" -> "raop_ntp.c" ;
+"raop_ntp.h" -> "raop_ntp.c" ;
+"sockets.h" -> "raop_ntp.c" ;
+"threads.h" -> "raop_ntp.c" ;
+"raop_rtp.c" -> "raop_rtp.c" ;
+"byteutils.h" -> "raop_rtp.c" ;
+"compat.h" -> "raop_rtp.c" ;
+"dnssd.h" -> "raop_rtp.c" ;
+"logger.h" -> "raop_rtp.c" ;
+"memalign.h" -> "raop_rtp.c" ;
+"mirror_buffer.h" -> "raop_rtp.c" ;
+"netutils.h" -> "raop_rtp.c" ;
+"raop.h" -> "raop_rtp.c" ;
+"raop_buffer.h" -> "raop_rtp.c" ;
+"raop_ntp.h" -> "raop_rtp.c" ;
+"raop_rtp.h" -> "raop_rtp.c" ;
+"sockets.h" -> "raop_rtp.c" ;
+"stream.h" -> "raop_rtp.c" ;
+"threads.h" -> "raop_rtp.c" ;
+"raop_rtp_mirror.c" -> "raop_rtp_mirror.c" ;
+"byteutils.h" -> "raop_rtp_mirror.c" ;
+"compat.h" -> "raop_rtp_mirror.c" ;
+"dnssd.h" -> "raop_rtp_mirror.c" ;
+"logger.h" -> "raop_rtp_mirror.c" ;
+"memalign.h" -> "raop_rtp_mirror.c" ;
+"mirror_buffer.h" -> "raop_rtp_mirror.c" ;
+"netutils.h" -> "raop_rtp_mirror.c" ;
+"raop.h" -> "raop_rtp_mirror.c" ;
+"raop_ntp.h" -> "raop_rtp_mirror.c" ;
+"raop_rtp_mirror.h" -> "raop_rtp_mirror.c" ;
+"sockets.h" -> "raop_rtp_mirror.c" ;
+"stream.h" -> "raop_rtp_mirror.c" ;
+"threads.h" -> "raop_rtp_mirror.c" ;
+"utils.c" -> "utils.c" ;
+}
