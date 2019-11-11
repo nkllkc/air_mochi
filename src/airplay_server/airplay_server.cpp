@@ -14,6 +14,7 @@ int start_airplay_server(
         raop_t *raop,
         dnssd_t *dnssd,
         std::vector<char> hw_addr, 
+        void (*airplay_connection_established)(void *, uint64_t),
         void (*audio_process)(void *, raop_ntp_t *, aac_decode_struct *),
         void (*video_process)(void *, raop_ntp_t *, h264_decode_struct *),
         void (*audio_flush)(void *),
@@ -31,6 +32,7 @@ int start_airplay_server(
     raop_cbs.audio_flush = audio_flush;
     raop_cbs.video_flush = video_flush;
     raop_cbs.audio_set_volume = audio_set_volume;
+    raop_cbs.airplay_connection_established = airplay_connection_established;
 
     raop = raop_init(10, &raop_cbs);
     if (raop == NULL) {

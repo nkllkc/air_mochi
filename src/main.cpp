@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include <stdio.h>
 #include <stddef.h>
 #include <signal.h>
@@ -12,6 +13,7 @@
 #include "util/rtmp_connector.h"
 #include "util/util.h"
 #include "airplay_server/airplay_server.h"
+#include "airplay_server/airplay_callbacks.h"
 
 static int running;
 
@@ -42,11 +44,29 @@ static int parse_hw_addr(std::string str, std::vector<char> &hw_addr) {
 }
 
 static srs_rtmp_t rtmp;
+static int is_rtmp_set = 0;
 
 static raop_t* raop;
 static dnssd_t* dnssd;
 
-int main(int argv, const char** args) {
+static const char* rtmp_url;
+static float fps;
+
+void airplay_connection_established(void *cls, uint64_t streamConnectionId) {
+    rtmp = start_rtmp_connection(rtmp_url, fps);
+    is_rtmp_set = 1;
+    printf("RTMP server is running...\n");
+};
+
+int main(int args, const char** argv) {
+    if (args < 3) {
+        printf("Please specify URL and FPS.\n");
+        return 1;
+    }
+
+    rtmp_url = argv[1];
+    fps = std::stof(argv[2]);
+
     std::vector<char> server_hw_address = DEFAULT_HW_ADDRESS;    
 
     std::string mac_address = find_mac();
@@ -55,13 +75,22 @@ int main(int argv, const char** args) {
         parse_hw_addr(mac_address, server_hw_address);
     }
 
-    if (start_airplay_server(raop, dnssd, server_hw_address) != 0) {
-        printf("Couldn't start airplay server.");
+    if (start_airplay_server(
+            raop, 
+            dnssd, 
+            server_hw_address, 
+            airplay_connection_established) != 0) {
+        printf("Couldn't start AirPlay server.");
         return 1;
     }
-
+    
     running = true;
     while (running) {
         sleep(1);
+    }
+
+    stop_airplay_server(raop, dnssd);
+    if (is_rtmp_set) {
+        stop_rtmp_connection(rtmp);
     }
 }

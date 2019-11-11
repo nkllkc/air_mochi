@@ -69,6 +69,8 @@ fcntl.h
 /home/nikola/dev/mochi/air_mochi/src/main.cpp
 iostream
 -
+string
+-
 stdio.h
 -
 stddef.h
@@ -93,6 +95,8 @@ util/util.h
 /home/nikola/dev/mochi/air_mochi/src/util/util.h
 airplay_server/airplay_server.h
 /home/nikola/dev/mochi/air_mochi/src/airplay_server/airplay_server.h
+airplay_server/airplay_callbacks.h
+/home/nikola/dev/mochi/air_mochi/src/airplay_server/airplay_callbacks.h
 
 /home/nikola/dev/mochi/air_mochi/src/util/rtmp_connector.h
 ../lib/librtmp/srs_librtmp.h

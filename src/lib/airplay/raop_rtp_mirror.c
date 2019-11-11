@@ -165,6 +165,14 @@ raop_rtp_mirror_thread(void *arg)
     FILE* file_len = fopen("/home/pi/Airplay.len", "wb");
     #endif
 
+    /* 
+        This is used for signaling that the AirPlay stream is established.
+
+        TODO(nikola): remove this once it's airplay_connection_established 
+                      propagated to the right location.
+     */
+    int first_run = 1;
+
     while (1) {
         fd_set rfds;
         struct timeval tv;
@@ -324,6 +332,14 @@ raop_rtp_mirror_thread(void *arg)
                 h264_data.frame_type = 1;
                 h264_data.pts = ntp_timestamp;
 
+                if (first_run) {
+                    first_run = 0;
+                    
+                    /* Signal that AirPlay stream has been created. */
+                    /* TODO(nikola): remove this once it's propagated to final place. */
+                    raop_rtp_mirror->callbacks.airplay_connection_established(raop_rtp_mirror->callbacks.cls, 1);
+                }
+
                 raop_rtp_mirror->callbacks.video_process(raop_rtp_mirror->callbacks.cls, raop_rtp_mirror->ntp, &h264_data);
                 free(payload_decrypted);
 
@@ -379,6 +395,16 @@ raop_rtp_mirror_thread(void *arg)
                     h264_data.data = sps_pps;
                     h264_data.frame_type = 0;
                     h264_data.pts = 0;
+
+
+                    if (first_run) {
+                        first_run = 0;
+                    
+                        /* Signal that AirPlay stream has been created. */
+                        /* TODO(nikola): remove this once it's propagated to final place. */
+                        raop_rtp_mirror->callbacks.airplay_connection_established(raop_rtp_mirror->callbacks.cls, 1);
+                    }
+
                     raop_rtp_mirror->callbacks.video_process(raop_rtp_mirror->callbacks.cls, raop_rtp_mirror->ntp, &h264_data);
                 }
                 free(h264.picture_parameter_set);

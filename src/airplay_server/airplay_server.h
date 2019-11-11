@@ -19,6 +19,7 @@ int start_airplay_server(
         raop_t *raop,
         dnssd_t *dnssd,
         std::vector<char> hw_addr, 
+        void (*airplay_connection_established)(void *, uint64_t) = airplay_connection_established,
         void (*audio_process)(void *, raop_ntp_t *, aac_decode_struct *) = audio_process,
         void (*video_process)(void *, raop_ntp_t *, h264_decode_struct *) = video_process,
         void (*audio_flush)(void *) = audio_flush,

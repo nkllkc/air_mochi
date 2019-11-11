@@ -48,7 +48,7 @@ void handle_error(const char* location) {
 aes_ctx_t *aes_init(const uint8_t *key, const uint8_t *iv, const EVP_CIPHER *type, aes_direction_t direction) {
 	aes_ctx_t *ctx = malloc(sizeof(aes_ctx_t));
 	assert(ctx != NULL);
-	ctx->cipher_ctx = EVP_CIPHER_CTX_new();
+	ctx->cipher_ctx = EVP_MD_CTX_create();
 	assert(ctx->cipher_ctx != NULL);
 
 	ctx->block_offset = 0;
@@ -95,9 +95,12 @@ void aes_destroy(aes_ctx_t *ctx) {
 }
 
 void aes_reset(aes_ctx_t *ctx, const EVP_CIPHER *type, aes_direction_t direction) {
-	if (!EVP_CIPHER_CTX_reset(ctx->cipher_ctx)) {
-        handle_error(__func__);
-	}
+	// if (!EVP_CIPHER_CTX_reset(ctx->cipher_ctx)) {
+        // handle_error(__func__);
+	// }
+
+	aes_ctx_t *tmp = aes_init(ctx->key, ctx->iv, type, direction);
+	aes_destroy(ctx);
 
 	if (direction == AES_ENCRYPT) {
 		if (!EVP_EncryptInit_ex(ctx->cipher_ctx, type, NULL, ctx->key, ctx->iv)) {
@@ -172,7 +175,7 @@ struct sha_ctx_s {
 sha_ctx_t *sha_init() {
 	sha_ctx_t *ctx = malloc(sizeof(sha_ctx_t));
 	assert(ctx != NULL);
-	ctx->digest_ctx = EVP_MD_CTX_new();
+	ctx->digest_ctx = EVP_MD_CTX_create();
 	assert(ctx->digest_ctx != NULL);
 
 	if (!EVP_DigestInit_ex(ctx->digest_ctx, EVP_sha512(), NULL)) {
@@ -194,16 +197,18 @@ void sha_final(sha_ctx_t *ctx, uint8_t *out, unsigned int *len) {
 }
 
 void sha_reset(sha_ctx_t *ctx) {
-	if (!EVP_MD_CTX_reset(ctx->digest_ctx) || 
-		!EVP_DigestInit_ex(ctx->digest_ctx, EVP_sha512(), NULL)) {
+	// if (!EVP_MD_CTX_reset(ctx->digest_ctx) || 
+	// 	!EVP_DigestInit_ex(ctx->digest_ctx, EVP_sha512(), NULL)) {
 
-		handle_error(__func__);
-	}
+	// 	handle_error(__func__);
+	// }
+	sha_destroy(ctx);
+	ctx = sha_init();
 }
 
 void sha_destroy(sha_ctx_t *ctx) {
 	if (ctx) {
-	    EVP_MD_CTX_free(ctx->digest_ctx);
+	    EVP_MD_CTX_destroy(ctx->digest_ctx);
 	    free(ctx);
 	}
 }

@@ -10,5 +10,6 @@ void audio_flush(void *);
 void video_flush(void *);
 void audio_set_volume(void *, float);
 void log_callback(void *, int, const char *);
+void airplay_connection_established(void *, uint64_t);
 
 #endif

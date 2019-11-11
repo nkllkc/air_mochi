@@ -31,6 +31,7 @@
 #include "raop_rtp_mirror.h"
 #include "raop_ntp.h"
 
+
 struct raop_s {
 	/* Callbacks for audio and video */
 	raop_callbacks_t callbacks;
