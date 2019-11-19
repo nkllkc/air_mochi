@@ -1,0 +1,4 @@
+# ios_app generated files
+ios_app/Podfile.lock
+ios_app/VideoQuickStart.xcworkspace
+ios_app/VideoQuickStart.xcworkspace/*
