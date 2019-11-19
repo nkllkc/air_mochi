@@ -2,3 +2,9 @@
 ios_app/Podfile.lock
 ios_app/VideoQuickStart.xcworkspace
 ios_app/VideoQuickStart.xcworkspace/*
+os_app/Pods
+os_app/Pods/*
+
+# twilio_video_js submodule
+twillio_video_js
+twillio_video_js/*
