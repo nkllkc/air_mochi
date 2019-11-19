@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4502EAE8A06EBD57D1672162 /* libPods-TwilioVideo-BroadcastExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2316959CE4F96B9F50C005D0 /* libPods-TwilioVideo-BroadcastExtension.a */; };
 		4B20000520E9CB9C00FE9F2C /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B20FFFA20E9CB9C00FE9F2C /* ReplayKit.framework */; };
 		4B20000720E9CB9C00FE9F2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B20000620E9CB9C00FE9F2C /* UIKit.framework */; };
 		4B20000A20E9CB9C00FE9F2C /* BroadcastSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B20000920E9CB9C00FE9F2C /* BroadcastSetupViewController.swift */; };
@@ -73,9 +72,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2316959CE4F96B9F50C005D0 /* libPods-TwilioVideo-BroadcastExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TwilioVideo-BroadcastExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24B657BA22B1F8980057EBE6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ReplayKitExample/README.md; sourceTree = "<group>"; };
-		3E9CB3B167277C3E4708617C /* Pods-TwilioVideo-BroadcastExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwilioVideo-BroadcastExtension.release.xcconfig"; path = "Target Support Files/Pods-TwilioVideo-BroadcastExtension/Pods-TwilioVideo-BroadcastExtension.release.xcconfig"; sourceTree = "<group>"; };
 		4B20000420E9CB9C00FE9F2C /* BroadcastExtensionSetupUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BroadcastExtensionSetupUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B20000620E9CB9C00FE9F2C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4B20000920E9CB9C00FE9F2C /* BroadcastSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastSetupViewController.swift; sourceTree = "<group>"; };
@@ -107,7 +104,6 @@
 		8A992CEC2320C26C00D549F6 /* ReplayKitExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReplayKitExample-Bridging-Header.h"; sourceTree = "<group>"; };
 		8A992CED2320C2A300D549F6 /* ExampleReplayKitAudioCapturerDispatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleReplayKitAudioCapturerDispatch.h; sourceTree = "<group>"; };
 		8AD6D6E522FFE7CD00EBF279 /* Telecine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Telecine.swift; sourceTree = "<group>"; };
-		D7E6A8ADA853BF35FB5F83EE /* Pods-TwilioVideo-BroadcastExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwilioVideo-BroadcastExtension.debug.xcconfig"; path = "Target Support Files/Pods-TwilioVideo-BroadcastExtension/Pods-TwilioVideo-BroadcastExtension.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +132,6 @@
 			files = (
 				4B20FFFB20E9CB9C00FE9F2C /* ReplayKit.framework in Frameworks */,
 				4BB0385E20EB45FB0095CDA8 /* AudioToolbox.framework in Frameworks */,
-				4502EAE8A06EBD57D1672162 /* libPods-TwilioVideo-BroadcastExtension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +196,6 @@
 				4BB0385B20EB45F50095CDA8 /* AudioToolbox.framework */,
 				4B20FFFA20E9CB9C00FE9F2C /* ReplayKit.framework */,
 				4B20000620E9CB9C00FE9F2C /* UIKit.framework */,
-				2316959CE4F96B9F50C005D0 /* libPods-TwilioVideo-BroadcastExtension.a */,
 				7FDE1BCC908EBB8A4A6DFD25 /* libPods-TwilioVideo-ReplayKitExample.a */,
 			);
 			name = Frameworks;
@@ -225,8 +219,6 @@
 		6F7EFA583A240164DB667D07 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D7E6A8ADA853BF35FB5F83EE /* Pods-TwilioVideo-BroadcastExtension.debug.xcconfig */,
-				3E9CB3B167277C3E4708617C /* Pods-TwilioVideo-BroadcastExtension.release.xcconfig */,
 				66DCF6B67AE7E97AC839B0D7 /* Pods-TwilioVideo-ReplayKitExample.debug.xcconfig */,
 				523D07A1D05EE7502B9756D9 /* Pods-TwilioVideo-ReplayKitExample.release.xcconfig */,
 			);
@@ -289,7 +281,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B20001520E9CB9C00FE9F2C /* Build configuration list for PBXNativeTarget "BroadcastExtension" */;
 			buildPhases = (
-				9CF0750043B590DF9D43B074 /* [CP] Check Pods Manifest.lock */,
 				4B20FFF420E9CB9C00FE9F2C /* Sources */,
 				4B20FFF520E9CB9C00FE9F2C /* Frameworks */,
 				4B20FFF620E9CB9C00FE9F2C /* Resources */,
@@ -391,28 +382,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9CF0750043B590DF9D43B074 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TwilioVideo-BroadcastExtension-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C79C56765F7E3FE1E0A8FBF8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -568,7 +537,6 @@
 		};
 		4B20001620E9CB9C00FE9F2C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7E6A8ADA853BF35FB5F83EE /* Pods-TwilioVideo-BroadcastExtension.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 82YA8JWS89;
@@ -589,7 +557,6 @@
 		};
 		4B20001720E9CB9C00FE9F2C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E9CB3B167277C3E4708617C /* Pods-TwilioVideo-BroadcastExtension.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 82YA8JWS89;
