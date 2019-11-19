@@ -1,36 +1,32 @@
 # Air Mochi
 
-## Build
+## iOS App
 
-In order to build:
-```bash
-    .\build.sh
-```
+Based on [https://github.com/twilio/video-quickstart-ios]().
 
-## Run
+### Setup
 
-In order to run:
-```bash
-    .\run.sh
-```
+This repository contains example code written in both Objective-C and Swift. The Swift examples use Apple's Swift 4.2 programming language for iOS.
 
-## Example "How to push raw h264 to RTMP server (SRS)"
+If you haven't used Twilio before, welcome! You'll need to [Sign up for a Twilio account](https://www.twilio.com/try-twilio) first. It's free!
 
-```c
-    int ret = srs_h264_write_raw_frames(rtmp, (char *) data->data,    data->data_len, data->pts, data->pts);
-    if (ret != 0) {
-        if (srs_h264_is_dvbsp_error(ret)) {
-            srs_human_trace("ignore drop video error, code=%d", ret);
-        } else if (srs_h264_is_duplicated_sps_error(ret)) {
-            srs_human_trace("ignore duplicated sps, code=%d", ret);
-        } else if (srs_h264_is_duplicated_pps_error(ret)) {
-            srs_human_trace("ignore duplicated pps, code=%d", ret);
-        } else {
-            srs_human_trace("send h264 raw data failed. ret=%d", ret);
-        }
-    } else {
-        printf("HUHUHU\n");
-    }
-```
+#### CocoaPods
 
-This rtmp is the same srs_rtmp_t instance created by start_rtmp_connection() and later destoryed by stop_rtmp_connection() methods.
+1. Install [CocoaPods 1.7.5 or newer](https://guides.cocoapods.org/using/getting-started.html).
+
+2. Run `pod install` from the root directory of this project. CocoaPods will install `TwilioVideo.framework` and then set up an `xcworkspace`.
+
+3. Open `VideoQuickStart.xcworkspace`.
+
+Note: You may need to update the CocoaPods [Master Spec Repo](https://github.com/CocoaPods/Specs) by running `pod repo update master` in order to fetch the latest specs for TwilioVideo.
+
+#### XCode Changes for Building the App
+
+In order to run the app, you will need to sign it with your own Apple Developer Certificates (both application and app extensions). 
+
+**For the rest, please make sure you follow the instructions in [ios_app/ReplayKitExample/README.md]()**
+
+
+# Previous Approaches
+
+Added to [./obsolete]() directory. 
