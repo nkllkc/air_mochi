@@ -1,0 +1,3 @@
+[submodule "twillio-video-js"]
+	path = twillio-video-js
+	url = https://github.com/nkllkc/twillio-video-js.git
