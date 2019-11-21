@@ -8,3 +8,8 @@ os_app/Pods/*
 # twilio_video_js submodule
 twillio_video_js
 twillio_video_js/*
+
+# server deps
+server/node_modules
+server/node_modules/*
+/home/nikola/dev/mochi/air_mochi/server/quickstart/public/index.js

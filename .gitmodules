@@ -1,6 +1,0 @@
-[submodule "twillio-video-js"]
-	path = twillio-video-js
-	url = https://github.com/nkllkc/twillio-video-js.git
-[submodule "twilio-video"]
-	path = twilio-video
-	url = https://github.com/nkllkc/twillio-video-js.git

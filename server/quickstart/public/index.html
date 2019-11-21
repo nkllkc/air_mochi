@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <h1>AirMochi - Remotelly Test iOS Devices</h1>
+<div>
+  <div id="remote-media"></div>
+</div>
+<p id="a">A</p>
+<script src="/socket.io/socket.io.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="index.js"></script>
+<script>
+  var socket = io();
+  document.getElementById("a").onclick = function() {
+    console.log("__CLICKED");
+    socket.emit('callaback_client2server', "__CLICKED");
+  }
+</script>
+</body>
+</html>
