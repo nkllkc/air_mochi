@@ -33902,15 +33902,25 @@ function attachTrack(track, container) {
     track_html.onclick = function(e) {
       // element that has been clicked. 
 		  var elm = $(this); 
-    
+      
+      const height = elm.height();
+      const width = elm.width();
+
+      console.log("Hight: " + height);
+      console.log("Width: " + width);
+
       // getting the respective 
 		  var x = e.pageX - elm.offset().left; 
-    
+
+      x = x - (height / 2);
+      y = y - (width / 2);
+
       // coordinates of location. 
 		  var y = e.pageY - elm.offset().top; 
     
       console.log("X: " + x + ",Y: " + y);
-      socket.emit("callaback_client2server", "X=" + x + "&Y=" + y);
+      socket.emit("callaback_client2server", "H=" + height + "&" + "W=" + width 
+                  + "$" + "X=" + x + "&" + "Y=" + y);
     }
   }
   container.appendChild(track_html);
