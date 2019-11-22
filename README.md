@@ -1,8 +1,16 @@
 # Air Mochi
 
+## Documentation
+
+Previous documents:
+
+[Remote Mobile Device Control Platform](https://docs.google.com/document/d/1Kg74af_1J9uLzbWR60PTGsjHaetOnjZ7K9lmVM_Wh_c/edit) - Initial General Idea
+
+[Remote iOS Device Control](https://docs.google.com/document/d/14HrDbSchzDDFgsLERrwz1M5m7oQYkj_VtjeZaJcDImo/edit)
+
 ## iOS App
 
-Based on [https://github.com/twilio/video-quickstart-ios]().
+Based on [https://github.com/twilio/video-quickstart-ios](https://github.com/twilio/video-quickstart-ios).
 
 ### Setup
 
@@ -25,7 +33,6 @@ Note: You may need to update the CocoaPods [Master Spec Repo](https://github.com
 In order to run the app, you will need to sign it with your own Apple Developer Certificates (both application and app extensions). 
 
 **For the rest, please make sure you follow the instructions in [ios_app/ReplayKitExample/README.md]()**
-
 
 # Previous Approaches
 
