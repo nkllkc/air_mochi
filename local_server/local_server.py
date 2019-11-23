@@ -17,9 +17,9 @@ def update_current_cursor_place(new_x, new_y):
     curr_cursor_place['curr_x'] = new_x
     curr_cursor_place['curr_y'] = new_y
 
-def find_movement_values(new_x, new_y):
-    x_movement = new_x - curr_cursor_place['curr_x']
-    y_movement = new_y - curr_cursor_place['curr_y']
+def find_movement_values(new_x, new_y, height, width):
+    x_movement = int((new_x - curr_cursor_place['curr_x'])*4.23*(width/330))
+    y_movement = int((new_y - curr_cursor_place['curr_y'])*2.05*(height/720))
     x_values = []
     y_values = []
     if x_movement >= 0:
@@ -55,15 +55,18 @@ def connect():
 @sio.event
 def callback_server2client(data):
     print('message received with ', data)
+    dimensions = data.split('$')[0]
     cursor_place = data.split('$')[1]
     print(cursor_place)
     x = (cursor_place.split('&')[0]).split('=')[1]
     y = (cursor_place.split('&')[1]).split('=')[1]
+    h = (dimensions.split('&')[0]).split('=')[1]
+    w = (dimensions.split('&')[1]).split('=')[1]
     input_x = int(float(x))
     input_y = int(float(y))
     print(input_x)
     print(input_y)
-    x_movement_values, y_movement_values = find_movement_values(input_x, input_y)
+    x_movement_values, y_movement_values = find_movement_values(input_x, input_y, h, w)
     print(x_movement_values)
     print(y_movement_values)
     update_current_cursor_place(input_x, input_y)
