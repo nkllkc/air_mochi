@@ -2,15 +2,13 @@ import socketio
 import serial
 import requests
 import ast
-from flask import Flask, request, jsonify
 import json
-
 
 sio = socketio.Client()
 curr_cursor_place = {'curr_x': 0, 'curr_y': 0}
 ser = serial.Serial()
 ser.baudrate = 115200
-ser.port = '/dev/cu.SLAB_USBtoUART'
+ser.port = '/dev/ttyUSB1'
 ser.open()
 
 def update_current_cursor_place(new_x, new_y):
@@ -18,8 +16,8 @@ def update_current_cursor_place(new_x, new_y):
     curr_cursor_place['curr_y'] = new_y
 
 def find_movement_values(new_x, new_y, height, width):
-    x_movement = int((new_x - curr_cursor_place['curr_x'])*4.23*(width/330))
-    y_movement = int((new_y - curr_cursor_place['curr_y'])*2.05*(height/720))
+    x_movement = int((new_x - curr_cursor_place['curr_x'])*4.23)
+    y_movement = int((new_y - curr_cursor_place['curr_y'])*2.05)
     x_values = []
     y_values = []
     if x_movement >= 0:
@@ -82,22 +80,10 @@ def callback_server2client(data):
             ser.write(values)
         print("Mouse event sent")
 
-
-    # sio.emit('callaback_client2server', {'response': 'my response'})
-
 @sio.event
 def disconnect():
     print('disconnected from server')
 
-
-    # try:
-# sio.connect('http://localhost:8080')
+update_current_cursor_place(0, 0)
 sio.connect('https://mochiwsockets.appspot.com/')
-    # except:
-        # print("An exception occurred")
-    
-# x = 1
-# while True:
-#     x = x + 1
-
 sio.wait()
