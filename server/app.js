@@ -77,6 +77,10 @@ io.on('connection', socket => {
   socket.on('callaback_client2server', msg => {
     io.emit('callback_server2client', msg);
   });
+
+  socket.on('event_console2server', msg => {
+    io.emit('event_server2client', msg);
+  });
 });
 
 if (module === require.main) {

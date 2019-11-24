@@ -75,6 +75,7 @@ function roomJoined(room) {
     if (iosDevicePresent) {
       console.log("IOS DEVICE ALREADY PRESENT!!!");
       // TODO(nikola): Handle this.
+      return;
     }
     iosDevicePresent = true;
 
@@ -138,43 +139,122 @@ function attachTrack(track, container) {
 
   console.log("Track Kind:" + track.kind);
   if ("video" == track.kind) {
+    var height, width, x, y;
     
-    // // TODO(nikola): Make sure you add this listener, since the size of 
-    // // the video screen is changing (on network quality change). Notify 
-    // // the localServer about the change ot the size, so it knows how to
-    // // map values. Maybe you will need to cast it to VideoTrack. In 
-    // // order to cast it you need to import VideoTrack class into here.
-    // track.addEventListener("dimensionsChanged", function() {
-    //   console.log("HIHIHIHI");
-    // });
-    track.dimensionsChanged = function(new_track) {
-      console.log("Callback is working: " + new_track);
-    }
-    
-    console.log("Setting onclick for video element.");
-    track_html.onclick = function(e) {
+    // This is needed in order not to start the drag outside and finish inside 
+    // the device's screen.
+    var down = false;
+
+    console.log("Setting callbacks on: ", track_html);
+    $(track_html).mousedown(function (e) {
+      // console.log("MOUSEDOWN!");
+
+      down = true;
+
       // element that has been clicked. 
 		  var elm = $(this); 
       
-      const height = elm.height();
-      const width = elm.width();
-
-      console.log("Hight: " + height);
-      console.log("Width: " + width);
+      height = elm.height();
+      width = elm.width();
 
       // getting the respective 
-		  var x = e.pageX - elm.offset().left; 
-
-      x = x - (height / 2);
-      y = y - (width / 2);
-
       // coordinates of location. 
-		  var y = e.pageY - elm.offset().top; 
-    
-      console.log("X: " + x + ",Y: " + y);
-      socket.emit("callaback_client2server", "H=" + height + "&" + "W=" + width 
-                  + "$" + "X=" + x + "&" + "Y=" + y);
-    }
+		  x = e.pageX - elm.offset().left; 
+      y = e.pageY - elm.offset().top; 
+      
+      x = x - (width / 2);
+      y = y - (height / 2);
+
+      var date = new Date();
+      var msg_json = {
+        type: "DOWN",
+        time: date.getTime(),
+        height: height,
+        width: width,
+        x: x,
+        y: y, 
+      }
+
+      var msg = JSON.stringify(msg_json);
+      console.log(msg);
+
+      socket.emit('event_console2server', msg);
+      return false;
+    });
+
+    $(track_html).mouseup(function (e) {
+      // console.log("MOUSEUP!");
+
+      // Don't process the drags outside of the device screen.
+      if (!down) {
+        return false;
+      }
+      
+      down = false;
+      
+      // element that has been clicked. 
+      var elm = $(this); 
+
+      height = elm.height();
+      width = elm.width();
+
+      // getting the respective 
+      // coordinates of location. 
+      x = e.pageX - elm.offset().left; 
+      y = e.pageY - elm.offset().top; 
+
+      x = x - (width / 2);
+      y = y - (height / 2);
+
+      var date = new Date();
+      var msg_json = {
+        type: "UP",
+        time: date.getTime(),
+        height: height,
+        width: width,
+        x: x,
+        y: y
+      }
+
+      var msg = JSON.stringify(msg_json);
+      console.log(msg);
+
+      socket.emit('event_console2server', msg);
+      return false;  
+    });
+
+    // track_html.onclick = function(e) {
+    //   // element that has been clicked. 
+		//   var elm = $(this); 
+      
+    //   const height = elm.height();
+    //   const width = elm.width();
+
+    //   console.log("Hight: " + height);
+    //   console.log("Width: " + width);
+
+    //   // getting the respective 
+		//   var x = e.pageX - elm.offset().left; 
+
+    //   // coordinates of location. 
+		//   var y = e.pageY - elm.offset().top; 
+      
+    //   x = x - (width / 2);
+    //   y = y - (height / 2);
+
+    //   console.log("X: " + x + ",Y: " + y);
+    //   socket.emit("click_console2server", "H=" + height + "&" + "W=" + width 
+    //               + "$" + "X=" + x + "&" + "Y=" + y);
+    // }
+
+    // var timer;
+    // track_html.mouseup(function(e) {
+    //   console.log("Mouse UP");
+    // });
+
+    // track_html.mousedown(function(e) {
+    //   console.log("Mouse DOWN");
+    // });
   }
   container.appendChild(track_html);
 }
