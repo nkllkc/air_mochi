@@ -1,0 +1,72 @@
+<!DOCTYPE HTML> 
+<html> 
+
+<head> 
+	<title> 
+		How to get relative click coordinates 
+	on the target element using JQuery? 
+	</title> 
+	<script src= 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> 
+	</script> 
+	<style> 
+		h1 { 
+			border: 1px solid green; 
+		} 
+		
+		#GFG_UP { 
+			border: 1px solid green; 
+		} 
+		
+		button { 
+			border: 1px solid green; 
+		} 
+	</style> 
+</head> 
+
+<body style="text-align:center;" id="body"> 
+	<h1 style="color:green;"> 
+			GeeksForGeeks 
+		</h1> 
+	<p id="GFG_UP" style="font-size: 15px; 
+			font-weight: bold;"> 
+	</p> 
+	<p id="GFG_DOWN" style="color:green; 
+			font-size: 20px; 
+			font-weight: bold;"> 
+	</p> 
+	<script> 
+		var el_up = document.getElementById("GFG_UP"); 
+		var el_down = document.getElementById("GFG_DOWN"); 
+		var x, y; 
+		el_up.innerHTML = "Click inside any bordered element to get the"+ 
+		"click coordinates of that particular location with respect"+ 
+		"to its parent element "; 
+		$('h1').click(function(e) { 
+			// element that has been clicked. 
+			var elm = $(this); 
+
+			// getting the respective 
+			x = e.pageX - elm.offset().left; 
+
+			// coordinates of location. 
+			y = e.pageY - elm.offset().top; 
+			gfg_Run(); 
+		}); 
+		$('#GFG_UP').click(function(e) { 
+			var elm = $(this); 
+			// getting the respective 
+			x = e.pageX - elm.offset().left; 
+
+			// coordinates of location. 
+			y = e.pageY - elm.offset().top; 
+			gfg_Run(); 
+		}); 
+
+		function gfg_Run() { 
+			el_down.innerHTML = "X- " + x + "<br>Y- " + y; 
+		} 
+	</script> 
+</body> 
+
+</html> 
