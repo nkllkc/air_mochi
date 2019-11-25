@@ -1,0 +1,5 @@
+.DS_Store
+
+server/node_modules
+
+ios_app/Pod

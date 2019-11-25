@@ -33,7 +33,7 @@ class ViewController: UIViewController {
     var broadcastController: RPBroadcastController?
 
     var accessToken: String = "TWILIO_ACCESS_TOKEN"
-    let tokenUrl = "https://airmochiserver.appspot.com/token/"
+    let tokenUrl = "https://mochiwsockets.appspot.com/token?identity=ios_device"
 
     static let kBroadcastExtensionBundleId = "com.twilio.ReplayKitExample.BroadcastVideoExtension"
     static let kBroadcastExtensionSetupUiBundleId = "com.twilio.ReplayKitExample.BroadcastVideoExtensionSetupUI"

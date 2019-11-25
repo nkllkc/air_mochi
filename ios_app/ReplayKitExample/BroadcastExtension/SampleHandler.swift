@@ -22,7 +22,7 @@ class SampleHandler: RPBroadcastSampleHandler {
     let audioDevice = ExampleReplayKitAudioCapturer(sampleType: SampleHandler.kAudioSampleType)
 
     var accessToken: String = "TWILIO_ACCESS_TOKEN"
-    let tokenUrl = "https://airmochiserver.appspot.com/token/"
+    let tokenUrl = "https://mochiwsockets.appspot.com/token?identity=ios_device"
 
     var statsTimer: Timer?
     static let kBroadcastSetupInfoRoomNameKey = "roomName"
