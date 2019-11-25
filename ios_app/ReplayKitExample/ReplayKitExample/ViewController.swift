@@ -367,7 +367,7 @@ class ViewController: UIViewController {
                     self.conferenceButton?.setTitle(ViewController.kStopConferenceButtonTitle, for:.normal)
                     self.spinner.startAnimating()
                     self.infoLabel?.isHidden = true
-                    self.connectToRoom(name: "conference", encodingParameters: encodingParams)
+                    self.connectToRoom(name: "Broadcast", encodingParameters: encodingParams)
 
                     let playVideo = UIBarButtonItem(title: "Play Video", style: .plain, target: self, action: #selector(self.pickDocument(_:)))
                     let browseWeb = UIBarButtonItem(title: "Browse Web", style: .plain, target: self, action: #selector(self.browseWeb(_:)))

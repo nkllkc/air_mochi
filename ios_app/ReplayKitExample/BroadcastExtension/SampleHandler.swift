@@ -47,20 +47,25 @@ class SampleHandler: RPBroadcastSampleHandler {
             }
         }
 
+        NSLog("TRALALA %d", 1)
+//        os.log("TRALALA 3")
+        
         // This source will attempt to produce smaller buffers with fluid motion.
-        let options = ReplayKitVideoSource.TelecineOptions.p30to24or25
+        let options = ReplayKitVideoSource.TelecineOptions.p60to24or25or30
         let (encodingParams, outputFormat) = ReplayKitVideoSource.getParametersForUseCase(codec: SampleHandler.kVideoCodec,
-                                                                                          isScreencast: false,
+                                                                                          isScreencast: true,
                                                                                     telecineOptions: options)
 
-        videoSource = ReplayKitVideoSource(isScreencast: false, telecineOptions: options)
+        videoSource = ReplayKitVideoSource(isScreencast: true, telecineOptions: options)
         screenTrack = LocalVideoTrack(source: videoSource!,
                                       enabled: true,
                                       name: "Screen")
-
+        
+        NSLog("TRALALA %d", 2)
         videoSource!.requestOutputFormat(outputFormat)
         audioTrack = LocalAudioTrack()
-
+        
+        NSLog("TRALALA %d", 3)
         let connectOptions = ConnectOptions(token: accessToken) { (builder) in
 
             // Use the local media that we prepared earlier.
@@ -96,7 +101,7 @@ class SampleHandler: RPBroadcastSampleHandler {
         room = TwilioVideoSDK.connect(options: connectOptions, delegate: self)
 
         // The user has requested to start the broadcast. Setup info from the UI extension can be supplied but is optional.
-        print("broadcastStartedWithSetupInfo: ", setupInfo as Any)
+        NSLog("broadcastStartedWithSetupInfo: %s", setupInfo!)
     }
 
     override func broadcastPaused() {
@@ -148,7 +153,7 @@ class SampleHandler: RPBroadcastSampleHandler {
 // MARK:- RoomDelegate
 extension SampleHandler : RoomDelegate {
     func roomDidConnect(room: Room) {
-        print("didConnectToRoom: ", room)
+        NSLog("didConnectToRoom: %s", room)
 
         disconnectSemaphore = DispatchSemaphore(value: 0)
 
@@ -170,7 +175,7 @@ extension SampleHandler : RoomDelegate {
     }
 
     func roomDidFailToConnect(room: Room, error: Error) {
-        print("room: ", room, " didFailToConnectWithError: ", error)
+        NSLog("room: %s, didFailToConnectWithError: %s", room, error.localizedDescription)
         finishBroadcastWithError(error)
     }
 
@@ -180,7 +185,7 @@ extension SampleHandler : RoomDelegate {
             semaphore.signal()
         }
         if let theError = error {
-            print("room: ", room, "didDisconnectWithError: ", theError)
+            NSLog("room: %s, roomDidDisconnect: %s", room, theError.localizedDescription)
             finishBroadcastWithError(theError)
         }
     }

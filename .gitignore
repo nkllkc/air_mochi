@@ -2,4 +2,7 @@
 
 server/node_modules
 
-ios_app/Pod
+ios_app/Pod
+
+ios_app/.DS_Store
+
