@@ -162,8 +162,8 @@ function attachTrack(track, container) {
 		  x = e.pageX - elm.offset().left; 
       y = e.pageY - elm.offset().top; 
       
-      x = x - (width / 2);
-      y = y - (height / 2);
+      // x = x - (width / 2);
+      // y = y - (height / 2);
 
       var date = new Date();
       var msg_json = {
@@ -203,8 +203,8 @@ function attachTrack(track, container) {
       x = e.pageX - elm.offset().left; 
       y = e.pageY - elm.offset().top; 
 
-      x = x - (width / 2);
-      y = y - (height / 2);
+      // x = x - (width / 2);
+      // y = y - (height / 2);
 
       var date = new Date();
       var msg_json = {
