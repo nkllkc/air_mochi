@@ -182,6 +182,30 @@ function attachTrack(track, container) {
       return false;
     });
 
+    $(track_html).mousemove(function(e){
+      var elm  = $(this);
+      height = elm.height();
+      width = elm.width();
+      x = e.pageX - elm.offset().left;
+      y = e.pageY - elm.offset().top;
+
+      var date = new Date();
+      var msg_json = {
+        type: "HOVER",
+        time: date.getTime(),
+        height: height,
+        width: width,
+        x: x,
+        y: y
+      }
+
+      var msg = JSON.stringify(msg_json);
+      console.log(msg);
+
+      socket.emit('event_console2server', msg);
+      return false;
+    });
+
     $(track_html).mouseup(function (e) {
       // console.log("MOUSEUP!");
 
@@ -222,6 +246,7 @@ function attachTrack(track, container) {
       socket.emit('event_console2server', msg);
       return false;  
     });
+
 
     // track_html.onclick = function(e) {
     //   // element that has been clicked. 
