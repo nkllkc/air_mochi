@@ -2879,52 +2879,38 @@ exports.updateUnifiedPlanTrackIdsToSSRCs = updateUnifiedPlanTrackIdsToSSRCs;
 
 },{"./":16}],19:[function(require,module,exports){
 module.exports={
-  "_args": [
-    [
-      "@twilio/webrtc@4.0.0",
-      "/home/nikola/dev/mochi/air_mochi/server/node_modules/twilio-video"
-    ]
-  ],
   "_from": "@twilio/webrtc@4.0.0",
-  "_hasShrinkwrap": false,
   "_id": "@twilio/webrtc@4.0.0",
-  "_inCache": true,
-  "_installable": true,
+  "_inBundle": false,
+  "_integrity": "sha512-ZKAJ7g2dMhfbfmtSjFI7+u00NG1vbLUYD51vQzLy03MlO1pWM2JCtH8vdu6p6ejyoZBB7AE8dy0d6Oo/agpYsw==",
   "_location": "/@twilio/webrtc",
-  "_nodeVersion": "7.10.1",
-  "_npmOperationalInternal": {
-    "host": "s3://npm-registry-packages",
-    "tmp": "tmp/webrtc_4.0.0_1552692391468_0.5671680043475398"
-  },
-  "_npmUser": {
-    "email": "twilio-ci@twilio.com",
-    "name": "twilio-ci"
-  },
-  "_npmVersion": "4.2.0",
   "_phantomChildren": {},
   "_requested": {
-    "name": "@twilio/webrtc",
+    "type": "version",
+    "registry": true,
     "raw": "@twilio/webrtc@4.0.0",
-    "rawSpec": "4.0.0",
+    "name": "@twilio/webrtc",
+    "escapedName": "@twilio%2fwebrtc",
     "scope": "@twilio",
-    "spec": "4.0.0",
-    "type": "version"
+    "rawSpec": "4.0.0",
+    "saveSpec": null,
+    "fetchSpec": "4.0.0"
   },
   "_requiredBy": [
     "/twilio-video"
   ],
   "_resolved": "https://registry.npmjs.org/@twilio/webrtc/-/webrtc-4.0.0.tgz",
   "_shasum": "d170e1b9e2055728b94758085303dfa8e086c3c6",
-  "_shrinkwrap": null,
   "_spec": "@twilio/webrtc@4.0.0",
-  "_where": "/home/nikola/dev/mochi/air_mochi/server/node_modules/twilio-video",
+  "_where": "/Users/nikola/Development/air_mochi/server/node_modules/twilio-video",
   "author": {
-    "email": "mmalavalli@twilio.com",
-    "name": "Manjesh Malavalli"
+    "name": "Manjesh Malavalli",
+    "email": "mmalavalli@twilio.com"
   },
   "bugs": {
     "url": "https://github.com/twilio/twilio-webrtc.js/issues"
   },
+  "bundleDependencies": false,
   "contributors": [
     {
       "name": "Mark Roberts",
@@ -2935,7 +2921,7 @@ module.exports={
       "email": "rrowland@twilio.com"
     }
   ],
-  "dependencies": {},
+  "deprecated": false,
   "description": "WebRTC-related APIs and shims used by twilio-video.js",
   "devDependencies": {
     "browserify": "^14.4.0",
@@ -2957,16 +2943,6 @@ module.exports={
     "watchify": "^3.9.0",
     "webrtc-adapter": "^6.4.8"
   },
-  "directories": {},
-  "dist": {
-    "fileCount": 26,
-    "integrity": "sha512-ZKAJ7g2dMhfbfmtSjFI7+u00NG1vbLUYD51vQzLy03MlO1pWM2JCtH8vdu6p6ejyoZBB7AE8dy0d6Oo/agpYsw==",
-    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcjDSoCRA9TVsSAnZWagAAPWkP+wZMkxOlmZSGnt3Vm1G9\nlsNboKB4fpEn+uMy80VFKy+h26q29ayDfbmJg0GMOozoHns28xO2vK5XFw1J\nWqY0X/9wenIp5l7TmZyRlili1jdpQCfggLHWzVOT35bxG2P09Bswv28TobGU\nbmG+1AMtJV+FP5v3aHxwt5RCOGQAV+bnGi424YMsoGQSipwqWiNFZLyJtLeA\nq2IfpDhJLaZFgR2yoFMwuH2CD95BJ6XubUfV7GJ1OVLnlZ3qOok9UYfl+wlm\nR+3VXtKSxYxU0SEJ7Iyo5VaKfejRObZ0kNio8KCIlDVzYKHpviZKEqO1RKXM\nq6uoSnP701I/7qwxVIPnRzY6MzNWYjU9ZMXCGyOMRiztEFOA+X9GlW9BlNF6\nj2he3IgzrzHUqLQJSXpbMWsUszstYmjNY876Ir+S83ui3HlisoekrUfxju0z\ndxMYHtdFqN/L0fKAc5MDhRepcq+bJiNxmwzgPbHktb7SZIUvhTyHimCS//MI\nd/jYu/WSb9JJXC27GaaM5Jkp3zpyVcNKa2ABL8Ekpa/zFIfmiCT+HLRWLQy6\nXxVEONFbmMdhq5jwsbw/qH2S8ok20lj0Z/0CyRD6lPu4vL2tSrfAi//oF4Qm\ng7C1m3Ws7LhH/bD/F8vQqqeH4CWcPmy7+BDiX2zcT7dTkYSV6/Jy7ZSq8xcJ\nCT9s\r\n=ipSQ\r\n-----END PGP SIGNATURE-----\r\n",
-    "shasum": "d170e1b9e2055728b94758085303dfa8e086c3c6",
-    "tarball": "https://registry.npmjs.org/@twilio/webrtc/-/webrtc-4.0.0.tgz",
-    "unpackedSize": 110892
-  },
-  "gitHead": "707a913d96d9e23cd7e2eb7e3642d668e90adc77",
   "homepage": "https://github.com/twilio/twilio-webrtc.js#readme",
   "keywords": [
     "shim",
@@ -2976,15 +2952,7 @@ module.exports={
   ],
   "license": "BSD-3-Clause",
   "main": "./lib/index.js",
-  "maintainers": [
-    {
-      "name": "twilio-ci",
-      "email": "mroberts+twilio-ci@twilio.com"
-    }
-  ],
   "name": "@twilio/webrtc",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/twilio/twilio-webrtc.js.git"
@@ -32872,52 +32840,36 @@ to get a new one, but we\'ve run out of retries; returning it anyway.');
 module.exports = workaround;
 },{"./audiocontext":195,"./detectsilence":196}],198:[function(require,module,exports){
 module.exports={
-  "_args": [
-    [
-      "twilio-video@2.0.0-beta10",
-      "/home/nikola/dev/mochi/air_mochi/server"
-    ]
-  ],
   "_from": "twilio-video@2.0.0-beta10",
-  "_hasShrinkwrap": false,
   "_id": "twilio-video@2.0.0-beta10",
-  "_inCache": true,
-  "_installable": true,
+  "_inBundle": false,
+  "_integrity": "sha512-RfwaYHMFnQ69bsksyWMrI3XIZA1hPKxLviEO9XqDLEZ2gtxosGa+CToyKTM5F3yJNZZNhlmdmNyyLqRQAR48fg==",
   "_location": "/twilio-video",
-  "_nodeVersion": "10.16.0",
-  "_npmOperationalInternal": {
-    "host": "s3://npm-registry-packages",
-    "tmp": "tmp/twilio-video_2.0.0-beta10_1559861697979_0.9485835923157251"
-  },
-  "_npmUser": {
-    "email": "twilio-ci@twilio.com",
-    "name": "twilio-ci"
-  },
-  "_npmVersion": "6.9.0",
   "_phantomChildren": {
     "async-limiter": "1.0.1",
     "safe-buffer": "5.1.2",
     "ultron": "1.1.1"
   },
   "_requested": {
-    "name": "twilio-video",
+    "type": "version",
+    "registry": true,
     "raw": "twilio-video@2.0.0-beta10",
+    "name": "twilio-video",
+    "escapedName": "twilio-video",
     "rawSpec": "2.0.0-beta10",
-    "scope": null,
-    "spec": "2.0.0-beta10",
-    "type": "version"
+    "saveSpec": null,
+    "fetchSpec": "2.0.0-beta10"
   },
   "_requiredBy": [
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/twilio-video/-/twilio-video-2.0.0-beta10.tgz",
   "_shasum": "d0112629e770260f2e9cbb9868e79fe9be77700c",
-  "_shrinkwrap": null,
   "_spec": "twilio-video@2.0.0-beta10",
-  "_where": "/home/nikola/dev/mochi/air_mochi/server",
+  "_where": "/Users/nikola/Development/air_mochi/server",
   "author": {
-    "email": "mroberts@twilio.com",
-    "name": "Mark Andrus Roberts"
+    "name": "Mark Andrus Roberts",
+    "email": "mroberts@twilio.com"
   },
   "browser": {
     "ws": "./src/ws.js",
@@ -32926,6 +32878,7 @@ module.exports={
   "bugs": {
     "url": "https://github.com/twilio/twilio-video.js/issues"
   },
+  "bundleDependencies": false,
   "contributors": [
     {
       "name": "Ryan Rowland",
@@ -32941,6 +32894,7 @@ module.exports={
     "ws": "^3.3.1",
     "xmlhttprequest": "^1.8.0"
   },
+  "deprecated": false,
   "description": "Twilio Video JavaScript library",
   "devDependencies": {
     "@types/express": "^4.11.0",
@@ -32984,39 +32938,21 @@ module.exports={
     "vinyl-source-stream": "^1.1.0",
     "webrtc-adapter": "^4.1.1"
   },
-  "directories": {},
-  "dist": {
-    "fileCount": 283,
-    "integrity": "sha512-RfwaYHMFnQ69bsksyWMrI3XIZA1hPKxLviEO9XqDLEZ2gtxosGa+CToyKTM5F3yJNZZNhlmdmNyyLqRQAR48fg==",
-    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJc+ZnCCRA9TVsSAnZWagAAaEQP/2ZlElWwB75rMN/t1kRz\nWy5t22ljWWEHd68dKdfCgXvnzg6Jw79kQKvTFd4MRbkARVVwsa8eSbBtpERz\ngrfSL5CmTrIyXpTPLgkL6RHXPhfYDw3tk3KrHVqyHa+v36pfrDyfbZ2dyVIr\nVDzwAtNNVlkgU3YeysQglauyuv9jnG1JVX3xII1nYaImpIGdhBAuQRf8HfF7\n4LW9fLSiDLRfs9gKyaQVe5ilHnjcPUYfvsMPoh++wpIw4hE3QnpJV4XPlSf6\nAJvik7/pRKl6ZAhrQHDkDuduTrJ+AaeMRgkjyge/2R3Yre8Y3Pbgs8yNR+UJ\nnA/gbVRnHw/6I8apyjjBb0qUrdLUyZB7wnPSvYLpyfb7R53kHrOI9ni34HBA\n6qQSxa/kF4PBIFlaa7D+ibzURmJqQHk9YFD9uM29h+bQFa4ziHgun2reqZsa\nZt19zgI4vksHEd+Wa9wJ6jNnFvbpNN85kQIvC1XghOjBYGRRhsUUk0R6uSNA\nqWIDEDdnHKgmHXXQdOXj4Y8EUS4KSCpEWkCTJRCZ6P6i6f9jafpdAtWCUZSf\n2AfmoMEND4DjmSHebZtTo+hLcJ5WA2Jj+0zgQ7znQR5IE0OLixuqQRPCWZhL\nUzfB3rdKHsHhj7O8Nt4dqdJmetqqZzRyEi417Ny8JZaTNavf71ii+f0CPw3c\nGX16\r\n=QE7a\r\n-----END PGP SIGNATURE-----\r\n",
-    "shasum": "d0112629e770260f2e9cbb9868e79fe9be77700c",
-    "tarball": "https://registry.npmjs.org/twilio-video/-/twilio-video-2.0.0-beta10.tgz",
-    "unpackedSize": 2729735
-  },
   "engines": {
     "node": ">=0.12"
   },
-  "gitHead": "81a05cb0f92314110d3845556b88097db8dab112",
   "homepage": "https://twilio.com",
   "keywords": [
-    "javascript",
-    "library",
-    "rooms",
     "twilio",
+    "webrtc",
+    "library",
+    "javascript",
     "video",
-    "webrtc"
+    "rooms"
   ],
   "license": "BSD-3-Clause",
   "main": "./es5/index.js",
-  "maintainers": [
-    {
-      "name": "markandrus",
-      "email": "markandrusroberts@gmail.com"
-    }
-  ],
   "name": "twilio-video",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/twilio/twilio-video.js.git"
@@ -33777,7 +33713,8 @@ $.getJSON('/token?identity=tester', function(data) {
 
   var connectOptions = {
     name: roomName,
-    logLevel: 'debug'
+    logLevel: 'debug',
+    tracks: []
   };
 
   var localTracksPromise = previewTracks
@@ -33887,10 +33824,16 @@ function attachTrack(track, container) {
   console.log("Track Kind:" + track.kind);
   if ("video" == track.kind) {
     var height, width, x, y;
+    
+    // This is needed in order not to start the drag outside and finish inside 
+    // the device's screen.
+    var down = false;
 
     console.log("Setting callbacks on: ", track_html);
     $(track_html).mousedown(function (e) {
       // console.log("MOUSEDOWN!");
+
+      down = true;
 
       // element that has been clicked. 
 		  var elm = $(this); 
@@ -33903,8 +33846,8 @@ function attachTrack(track, container) {
 		  x = e.pageX - elm.offset().left; 
       y = e.pageY - elm.offset().top; 
       
-      x = x - (width / 2);
-      y = y - (height / 2);
+      // x = x - (width / 2);
+      // y = y - (height / 2);
 
       var date = new Date();
       var msg_json = {
@@ -33925,6 +33868,13 @@ function attachTrack(track, container) {
 
     $(track_html).mouseup(function (e) {
       // console.log("MOUSEUP!");
+
+      // Don't process the drags outside of the device screen.
+      if (!down) {
+        return false;
+      }
+      
+      down = false;
       
       // element that has been clicked. 
       var elm = $(this); 
@@ -33937,8 +33887,8 @@ function attachTrack(track, container) {
       x = e.pageX - elm.offset().left; 
       y = e.pageY - elm.offset().top; 
 
-      x = x - (width / 2);
-      y = y - (height / 2);
+      // x = x - (width / 2);
+      // y = y - (height / 2);
 
       var date = new Date();
       var msg_json = {

@@ -30,7 +30,8 @@ $.getJSON('/token?identity=tester', function(data) {
 
   var connectOptions = {
     name: roomName,
-    logLevel: 'debug'
+    logLevel: 'debug',
+    tracks: []
   };
 
   var localTracksPromise = previewTracks
