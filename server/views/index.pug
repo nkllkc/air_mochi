@@ -40,7 +40,7 @@ html(lang="en")
     script.
       // [START appengine_websockets_js]
       $(function () {
-        var socket = io();
+        var socket = io('http://softarch.usc.edu:3000/');
         $('form').submit(function(){
           console.log($('#m').val());
           socket.emit('callaback_client2server', $('#m').val());

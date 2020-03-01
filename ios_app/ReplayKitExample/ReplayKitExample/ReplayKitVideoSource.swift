@@ -133,10 +133,12 @@ class ReplayKitVideoSource: NSObject, VideoSource {
         screenSize.width *= UIScreen.main.nativeScale
         screenSize.height *= UIScreen.main.nativeScale
         
-        NSLog("TRALALA Size: w %f, h %f", screenSize.width.native, screenSize.height.native)
-        NSLog("TRALALA max %d", maxWidthOrHeight)
+        print("TRALALA Size: w %f, h %f", screenSize.width.native, screenSize.height.native)
+        print("TRALALA max %d", maxWidthOrHeight)
+        print("HUHUHHU")
         
         if maxWidthOrHeight > 0 {
+            print("1")
             let downscaledTarget = CGSize(width: Int(maxWidthOrHeight),
                                           height: Int(maxWidthOrHeight))
             let fitRect = AVMakeRect(aspectRatio: screenSize,
@@ -145,10 +147,11 @@ class ReplayKitVideoSource: NSObject, VideoSource {
 
             outputFormat.dimensions = CMVideoDimensions(width: Int32(outputSize.width), height: Int32(outputSize.height))
         } else {
+            print("2")
             // In order to make the screen not to rescale on network change, this had to be set.
             // TODO(saghar, nikola): TEST THIS.
             // TODO(nikola): Remove hardcoded values from here.
-            outputFormat.dimensions = CMVideoDimensions(width: Int32(720), height: Int32(330))
+            outputFormat.dimensions = CMVideoDimensions(width: Int32(720), height: Int32(535))
         }
 
         outputFormat.frameRate = maxFrameRate

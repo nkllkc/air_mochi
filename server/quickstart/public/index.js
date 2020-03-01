@@ -2879,6 +2879,12 @@ exports.updateUnifiedPlanTrackIdsToSSRCs = updateUnifiedPlanTrackIdsToSSRCs;
 
 },{"./":16}],19:[function(require,module,exports){
 module.exports={
+  "_args": [
+    [
+      "@twilio/webrtc@4.0.0",
+      "/Users/nikola/Development/onr_pres/air_mochi/server"
+    ]
+  ],
   "_from": "@twilio/webrtc@4.0.0",
   "_id": "@twilio/webrtc@4.0.0",
   "_inBundle": false,
@@ -2900,9 +2906,8 @@ module.exports={
     "/twilio-video"
   ],
   "_resolved": "https://registry.npmjs.org/@twilio/webrtc/-/webrtc-4.0.0.tgz",
-  "_shasum": "d170e1b9e2055728b94758085303dfa8e086c3c6",
-  "_spec": "@twilio/webrtc@4.0.0",
-  "_where": "/Users/nikola/Development/air_mochi/server/node_modules/twilio-video",
+  "_spec": "4.0.0",
+  "_where": "/Users/nikola/Development/onr_pres/air_mochi/server",
   "author": {
     "name": "Manjesh Malavalli",
     "email": "mmalavalli@twilio.com"
@@ -2910,7 +2915,6 @@ module.exports={
   "bugs": {
     "url": "https://github.com/twilio/twilio-webrtc.js/issues"
   },
-  "bundleDependencies": false,
   "contributors": [
     {
       "name": "Mark Roberts",
@@ -2921,7 +2925,6 @@ module.exports={
       "email": "rrowland@twilio.com"
     }
   ],
-  "deprecated": false,
   "description": "WebRTC-related APIs and shims used by twilio-video.js",
   "devDependencies": {
     "browserify": "^14.4.0",
@@ -32840,6 +32843,12 @@ to get a new one, but we\'ve run out of retries; returning it anyway.');
 module.exports = workaround;
 },{"./audiocontext":195,"./detectsilence":196}],198:[function(require,module,exports){
 module.exports={
+  "_args": [
+    [
+      "twilio-video@2.0.0-beta10",
+      "/Users/nikola/Development/onr_pres/air_mochi/server"
+    ]
+  ],
   "_from": "twilio-video@2.0.0-beta10",
   "_id": "twilio-video@2.0.0-beta10",
   "_inBundle": false,
@@ -32864,9 +32873,8 @@ module.exports={
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/twilio-video/-/twilio-video-2.0.0-beta10.tgz",
-  "_shasum": "d0112629e770260f2e9cbb9868e79fe9be77700c",
-  "_spec": "twilio-video@2.0.0-beta10",
-  "_where": "/Users/nikola/Development/air_mochi/server",
+  "_spec": "2.0.0-beta10",
+  "_where": "/Users/nikola/Development/onr_pres/air_mochi/server",
   "author": {
     "name": "Mark Andrus Roberts",
     "email": "mroberts@twilio.com"
@@ -32878,7 +32886,6 @@ module.exports={
   "bugs": {
     "url": "https://github.com/twilio/twilio-video.js/issues"
   },
-  "bundleDependencies": false,
   "contributors": [
     {
       "name": "Ryan Rowland",
@@ -32894,7 +32901,6 @@ module.exports={
     "ws": "^3.3.1",
     "xmlhttprequest": "^1.8.0"
   },
-  "deprecated": false,
   "description": "Twilio Video JavaScript library",
   "devDependencies": {
     "@types/express": "^4.11.0",
@@ -33683,8 +33689,11 @@ module.exports = yeast;
 },{}],204:[function(require,module,exports){
 'use strict';
 
+ 
+const server_location = 'http://softarch.usc.edu:3000/'
+
 const io = require('socket.io-client');
-var socket = io();
+const socket = io(server_location);
 
 var Video = require('twilio-video');
 
@@ -33821,6 +33830,11 @@ function roomJoined(room) {
 function attachTrack(track, container) {
   var track_html = track.attach();
 
+  var x = 0;
+  var y = 0;
+
+  var locked = false;
+
   console.log("Track Kind:" + track.kind);
   if ("video" == track.kind) {
     var height, width, x, y;
@@ -33829,83 +33843,256 @@ function attachTrack(track, container) {
     // the device's screen.
     var down = false;
 
-    console.log("Setting callbacks on: ", track_html);
-    $(track_html).mousedown(function (e) {
-      // console.log("MOUSEDOWN!");
+    $(track_html).click(function(){
+      var canvas = $(track_html).get()[0];
+      canvas.requestPointerLock = canvas.requestPointerLock ||
+              canvas.mozRequestPointerLock ||
+              canvas.webkitRequestPointerLock;
 
-      down = true;
-
-      // element that has been clicked. 
-		  var elm = $(this); 
-      
-      height = elm.height();
-      width = elm.width();
-
-      // getting the respective 
-      // coordinates of location. 
-		  x = e.pageX - elm.offset().left; 
-      y = e.pageY - elm.offset().top; 
-      
-      // x = x - (width / 2);
-      // y = y - (height / 2);
-
-      var date = new Date();
-      var msg_json = {
-        type: "DOWN",
-        time: date.getTime(),
-        height: height,
-        width: width,
-        x: x,
-        y: y, 
-      }
-
-      var msg = JSON.stringify(msg_json);
-      console.log(msg);
-
-      socket.emit('event_console2server', msg);
-      return false;
+      // Ask the browser to lock the pointer)
+      canvas.requestPointerLock();
     });
 
-    $(track_html).mouseup(function (e) {
-      // console.log("MOUSEUP!");
+    document.addEventListener('pointerlockchange', lockChangeAlert, false);
+    document.addEventListener('mozpointerlockchange', lockChangeAlert, false);
 
-      // Don't process the drags outside of the device screen.
-      if (!down) {
-        return false;
-      }
-      
-      down = false;
-      
-      // element that has been clicked. 
-      var elm = $(this); 
+    function updatePosition(e) {
+      var x = e.movementX
+      var y = e.movementY
 
-      height = elm.height();
-      width = elm.width();
+      if (Math.sqrt(x * x + y * y) < 3) {
+        return
+      } 
 
-      // getting the respective 
-      // coordinates of location. 
-      x = e.pageX - elm.offset().left; 
-      y = e.pageY - elm.offset().top; 
-
-      // x = x - (width / 2);
-      // y = y - (height / 2);
-
-      var date = new Date();
       var msg_json = {
-        type: "UP",
-        time: date.getTime(),
-        height: height,
-        width: width,
-        x: x,
-        y: y
+        _b: 0,
+        _x: e.movementX,
+        _y: e.movementY,
+        _w: 0
       }
-
+      // console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
       var msg = JSON.stringify(msg_json);
       console.log(msg);
-
       socket.emit('event_console2server', msg);
-      return false;  
-    });
+    }
+
+    function clicked() {
+      console.log("Clicked()")
+
+      var msg_json = {
+        _b: 1,
+        _x: 0,
+        _y: 0,
+        _w: 0
+      }
+      // console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
+      var msg = JSON.stringify(msg_json);
+      console.log(msg);
+      socket.emit('event_console2server', msg);
+    }
+
+    function keyboardPressed(event) {
+      // User has pressed 'h', meaning that we should go to home screen.
+      if (event.key == 'h') {
+        console.log("Homescreen!")
+        var msg_json = {
+          _b: 2,
+          _x: 0,
+          _y: 0,
+          _w: 0
+        }
+        // console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
+        var msg = JSON.stringify(msg_json);
+        console.log(msg);
+        socket.emit('event_console2server', msg);
+      }
+
+      // Screenshot.
+      if (event.key == 's') {
+        console.log("Screenshot!")
+        var msg_json = {
+          _b: 4,
+          _x: 0,
+          _y: 0,
+          _w: 0
+        }
+        // console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
+        var msg = JSON.stringify(msg_json);
+        console.log(msg);
+        socket.emit('event_console2server', msg);
+      }
+
+      // Notifications.
+      if (event.key == 'n') {
+        console.log("Notifications!")
+        var msg_json = {
+          _b: 8,
+          _x: 0,
+          _y: 0,
+          _w: 0
+        }
+        // console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
+        var msg = JSON.stringify(msg_json);
+        console.log(msg);
+        socket.emit('event_console2server', msg);
+      }
+
+      // Control Center.
+      if (event.key == 'c') {
+        console.log("Control Center!")
+        var msg_json = {
+          _b: 16,
+          _x: 0,
+          _y: 0,
+          _w: 0
+        }
+        // console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
+        var msg = JSON.stringify(msg_json);
+        console.log(msg);
+        socket.emit('event_console2server', msg);
+      }
+
+      // Dock.
+      if (event.key == 'd') {
+        console.log("Dock!")
+        var msg_json = {
+          _b: 32,
+          _x: 0,
+          _y: 0,
+          _w: 0
+        }
+        // console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
+        var msg = JSON.stringify(msg_json);
+        console.log(msg);
+        socket.emit('event_console2server', msg);
+      }
+
+      // Scrool Down!
+      if (event.key == 'ArrowDown') {
+        console.log("Screenshot!")
+        var msg_json = {
+          _b: 0,
+          _x: 0,
+          _y: 0,
+          _w: -1
+        }
+        // console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
+        var msg = JSON.stringify(msg_json);
+        console.log(msg);
+        socket.emit('event_console2server', msg);
+      }
+
+      // Scrool Up!
+      if (event.key == 'ArrowUp') {
+        console.log("Screenshot!")
+        var msg_json = {
+          _b: 0,
+          _x: 0,
+          _y: 0,
+          _w: 1
+        }
+        // console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
+        var msg = JSON.stringify(msg_json);
+        console.log(msg);
+        socket.emit('event_console2server', msg);
+      }
+
+    }
+
+    function lockChangeAlert() {
+      let canvas = $(track_html).get()[0];
+      if (document.pointerLockElement === canvas ||
+          document.mozPointerLockElement === canvas) {
+        console.log('The pointer lock status is now locked');
+        // locked = true;
+        document.addEventListener("mousemove", updatePosition, false);
+        document.addEventListener("click", clicked, false);
+        document.addEventListener("keydown", keyboardPressed, false);
+      } else {
+        console.log('The pointer lock status is now unlocked');  
+        // locked = false;
+        document.removeEventListener("mousemove", updatePosition, false);
+        document.removeEventListener("click", clicked, false);
+        document.removeEventListener("keydown", keyboardPressed, false);
+      }
+    }
+
+
+
+    // console.log("Setting callbacks on: ", track_html);
+    // $(track_html).mousedown(function (e) {
+    //   // console.log("MOUSEDOWN!");
+
+    //   down = true;
+
+    //   // element that has been clicked. 
+		//   var elm = $(this); 
+      
+    //   height = elm.height();
+    //   width = elm.width();
+
+    //   // getting the respective 
+    //   // coordinates of location. 
+		//   x = e.pageX - elm.offset().left; 
+    //   y = e.pageY - elm.offset().top; 
+      
+    //   // x = x - (width / 2);
+    //   // y = y - (height / 2);
+
+    //   var date = new Date();
+    //   var msg_json = {
+    //     type: "DOWN",
+    //     time: date.getTime(),
+    //     height: height,
+    //     width: width,
+    //     x: x,
+    //     y: y, 
+    //   }
+
+    //   var msg = JSON.stringify(msg_json);
+    //   console.log(msg);
+
+    //   socket.emit('event_console2server', msg);
+    //   return false;
+    // });
+
+    // $(track_html).mouseup(function (e) {
+    //   // console.log("MOUSEUP!");
+
+    //   // Don't process the drags outside of the device screen.
+    //   if (!down) {
+    //     return false;
+    //   }
+      
+    //   down = false;
+      
+    //   // element that has been clicked. 
+    //   var elm = $(this); 
+
+    //   height = elm.height();
+    //   width = elm.width();
+
+    //   // getting the respective 
+    //   // coordinates of location. 
+    //   x = e.pageX - elm.offset().left; 
+    //   y = e.pageY - elm.offset().top; 
+
+    //   // x = x - (width / 2);
+    //   // y = y - (height / 2);
+
+    //   var date = new Date();
+    //   var msg_json = {
+
+    //     x: x,
+    //     y: y
+    //   }
+
+    //   var msg = JSON.stringify(msg_json);
+    //   console.log(msg);
+
+    //   socket.emit('event_console2server', msg);
+    //   return false;  
+    // });
 
     // track_html.onclick = function(e) {
     //   // element that has been clicked. 
@@ -33998,6 +34185,12 @@ function getTracks(participant) {
   }).map(function(publication) {
     return publication.track;
   });
+}
+
+function sendMessage(msg_json) {
+  var msg = JSON.stringify(msg_json);
+  console.log(msg);
+  socket.emit('event_console2server', msg);
 }
 
 // ******************* CALLBACKS *******************

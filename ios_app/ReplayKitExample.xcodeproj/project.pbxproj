@@ -8,10 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4502EAE8A06EBD57D1672162 /* libPods-TwilioVideo-BroadcastExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2316959CE4F96B9F50C005D0 /* libPods-TwilioVideo-BroadcastExtension.a */; };
-		4B20000520E9CB9C00FE9F2C /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B20FFFA20E9CB9C00FE9F2C /* ReplayKit.framework */; };
-		4B20000720E9CB9C00FE9F2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B20000620E9CB9C00FE9F2C /* UIKit.framework */; };
-		4B20000A20E9CB9C00FE9F2C /* BroadcastSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B20000920E9CB9C00FE9F2C /* BroadcastSetupViewController.swift */; };
-		4B20000E20E9CB9C00FE9F2C /* BroadcastExtensionSetupUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4B20000420E9CB9C00FE9F2C /* BroadcastExtensionSetupUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4B20001120E9CB9C00FE9F2C /* BroadcastExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4B20FFF820E9CB9C00FE9F2C /* BroadcastExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4B20FFE320E9CB8500FE9F2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B20FFE220E9CB8500FE9F2C /* AppDelegate.swift */; };
 		4B20FFE520E9CB8500FE9F2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B20FFE420E9CB8500FE9F2C /* ViewController.swift */; };
@@ -21,15 +17,12 @@
 		4B20FFFB20E9CB9C00FE9F2C /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B20FFFA20E9CB9C00FE9F2C /* ReplayKit.framework */; };
 		4B20FFFE20E9CB9C00FE9F2C /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B20FFFD20E9CB9C00FE9F2C /* SampleHandler.swift */; };
 		4BB0385920EB45950095CDA8 /* ExampleReplayKitAudioCapturer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB0385820EB45940095CDA8 /* ExampleReplayKitAudioCapturer.m */; };
-		4BB0385C20EB45F50095CDA8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB0385B20EB45F50095CDA8 /* AudioToolbox.framework */; };
 		4BB0385E20EB45FB0095CDA8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB0385B20EB45F50095CDA8 /* AudioToolbox.framework */; };
 		4BB0386020EB46040095CDA8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB0385B20EB45F50095CDA8 /* AudioToolbox.framework */; };
-		4BEA5E0820E9DB5900643AF1 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BEA5E0720E9DB5900643AF1 /* MainInterface.storyboard */; };
 		8A390D932161D4430013D6E5 /* ReplayKitVideoSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A390D922161D4430013D6E5 /* ReplayKitVideoSource.swift */; };
 		8A437271216350CA00436765 /* ReplayKitVideoSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A390D922161D4430013D6E5 /* ReplayKitVideoSource.swift */; };
 		8A50FEFE215DDC6100297C7A /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A50FEFB215DDC6100297C7A /* SettingsTableViewController.swift */; };
 		8A50FF00215DDC6100297C7A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A50FEFC215DDC6100297C7A /* Settings.swift */; };
-		8A50FF03215DDC6100297C7A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A50FEFD215DDC6100297C7A /* Utils.swift */; };
 		8A57F4A32319C2A1001561EA /* Telecine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD6D6E522FFE7CD00EBF279 /* Telecine.swift */; };
 		8A57F4A42319CD6B001561EA /* Telecine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD6D6E522FFE7CD00EBF279 /* Telecine.swift */; };
 		8A992CEB2320C1DC00D549F6 /* ExampleReplayKitAudioCapturer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB0385820EB45940095CDA8 /* ExampleReplayKitAudioCapturer.m */; };
@@ -41,13 +34,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4B20000C20E9CB9C00FE9F2C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4B20FFD720E9CB8500FE9F2C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4B20000320E9CB9C00FE9F2C;
-			remoteInfo = BroadcastExtensionSetupUI;
-		};
 		4B20000F20E9CB9C00FE9F2C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4B20FFD720E9CB8500FE9F2C /* Project object */;
@@ -65,7 +51,6 @@
 			dstSubfolderSpec = 13;
 			files = (
 				4B20001120E9CB9C00FE9F2C /* BroadcastExtension.appex in Embed App Extensions */,
-				4B20000E20E9CB9C00FE9F2C /* BroadcastExtensionSetupUI.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,7 +61,6 @@
 		2316959CE4F96B9F50C005D0 /* libPods-TwilioVideo-BroadcastExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TwilioVideo-BroadcastExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24B657BA22B1F8980057EBE6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ReplayKitExample/README.md; sourceTree = "<group>"; };
 		3E9CB3B167277C3E4708617C /* Pods-TwilioVideo-BroadcastExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwilioVideo-BroadcastExtension.release.xcconfig"; path = "Target Support Files/Pods-TwilioVideo-BroadcastExtension/Pods-TwilioVideo-BroadcastExtension.release.xcconfig"; sourceTree = "<group>"; };
-		4B20000420E9CB9C00FE9F2C /* BroadcastExtensionSetupUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BroadcastExtensionSetupUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B20000620E9CB9C00FE9F2C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4B20000920E9CB9C00FE9F2C /* BroadcastSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastSetupViewController.swift; sourceTree = "<group>"; };
 		4B20000B20E9CB9C00FE9F2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -111,16 +95,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4B20000120E9CB9C00FE9F2C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4B20000520E9CB9C00FE9F2C /* ReplayKit.framework in Frameworks */,
-				4B20000720E9CB9C00FE9F2C /* UIKit.framework in Frameworks */,
-				4BB0385C20EB45F50095CDA8 /* AudioToolbox.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4B20FFDC20E9CB8500FE9F2C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -173,7 +147,6 @@
 			children = (
 				4B20FFDF20E9CB8500FE9F2C /* ReplayKitExample.app */,
 				4B20FFF820E9CB9C00FE9F2C /* BroadcastExtension.appex */,
-				4B20000420E9CB9C00FE9F2C /* BroadcastExtensionSetupUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -246,23 +219,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4B20000320E9CB9C00FE9F2C /* BroadcastExtensionSetupUI */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4B20001220E9CB9C00FE9F2C /* Build configuration list for PBXNativeTarget "BroadcastExtensionSetupUI" */;
-			buildPhases = (
-				4B20000020E9CB9C00FE9F2C /* Sources */,
-				4B20000120E9CB9C00FE9F2C /* Frameworks */,
-				4B20000220E9CB9C00FE9F2C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = BroadcastExtensionSetupUI;
-			productName = BroadcastExtensionSetupUI;
-			productReference = 4B20000420E9CB9C00FE9F2C /* BroadcastExtensionSetupUI.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 		4B20FFDE20E9CB8500FE9F2C /* ReplayKitExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B20FFF120E9CB8600FE9F2C /* Build configuration list for PBXNativeTarget "ReplayKitExample" */;
@@ -277,7 +233,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				4B20000D20E9CB9C00FE9F2C /* PBXTargetDependency */,
 				4B20001020E9CB9C00FE9F2C /* PBXTargetDependency */,
 			);
 			name = ReplayKitExample;
@@ -313,15 +268,6 @@
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = Twilio;
 				TargetAttributes = {
-					4B20000320E9CB9C00FE9F2C = {
-						CreatedOnToolsVersion = 10.0;
-						LastSwiftMigration = 1000;
-						SystemCapabilities = {
-							com.apple.InterAppAudio = {
-								enabled = 1;
-							};
-						};
-					};
 					4B20FFDE20E9CB8500FE9F2C = {
 						CreatedOnToolsVersion = 10.0;
 						LastSwiftMigration = 1000;
@@ -357,20 +303,11 @@
 			targets = (
 				4B20FFDE20E9CB8500FE9F2C /* ReplayKitExample */,
 				4B20FFF720E9CB9C00FE9F2C /* BroadcastExtension */,
-				4B20000320E9CB9C00FE9F2C /* BroadcastExtensionSetupUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4B20000220E9CB9C00FE9F2C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4BEA5E0820E9DB5900643AF1 /* MainInterface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4B20FFDD20E9CB8500FE9F2C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -455,15 +392,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4B20000020E9CB9C00FE9F2C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4B20000A20E9CB9C00FE9F2C /* BroadcastSetupViewController.swift in Sources */,
-				8A50FF03215DDC6100297C7A /* Utils.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4B20FFDB20E9CB8500FE9F2C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -496,11 +424,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4B20000D20E9CB9C00FE9F2C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4B20000320E9CB9C00FE9F2C /* BroadcastExtensionSetupUI */;
-			targetProxy = 4B20000C20E9CB9C00FE9F2C /* PBXContainerItemProxy */;
-		};
 		4B20001020E9CB9C00FE9F2C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4B20FFF720E9CB9C00FE9F2C /* BroadcastExtension */;
@@ -528,57 +451,19 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		4B20001320E9CB9C00FE9F2C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = ReplayKitExample/BroadcastExtensionSetupUI/BroadcastExtensionSetupUI.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 82YA8JWS89;
-				INFOPLIST_FILE = ReplayKitExample/BroadcastExtensionSetupUI/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.sa.AppRTCMobile.BroadcastUploadSetupUI;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		4B20001420E9CB9C00FE9F2C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = ReplayKitExample/BroadcastExtensionSetupUI/BroadcastExtensionSetupUI.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 82YA8JWS89;
-				INFOPLIST_FILE = ReplayKitExample/BroadcastExtensionSetupUI/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.sa.AppRTCMobile.BroadcastUploadSetupUI;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		4B20001620E9CB9C00FE9F2C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D7E6A8ADA853BF35FB5F83EE /* Pods-TwilioVideo-BroadcastExtension.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 82YA8JWS89;
+				DEVELOPMENT_TEAM = 4GU87GGBVZ;
 				INFOPLIST_FILE = ReplayKitExample/BroadcastExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.sa.AppRTCMobile.BroadcastUpload;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.sa.StreamIt.ScreenShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "ReplayKitExample/BroadcastExtension/BroadcastExtension-Bridging-Header.h";
@@ -592,14 +477,14 @@
 			baseConfigurationReference = 3E9CB3B167277C3E4708617C /* Pods-TwilioVideo-BroadcastExtension.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 82YA8JWS89;
+				DEVELOPMENT_TEAM = 4GU87GGBVZ;
 				INFOPLIST_FILE = ReplayKitExample/BroadcastExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.sa.AppRTCMobile.BroadcastUpload;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.sa.StreamIt.ScreenShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "ReplayKitExample/BroadcastExtension/BroadcastExtension-Bridging-Header.h";
@@ -730,13 +615,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 82YA8JWS89;
+				DEVELOPMENT_TEAM = 4GU87GGBVZ;
 				INFOPLIST_FILE = ReplayKitExample/ReplayKitExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.sa.AppRTCMobile;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.sa.StreamIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ReplayKitExample/ReplayKitExample/ReplayKitExample-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -750,13 +635,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 82YA8JWS89;
+				DEVELOPMENT_TEAM = 4GU87GGBVZ;
 				INFOPLIST_FILE = ReplayKitExample/ReplayKitExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.sa.AppRTCMobile;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.sa.StreamIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ReplayKitExample/ReplayKitExample/ReplayKitExample-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -766,15 +651,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4B20001220E9CB9C00FE9F2C /* Build configuration list for PBXNativeTarget "BroadcastExtensionSetupUI" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4B20001320E9CB9C00FE9F2C /* Debug */,
-				4B20001420E9CB9C00FE9F2C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4B20001520E9CB9C00FE9F2C /* Build configuration list for PBXNativeTarget "BroadcastExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

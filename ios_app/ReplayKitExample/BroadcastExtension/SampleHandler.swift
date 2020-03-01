@@ -22,7 +22,7 @@ class SampleHandler: RPBroadcastSampleHandler {
     let audioDevice = ExampleReplayKitAudioCapturer(sampleType: SampleHandler.kAudioSampleType)
 
     var accessToken: String = "TWILIO_ACCESS_TOKEN"
-    let tokenUrl = "https://mochiwsockets.appspot.com/token?identity=ios_device"
+    let tokenUrl = "http://softarch.usc.edu:3000/token?identity=ios_device"
 
     var statsTimer: Timer?
     static let kBroadcastSetupInfoRoomNameKey = "roomName"
@@ -47,6 +47,7 @@ class SampleHandler: RPBroadcastSampleHandler {
             }
         }
 
+        print("TRALALA");
         NSLog("TRALALA %d", 1)
 //        os.log("TRALALA 3")
         

@@ -26,7 +26,8 @@
     "pug": "^2.0.3",
     "socket.io": "^2.2.0",
     "twilio": "^3.19.1",
-    "twilio-video": "2.0.0-beta10"
+    "twilio-video": "2.0.0-beta10",
+    "socket.io-client": " ^2.3.0"
   },
   "devDependencies": {
     "@google-cloud/nodejs-repo-tools": "^3.3.0",
