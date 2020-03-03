@@ -1,6 +1,5 @@
 'use strict';
 
- 
 const server_location = 'http://softarch.usc.edu:3000/'
 
 const io = require('socket.io-client');
@@ -37,16 +36,16 @@ $.getJSON('/token?identity=tester', function(data) {
     tracks: []
   };
 
-  var localTracksPromise = previewTracks
-    ? Promise.resolve(previewTracks)
-    : Video.createLocalTracks();
+  // var localTracksPromise = previewTracks
+  //   ? Promise.resolve(previewTracks)
+  //   : Video.createLocalTracks();
 
-  localTracksPromise.then(function(tracks) {
-    window.previewTracks = previewTracks = tracks;
-  }, function(error) {
-    console.error('Unable to access local media', error);
-    console.log('Unable to access Camera and Microphone');
-  });
+  // localTracksPromise.then(function(tracks) {
+  //   window.previewTracks = previewTracks = tracks;
+  // }, function(error) {
+  //   console.error('Unable to access local media', error);
+  //   console.log('Unable to access Camera and Microphone');
+  // });
 
   if (previewTracks) {
     console.log("PreviewTracks: " + previewTracks)

@@ -6,3 +6,6 @@ ios_app/Pod
 
 ios_app/.DS_Store
 
+local_server/node_modules
+
+main_server/node_modules
