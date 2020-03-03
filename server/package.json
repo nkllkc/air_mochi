@@ -1,40 +1,28 @@
 {
-  "name": "appengine-websockets",
-  "description": "Node.js websockets sample for Google App Engine",
+  "name": "airmochi-local-server",
+  "description": "Local Server for connecting to ",
   "version": "0.0.1",
   "private": true,
   "license": "Apache Version 2.0",
-  "author": "Google Inc.",
+  "author": "Nikola Lukic",
   "engines": {
     "node": ">=8.0.0"
   },
   "scripts": {
     "build": "browserify quickstart/src/index.js > quickstart/public/index.js",
     "clean": "rimraf quickstart/public/index.js",
-    "deploy": "gcloud app deploy",
     "start": "node app.js",
-    "prepare-deploy": "npm run clean && npm run build",
-    "start-locally": "npm run prepare-deploy && npm run start",
-    "lint": "eslint .",
-    "fix": "eslint --fix .",
-    "test": "repo-tools test app & mocha */*.test.js --timeout=30000 --exit",
-    "e2e-test": "samples test deploy"
+    "start-locally": "npm run clean && npm run build && npm run start"
   },
   "dependencies": {
     "dotenv": "^4.0.0",
     "express": "^4.15.4",
     "pug": "^2.0.3",
-    "socket.io": "^2.2.0",
     "twilio": "^3.19.1",
     "twilio-video": "2.0.0-beta10",
     "socket.io-client": " ^2.3.0"
   },
   "devDependencies": {
-    "@google-cloud/nodejs-repo-tools": "^3.3.0",
-    "eslint": "^6.0.0",
-    "eslint-config-prettier": "^6.0.0",
-    "eslint-plugin-node": "^10.0.0",
-    "eslint-plugin-prettier": "^3.0.0",
     "mocha": "^6.0.0",
     "puppeteer": "^2.0.0",
     "browserify": "^14.3.0",
