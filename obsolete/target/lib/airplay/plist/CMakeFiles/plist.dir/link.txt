@@ -1,2 +1,0 @@
-/usr/bin/ar qc libplist.a  CMakeFiles/plist.dir/base64.c.o CMakeFiles/plist.dir/bplist.c.o CMakeFiles/plist.dir/bytearray.c.o CMakeFiles/plist.dir/cnary.c.o CMakeFiles/plist.dir/hashtable.c.o CMakeFiles/plist.dir/list.c.o CMakeFiles/plist.dir/node.c.o CMakeFiles/plist.dir/node_list.c.o CMakeFiles/plist.dir/plist.c.o CMakeFiles/plist.dir/ptrarray.c.o CMakeFiles/plist.dir/time64.c.o CMakeFiles/plist.dir/xplist.c.o
-/usr/bin/ranlib libplist.a
