@@ -1,0 +1,3 @@
+[submodule "StreamingApp-iOS"]
+	path = StreamingApp-iOS
+	url = git@github.com:nkllkc/StreamingApp-iOS.git
