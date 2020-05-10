@@ -11,3 +11,6 @@ local_server/node_modules
 main_server/node_modules
 
 npm-debug.log
+
+package-lock.json
+
