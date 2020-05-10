@@ -27,22 +27,26 @@ require('dotenv').load();
 var path = require('path');
 var express = require('express');
 var AccessToken = require('twilio').jwt.AccessToken;
+var bodyParser = require('body-parser');
+var cors = require('cors')
 var VideoGrant = AccessToken.VideoGrant;
+var available_devices = [];
 
 // Build an express app.
 const app = express();
-app.engine('html', require('ejs').renderFile);
-app.set('view engine', 'html');
-const server = require('http').Server(app);
-// const io = require('socket.io')(server);
- 
-const server_location = 'http://softarch.usc.edu:3000/'
+app.set('view engine', 'pug');
 
-const io = require('socket.io-client');
-const socket = io(server_location);
+
+const server = require('http').Server(app);
+const io = require('socket.io')(server);
 
 // Max. period that a Participant is allowed to be in a Room (currently 14400 seconds or 4 hours)
 const MAX_ALLOWED_SESSION_DURATION = 14400;
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+app.use(cors());
 
 var quickstartPath = path.join(__dirname, 'quickstart/public');
 app.use('/quickstart', express.static(quickstartPath));
@@ -88,11 +92,38 @@ app.get('/info', function(request, response){
   response.redirect('/quickstart');
 });
 
-
 app.get('/session', function(request, response){
   response.send({
     deviceId: deviceId,
     name: name
+  })
+});
+
+app.post('/device', function(request, response){
+  var deviceId = request.body.deviceId;
+  var deviceType = request.body.deviceType;
+  available_devices.push({
+    deviceId: deviceId,
+    deviceType: deviceType
+  });
+  // for now preserve it locally.
+  // when tester is added -> get all the active phones types => get the room nanme for the selected name -> join the room with the selected name
+  response.send({
+      statusCode: 200
+  })
+});
+
+app.post('/delete', function(request, response){
+  var deviceId = request.body.deviceId;
+  console.log(" in delete request");
+  console.log(available_devices);
+  //available_devices = available_devices.filter(device => ((device.deviceId)!=deviceId));
+  available_devices = [];
+});
+
+app.get('/devices', function(request, response){
+  response.send({
+    available_devices: available_devices
   })
 });
 
@@ -102,18 +133,22 @@ socket.on('connect', function(){
 
 socket.on('disconnect', function(){"WebSocket is closed"});
 
-// io.on('connection', socket => {
-//   socket.on('callaback_client2server', msg => {
-//     io.emit('callback_server2client', msg);
-//   });
+io.on('connection', socket => {
+  socket.on('callaback_client2server', msg => {
+    io.emit('callback_server2client', msg);
+  });
 
-//   socket.on('event_console2server', msg => {
-//     io.emit('event_server2client', msg);
-//   });
-// });
+  socket.on('event_console2server', msg => {
+    io.emit('event_server2client', msg);
+  });
+
+  socket.on('event_console2server_keyboard', msg => {
+    io.emit('event_server2client_keyboard', msg);
+  });
+});
 
 if (module === require.main) {
-  const PORT = process.env.PORT || 8080;
+  const PORT = process.env.PORT || 3000;
   // '10.25.53.254',
   server.listen(PORT, () => {
     console.log(`App listening on port ${PORT}`);
