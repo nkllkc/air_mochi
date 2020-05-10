@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> AirMochi! </title>
+    <script>
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.onreadystatechange = function(){
+            if (xmlHttp.readyState == 4 && xmlHttp.status == 200){
+                var available_devices = JSON.parse(xmlHttp.responseText).available_devices;
+                var device_opts = document.getElementById('device_select');
+                var current_opts = [];
+                available_devices.forEach(device => {
+                    var newOption = document.createElement("option");
+                    newOption.value = device.deviceId;
+                    newOption.innerHTML = device.deviceType;
+                    device_opts.options.add(newOption);
+                    current_opts.push(newOption);
+                });
+            }
+        };
+        xmlHttp.open("GET", "http://192.168.1.126:3000/devices", true);
+        xmlHttp.setRequestHeader('Access-Control-Allow-Headers', true);
+        xmlHttp.send(null);
+    </script>
+</head>
+<body>
+    <form action="/info", method="get">
+        <label for="tester_name">Tester's name:</label><br>
+        <input type="text" id="tester_name" name="tester_name"><br>
+        <label for="device_select">Device under test:</label>
+        <select id="device_select" name="device_select"></select>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <h1>AirMochi - Remotelly Test Mobile Apps</h1>
+
+  <div class="row">
+    <div class="column left">
+      <div style="display: none;">
+        <video controls autoplay playsinline id="preview-video"></video>
+      </div>
+      <div id="remote-media"></div>
+    </div>
+    <div class="column right">
+      </br>
+      <button id="btn-start-recording">Start Recording</button>
+      <button id="btn-stop-recording" disabled>Stop Recording</button>
+      </br>
+      <p>Last event: </p>
+      <div id="last_event"></div>
+    </div>
+  </div>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
