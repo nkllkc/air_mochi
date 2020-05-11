@@ -28,7 +28,7 @@ var path = require('path');
 var express = require('express');
 var AccessToken = require('twilio').jwt.AccessToken;
 var bodyParser = require('body-parser');
-var cors = require('cors')
+var cors = require('cors');
 var VideoGrant = AccessToken.VideoGrant;
 var available_devices = [];
 
@@ -38,7 +38,11 @@ app.set('view engine', 'pug');
 
 
 const server = require('http').Server(app);
-const io = require('socket.io')(server);
+
+const server_location = 'http://softarch.usc.edu:3000/'
+
+const io = require('socket.io-client');
+const socket = io(server_location);
 
 // Max. period that a Participant is allowed to be in a Room (currently 14400 seconds or 4 hours)
 const MAX_ALLOWED_SESSION_DURATION = 14400;
@@ -50,6 +54,9 @@ app.use(cors());
 
 var quickstartPath = path.join(__dirname, 'quickstart/public');
 app.use('/quickstart', express.static(quickstartPath));
+
+var loginpagePath = path.join(__dirname, 'views/');
+app.use('/', express.static(loginpagePath));
 
 var tmpPath = path.join(__dirname, 'tmp/public');
 app.use('/tmp', express.static(tmpPath));
@@ -102,6 +109,7 @@ app.get('/session', function(request, response){
 app.post('/device', function(request, response){
   var deviceId = request.body.deviceId;
   var deviceType = request.body.deviceType;
+  console.log('device');
   available_devices.push({
     deviceId: deviceId,
     deviceType: deviceType
@@ -133,19 +141,19 @@ socket.on('connect', function(){
 
 socket.on('disconnect', function(){"WebSocket is closed"});
 
-io.on('connection', socket => {
-  socket.on('callaback_client2server', msg => {
-    io.emit('callback_server2client', msg);
-  });
-
-  socket.on('event_console2server', msg => {
-    io.emit('event_server2client', msg);
-  });
-
-  socket.on('event_console2server_keyboard', msg => {
-    io.emit('event_server2client_keyboard', msg);
-  });
-});
+// io.on('connection', socket => {
+//   socket.on('callaback_client2server', msg => {
+//     io.emit('callback_server2client', msg);
+//   });
+//
+//   socket.on('event_console2server', msg => {
+//     io.emit('event_server2client', msg);
+//   });
+//
+//   socket.on('event_console2server_keyboard', msg => {
+//     io.emit('event_server2client_keyboard', msg);
+//   });
+// });
 
 if (module === require.main) {
   const PORT = process.env.PORT || 3000;

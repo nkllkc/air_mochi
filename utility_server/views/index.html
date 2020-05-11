@@ -1,3 +1,42 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title> AirMochi! </title>-->
+<!--    <script>-->
+<!--        var xmlHttp = new XMLHttpRequest();-->
+<!--        xmlHttp.onreadystatechange = function(){-->
+<!--            if (xmlHttp.readyState == 4 && xmlHttp.status == 200){-->
+<!--                var available_devices = JSON.parse(xmlHttp.responseText).available_devices;-->
+<!--                var device_opts = document.getElementById('device_select');-->
+<!--                var current_opts = [];-->
+<!--                available_devices.forEach(device => {-->
+<!--                    var newOption = document.createElement("option");-->
+<!--                    newOption.value = device.deviceId;-->
+<!--                    newOption.innerHTML = device.deviceType;-->
+<!--                    device_opts.options.add(newOption);-->
+<!--                    current_opts.push(newOption);-->
+<!--                });-->
+<!--            }-->
+<!--        };-->
+<!--        xmlHttp.open("GET", "http://192.168.1.126:3000/devices", true);-->
+<!--        xmlHttp.setRequestHeader('Access-Control-Allow-Headers', true);-->
+<!--        xmlHttp.send(null);-->
+<!--    </script>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <form action="/info", method="get">-->
+<!--        <label for="tester_name">Tester's name:</label><br>-->
+<!--        <input type="text" id="tester_name" name="tester_name"><br>-->
+<!--        <label for="device_select">Device under test:</label>-->
+<!--        <select id="device_select" name="device_select"></select>-->
+<!--        <input type="submit" value="Submit">-->
+<!--    </form>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,18 +58,84 @@
                 });
             }
         };
-        xmlHttp.open("GET", "http://192.168.1.126:3000/devices", true);
+        xmlHttp.open("GET", "http://softarch.usc.edu:3000/devices", true);
         xmlHttp.setRequestHeader('Access-Control-Allow-Headers', true);
         xmlHttp.send(null);
     </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--===============================================================================================-->
 </head>
 <body>
-    <form action="/info", method="get">
-        <label for="tester_name">Tester's name:</label><br>
-        <input type="text" id="tester_name" name="tester_name"><br>
-        <label for="device_select">Device under test:</label>
-        <select id="device_select" name="device_select"></select>
-        <input type="submit" value="Submit">
-    </form>
+
+<div class="limiter">
+    <div class="container-login100">
+        <div class="wrap-login100">
+            <div class="login100-pic js-tilt" data-tilt>
+                <img src="images/img-01.png" alt="IMG">
+            </div>
+
+            <form class="login100-form validate-form" action="/info", method="get">
+					<span class="login100-form-title">
+                        Enter your name, choose the testing device and start testing!
+					</span>
+
+                <div class="wrap-input100 valtidate-inpu" data-validate = "Valid email is required: ex@abc.xyz">
+                    <input class="form-control" type="text" name="tester_name" placeholder="Tester's name">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate = "Password is required">
+                    <!--                    <input class="input100" type="password" name="pass" placeholder="Password">-->
+                    <select id="device_select" name="device_select" class="custom-select custom-select-lg" style="width: 100%">
+                        <option>Device under test</option>
+                    </select>
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="container-login100-form-btn">
+                    <button class="login100-form-btn">
+                        Start testing
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--===============================================================================================-->
+<script src="/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/bootstrap/js/popper.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+<script src="server/views/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/tilt/tilt.jquery.min.js"></script>
+<script >
+    $('.js-tilt').tilt({
+        scale: 1.1
+    })
+</script>
+<!--===============================================================================================-->
+<script src="js/main.js"></script>
+
 </body>
 </html>

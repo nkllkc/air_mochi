@@ -6,26 +6,33 @@
 </head>
 
 <body>
-  <h1>AirMochi - Remotelly Test iOS Apps</h1>
+<!--  <h1 class="airmochi-title">AirMochi - Remotelly Test iOS Apps</h1>-->
 
   <div class="row">
     <div class="column left">
-      <div style="display: none;">
-        <video controls autoplay playsinline id="preview-video"></video>
+      <div class="phone" style="display: inline-block">
+        <div style="display: none;" class="video">
+          <video controls autoplay playsinline id="preview-video" style="display: inline-block"></video>
+        </div>
+        <div id="remote-media"></div>
       </div>
-      <div id="remote-media"></div>
     </div>
     <div class="column right">
+      <div class="instructions">
+      <h2> instructions: </h2>
       <p>Press 'H' for going back to the homescreen.</p>
       <p>Press 'S' for taking a screenshot.</p>
       <p>Press 'N' for opening Notification tab.</p> 
       <p>Press 'C' for opening Control Center tab. </p>
       <p>Press 'D' for bringing up Dock.</p>
       <p>Press 'ArrowDown'/'ArrowUp' to scroll down/up. </p>
+      </div>
+      <div class="control-buttons">
+        </br>
+      <button class="start-button" id="btn-start-recording">Start Recording</button>
+      <button class="end-button" id="btn-stop-recording" disabled>Stop Recording</button>
       </br>
-      <button id="btn-start-recording">Start Recording</button>
-      <button id="btn-stop-recording" disabled>Stop Recording</button>
-      </br>
+      <div>
       <p>Event log: </p>
       <div id="event-log"></div>
     </div>
