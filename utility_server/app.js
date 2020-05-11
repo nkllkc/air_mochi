@@ -28,7 +28,6 @@ var path = require('path');
 var express = require('express');
 var AccessToken = require('twilio').jwt.AccessToken;
 var bodyParser = require('body-parser');
-var cors = require('cors');
 var VideoGrant = AccessToken.VideoGrant;
 var available_devices = [];
 
@@ -49,8 +48,6 @@ const MAX_ALLOWED_SESSION_DURATION = 14400;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-
-app.use(cors());
 
 var quickstartPath = path.join(__dirname, 'quickstart/public');
 app.use('/quickstart', express.static(quickstartPath));
