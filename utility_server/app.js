@@ -136,14 +136,17 @@ app.get('/devices', function(request, response){
 
 io.on('connection', socket => {
   socket.on('callaback_client2server', msg => {
+    console.log('callaback_client2server')
     io.emit('callback_server2client', msg);
   });
 
   socket.on('event_console2server', msg => {
+    console.log('event_console2server')
     io.emit('event_server2client', msg);
   });
 
   socket.on('event_console2server_keyboard', msg => {
+    console.log('event_console2server_keyboard')
     io.emit('event_server2client_keyboard', msg);
   });
 });
