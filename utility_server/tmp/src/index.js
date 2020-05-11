@@ -30,7 +30,7 @@ var identity;
 // The name of the room to join.
 // TODO: Change hardcoded name. This is needed in order to support multiple 
 // 		 devices at the same time. 
-roomName = "Broadcast";
+var roomName = "Broadcast";
 var connectOptions = {
 	name: roomName,
 	logLevel: 'debug',
@@ -68,6 +68,7 @@ $.getJSON('/session',function(data){
 		var token = data.token;
 		console.log(tester_name+" is connecting to room "+ roomName);
 		roomName = "Room_"+deviceId;
+		console.log("Connecting to the room: " + roomName)
 		var connectOptions={
 			name: roomName,
 			logLevel: 'debug',
