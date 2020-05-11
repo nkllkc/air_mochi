@@ -33,15 +33,11 @@ var available_devices = [];
 
 // Build an express app.
 const app = express();
-app.set('view engine', 'pug');
-
-
 const server = require('http').Server(app);
+const io = require('socket.io')(server);
 
-const server_location = 'http://softarch.usc.edu:3000/'
-
-const io = require('socket.io-client');
-const socket = io(server_location);
+// const server_location = 'http://softarch.usc.edu:3000/'
+// const socket = io(server_location);
 
 // Max. period that a Participant is allowed to be in a Room (currently 14400 seconds or 4 hours)
 const MAX_ALLOWED_SESSION_DURATION = 14400;
@@ -132,25 +128,25 @@ app.get('/devices', function(request, response){
   })
 });
 
-socket.on('connect', function(){
-  console.log("WebSocket with " + server_location + " has been opened.")
-});
-
-socket.on('disconnect', function(){"WebSocket is closed"});
-
-// io.on('connection', socket => {
-//   socket.on('callaback_client2server', msg => {
-//     io.emit('callback_server2client', msg);
-//   });
-//
-//   socket.on('event_console2server', msg => {
-//     io.emit('event_server2client', msg);
-//   });
-//
-//   socket.on('event_console2server_keyboard', msg => {
-//     io.emit('event_server2client_keyboard', msg);
-//   });
+// socket.on('connect', function(){
+//   console.log("WebSocket with " + server_location + " has been opened.")
 // });
+
+// socket.on('disconnect', function(){"WebSocket is closed"});
+
+io.on('connection', socket => {
+  socket.on('callaback_client2server', msg => {
+    io.emit('callback_server2client', msg);
+  });
+
+  socket.on('event_console2server', msg => {
+    io.emit('event_server2client', msg);
+  });
+
+  socket.on('event_console2server_keyboard', msg => {
+    io.emit('event_server2client_keyboard', msg);
+  });
+});
 
 if (module === require.main) {
   const PORT = process.env.PORT || 3000;

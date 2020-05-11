@@ -27,7 +27,6 @@
     "pug": "^2.0.3",
     "recordrtc": "^5.5.9",
     "socket.io": "^2.2.0",
-    "socket.io-client": " ^2.3.0",
     "twilio": "^3.19.1",
     "twilio-video": "2.0.0-beta10"
   },
