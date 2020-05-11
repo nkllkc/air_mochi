@@ -2902,7 +2902,7 @@ module.exports={
   "_resolved": "https://registry.npmjs.org/@twilio/webrtc/-/webrtc-4.0.0.tgz",
   "_shasum": "d170e1b9e2055728b94758085303dfa8e086c3c6",
   "_spec": "@twilio/webrtc@4.0.0",
-  "_where": "/Users/nikola/Development/air_mochi/utility_server/node_modules/twilio-video",
+  "_where": "/Users/apple/Documents/dev/USC/Airmochi/air_mochi/utility_server/node_modules/twilio-video",
   "author": {
     "name": "Manjesh Malavalli",
     "email": "mmalavalli@twilio.com"
@@ -20785,7 +20785,7 @@ module.exports={
   "_resolved": "https://registry.npmjs.org/levelup/-/levelup-0.18.6.tgz",
   "_shasum": "e6a01cb089616c8ecc0291c2a9bd3f0c44e3e5eb",
   "_spec": "levelup@^0.18.2",
-  "_where": "/Users/nikola/Development/air_mochi/utility_server/node_modules/browserify-fs",
+  "_where": "/Users/apple/Documents/dev/USC/Airmochi/air_mochi/utility_server/node_modules/browserify-fs",
   "browser": {
     "leveldown": false,
     "leveldown/package": false,
@@ -53770,7 +53770,7 @@ module.exports={
   "_resolved": "https://registry.npmjs.org/twilio-video/-/twilio-video-2.0.0-beta10.tgz",
   "_shasum": "d0112629e770260f2e9cbb9868e79fe9be77700c",
   "_spec": "twilio-video@2.0.0-beta10",
-  "_where": "/Users/nikola/Development/air_mochi/utility_server",
+  "_where": "/Users/apple/Documents/dev/USC/Airmochi/air_mochi/utility_server",
   "author": {
     "name": "Mark Andrus Roberts",
     "email": "mroberts@twilio.com"

@@ -45,7 +45,7 @@ const MAX_ALLOWED_SESSION_DURATION = 14400;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-var quickstartPath = path.join(__dirname, 'quickstart/public');
+var quickstartPath = path.join(__dirname, 'tmp/public');
 app.use('/quickstart', express.static(quickstartPath));
 
 var loginpagePath = path.join(__dirname, 'views/');
