@@ -2,8 +2,6 @@
 
 const server_location = 'http://softarch.usc.edu:3000/'
 
-const fs = require('browserify-fs')
-
 const io = require('socket.io-client');
 const socket = io(server_location);
 
@@ -63,20 +61,24 @@ var isStoppedRecording = false;
 
 
 // Obtain a token from the server in order to connect to the Room.
-$.getJSON('/token?identity=tester', function (data) {
-	console.log(data);
-	identity = data.identity;
-	console.log("Connecting!");
-	var token = data.token
-	$getJSON('/devices', function(data){
-		// Join the Room with the token from the server and the
-		// LocalParticipant's Tracks.
-
+$.getJSON('/session',function(data){
+	var deviceId = data.deviceId;
+	var tester_name = data.name;
+	$.getJSON('/token?identity='+tester_name, function(data){
+		var token = data.token;
+		console.log(tester_name+" is connecting to room "+ roomName);
+		roomName = "Room_"+deviceId;
+		var connectOptions={
+			name: roomName,
+			logLevel: 'debug',
+			tracks: []
+		};
 		Video.connect(token, connectOptions).then(roomJoined, function (error) {
-			console.log('Could not connect to Twilio: ' + error.message);
+			console.log("Could not connect to Twilio: "+ error.message);
 		});
 	});
 });
+
 
 document.getElementById('btn-start-recording').onclick = startRecordingClicked
 document.getElementById('btn-stop-recording').onclick = stopRecordingClicked
