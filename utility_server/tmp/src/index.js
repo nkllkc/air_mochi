@@ -61,7 +61,7 @@ var isStoppedRecording = false;
 
 
 // Obtain a token from the server in order to connect to the Room.
-$.getJSON('/session',function(data){
+$.getJSON('/session', function(data){
 	var deviceId = data.deviceId;
 	var tester_name = data.name;
 
