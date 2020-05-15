@@ -128,7 +128,7 @@ function roomJoined(room) {
 
 	// When a Participant joins the Room, log the event.
 	// This happens when iOS app starts after you opened this page.
-	room.on('participantConnected', checkAndConnectParticipant(participant));
+	room.on('participantConnected', checkAndConnectParticipant);
 
 	// When a Participant leaves the Room, detach its Tracks.
 	room.on('participantDisconnected', function (participant) {
