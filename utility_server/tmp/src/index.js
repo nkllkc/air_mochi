@@ -1,9 +1,14 @@
 'use strict';
 
-const server_location = 'http://softarch.usc.edu:3000/'
+// const server_location = 'http://softarch.usc.edu:3000/'
 
 const io = require('socket.io-client');
-const socket = io(server_location);
+// const socket = io(server_location);
+const socket = io();
+
+const alert = require('alert-node');
+
+var Video = require('twilio-video');
 
 const VIDEO_STREAM_WIDTH = 720;
 const VIDEO_STREAM_HEIGHT = 540;
@@ -31,11 +36,6 @@ var identity;
 // TODO: Change hardcoded name. This is needed in order to support multiple 
 // 		 devices at the same time. 
 var roomName = "Broadcast";
-var connectOptions = {
-	name: roomName,
-	logLevel: 'debug',
-	tracks: []
-};
 
 var fileName = "some_download"
 
@@ -64,10 +64,17 @@ var isStoppedRecording = false;
 $.getJSON('/session',function(data){
 	var deviceId = data.deviceId;
 	var tester_name = data.name;
-	$.getJSON('/token?identity='+tester_name, function(data){
+
+	if (deviceId == null || deviceId == "" || tester_name == null || tester_name == "") {
+		console.log("Something is wrong!")
+		alert("Please go back to the start page and enter name and chose device.")
+		return
+	}
+
+	$.getJSON('/token?identity=' + tester_name, function(data){
 		var token = data.token;
-		console.log(tester_name+" is connecting to room "+ roomName);
-		roomName = "Room_"+deviceId;
+		console.log(tester_name + " is connecting to room " + roomName);
+		roomName = "Room_" + deviceId;
 		console.log("Connecting to the room: " + roomName)
 		var connectOptions={
 			name: roomName,

@@ -10,4 +10,6 @@ npm-debug.log
 
 package-lock.json
 
-public/index.js
+utility_server/tmp/public/index.js
+
+utility_server/quickstart/public/index.js
