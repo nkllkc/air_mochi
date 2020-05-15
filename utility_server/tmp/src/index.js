@@ -124,7 +124,7 @@ function roomJoined(room) {
 
 	// Attach the Tracks of the Room's Participants.
 	// This happens only when iOS device is already sharing the screen.
-	room.participants.forEach(checkAndConnectParticipant(participant));
+	room.participants.forEach(participant => checkAndConnectParticipant(participant));
 
 	// When a Participant joins the Room, log the event.
 	// This happens when iOS app starts after you opened this page.
