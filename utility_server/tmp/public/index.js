@@ -1366,7 +1366,7 @@ function updateTrackIdsToSSRCs(sdpFormat, tracksToSSRCs, sdp) {
 
 module.exports = ChromeRTCPeerConnection;
 
-},{"../mediastream":4,"../rtcrtpsender":11,"../rtcsessiondescription/chrome":12,"../util":16,"../util/eventtarget":15,"../util/latch":17,"../util/sdp":18,"util":209}],8:[function(require,module,exports){
+},{"../mediastream":4,"../rtcrtpsender":11,"../rtcsessiondescription/chrome":12,"../util":16,"../util/eventtarget":15,"../util/latch":17,"../util/sdp":18,"util":210}],8:[function(require,module,exports){
 /* globals RTCPeerConnection */
 'use strict';
 
@@ -1699,7 +1699,7 @@ function overwriteWithInitiallyNegotiatedDtlsRole(description, dtlsRole) {
 
 module.exports = FirefoxRTCPeerConnection;
 
-},{"../rtcsessiondescription/firefox":13,"../util":16,"../util/eventtarget":15,"../util/sdp":18,"util":209}],9:[function(require,module,exports){
+},{"../rtcsessiondescription/firefox":13,"../util":16,"../util/eventtarget":15,"../util/sdp":18,"util":210}],9:[function(require,module,exports){
 'use strict';
 
 var guessBrowser = require('../util').guessBrowser;
@@ -2070,7 +2070,7 @@ function shimDataChannel(dataChannel) {
 
 module.exports = SafariRTCPeerConnection;
 
-},{"../util":16,"../util/eventtarget":15,"../util/latch":17,"../util/sdp":18,"util":209}],11:[function(require,module,exports){
+},{"../util":16,"../util/eventtarget":15,"../util/latch":17,"../util/sdp":18,"util":210}],11:[function(require,module,exports){
 'use strict';
 
 /**
@@ -2220,7 +2220,7 @@ EventTarget.prototype.removeEventListener = function removeEventListener() {
 
 module.exports = EventTarget;
 
-},{"events":50}],16:[function(require,module,exports){
+},{"events":51}],16:[function(require,module,exports){
 'use strict';
 
 /**
@@ -2902,7 +2902,7 @@ module.exports={
   "_resolved": "https://registry.npmjs.org/@twilio/webrtc/-/webrtc-4.0.0.tgz",
   "_shasum": "d170e1b9e2055728b94758085303dfa8e086c3c6",
   "_spec": "@twilio/webrtc@4.0.0",
-  "_where": "/Users/nikola/Development/air_mochi/utility_server/node_modules/twilio-video",
+  "_where": "/Users/apple/Documents/dev/ASE/2020/AirMochi-tool/air_mochi/utility_server/node_modules/twilio-video",
   "author": {
     "name": "Manjesh Malavalli",
     "email": "mmalavalli@twilio.com"
@@ -3101,7 +3101,7 @@ const getAlert = (input = '', thingToUse = '') => {
 module.exports = getAlert
 
 }).call(this,require('_process'),"/node_modules/alert-node")
-},{"_process":60,"child_process":29,"is-program-installed":56,"path":59}],23:[function(require,module,exports){
+},{"_process":61,"child_process":29,"is-program-installed":57,"path":60}],23:[function(require,module,exports){
 /**
  * An abstraction for slicing an arraybuffer even when
  * ArrayBuffer.prototype.slice is not supported
@@ -5346,7 +5346,7 @@ var hexSliceLookupTable = (function () {
 })()
 
 }).call(this,require("buffer").Buffer)
-},{"base64-js":26,"buffer":30,"ieee754":54}],31:[function(require,module,exports){
+},{"base64-js":26,"buffer":30,"ieee754":55}],31:[function(require,module,exports){
 /**
  * Slice reference.
  */
@@ -5567,7 +5567,7 @@ module.exports = require('./socket');
  */
 module.exports.parser = require('engine.io-parser');
 
-},{"./socket":36,"engine.io-parser":47}],36:[function(require,module,exports){
+},{"./socket":36,"engine.io-parser":48}],36:[function(require,module,exports){
 /**
  * Module dependencies.
  */
@@ -6317,7 +6317,7 @@ Socket.prototype.filterUpgrades = function (upgrades) {
   return filteredUpgrades;
 };
 
-},{"./transport":37,"./transports/index":38,"component-emitter":32,"debug":44,"engine.io-parser":47,"indexof":55,"parseqs":57,"parseuri":58}],37:[function(require,module,exports){
+},{"./transport":37,"./transports/index":38,"component-emitter":44,"debug":45,"engine.io-parser":48,"indexof":56,"parseqs":58,"parseuri":59}],37:[function(require,module,exports){
 /**
  * Module dependencies.
  */
@@ -6480,7 +6480,7 @@ Transport.prototype.onClose = function () {
   this.emit('close');
 };
 
-},{"component-emitter":32,"engine.io-parser":47}],38:[function(require,module,exports){
+},{"component-emitter":44,"engine.io-parser":48}],38:[function(require,module,exports){
 /**
  * Module dependencies
  */
@@ -7187,7 +7187,7 @@ function unloadHandler () {
   }
 }
 
-},{"../globalThis":34,"./polling":41,"component-emitter":32,"component-inherit":33,"debug":44,"xmlhttprequest-ssl":43}],41:[function(require,module,exports){
+},{"../globalThis":34,"./polling":41,"component-emitter":44,"component-inherit":33,"debug":45,"xmlhttprequest-ssl":43}],41:[function(require,module,exports){
 /**
  * Module dependencies.
  */
@@ -7434,7 +7434,7 @@ Polling.prototype.uri = function () {
   return schema + '://' + (ipv6 ? '[' + this.hostname + ']' : this.hostname) + port + this.path + query;
 };
 
-},{"../transport":37,"component-inherit":33,"debug":44,"engine.io-parser":47,"parseqs":57,"xmlhttprequest-ssl":43,"yeast":210}],42:[function(require,module,exports){
+},{"../transport":37,"component-inherit":33,"debug":45,"engine.io-parser":48,"parseqs":58,"xmlhttprequest-ssl":43,"yeast":211}],42:[function(require,module,exports){
 (function (Buffer){
 /**
  * Module dependencies.
@@ -7733,7 +7733,7 @@ WS.prototype.check = function () {
 };
 
 }).call(this,require("buffer").Buffer)
-},{"../transport":37,"buffer":30,"component-inherit":33,"debug":44,"engine.io-parser":47,"parseqs":57,"ws":28,"yeast":210}],43:[function(require,module,exports){
+},{"../transport":37,"buffer":30,"component-inherit":33,"debug":45,"engine.io-parser":48,"parseqs":58,"ws":28,"yeast":211}],43:[function(require,module,exports){
 // browser shim for xmlhttprequest module
 
 var hasCORS = require('has-cors');
@@ -7773,7 +7773,184 @@ module.exports = function (opts) {
   }
 };
 
-},{"./globalThis":34,"has-cors":53}],44:[function(require,module,exports){
+},{"./globalThis":34,"has-cors":54}],44:[function(require,module,exports){
+
+/**
+ * Expose `Emitter`.
+ */
+
+if (typeof module !== 'undefined') {
+  module.exports = Emitter;
+}
+
+/**
+ * Initialize a new `Emitter`.
+ *
+ * @api public
+ */
+
+function Emitter(obj) {
+  if (obj) return mixin(obj);
+};
+
+/**
+ * Mixin the emitter properties.
+ *
+ * @param {Object} obj
+ * @return {Object}
+ * @api private
+ */
+
+function mixin(obj) {
+  for (var key in Emitter.prototype) {
+    obj[key] = Emitter.prototype[key];
+  }
+  return obj;
+}
+
+/**
+ * Listen on the given `event` with `fn`.
+ *
+ * @param {String} event
+ * @param {Function} fn
+ * @return {Emitter}
+ * @api public
+ */
+
+Emitter.prototype.on =
+Emitter.prototype.addEventListener = function(event, fn){
+  this._callbacks = this._callbacks || {};
+  (this._callbacks['$' + event] = this._callbacks['$' + event] || [])
+    .push(fn);
+  return this;
+};
+
+/**
+ * Adds an `event` listener that will be invoked a single
+ * time then automatically removed.
+ *
+ * @param {String} event
+ * @param {Function} fn
+ * @return {Emitter}
+ * @api public
+ */
+
+Emitter.prototype.once = function(event, fn){
+  function on() {
+    this.off(event, on);
+    fn.apply(this, arguments);
+  }
+
+  on.fn = fn;
+  this.on(event, on);
+  return this;
+};
+
+/**
+ * Remove the given callback for `event` or all
+ * registered callbacks.
+ *
+ * @param {String} event
+ * @param {Function} fn
+ * @return {Emitter}
+ * @api public
+ */
+
+Emitter.prototype.off =
+Emitter.prototype.removeListener =
+Emitter.prototype.removeAllListeners =
+Emitter.prototype.removeEventListener = function(event, fn){
+  this._callbacks = this._callbacks || {};
+
+  // all
+  if (0 == arguments.length) {
+    this._callbacks = {};
+    return this;
+  }
+
+  // specific event
+  var callbacks = this._callbacks['$' + event];
+  if (!callbacks) return this;
+
+  // remove all handlers
+  if (1 == arguments.length) {
+    delete this._callbacks['$' + event];
+    return this;
+  }
+
+  // remove specific handler
+  var cb;
+  for (var i = 0; i < callbacks.length; i++) {
+    cb = callbacks[i];
+    if (cb === fn || cb.fn === fn) {
+      callbacks.splice(i, 1);
+      break;
+    }
+  }
+
+  // Remove event specific arrays for event types that no
+  // one is subscribed for to avoid memory leak.
+  if (callbacks.length === 0) {
+    delete this._callbacks['$' + event];
+  }
+
+  return this;
+};
+
+/**
+ * Emit `event` with the given args.
+ *
+ * @param {String} event
+ * @param {Mixed} ...
+ * @return {Emitter}
+ */
+
+Emitter.prototype.emit = function(event){
+  this._callbacks = this._callbacks || {};
+
+  var args = new Array(arguments.length - 1)
+    , callbacks = this._callbacks['$' + event];
+
+  for (var i = 1; i < arguments.length; i++) {
+    args[i - 1] = arguments[i];
+  }
+
+  if (callbacks) {
+    callbacks = callbacks.slice(0);
+    for (var i = 0, len = callbacks.length; i < len; ++i) {
+      callbacks[i].apply(this, args);
+    }
+  }
+
+  return this;
+};
+
+/**
+ * Return array of callbacks for `event`.
+ *
+ * @param {String} event
+ * @return {Array}
+ * @api public
+ */
+
+Emitter.prototype.listeners = function(event){
+  this._callbacks = this._callbacks || {};
+  return this._callbacks['$' + event] || [];
+};
+
+/**
+ * Check if this emitter has `event` handlers.
+ *
+ * @param {String} event
+ * @return {Boolean}
+ * @api public
+ */
+
+Emitter.prototype.hasListeners = function(event){
+  return !! this.listeners(event).length;
+};
+
+},{}],45:[function(require,module,exports){
 (function (process){
 /* eslint-env browser */
 
@@ -8041,7 +8218,7 @@ formatters.j = function (v) {
 };
 
 }).call(this,require('_process'))
-},{"./common":45,"_process":60}],45:[function(require,module,exports){
+},{"./common":46,"_process":61}],46:[function(require,module,exports){
 
 /**
  * This is the common logic for both the Node.js and web browser
@@ -8309,7 +8486,7 @@ function setup(env) {
 
 module.exports = setup;
 
-},{"ms":46}],46:[function(require,module,exports){
+},{"ms":47}],47:[function(require,module,exports){
 /**
  * Helpers.
  */
@@ -8473,7 +8650,7 @@ function plural(ms, msAbs, n, name) {
   return Math.round(ms / n) + ' ' + name + (isPlural ? 's' : '');
 }
 
-},{}],47:[function(require,module,exports){
+},{}],48:[function(require,module,exports){
 /**
  * Module dependencies.
  */
@@ -9080,7 +9257,7 @@ exports.decodePayloadAsBinary = function (data, binaryType, callback) {
   });
 };
 
-},{"./keys":48,"./utf8":49,"after":20,"arraybuffer.slice":23,"base64-arraybuffer":25,"blob":27,"has-binary2":51}],48:[function(require,module,exports){
+},{"./keys":49,"./utf8":50,"after":20,"arraybuffer.slice":23,"base64-arraybuffer":25,"blob":27,"has-binary2":52}],49:[function(require,module,exports){
 
 /**
  * Gets the keys for an object.
@@ -9101,7 +9278,7 @@ module.exports = Object.keys || function keys (obj){
   return arr;
 };
 
-},{}],49:[function(require,module,exports){
+},{}],50:[function(require,module,exports){
 /*! https://mths.be/utf8js v2.1.2 by @mathias */
 
 var stringFromCharCode = String.fromCharCode;
@@ -9313,7 +9490,7 @@ module.exports = {
 	decode: utf8decode
 };
 
-},{}],50:[function(require,module,exports){
+},{}],51:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -9617,7 +9794,7 @@ function isUndefined(arg) {
   return arg === void 0;
 }
 
-},{}],51:[function(require,module,exports){
+},{}],52:[function(require,module,exports){
 (function (Buffer){
 /* global Blob File */
 
@@ -9685,14 +9862,14 @@ function hasBinary (obj) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":30,"isarray":52}],52:[function(require,module,exports){
+},{"buffer":30,"isarray":53}],53:[function(require,module,exports){
 var toString = {}.toString;
 
 module.exports = Array.isArray || function (arr) {
   return toString.call(arr) == '[object Array]';
 };
 
-},{}],53:[function(require,module,exports){
+},{}],54:[function(require,module,exports){
 
 /**
  * Module exports.
@@ -9711,7 +9888,7 @@ try {
   module.exports = false;
 }
 
-},{}],54:[function(require,module,exports){
+},{}],55:[function(require,module,exports){
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
   var e, m
   var eLen = (nBytes * 8) - mLen - 1
@@ -9797,7 +9974,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
   buffer[offset + i - d] |= s * 128
 }
 
-},{}],55:[function(require,module,exports){
+},{}],56:[function(require,module,exports){
 
 var indexOf = [].indexOf;
 
@@ -9808,7 +9985,7 @@ module.exports = function(arr, obj){
   }
   return -1;
 };
-},{}],56:[function(require,module,exports){
+},{}],57:[function(require,module,exports){
 module.exports = (program) => {
   try {
     require('child_process').execSync(`hash ${program} 2>/dev/null`)
@@ -9818,7 +9995,7 @@ module.exports = (program) => {
   }
 }
 
-},{"child_process":29}],57:[function(require,module,exports){
+},{"child_process":29}],58:[function(require,module,exports){
 /**
  * Compiles a querystring
  * Returns string representation of the object
@@ -9857,7 +10034,7 @@ exports.decode = function(qs){
   return qry;
 };
 
-},{}],58:[function(require,module,exports){
+},{}],59:[function(require,module,exports){
 /**
  * Parses an URI
  *
@@ -9898,7 +10075,7 @@ module.exports = function parseuri(str) {
     return uri;
 };
 
-},{}],59:[function(require,module,exports){
+},{}],60:[function(require,module,exports){
 (function (process){
 // .dirname, .basename, and .extname methods are extracted from Node.js v8.11.1,
 // backported and transplited with Babel, with backwards-compat fixes
@@ -10204,7 +10381,7 @@ var substr = 'ab'.substr(-1) === 'b'
 ;
 
 }).call(this,require('_process'))
-},{"_process":60}],60:[function(require,module,exports){
+},{"_process":61}],61:[function(require,module,exports){
 // shim for using process in browser
 var process = module.exports = {};
 
@@ -10390,7 +10567,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],61:[function(require,module,exports){
+},{}],62:[function(require,module,exports){
 
 /**
  * Module dependencies.
@@ -10486,7 +10663,7 @@ exports.connect = lookup;
 exports.Manager = require('./manager');
 exports.Socket = require('./socket');
 
-},{"./manager":62,"./socket":64,"./url":65,"debug":66,"socket.io-parser":71}],62:[function(require,module,exports){
+},{"./manager":63,"./socket":65,"./url":66,"debug":67,"socket.io-parser":72}],63:[function(require,module,exports){
 
 /**
  * Module dependencies.
@@ -11061,7 +11238,7 @@ Manager.prototype.onreconnect = function () {
   this.emitAll('reconnect', attempt);
 };
 
-},{"./on":63,"./socket":64,"backo2":24,"component-bind":31,"component-emitter":32,"debug":66,"engine.io-client":35,"indexof":55,"socket.io-parser":71}],63:[function(require,module,exports){
+},{"./on":64,"./socket":65,"backo2":24,"component-bind":31,"component-emitter":32,"debug":67,"engine.io-client":35,"indexof":56,"socket.io-parser":72}],64:[function(require,module,exports){
 
 /**
  * Module exports.
@@ -11087,7 +11264,7 @@ function on (obj, ev, fn) {
   };
 }
 
-},{}],64:[function(require,module,exports){
+},{}],65:[function(require,module,exports){
 
 /**
  * Module dependencies.
@@ -11527,7 +11704,7 @@ Socket.prototype.binary = function (binary) {
   return this;
 };
 
-},{"./on":63,"component-bind":31,"component-emitter":32,"debug":66,"has-binary2":51,"parseqs":57,"socket.io-parser":71,"to-array":76}],65:[function(require,module,exports){
+},{"./on":64,"component-bind":31,"component-emitter":32,"debug":67,"has-binary2":52,"parseqs":58,"socket.io-parser":72,"to-array":77}],66:[function(require,module,exports){
 
 /**
  * Module dependencies.
@@ -11604,15 +11781,15 @@ function url (uri, loc) {
   return obj;
 }
 
-},{"debug":66,"parseuri":58}],66:[function(require,module,exports){
-arguments[4][44][0].apply(exports,arguments)
-},{"./common":67,"_process":60,"dup":44}],67:[function(require,module,exports){
+},{"debug":67,"parseuri":59}],67:[function(require,module,exports){
 arguments[4][45][0].apply(exports,arguments)
-},{"dup":45,"ms":69}],68:[function(require,module,exports){
-arguments[4][52][0].apply(exports,arguments)
-},{"dup":52}],69:[function(require,module,exports){
+},{"./common":68,"_process":61,"dup":45}],68:[function(require,module,exports){
 arguments[4][46][0].apply(exports,arguments)
-},{"dup":46}],70:[function(require,module,exports){
+},{"dup":46,"ms":70}],69:[function(require,module,exports){
+arguments[4][53][0].apply(exports,arguments)
+},{"dup":53}],70:[function(require,module,exports){
+arguments[4][47][0].apply(exports,arguments)
+},{"dup":47}],71:[function(require,module,exports){
 /*global Blob,File*/
 
 /**
@@ -11755,7 +11932,7 @@ exports.removeBlobs = function(data, callback) {
   }
 };
 
-},{"./is-buffer":72,"isarray":68}],71:[function(require,module,exports){
+},{"./is-buffer":73,"isarray":69}],72:[function(require,module,exports){
 
 /**
  * Module dependencies.
@@ -12172,7 +12349,7 @@ function error(msg) {
   };
 }
 
-},{"./binary":70,"./is-buffer":72,"component-emitter":32,"debug":73,"isarray":68}],72:[function(require,module,exports){
+},{"./binary":71,"./is-buffer":73,"component-emitter":32,"debug":74,"isarray":69}],73:[function(require,module,exports){
 (function (Buffer){
 
 module.exports = isBuf;
@@ -12196,7 +12373,7 @@ function isBuf(obj) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":30}],73:[function(require,module,exports){
+},{"buffer":30}],74:[function(require,module,exports){
 (function (process){
 /**
  * This is the web browser implementation of `debug()`.
@@ -12395,7 +12572,7 @@ function localstorage() {
 }
 
 }).call(this,require('_process'))
-},{"./debug":74,"_process":60}],74:[function(require,module,exports){
+},{"./debug":75,"_process":61}],75:[function(require,module,exports){
 
 /**
  * This is the common logic for both the Node.js and web browser
@@ -12622,7 +12799,7 @@ function coerce(val) {
   return val;
 }
 
-},{"ms":75}],75:[function(require,module,exports){
+},{"ms":76}],76:[function(require,module,exports){
 /**
  * Helpers.
  */
@@ -12776,7 +12953,7 @@ function plural(ms, n, name) {
   return Math.ceil(ms / n) + ' ' + name + 's';
 }
 
-},{}],76:[function(require,module,exports){
+},{}],77:[function(require,module,exports){
 module.exports = toArray
 
 function toArray(list, index) {
@@ -12791,7 +12968,7 @@ function toArray(list, index) {
     return array
 }
 
-},{}],77:[function(require,module,exports){
+},{}],78:[function(require,module,exports){
 'use strict';
 
 var CancelablePromise = require('./util/cancelablepromise');
@@ -12840,7 +13017,7 @@ function createCancelableRoomPromise(getLocalTracks, createLocalParticipant, cre
 }
 
 module.exports = createCancelableRoomPromise;
-},{"./util/cancelablepromise":183}],78:[function(require,module,exports){
+},{"./util/cancelablepromise":184}],79:[function(require,module,exports){
 'use strict';
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -13337,7 +13514,7 @@ function normalizeVideoCodecSettings(nameOrSettings) {
 }
 
 module.exports = connect;
-},{"./cancelableroompromise":77,"./createlocaltracks":80,"./encodingparameters":86,"./iceserversource/constant":88,"./iceserversource/nts":89,"./localparticipant":91,"./media/track/es5/localaudiotrack":93,"./media/track/es5/localdatatrack":94,"./media/track/es5/localvideotrack":95,"./networkqualityconfiguration":119,"./room":124,"./signaling/v2":137,"./util":186,"./util/cancelablepromise":183,"./util/constants":184,"./util/log":189,"@twilio/webrtc":3,"@twilio/webrtc/lib/util":16}],79:[function(require,module,exports){
+},{"./cancelableroompromise":78,"./createlocaltracks":81,"./encodingparameters":87,"./iceserversource/constant":89,"./iceserversource/nts":90,"./localparticipant":92,"./media/track/es5/localaudiotrack":94,"./media/track/es5/localdatatrack":95,"./media/track/es5/localvideotrack":96,"./networkqualityconfiguration":120,"./room":125,"./signaling/v2":138,"./util":187,"./util/cancelablepromise":184,"./util/constants":185,"./util/log":190,"@twilio/webrtc":3,"@twilio/webrtc/lib/util":16}],80:[function(require,module,exports){
 'use strict';
 
 var defaultCreateLocalTracks = require('./createlocaltracks');
@@ -13443,7 +13620,7 @@ module.exports = {
   audio: createLocalAudioTrack,
   video: createLocalVideoTrack
 };
-},{"./createlocaltracks":80,"./util/constants":184}],80:[function(require,module,exports){
+},{"./createlocaltracks":81,"./util/constants":185}],81:[function(require,module,exports){
 'use strict';
 
 var asLocalTrack = require('./util').asLocalTrack;
@@ -13584,7 +13761,7 @@ function createLocalTracks(options) {
  */
 
 module.exports = createLocalTracks;
-},{"./media/track/es5/localaudiotrack":93,"./media/track/es5/localdatatrack":94,"./media/track/es5/localvideotrack":95,"./util":186,"./util/constants":184,"./util/log":189,"./webaudio/workaround180748":203,"@twilio/webrtc":3}],81:[function(require,module,exports){
+},{"./media/track/es5/localaudiotrack":94,"./media/track/es5/localdatatrack":95,"./media/track/es5/localvideotrack":96,"./util":187,"./util/constants":185,"./util/log":190,"./webaudio/workaround180748":204,"@twilio/webrtc":3}],82:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -13665,7 +13842,7 @@ var DataTrackReceiver = function (_DataTrackTransceiver) {
  */
 
 module.exports = DataTrackReceiver;
-},{"./transceiver":83,"./transport":84}],82:[function(require,module,exports){
+},{"./transceiver":84,"./transport":85}],83:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -13823,7 +14000,7 @@ var DataTrackSender = function (_DataTrackTransceiver) {
 }(DataTrackTransceiver);
 
 module.exports = DataTrackSender;
-},{"../util":186,"./transceiver":83}],83:[function(require,module,exports){
+},{"../util":187,"./transceiver":84}],84:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -13882,7 +14059,7 @@ var DataTrackTransceiver = function (_TrackTransceiver) {
 }(TrackTransceiver);
 
 module.exports = DataTrackTransceiver;
-},{"../transceiver":180}],84:[function(require,module,exports){
+},{"../transceiver":181}],85:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -13993,7 +14170,7 @@ var DataTransport = function (_EventEmitter) {
  */
 
 module.exports = DataTransport;
-},{"events":50}],85:[function(require,module,exports){
+},{"events":51}],86:[function(require,module,exports){
 'use strict';
 
 var request = require('./request');
@@ -14062,7 +14239,7 @@ function toQueryString(params) {
 }
 
 module.exports.getConfiguration = getConfiguration;
-},{"./request":123,"./util/twilio-video-errors":199}],86:[function(require,module,exports){
+},{"./request":124,"./util/twilio-video-errors":200}],87:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -14169,7 +14346,7 @@ var EncodingParametersImpl = function (_EventEmitter) {
  */
 
 module.exports = EncodingParametersImpl;
-},{"events":50}],87:[function(require,module,exports){
+},{"events":51}],88:[function(require,module,exports){
 'use strict';
 
 var _require = require('events'),
@@ -14179,7 +14356,7 @@ var _require2 = require('./util'),
     hidePrivateAndCertainPublicPropertiesInClass = _require2.hidePrivateAndCertainPublicPropertiesInClass;
 
 module.exports = hidePrivateAndCertainPublicPropertiesInClass(EventEmitter, ['domain']);
-},{"./util":186,"events":50}],88:[function(require,module,exports){
+},{"./util":187,"events":51}],89:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -14262,7 +14439,7 @@ var ConstantIceServerSource = function (_EventEmitter) {
 }(EventEmitter);
 
 module.exports = ConstantIceServerSource;
-},{"events":50}],89:[function(require,module,exports){
+},{"events":51}],90:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -14545,7 +14722,7 @@ function poll(client) {
 }
 
 module.exports = NTSIceServerSource;
-},{"../../package.json":204,"../ecs":85,"../util":186,"../util/constants":184,"../util/log":189,"../util/timeoutpromise":198,"../util/twilio-video-errors":199,"events":50}],90:[function(require,module,exports){
+},{"../../package.json":205,"../ecs":86,"../util":187,"../util/constants":185,"../util/log":190,"../util/timeoutpromise":199,"../util/twilio-video-errors":200,"events":51}],91:[function(require,module,exports){
 'use strict';
 
 var version = require('../package.json').version;
@@ -14591,7 +14768,7 @@ Object.defineProperties(Video, {
 });
 
 module.exports = Video;
-},{"../package.json":204,"./connect":78,"./createlocaltrack":79,"./createlocaltracks":80,"./media/track/es5/localaudiotrack":93,"./media/track/es5/localdatatrack":94,"./media/track/es5/localvideotrack":95,"./util/support":196}],91:[function(require,module,exports){
+},{"../package.json":205,"./connect":79,"./createlocaltrack":80,"./createlocaltracks":81,"./media/track/es5/localaudiotrack":94,"./media/track/es5/localdatatrack":95,"./media/track/es5/localvideotrack":96,"./util/support":197}],92:[function(require,module,exports){
 'use strict';
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -15223,7 +15400,7 @@ function getTrackPublication(trackPublications, track) {
 }
 
 module.exports = LocalParticipant;
-},{"./media/track/es5/localaudiotrack":93,"./media/track/es5/localdatatrack":94,"./media/track/es5/localvideotrack":95,"./media/track/localaudiotrackpublication":98,"./media/track/localdatatrackpublication":100,"./media/track/localvideotrackpublication":104,"./participant":120,"./util":186,"./util/constants":184,"@twilio/webrtc":3}],92:[function(require,module,exports){
+},{"./media/track/es5/localaudiotrack":94,"./media/track/es5/localdatatrack":95,"./media/track/es5/localvideotrack":96,"./media/track/localaudiotrackpublication":99,"./media/track/localdatatrackpublication":101,"./media/track/localvideotrackpublication":105,"./participant":121,"./util":187,"./util/constants":185,"@twilio/webrtc":3}],93:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -15404,7 +15581,7 @@ var AudioTrack = function (_MediaTrack) {
  */
 
 module.exports = AudioTrack;
-},{"./mediatrack":105}],93:[function(require,module,exports){
+},{"./mediatrack":106}],94:[function(require,module,exports){
 // TODO(mroberts): Remove this when we go to the next major version. This is
 // only in place so that we can support ES6 classes without requiring `new`.
 'use strict';
@@ -15423,7 +15600,7 @@ function LocalAudioTrack(mediaStreamTrack, options) {
 inherits(LocalAudioTrack, LocalAudioTrackClass);
 
 module.exports = LocalAudioTrack;
-},{"../localaudiotrack":97,"util":209}],94:[function(require,module,exports){
+},{"../localaudiotrack":98,"util":210}],95:[function(require,module,exports){
 // TODO(mroberts): Remove this when we go to the next major version. This is
 // only in place so that we can support ES6 classes without requiring `new`.
 'use strict';
@@ -15442,7 +15619,7 @@ function LocalDataTrack(options) {
 inherits(LocalDataTrack, LocalDataTrackClass);
 
 module.exports = LocalDataTrack;
-},{"../localdatatrack":99,"util":209}],95:[function(require,module,exports){
+},{"../localdatatrack":100,"util":210}],96:[function(require,module,exports){
 // TODO(mroberts): Remove this when we go to the next major version. This is
 // only in place so that we can support ES6 classes without requiring `new`.
 'use strict';
@@ -15461,7 +15638,7 @@ function LocalVideoTrack(mediaStreamTrack, options) {
 inherits(LocalVideoTrack, LocalVideoTrackClass);
 
 module.exports = LocalVideoTrack;
-},{"../localvideotrack":103,"util":209}],96:[function(require,module,exports){
+},{"../localvideotrack":104,"util":210}],97:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -15586,7 +15763,7 @@ var Track = function (_EventEmitter) {
  */
 
 module.exports = Track;
-},{"../../eventemitter":87,"../../util":186,"../../util/constants":184,"../../util/log":189}],97:[function(require,module,exports){
+},{"../../eventemitter":88,"../../util":187,"../../util/constants":185,"../../util/log":190}],98:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -15735,7 +15912,7 @@ var LocalAudioTrack = function (_LocalMediaAudioTrack) {
  */
 
 module.exports = LocalAudioTrack;
-},{"./audiotrack":92,"./localmediatrack":101}],98:[function(require,module,exports){
+},{"./audiotrack":93,"./localmediatrack":102}],99:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -15784,7 +15961,7 @@ var LocalAudioTrackPublication = function (_LocalTrackPublicatio) {
 }(LocalTrackPublication);
 
 module.exports = LocalAudioTrackPublication;
-},{"./localtrackpublication":102}],99:[function(require,module,exports){
+},{"./localtrackpublication":103}],100:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -15930,7 +16107,7 @@ var LocalDataTrack = function (_Track) {
  */
 
 module.exports = LocalDataTrack;
-},{"../../data/sender":82,"./":96}],100:[function(require,module,exports){
+},{"../../data/sender":83,"./":97}],101:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -15979,7 +16156,7 @@ var LocalDataTrackPublication = function (_LocalTrackPublicatio) {
 }(LocalTrackPublication);
 
 module.exports = LocalDataTrackPublication;
-},{"./localtrackpublication":102}],101:[function(require,module,exports){
+},{"./localtrackpublication":103}],102:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -16094,7 +16271,7 @@ function mixinLocalMediaTrack(AudioOrVideoTrack) {
 }
 
 module.exports = mixinLocalMediaTrack;
-},{"./sender":115}],102:[function(require,module,exports){
+},{"./sender":116}],103:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -16190,7 +16367,7 @@ var LocalTrackPublication = function (_TrackPublication) {
 }(TrackPublication);
 
 module.exports = LocalTrackPublication;
-},{"./trackpublication":116}],103:[function(require,module,exports){
+},{"./trackpublication":117}],104:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -16329,7 +16506,7 @@ var LocalVideoTrack = function (_LocalMediaVideoTrack) {
  */
 
 module.exports = LocalVideoTrack;
-},{"./localmediatrack":101,"./videotrack":118}],104:[function(require,module,exports){
+},{"./localmediatrack":102,"./videotrack":119}],105:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -16378,7 +16555,7 @@ var LocalVideoTrackPublication = function (_LocalTrackPublicatio) {
 }(LocalTrackPublication);
 
 module.exports = LocalVideoTrackPublication;
-},{"./localtrackpublication":102}],105:[function(require,module,exports){
+},{"./localtrackpublication":103}],106:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -16672,7 +16849,7 @@ var MediaTrack = function (_Track) {
 }(Track);
 
 module.exports = MediaTrack;
-},{"./":96,"@twilio/webrtc":3}],106:[function(require,module,exports){
+},{"./":97,"@twilio/webrtc":3}],107:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -16706,7 +16883,7 @@ var MediaTrackReceiver = function (_MediaTrackTransceive) {
 }(MediaTrackTransceiver);
 
 module.exports = MediaTrackReceiver;
-},{"./transceiver":117}],107:[function(require,module,exports){
+},{"./transceiver":118}],108:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -16780,7 +16957,7 @@ var RemoteAudioTrack = function (_RemoteMediaAudioTrac) {
  */
 
 module.exports = RemoteAudioTrack;
-},{"./audiotrack":92,"./remotemediatrack":111}],108:[function(require,module,exports){
+},{"./audiotrack":93,"./remotemediatrack":112}],109:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -16861,7 +17038,7 @@ var RemoteAudioTrackPublication = function (_RemoteTrackPublicati) {
  */
 
 module.exports = RemoteAudioTrackPublication;
-},{"./remotetrackpublication":112}],109:[function(require,module,exports){
+},{"./remotetrackpublication":113}],110:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -16970,7 +17147,7 @@ var RemoteDataTrack = function (_Track) {
  */
 
 module.exports = RemoteDataTrack;
-},{"./":96}],110:[function(require,module,exports){
+},{"./":97}],111:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -17039,7 +17216,7 @@ var RemoteDataTrackPublication = function (_RemoteTrackPublicati) {
  */
 
 module.exports = RemoteDataTrackPublication;
-},{"./remotetrackpublication":112}],111:[function(require,module,exports){
+},{"./remotetrackpublication":113}],112:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -17127,7 +17304,7 @@ function mixinRemoteMediaTrack(AudioOrVideoTrack) {
  */
 
 module.exports = mixinRemoteMediaTrack;
-},{}],112:[function(require,module,exports){
+},{}],113:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -17290,7 +17467,7 @@ var RemoteTrackPublication = function (_TrackPublication) {
  */
 
 module.exports = RemoteTrackPublication;
-},{"./trackpublication":116}],113:[function(require,module,exports){
+},{"./trackpublication":117}],114:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -17365,7 +17542,7 @@ var RemoteVideoTrack = function (_RemoteMediaVideoTrac) {
  */
 
 module.exports = RemoteVideoTrack;
-},{"./remotemediatrack":111,"./videotrack":118}],114:[function(require,module,exports){
+},{"./remotemediatrack":112,"./videotrack":119}],115:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -17446,7 +17623,7 @@ var RemoteVideoTrackPublication = function (_RemoteTrackPublicati) {
  */
 
 module.exports = RemoteVideoTrackPublication;
-},{"./remotetrackpublication":112}],115:[function(require,module,exports){
+},{"./remotetrackpublication":113}],116:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -17528,7 +17705,7 @@ var MediaTrackSender = function (_MediaTrackTransceive) {
 }(MediaTrackTransceiver);
 
 module.exports = MediaTrackSender;
-},{"./transceiver":117}],116:[function(require,module,exports){
+},{"./transceiver":118}],117:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -17646,7 +17823,7 @@ var TrackPublication = function (_EventEmitter) {
  */
 
 module.exports = TrackPublication;
-},{"../../eventemitter":87,"../../util":186,"../../util/constants":184,"../../util/log":189}],117:[function(require,module,exports){
+},{"../../eventemitter":88,"../../util":187,"../../util/constants":185,"../../util/log":190}],118:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -17708,7 +17885,7 @@ var MediaTrackTransceiver = function (_TrackTransceiver) {
 }(TrackTransceiver);
 
 module.exports = MediaTrackTransceiver;
-},{"../../transceiver":180}],118:[function(require,module,exports){
+},{"../../transceiver":181}],119:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -17957,7 +18134,7 @@ function dimensionsChanged(track, elem) {
  */
 
 module.exports = VideoTrack;
-},{"./mediatrack":105}],119:[function(require,module,exports){
+},{"./mediatrack":106}],120:[function(require,module,exports){
 'use strict';
 
 var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
@@ -18054,7 +18231,7 @@ var NetworkQualityConfigurationImpl = function (_EventEmitter) {
 }(EventEmitter);
 
 module.exports = NetworkQualityConfigurationImpl;
-},{"./util":186,"./util/constants":184,"events":50}],120:[function(require,module,exports){
+},{"./util":187,"./util/constants":185,"events":51}],121:[function(require,module,exports){
 'use strict';
 
 var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
@@ -18716,7 +18893,7 @@ function reemitTrackPublicationEvents(participant, publication) {
 }
 
 module.exports = Participant;
-},{"./eventemitter":87,"./media/track/remoteaudiotrack":107,"./media/track/remoteaudiotrackpublication":108,"./media/track/remotedatatrack":109,"./media/track/remotedatatrackpublication":110,"./media/track/remotevideotrack":113,"./media/track/remotevideotrackpublication":114,"./util":186}],121:[function(require,module,exports){
+},{"./eventemitter":88,"./media/track/remoteaudiotrack":108,"./media/track/remoteaudiotrackpublication":109,"./media/track/remotedatatrack":110,"./media/track/remotedatatrackpublication":111,"./media/track/remotevideotrack":114,"./media/track/remotevideotrackpublication":115,"./util":187}],122:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -18812,7 +18989,7 @@ var QueueingEventEmitter = function (_EventEmitter) {
 }(EventEmitter);
 
 module.exports = QueueingEventEmitter;
-},{"events":50}],122:[function(require,module,exports){
+},{"events":51}],123:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -19072,7 +19249,7 @@ var RemoteParticipant = function (_Participant) {
  */
 
 module.exports = RemoteParticipant;
-},{"./participant":120}],123:[function(require,module,exports){
+},{"./participant":121}],124:[function(require,module,exports){
 'use strict';
 
 var XHR = require('xmlhttprequest').XMLHttpRequest;
@@ -19125,7 +19302,7 @@ request.get = request.bind(null, 'GET');
 request.post = request.bind(null, 'POST');
 
 module.exports = request;
-},{"xmlhttprequest":206}],124:[function(require,module,exports){
+},{"xmlhttprequest":207}],125:[function(require,module,exports){
 'use strict';
 
 var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
@@ -19626,7 +19803,7 @@ function handleSignalingEvents(room, signaling) {
 }
 
 module.exports = Room;
-},{"./eventemitter":87,"./remoteparticipant":122,"./stats/statsreport":177,"./util":186}],125:[function(require,module,exports){
+},{"./eventemitter":88,"./remoteparticipant":123,"./stats/statsreport":178,"./util":187}],126:[function(require,module,exports){
 /* eslint consistent-return:0 */
 'use strict';
 
@@ -19820,7 +19997,7 @@ var Signaling = function (_StateMachine) {
 }(StateMachine);
 
 module.exports = Signaling;
-},{"../statemachine":149,"./participant":128,"./room":132}],126:[function(require,module,exports){
+},{"../statemachine":150,"./participant":129,"./room":133}],127:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -19918,7 +20095,7 @@ var LocalParticipantSignaling = function (_ParticipantSignaling) {
 }(ParticipantSignaling);
 
 module.exports = LocalParticipantSignaling;
-},{"./participant":128}],127:[function(require,module,exports){
+},{"./participant":129}],128:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -20048,7 +20225,7 @@ function setError(publication, error) {
 }
 
 module.exports = LocalTrackPublicationSignaling;
-},{"./track":133}],128:[function(require,module,exports){
+},{"./track":134}],129:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -20269,7 +20446,7 @@ var ParticipantSignaling = function (_StateMachine) {
  */
 
 module.exports = ParticipantSignaling;
-},{"../statemachine":149,"../stats/networkqualitystats":164}],129:[function(require,module,exports){
+},{"../statemachine":150,"../stats/networkqualitystats":165}],130:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -20354,7 +20531,7 @@ var RecordingSignaling = function (_EventEmitter) {
  */
 
 module.exports = RecordingSignaling;
-},{"events":50}],130:[function(require,module,exports){
+},{"events":51}],131:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -20393,7 +20570,7 @@ var RemoteParticipantSignaling = function (_ParticipantSignaling) {
 }(ParticipantSignaling);
 
 module.exports = RemoteParticipantSignaling;
-},{"./participant":128}],131:[function(require,module,exports){
+},{"./participant":129}],132:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -20479,7 +20656,7 @@ var RemoteTrackPublicationSignaling = function (_TrackSignaling) {
 }(TrackSignaling);
 
 module.exports = RemoteTrackPublicationSignaling;
-},{"./track":133}],132:[function(require,module,exports){
+},{"./track":134}],133:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -20744,7 +20921,7 @@ function maybeUpdateState(roomSignaling) {
 }
 
 module.exports = RoomSignaling;
-},{"../statemachine":149,"../util/twilio-video-errors":199,"./recording":129}],133:[function(require,module,exports){
+},{"../statemachine":150,"../util/twilio-video-errors":200,"./recording":130}],134:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -20918,7 +21095,7 @@ var TrackSignaling = function (_EventEmitter) {
  */
 
 module.exports = TrackSignaling;
-},{"events":50}],134:[function(require,module,exports){
+},{"events":51}],135:[function(require,module,exports){
 'use strict';
 
 var CancelablePromise = require('../../util/cancelablepromise');
@@ -21037,7 +21214,7 @@ function createCancelableRoomSignalingPromise(token, wsServer, localParticipant,
 }
 
 module.exports = createCancelableRoomSignalingPromise;
-},{"../../util":186,"../../util/cancelablepromise":183,"../../util/twilio-video-errors":199,"./peerconnectionmanager":143,"./room":147,"./twilioconnectiontransport":148}],135:[function(require,module,exports){
+},{"../../util":187,"../../util/cancelablepromise":184,"../../util/twilio-video-errors":200,"./peerconnectionmanager":144,"./room":148,"./twilioconnectiontransport":149}],136:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -21125,7 +21302,7 @@ var DominantSpeakerSignaling = function (_EventEmitter) {
  */
 
 module.exports = DominantSpeakerSignaling;
-},{"events":50}],136:[function(require,module,exports){
+},{"events":51}],137:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -21211,7 +21388,7 @@ var IceBox = function () {
 }();
 
 module.exports = IceBox;
-},{"../../util/filter":185}],137:[function(require,module,exports){
+},{"../../util/filter":186}],138:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -21285,7 +21462,7 @@ var SignalingV2 = function (_Signaling) {
 }(Signaling);
 
 module.exports = SignalingV2;
-},{"../":125,"./cancelableroomsignalingpromise":134,"./localparticipant":138}],138:[function(require,module,exports){
+},{"../":126,"./cancelableroomsignalingpromise":135,"./localparticipant":139}],139:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -21572,7 +21749,7 @@ var LocalParticipantV2 = function (_LocalParticipantSign) {
  */
 
 module.exports = LocalParticipantV2;
-},{"../localparticipant":126,"./localtrackpublication":139}],139:[function(require,module,exports){
+},{"../localparticipant":127,"./localtrackpublication":140}],140:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -21664,7 +21841,7 @@ var LocalTrackPublicationV2 = function (_LocalTrackPublicatio) {
  */
 
 module.exports = LocalTrackPublicationV2;
-},{"../../util/twilio-video-errors":199,"../localtrackpublication":127}],140:[function(require,module,exports){
+},{"../../util/twilio-video-errors":200,"../localtrackpublication":128}],141:[function(require,module,exports){
 /* eslint callback-return:0 */
 'use strict';
 
@@ -21842,7 +22019,7 @@ function next(monitor) {
  */
 
 module.exports = NetworkQualityMonitor;
-},{"../../stats/peerconnectionreportfactory":167,"events":50}],141:[function(require,module,exports){
+},{"../../stats/peerconnectionreportfactory":168,"events":51}],142:[function(require,module,exports){
 'use strict';
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -22122,7 +22299,7 @@ function createNetworkQualityInputsMessage(networkQualityInputs, networkQualityR
 }
 
 module.exports = NetworkQualitySignaling;
-},{"../../util/asyncvar":182,"events":50}],142:[function(require,module,exports){
+},{"../../util/asyncvar":183,"events":51}],143:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -23357,7 +23534,7 @@ function shouldStopTransceiver(description, transceiver) {
 }
 
 module.exports = PeerConnectionV2;
-},{"../../data/receiver":81,"../../media/track/receiver":106,"../../statemachine":149,"../../util":186,"../../util/constants":184,"../../util/log":189,"../../util/sdp":190,"../../util/sdp/issue8329":191,"../../util/sdp/trackmatcher/identity":193,"../../util/sdp/trackmatcher/mid":194,"../../util/sdp/trackmatcher/ordered":195,"../../util/twilio-video-errors":199,"./icebox":136,"@twilio/webrtc":3,"@twilio/webrtc/lib/util":16,"@twilio/webrtc/lib/util/sdp":18}],143:[function(require,module,exports){
+},{"../../data/receiver":82,"../../media/track/receiver":107,"../../statemachine":150,"../../util":187,"../../util/constants":185,"../../util/log":190,"../../util/sdp":191,"../../util/sdp/issue8329":192,"../../util/sdp/trackmatcher/identity":194,"../../util/sdp/trackmatcher/mid":195,"../../util/sdp/trackmatcher/ordered":196,"../../util/twilio-video-errors":200,"./icebox":137,"@twilio/webrtc":3,"@twilio/webrtc/lib/util":16,"@twilio/webrtc/lib/util/sdp":18}],144:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -23927,7 +24104,7 @@ function updateIceConnectionState(pcm) {
 }
 
 module.exports = PeerConnectionManager;
-},{"../../media/track/sender":115,"../../queueingeventemitter":121,"../../util":186,"../../util/twilio-video-errors":199,"../../webaudio/audiocontext":201,"./peerconnection":142,"@twilio/webrtc/lib/util":16}],144:[function(require,module,exports){
+},{"../../media/track/sender":116,"../../queueingeventemitter":122,"../../util":187,"../../util/twilio-video-errors":200,"../../webaudio/audiocontext":202,"./peerconnection":143,"@twilio/webrtc/lib/util":16}],145:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -23995,7 +24172,7 @@ var RecordingV2 = function (_RecordingSignaling) {
  */
 
 module.exports = RecordingV2;
-},{"../recording":129}],145:[function(require,module,exports){
+},{"../recording":130}],146:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -24115,7 +24292,7 @@ var RemoteParticipantV2 = function (_RemoteParticipantSig) {
 }(RemoteParticipantSignaling);
 
 module.exports = RemoteParticipantV2;
-},{"../remoteparticipant":130,"./remotetrackpublication":146}],146:[function(require,module,exports){
+},{"../remoteparticipant":131,"./remotetrackpublication":147}],147:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -24173,7 +24350,7 @@ var RemoteTrackPublicationV2 = function (_RemoteTrackPublicati) {
  */
 
 module.exports = RemoteTrackPublicationV2;
-},{"../remotetrackpublication":131}],147:[function(require,module,exports){
+},{"../remotetrackpublication":132}],148:[function(require,module,exports){
 'use strict';
 
 var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
@@ -24931,7 +25108,7 @@ function replaceNullsWithDefaults(activeIceCandidatePair, peerConnectionId) {
 }
 
 module.exports = RoomV2;
-},{"../../stats/statsreport":177,"../../util":186,"../../util/twilio-video-errors":199,"../room":132,"./dominantspeakersignaling":135,"./networkqualitymonitor":140,"./networkqualitysignaling":141,"./recording":144,"./remoteparticipant":145}],148:[function(require,module,exports){
+},{"../../stats/statsreport":178,"../../util":187,"../../util/twilio-video-errors":200,"../room":133,"./dominantspeakersignaling":136,"./networkqualitymonitor":141,"./networkqualitysignaling":142,"./recording":145,"./remoteparticipant":146}],149:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -25462,7 +25639,7 @@ function setupEventListeners(transport) {
 }
 
 module.exports = TwilioConnectionTransport;
-},{"../../../package.json":204,"../../statemachine":149,"../../twilioconnection":181,"../../util":186,"../../util/insightspublisher":187,"../../util/insightspublisher/null":188,"../../util/twilio-video-errors":199,"@twilio/webrtc/lib/util/sdp":18}],149:[function(require,module,exports){
+},{"../../../package.json":205,"../../statemachine":150,"../../twilioconnection":182,"../../util":187,"../../util/insightspublisher":188,"../../util/insightspublisher/null":189,"../../util/twilio-video-errors":200,"@twilio/webrtc/lib/util/sdp":18}],150:[function(require,module,exports){
 'use strict';
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -25964,7 +26141,7 @@ function createUnreachableError(here, there) {
 }
 
 module.exports = StateMachine;
-},{"./util":186,"events":50}],150:[function(require,module,exports){
+},{"./util":187,"events":51}],151:[function(require,module,exports){
 /* eslint no-undefined:0 */
 'use strict';
 
@@ -25983,7 +26160,7 @@ function average(xs) {
 }
 
 module.exports = average;
-},{}],151:[function(require,module,exports){
+},{}],152:[function(require,module,exports){
 'use strict';
 
 /**
@@ -26054,7 +26231,7 @@ var IceReport = function () {
 }();
 
 module.exports = IceReport;
-},{}],152:[function(require,module,exports){
+},{}],153:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -26113,7 +26290,7 @@ var IceReportFactory = function () {
 }();
 
 module.exports = IceReportFactory;
-},{"./icereport":151}],153:[function(require,module,exports){
+},{"./icereport":152}],154:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -26166,7 +26343,7 @@ var LocalAudioTrackStats = function (_LocalTrackStats) {
  */
 
 module.exports = LocalAudioTrackStats;
-},{"./localtrackstats":154}],154:[function(require,module,exports){
+},{"./localtrackstats":155}],155:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -26218,7 +26395,7 @@ var LocalTrackStats = function (_TrackStats) {
 }(TrackStats);
 
 module.exports = LocalTrackStats;
-},{"./trackstats":179}],155:[function(require,module,exports){
+},{"./trackstats":180}],156:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -26307,7 +26484,7 @@ var LocalVideoTrackStats = function (_LocalTrackStats) {
 }(LocalTrackStats);
 
 module.exports = LocalVideoTrackStats;
-},{"./localtrackstats":154}],156:[function(require,module,exports){
+},{"./localtrackstats":155}],157:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -26339,7 +26516,7 @@ var NetworkQualityAudioStats = function (_NetworkQualityMediaS) {
 }(NetworkQualityMediaStats);
 
 module.exports = NetworkQualityAudioStats;
-},{"./networkqualitymediastats":160}],157:[function(require,module,exports){
+},{"./networkqualitymediastats":161}],158:[function(require,module,exports){
 'use strict';
 
 /**
@@ -26383,7 +26560,7 @@ function NetworkQualityBandwidthStats(_ref) {
 };
 
 module.exports = NetworkQualityBandwidthStats;
-},{}],158:[function(require,module,exports){
+},{}],159:[function(require,module,exports){
 'use strict';
 
 /**
@@ -26420,7 +26597,7 @@ function NetworkQualityFractionLostStats(_ref) {
 };
 
 module.exports = NetworkQualityFractionLostStats;
-},{}],159:[function(require,module,exports){
+},{}],160:[function(require,module,exports){
 'use strict';
 
 /**
@@ -26464,7 +26641,7 @@ function NetworkQualityLatencyStats(_ref) {
 };
 
 module.exports = NetworkQualityLatencyStats;
-},{}],160:[function(require,module,exports){
+},{}],161:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -26522,7 +26699,7 @@ function NetworkQualityMediaStats(_ref) {
 };
 
 module.exports = NetworkQualityMediaStats;
-},{"./networkqualityrecvstats":161,"./networkqualitysendstats":163}],161:[function(require,module,exports){
+},{"./networkqualityrecvstats":162,"./networkqualitysendstats":164}],162:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -26555,7 +26732,7 @@ var NetworkQualityRecvStats = function (_NetworkQualitySendOr) {
 }(NetworkQualitySendOrRecvStats);
 
 module.exports = NetworkQualityRecvStats;
-},{"./networkqualitysendorrecvstats":162}],162:[function(require,module,exports){
+},{"./networkqualitysendorrecvstats":163}],163:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -26606,7 +26783,7 @@ function NetworkQualitySendOrRecvStats(_ref) {
 };
 
 module.exports = NetworkQualitySendOrRecvStats;
-},{"./networkqualitybandwidthstats":157,"./networkqualityfractionloststats":158,"./networkqualitylatencystats":159}],163:[function(require,module,exports){
+},{"./networkqualitybandwidthstats":158,"./networkqualityfractionloststats":159,"./networkqualitylatencystats":160}],164:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -26639,7 +26816,7 @@ var NetworkQualitySendStats = function (_NetworkQualitySendOr) {
 }(NetworkQualitySendOrRecvStats);
 
 module.exports = NetworkQualitySendStats;
-},{"./networkqualitysendorrecvstats":162}],164:[function(require,module,exports){
+},{"./networkqualitysendorrecvstats":163}],165:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -26687,7 +26864,7 @@ function NetworkQualityStats(_ref) {
 };
 
 module.exports = NetworkQualityStats;
-},{"./networkqualityaudiostats":156,"./networkqualityvideostats":165}],165:[function(require,module,exports){
+},{"./networkqualityaudiostats":157,"./networkqualityvideostats":166}],166:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -26719,7 +26896,7 @@ var NetworkQualityVideoStats = function (_NetworkQualityMediaS) {
 }(NetworkQualityMediaStats);
 
 module.exports = NetworkQualityVideoStats;
-},{"./networkqualitymediastats":160}],166:[function(require,module,exports){
+},{"./networkqualitymediastats":161}],167:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -26818,7 +26995,7 @@ var PeerConnectionReport = function () {
 }();
 
 module.exports = PeerConnectionReport;
-},{"./receiverreport":168,"./senderreport":175}],167:[function(require,module,exports){
+},{"./receiverreport":169,"./senderreport":176}],168:[function(require,module,exports){
 'use strict';
 
 var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
@@ -27346,7 +27523,7 @@ function updateChrome(factory) {
 }
 
 module.exports = PeerConnectionReportFactory;
-},{"./icereportfactory":152,"./peerconnectionreport":166,"./receiverreportfactory":169,"./senderreportfactory":176}],168:[function(require,module,exports){
+},{"./icereportfactory":153,"./peerconnectionreport":167,"./receiverreportfactory":170,"./senderreportfactory":177}],169:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -27494,7 +27671,7 @@ var ReceiverReport = function (_SenderOrReceiverRepo) {
 }(SenderOrReceiverReport);
 
 module.exports = ReceiverReport;
-},{"./average":150,"./senderorreceiverreport":173,"./sum":178}],169:[function(require,module,exports){
+},{"./average":151,"./senderorreceiverreport":174,"./sum":179}],170:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -27560,7 +27737,7 @@ var ReceiverReportFactory = function (_SenderOrReceiverRepo) {
 }(SenderOrReceiverReportFactory);
 
 module.exports = ReceiverReportFactory;
-},{"./receiverreport":168,"./senderorreceiverreportfactory":174}],170:[function(require,module,exports){
+},{"./receiverreport":169,"./senderorreceiverreportfactory":175}],171:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -27607,7 +27784,7 @@ var RemoteAudioTrackStats = function (_RemoteTrackStats) {
 }(RemoteTrackStats);
 
 module.exports = RemoteAudioTrackStats;
-},{"./remotetrackstats":171}],171:[function(require,module,exports){
+},{"./remotetrackstats":172}],172:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -27654,7 +27831,7 @@ var RemoteTrackStats = function (_TrackStats) {
 }(TrackStats);
 
 module.exports = RemoteTrackStats;
-},{"./trackstats":179}],172:[function(require,module,exports){
+},{"./trackstats":180}],173:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -27717,7 +27894,7 @@ var RemoteVideoTrackStats = function (_RemoteTrackStats) {
 }(RemoteTrackStats);
 
 module.exports = RemoteVideoTrackStats;
-},{"./remotetrackstats":171}],173:[function(require,module,exports){
+},{"./remotetrackstats":172}],174:[function(require,module,exports){
 'use strict';
 
 /**
@@ -27755,7 +27932,7 @@ function SenderOrReceiverReport(id, trackId, bitrate) {
 };
 
 module.exports = SenderOrReceiverReport;
-},{}],174:[function(require,module,exports){
+},{}],175:[function(require,module,exports){
 'use strict';
 
 /**
@@ -27795,7 +27972,7 @@ function SenderOrReceiverReportFactory(id, trackId, initialStats) {
 };
 
 module.exports = SenderOrReceiverReportFactory;
-},{}],175:[function(require,module,exports){
+},{}],176:[function(require,module,exports){
 /* eslint no-undefined:0 */
 'use strict';
 
@@ -27895,7 +28072,7 @@ var SenderReport = function (_SenderOrReceiverRepo) {
 }(SenderOrReceiverReport);
 
 module.exports = SenderReport;
-},{"./average":150,"./senderorreceiverreport":173,"./sum":178}],176:[function(require,module,exports){
+},{"./average":151,"./senderorreceiverreport":174,"./sum":179}],177:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -27961,7 +28138,7 @@ var SenderReportFactory = function (_SenderOrReceiverRepo) {
 }(SenderOrReceiverReportFactory);
 
 module.exports = SenderReportFactory;
-},{"./senderorreceiverreportfactory":174,"./senderreport":175}],177:[function(require,module,exports){
+},{"./senderorreceiverreportfactory":175,"./senderreport":176}],178:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -28025,7 +28202,7 @@ function StatsReport(peerConnectionId, statsResponse) {
 };
 
 module.exports = StatsReport;
-},{"./localaudiotrackstats":153,"./localvideotrackstats":155,"./remoteaudiotrackstats":170,"./remotevideotrackstats":172}],178:[function(require,module,exports){
+},{"./localaudiotrackstats":154,"./localvideotrackstats":156,"./remoteaudiotrackstats":171,"./remotevideotrackstats":173}],179:[function(require,module,exports){
 'use strict';
 
 /**
@@ -28040,7 +28217,7 @@ function sum(xs) {
 }
 
 module.exports = sum;
-},{}],179:[function(require,module,exports){
+},{}],180:[function(require,module,exports){
 'use strict';
 
 /**
@@ -28100,7 +28277,7 @@ function TrackStats(trackId, statsReport) {
 };
 
 module.exports = TrackStats;
-},{}],180:[function(require,module,exports){
+},{}],181:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -28170,7 +28347,7 @@ var TrackTransceiver = function (_EventEmitter) {
  */
 
 module.exports = TrackTransceiver;
-},{"events":50}],181:[function(require,module,exports){
+},{"events":51}],182:[function(require,module,exports){
 (function (global){
 'use strict';
 
@@ -28702,7 +28879,7 @@ var TwilioConnection = function (_StateMachine) {
 
 module.exports = TwilioConnection;
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./statemachine":149,"./util":186,"./util/log":189,"./util/timeout":197,"ws":205}],182:[function(require,module,exports){
+},{"./statemachine":150,"./util":187,"./util/log":190,"./util/timeout":198,"ws":206}],183:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -28790,7 +28967,7 @@ var AsyncVar = function () {
 }();
 
 module.exports = AsyncVar;
-},{"./":186}],183:[function(require,module,exports){
+},{"./":187}],184:[function(require,module,exports){
 'use strict';
 
 /**
@@ -28938,7 +29115,7 @@ var CancelablePromise = function () {
 }();
 
 module.exports = CancelablePromise;
-},{}],184:[function(require,module,exports){
+},{}],185:[function(require,module,exports){
 'use strict';
 
 module.exports.DEFAULT_ENVIRONMENT = 'prod';
@@ -29004,7 +29181,7 @@ module.exports.typeErrors = {
 module.exports.DEFAULT_NQ_LEVEL_LOCAL = 1;
 module.exports.DEFAULT_NQ_LEVEL_REMOTE = 0;
 module.exports.MAX_NQ_LEVEL = 3;
-},{}],185:[function(require,module,exports){
+},{}],186:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -29069,7 +29246,7 @@ var Filter = function () {
 }();
 
 module.exports = Filter;
-},{}],186:[function(require,module,exports){
+},{}],187:[function(require,module,exports){
 'use strict';
 
 var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
@@ -29691,7 +29868,7 @@ exports.trackPublicationClass = trackPublicationClass;
 exports.validateLocalTrack = validateLocalTrack;
 exports.valueToJSON = valueToJSON;
 exports.withJitter = withJitter;
-},{"./constants":184}],187:[function(require,module,exports){
+},{"./constants":185}],188:[function(require,module,exports){
 (function (global){
 'use strict';
 
@@ -29981,7 +30158,7 @@ function reconnect(publisher, token, sdkName, sdkVersion, options) {
 
 module.exports = InsightsPublisher;
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"..":186,"events":50,"ws":205}],188:[function(require,module,exports){
+},{"..":187,"events":51,"ws":206}],189:[function(require,module,exports){
 // TODO(mroberts): This should be described as implementing some
 // InsightsPublisher interface.
 'use strict';
@@ -30038,7 +30215,7 @@ var InsightsPublisher = function () {
 }();
 
 module.exports = InsightsPublisher;
-},{}],189:[function(require,module,exports){
+},{}],190:[function(require,module,exports){
 /* eslint new-cap:0, no-console:0 */
 'use strict';
 
@@ -30340,7 +30517,7 @@ function validateLogLevels(levels) {
 }
 
 module.exports = Log;
-},{"./constants":184}],190:[function(require,module,exports){
+},{"./constants":185}],191:[function(require,module,exports){
 'use strict';
 
 var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
@@ -30638,7 +30815,7 @@ exports.setBitrateParameters = setBitrateParameters;
 exports.setCodecPreferences = setCodecPreferences;
 exports.setSimulcast = setSimulcast;
 exports.unifiedPlanRewriteTrackIds = unifiedPlanRewriteTrackIds;
-},{"../":186,"./simulcast":192}],191:[function(require,module,exports){
+},{"../":187,"./simulcast":193}],192:[function(require,module,exports){
 'use strict';
 
 var RTCSessionDescription = require('@twilio/webrtc').RTCSessionDescription;
@@ -30853,7 +31030,7 @@ function addFmtpAttributeForRtxPt(mediaSection, rtxPt, pt) {
 }
 
 module.exports = workaround;
-},{"./":190,"@twilio/webrtc":3}],192:[function(require,module,exports){
+},{"./":191,"@twilio/webrtc":3}],193:[function(require,module,exports){
 'use strict';
 
 var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
@@ -31191,7 +31368,7 @@ function setSimulcastInMediaSection(section, sdpFormat, trackIdsToAttributes) {
  */
 
 module.exports = setSimulcastInMediaSection;
-},{"../":186}],193:[function(require,module,exports){
+},{"../":187}],194:[function(require,module,exports){
 'use strict';
 
 /**
@@ -31234,7 +31411,7 @@ var IdentityTrackMatcher = function () {
 }();
 
 module.exports = IdentityTrackMatcher;
-},{}],194:[function(require,module,exports){
+},{}],195:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -31299,7 +31476,7 @@ var MIDTrackMatcher = function () {
 }();
 
 module.exports = MIDTrackMatcher;
-},{"../":190}],195:[function(require,module,exports){
+},{"../":191}],196:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -31441,7 +31618,7 @@ var OrderedTrackMatcher = function () {
 }();
 
 module.exports = OrderedTrackMatcher;
-},{"../":190,"../../":186}],196:[function(require,module,exports){
+},{"../":191,"../../":187}],197:[function(require,module,exports){
 /* globals RTCPeerConnection, webkitRTCPeerConnection, mozRTCPeerConnection, navigator */
 'use strict';
 
@@ -31475,7 +31652,7 @@ function isSupported() {
 }
 
 module.exports = isSupported;
-},{"@twilio/webrtc/lib/util":16}],197:[function(require,module,exports){
+},{"@twilio/webrtc/lib/util":16}],198:[function(require,module,exports){
 'use strict';
 
 /**
@@ -31563,7 +31740,7 @@ var Timeout = function () {
 }();
 
 module.exports = Timeout;
-},{}],198:[function(require,module,exports){
+},{}],199:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -31724,7 +31901,7 @@ var TimeoutPromise = function (_EventEmitter) {
  */
 
 module.exports = TimeoutPromise;
-},{"./":186,"events":50}],199:[function(require,module,exports){
+},{"./":187,"events":51}],200:[function(require,module,exports){
 'use strict';
 
 // NOTE: Do not edit this file. This code is auto-generated. Contact the
@@ -32924,7 +33101,7 @@ var ConfigurationAcquireTurnFailedError = function (_TwilioError51) {
 
 exports.ConfigurationAcquireTurnFailedError = ConfigurationAcquireTurnFailedError;
 Object.defineProperty(TwilioErrorByCode, 53501, { value: ConfigurationAcquireTurnFailedError });
-},{"./twilioerror":200}],200:[function(require,module,exports){
+},{"./twilioerror":201}],201:[function(require,module,exports){
 'use strict';
 
 /**
@@ -32996,7 +33173,7 @@ var TwilioError = function (_Error) {
 }(Error);
 
 module.exports = TwilioError;
-},{}],201:[function(require,module,exports){
+},{}],202:[function(require,module,exports){
 /* globals webkitAudioContext, AudioContext */
 'use strict';
 
@@ -33095,7 +33272,7 @@ var AudioContextFactory = function () {
 }();
 
 module.exports = new AudioContextFactory();
-},{}],202:[function(require,module,exports){
+},{}],203:[function(require,module,exports){
 'use strict';
 
 /**
@@ -33158,7 +33335,7 @@ function detectSilence(audioContext, stream, timeout) {
 }
 
 module.exports = detectSilence;
-},{}],203:[function(require,module,exports){
+},{}],204:[function(require,module,exports){
 'use strict';
 
 var detectSilence = require('./detectsilence');
@@ -33231,7 +33408,7 @@ to get a new one, but we\'ve run out of retries; returning it anyway.');
 }
 
 module.exports = workaround;
-},{"./audiocontext":201,"./detectsilence":202}],204:[function(require,module,exports){
+},{"./audiocontext":202,"./detectsilence":203}],205:[function(require,module,exports){
 module.exports={
   "_from": "twilio-video@2.0.0-beta10",
   "_id": "twilio-video@2.0.0-beta10",
@@ -33259,7 +33436,7 @@ module.exports={
   "_resolved": "https://registry.npmjs.org/twilio-video/-/twilio-video-2.0.0-beta10.tgz",
   "_shasum": "d0112629e770260f2e9cbb9868e79fe9be77700c",
   "_spec": "twilio-video@2.0.0-beta10",
-  "_where": "/Users/nikola/Development/air_mochi/utility_server",
+  "_where": "/Users/apple/Documents/dev/ASE/2020/AirMochi-tool/air_mochi/utility_server",
   "author": {
     "name": "Mark Andrus Roberts",
     "email": "mroberts@twilio.com"
@@ -33400,13 +33577,13 @@ module.exports={
   "version": "2.0.0-beta10"
 }
 
-},{}],205:[function(require,module,exports){
+},{}],206:[function(require,module,exports){
 module.exports = WebSocket;
 
-},{}],206:[function(require,module,exports){
+},{}],207:[function(require,module,exports){
 exports.XMLHttpRequest = XMLHttpRequest;
 
-},{}],207:[function(require,module,exports){
+},{}],208:[function(require,module,exports){
 if (typeof Object.create === 'function') {
   // implementation from standard node.js 'util' module
   module.exports = function inherits(ctor, superCtor) {
@@ -33431,14 +33608,14 @@ if (typeof Object.create === 'function') {
   }
 }
 
-},{}],208:[function(require,module,exports){
+},{}],209:[function(require,module,exports){
 module.exports = function isBuffer(arg) {
   return arg && typeof arg === 'object'
     && typeof arg.copy === 'function'
     && typeof arg.fill === 'function'
     && typeof arg.readUInt8 === 'function';
 }
-},{}],209:[function(require,module,exports){
+},{}],210:[function(require,module,exports){
 (function (process,global){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -34028,7 +34205,7 @@ function hasOwnProperty(obj, prop) {
 }
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./support/isBuffer":208,"_process":60,"inherits":207}],210:[function(require,module,exports){
+},{"./support/isBuffer":209,"_process":61,"inherits":208}],211:[function(require,module,exports){
 'use strict';
 
 var alphabet = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_'.split('')
@@ -34098,7 +34275,7 @@ yeast.encode = encode;
 yeast.decode = decode;
 module.exports = yeast;
 
-},{}],211:[function(require,module,exports){
+},{}],212:[function(require,module,exports){
 'use strict';
 
 // const server_location = 'http://softarch.usc.edu:3000/'
@@ -34135,9 +34312,8 @@ var identity;
 
 // The name of the room to join.
 // TODO: Change hardcoded name. This is needed in order to support multiple 
-// 		 devices at the same time. 
-var roomName = "Broadcast";
-
+// 		 devices at the same time.
+var roomName;
 var fileName = "some_download"
 
 var eventArray = [];
@@ -34162,7 +34338,7 @@ var isStoppedRecording = false;
 
 
 // Obtain a token from the server in order to connect to the Room.
-$.getJSON('/session',function(data){
+$.getJSON('/session', function(data){
 	var deviceId = data.deviceId;
 	var tester_name = data.name;
 
@@ -34198,6 +34374,7 @@ document.getElementById('btn-stop-recording').onclick = stopRecordingClicked
  *  from the room, if joined.
  * 
  */
+
 window.addEventListener('beforeunload', function () {
 	if (activeRoom) {
 		activeRoom.disconnect();
@@ -34218,18 +34395,18 @@ window.addEventListener('beforeunload', function () {
  *  
  * @param {*} room 
  */
-function roomJoined(room) {
+function roomJoined(room){
 	window.room = activeRoom = room;
 
 	console.log("Joined room: " + room + " as '" + identity + "'");
 
 	// Attach the Tracks of the Room's Participants.
 	// This happens only when iOS device is already sharing the screen.
-	room.participants.forEach(checkAndConnectParticipant(participant));
+	room.participants.forEach(participant => checkAndConnectParticipant(participant));
 
 	// When a Participant joins the Room, log the event.
 	// This happens when iOS app starts after you opened this page.
-	room.on('participantConnected', checkAndConnectParticipant(participant));
+	room.on('participantConnected', checkAndConnectParticipant);
 
 	// When a Participant leaves the Room, detach its Tracks.
 	room.on('participantDisconnected', function (participant) {
@@ -34485,4 +34662,4 @@ function sendMessage(jsonMessage, methodName) {
 	socket.emit(methodName, msg);
 }
 
-},{"alert-node":21,"socket.io-client":61,"twilio-video":90}]},{},[211]);
+},{"alert-node":21,"socket.io-client":62,"twilio-video":91}]},{},[212]);

@@ -1,6 +1,8 @@
 'use strict';
 
-const server_location = 'http://softarch.usc.edu:3000/'
+// const server_location = 'http://softarch.usc.edu:3000/'
+const server_location = 'http://192.168.1.126:3000/'
+
 
 const fs = require('browserify-fs')
 
@@ -9,12 +11,13 @@ const socket = io(server_location);
 
 // import RecordRTC from 'recordrtc';
 const RecordRTC = require('recordrtc');
+// const fs = require('fs');
 
 var eventLog = document.getElementById('event-log');
 
 var Video = require('twilio-video');
 
-var fileName = "some_download"
+var fileName = "some_download";
 
 var eventArray = [];
 
@@ -30,59 +33,119 @@ var isRecordingStarted = false;
 var isStoppedRecording = false;
 
 var iosDevicePresent = false;
+var scenarioName;
+//
+// const VIDEO_STREAM_WIDTH = 720;
+// const VIDEO_STREAM_HEIGHT = 540;
+
+const VIDEO_STREAM_WIDTH = 240;
+const VIDEO_STREAM_HEIGHT = 426;
 
 var currentX = 0;
 var currentY = 0;
+var scenarios;
 
-document.getElementById('btn-start-recording').onclick = function () {
-	this.disabled = true;
+document.getElementById('btn-start-replay').onclick = getScenario;
 
+document.getElementById('start-recording').onclick = function (){
+	console.log('recording started');
+	// this.disabled = true;
 	isStoppedRecording = false;
 	isRecordingStarted = true;
-
 	eventArray = [];
-
 	recordingTimerStart = (new Date()).getTime();
-
-	recorder.startRecording();
+	// recorder.startRecording();
 	document.getElementById('btn-stop-recording').disabled = false;
+	document.getElementById('btn-start-recording').disabled = true;
+	scenarioName = document.getElementById('message-text').value;
+	$('#exampleModal').modal('toggle');
+	const message = {
+		type: 'mouse',
+		xPercentage: 0,
+		yPercentage: 0,
+		subtype: 'touch'
+	};
+	sendMessage(message, 'event_console2server_calibrate');
 };
+var currentScenarioOptions = [];
+document.getElementById('btn-replay').onclick = function(){
+	$.getJSON('/scenarios',function(data){
+		scenarios  = [];
+		scenarios = data.scenarios;
+		var scenarioOptions = document.getElementById('scenario_select');
+		scenarios.forEach(scenario => {
+			if(currentScenarioOptions.includes(scenario)){
+
+			}
+			else{
+				var newOption = document.createElement("option");
+				newOption.value = scenario;
+				newOption.innerHTML = scenario;
+				scenarioOptions.options.add(newOption);
+				currentScenarioOptions.push(scenario);
+			}
+		});
+	});
+}
 
 document.getElementById('btn-stop-recording').onclick = function () {
 	this.disabled = true;
+	isRecordingStarted = false;
+	isStoppedRecording = true;
+	var events = []
+	eventArray.forEach(function (element) {
+		//csv += element + "," + "\r\n";
+		events.push(element)
 
-	recorder.stopRecording(function () {
-		isRecordingStarted = false;
-		isStoppedRecording = true;
-
-		var recordedBlobs = recorder.getBlob();
-		// document.getElementById('preview-video').srcObject = null;
-		// document.getElementById('preview-video').src = URL.createObjectURL(blob);
-		// document.getElementById('preview-video').parentNode.style.display = 'block';
-
-		// var file = new File([recordedBlobs], 'video.mp4', {
-		// 	type: 'video/mp4'
-		// });
-
-		RecordRTC.invokeSaveAsDialog(recordedBlobs, fileName + ".webm");
-
-		// let csvContent = "data:text/csv;charset=utf-8,";
-		var csv = '';
-		eventArray.forEach(function (element) {
-			csv += element + "," + "\r\n";
-		});
-
-		console.log(csv);
-		var hiddenElement = document.createElement('a');
-		hiddenElement.href = 'data:text/csv;charset=utf-8,' + encodeURI(csv);
-		hiddenElement.target = '_blank';
-		hiddenElement.download = fileName + '.csv';
-		hiddenElement.click();
-
-		document.getElementById('btn-start-recording').disabled = false;
-
-		// window.open(URL.createObjectURL(blob));
 	});
+	var recordedSession = {
+		name: scenarioName,
+		events: events
+	}
+	console.log(recordedSession);
+	var stringEvents = JSON.stringify(recordedSession);
+	console.log(stringEvents)
+	document.getElementById('btn-start-recording').disabled = false;
+	// $.post('/recordsession', stringEvents , function () {
+	// 	// 	console.log("recorded session is now sent to the server.")
+	// 	// });
+
+	$.ajax({
+		url: '/recordsession',
+		type:"POST",
+		data: stringEvents,
+		contentType:"application/json",
+		dataType:"json",
+		success: function(result){
+			console.log("recorded session is now sent to the server.")
+		}
+	})
+	// recorder.stopRecording(function(){
+	// 	isRecordingStarted = false;
+	// 	isStoppedRecording = true;
+	// 	var recordedBlobs = recorder.getBlob();
+	// 	// document.getElementById('preview-video').srcObject = null;
+	// 	// document.getElementById('preview-video').src = URL.createObjectURL(blob);
+	// 	// document.getElementById('preview-video').parentNode.style.display = 'block';
+	//
+	// 	// var file = new File([recordedBlobs], 'video.mp4', {
+	// 	// 	type: 'video/mp4'
+	// 	// });
+	// 	RecordRTC.invokeSaveAsDialog(recordedBlobs, fileName + ".webm");
+	// 	// let csvContent = "data:text/csv;charset=utf-8,";
+	// 	var csv = '';
+	// 	eventArray.forEach(function (element) {
+	// 		csv += element + "," + "\r\n";
+	// 	});
+	// 	console.log(csv);
+	// 	var hiddenElement = document.createElement('a');
+	// 	hiddenElement.href = 'data:text/csv;charset=utf-8,' + encodeURI(csv);
+	// 	hiddenElement.target = '_blank';
+	// 	hiddenElement.download = fileName + '.csv';
+	// 	hiddenElement.click();
+	// 	document.getElementById('btn-start-recording').disabled = false;
+	// 	// window.open(URL.createObjectURL(blob));
+	// });
 };
 
 // When we are about to transition away from this page, disconnect
@@ -92,6 +155,8 @@ window.addEventListener('beforeunload', function () {
 		activeRoom.disconnect();
 	}
 });
+
+window.addEventListener( "keydown", keyboardEvent);
 
 // Obtain a token from the server in order to connect to the Room.
 // $.getJSON('/token?identity=tester', function (data){
@@ -192,7 +257,6 @@ function roomJoined(room) {
 // Attach the Track to the DOM.
 function attachTrack(track, container) {
 	var htmlMediaElement = track.attach();
-
 	console.log("Track Kind:" + track.kind);
 	if ("video" == track.kind) {
 		var stream = htmlMediaElement.captureStream();
@@ -225,38 +289,41 @@ function attachTrack(track, container) {
 		// the device's screen.
 		var down = false;
 
-		$(htmlMediaElement).click(function (e) {
-			// e = Mouse click event.
-
-			var canvas = $(htmlMediaElement).get()[0];
-			canvas.requestPointerLock = canvas.requestPointerLock ||
-				canvas.mozRequestPointerLock ||
-				canvas.webkitRequestPointerLock;
-
-			// Ask the browser to lock the pointer)
-			canvas.requestPointerLock();
-		});
-
-		document.addEventListener('pointerlockchange', lockChangeAlert, false);
-		document.addEventListener('mozpointerlockchange', lockChangeAlert, false);
-
-		function lockChangeAlert() {
-			let canvas = $(htmlMediaElement).get()[0];
-			if (document.pointerLockElement === canvas ||
-				document.mozPointerLockElement === canvas) {
-				console.log('The pointer lock status is now locked');
-
-				document.addEventListener("mousemove", trackingEvent, true);
-				document.addEventListener("click", clickEvent, false);
-				document.addEventListener("keydown", keyboardEvent, false);
-			} else {
-				console.log('The pointer lock status is now unlocked');
-
-				document.removeEventListener("mousemove", trackingEvent, true);
-				document.removeEventListener("click", clickEvent, false);
-				document.removeEventListener("keydown", keyboardEvent, false);
-			}
-		}
+		// $(htmlMediaElement).click(function (e){
+		// 	// e = Mouse click event.
+		//
+		// 	var canvas = $(htmlMediaElement).get()[0];
+		// 	canvas.requestPointerLock = canvas.requestPointerLock ||
+		// 		canvas.mozRequestPointerLock ||
+		// 		canvas.webkitRequestPointerLock;
+		//
+		// 	// Ask the browser to lock the pointer)
+		// 	canvas.requestPointerLock();
+		// });
+		//
+		// document.addEventListener('pointerlockchange', lockChangeAlert, false);
+		// document.addEventListener('mozpointerlockchange', lockChangeAlert, false);
+		//
+		// function lockChangeAlert() {
+		// 	let canvas = $(htmlMediaElement).get()[0];
+		// 	if (document.pointerLockElement === canvas ||
+		// 		document.mozPointerLockElement === canvas) {
+		// 		console.log('The pointer lock status is now locked');
+		//
+		// 		document.addEventListener("mousemove", trackingEvent, true);
+		// 		document.addEventListener("click", clickEvent, false);
+		// 		document.addEventListener("keydown", keyboardEvent, false);
+		// 	} else {
+		// 		console.log('The pointer lock status is now unlocked');
+		//
+		// 		document.removeEventListener("mousemove", trackingEvent, true);
+		// 		document.removeEventListener("click", clickEvent, false);
+		// 		document.removeEventListener("keydown", keyboardEvent, false);
+		// 	}
+		// }
+		//$(htmlMediaElement).click(touchOnStream);
+		$(htmlMediaElement).mousedown(pressEvent);
+		$(htmlMediaElement).mouseup(releaseEvent);
 	}
 	container.appendChild(htmlMediaElement);
 }
@@ -343,196 +410,434 @@ function detachParticipantTracks(participant) {
 
 
 
+//
+// function clickEvent(e) {
+// 	var currentTime = (new Date()).getTime() - recordingTimerStart;
+// 	const newMessage = '' + currentTime + ':click[' + currentX + '-' + currentY + ']';
+//
+// 	if (isRecordingStarted) {
+// 		eventArray.push(newMessage);
+// 	}
+//
+// 	const previousInnerHtml = eventLog.innerHTML;
+// 	eventLog.innerHTML = newMessage;
+// 	eventLog.innerHTML += '<br/>';
+// 	eventLog.innerHTML += previousInnerHtml;
+//
+// 	var msg_json = {
+// 		_b: 1,
+// 		_x: 0,
+// 		_y: 0,
+// 		_w: 0
+// 	}
+// 	// console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
+// 	var msg = JSON.stringify(msg_json);
+// 	console.log(msg);
+// 	socket.emit('event_console2server', msg);
+// }
+//
+// function trackingEvent(e) {
+// 	var x = e.movementX
+// 	var y = e.movementY
+//
+// 	currentX += x;
+// 	currentY += y;
+//
+// 	if (currentX < 0) {
+// 		currentX = 0;
+// 	}
+// 	if (currentY < 0) {
+// 		currentY = 0;
+// 	}
+// 	if (currentX >= 720) {
+// 		currentX = 719;
+// 	}
+// 	if (currentY >= 540) {
+// 		currentY = 539;
+// 	}
+//
+// 	if (Math.sqrt(x * x + y * y) < 3) {
+// 		return
+// 	}
+//
+// 	var msg_json = {
+// 		_b: 0,
+// 		_x: e.movementX,
+// 		_y: e.movementY,
+// 		_w: 0
+// 	}
+//
+// 	// console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
+// 	var msg = JSON.stringify(msg_json);
+// 	console.log(msg);
+// 	socket.emit('event_console2server', msg);
+// }
 
-function clickEvent(e) {
-	var currentTime = (new Date()).getTime() - recordingTimerStart;
-	const newMessage = '' + currentTime + ':click[' + currentX + '-' + currentY + ']';
 
-	if (isRecordingStarted) {
-		eventArray.push(newMessage);
+
+
+// function keyboardEvent(event) {
+// 	// User has pressed 'h', meaning that we should go to home screen.
+// 	if (event.key == 'h') {
+// 		console.log("Homescreen!")
+//
+// 		var currentTime = recordingTimerStart - date.getTime();
+// 		var logString = '' + currentTime + ': homescreen';
+//
+// 		eventLog.innerHTML += '\n';
+// 		eventLog.innerHTML += logString;
+//
+// 		var msg_json = {
+// 			_b: 2,
+// 			_x: 0,
+// 			_y: 0,
+// 			_w: 0
+// 		}
+// 		// console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
+// 		var msg = JSON.stringify(msg_json);
+// 		console.log(msg);
+// 		socket.emit('event_console2server', msg);
+// 	}
+//
+// 	// Screenshot.
+// 	if (event.key == 's') {
+// 		console.log("Screenshot!")
+//
+// 		// var currentTime = recordingTimerStart - date.getTime();
+// 		// eventLog.innerHTML += '' + currentTime + ': screenshot';
+// 		// eventLog.innerHTML += '\n';
+//
+// 		var msg_json = {
+// 			_b: 4,
+// 			_x: 0,
+// 			_y: 0,
+// 			_w: 0
+// 		}
+// 		// console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
+// 		var msg = JSON.stringify(msg_json);
+// 		console.log(msg);
+// 		socket.emit('event_console2server', msg);
+// 	}
+//
+// 	// Notifications.
+// 	if (event.key == 'n') {
+// 		console.log("Notifications!")
+//
+// 		// var currentTime = recordingTimerStart - date.getTime();
+// 		// eventLog.innerHTML += '' + currentTime + ': notification';
+// 		// eventLog.innerHTML += '\n';
+//
+// 		var msg_json = {
+// 			_b: 8,
+// 			_x: 0,
+// 			_y: 0,
+// 			_w: 0
+// 		}
+// 		// console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
+// 		var msg = JSON.stringify(msg_json);
+// 		console.log(msg);
+// 		socket.emit('event_console2server', msg);
+// 	}
+//
+// 	// Control Center.
+// 	if (event.key == 'c') {
+// 		console.log("Control Center!");
+// 		var msg_json = {
+// 			_b: 16,
+// 			_x: 0,
+// 			_y: 0,
+// 			_w: 0
+// 		}
+// 		// console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
+// 		var msg = JSON.stringify(msg_json);
+// 		console.log(msg);
+// 		socket.emit('event_console2server', msg);
+// 	}
+//
+// 	// Dock.
+// 	if (event.key == 'd') {
+// 		console.log("Dock!")
+// 		var msg_json = {
+// 			_b: 32,
+// 			_x: 0,
+// 			_y: 0,
+// 			_w: 0
+// 		}
+// 		// console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
+// 		var msg = JSON.stringify(msg_json);
+// 		console.log(msg);
+// 		socket.emit('event_console2server', msg);
+// 	}
+//
+// 	// Scroll Down!
+// 	if (event.key == 'ArrowDown') {
+// 		console.log("Screenshot!")
+// 		var msg_json = {
+// 			_b: 0,
+// 			_x: 0,
+// 			_y: 0,
+// 			_w: -1
+// 		}
+// 		// console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
+// 		var msg = JSON.stringify(msg_json);
+// 		console.log(msg);
+// 		socket.emit('event_console2server', msg);
+// 	}
+//
+// 	// Scrool Up!
+// 	if (event.key == 'ArrowUp') {
+// 		console.log("Screenshot!")
+// 		var msg_json = {
+// 			_b: 0,
+// 			_x: 0,
+// 			_y: 0,
+// 			_w: 1
+// 		}
+// 		// console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
+// 		var msg = JSON.stringify(msg_json);
+// 		console.log(msg);
+// 		socket.emit('event_console2server', msg);
+// 	}
+//
+// }
+
+// function sendMessage(msg_json) {
+// 	var msg = JSON.stringify(msg_json);
+// 	console.log(msg);
+// 	socket.emit('event_console2server', msg);
+// }
+
+
+function forEachWithCallback(callback) {
+	const arrayCopy = this;
+	let index = 0;
+	const next = () => {
+		index++;
+		if (arrayCopy.length > 0) {
+			callback(arrayCopy.shift(), index, next);
+		}
 	}
-
-	const previousInnerHtml = eventLog.innerHTML;
-	eventLog.innerHTML = newMessage;
-	eventLog.innerHTML += '<br/>';
-	eventLog.innerHTML += previousInnerHtml;
-
-	var msg_json = {
-		_b: 1,
-		_x: 0,
-		_y: 0,
-		_w: 0
-	}
-	// console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
-	var msg = JSON.stringify(msg_json);
-	console.log(msg);
-	socket.emit('event_console2server', msg);
+	next();
 }
 
-function trackingEvent(e) {
-	var x = e.movementX
-	var y = e.movementY
+Array.prototype.forEachWithCallback = forEachWithCallback;
 
-	currentX += x;
-	currentY += y;
+document.getElementById('phone-container').onScroll = scroll;
 
-	if (currentX < 0) {
-		currentX = 0;
-	}
-	if (currentY < 0) {
-		currentY = 0;
-	}
-	if (currentX >= 720) {
-		currentX = 719;
-	}
-	if (currentY >= 540) {
-		currentY = 539;
-	}
 
-	if (Math.sqrt(x * x + y * y) < 3) {
-		return
-	}
+function keyboardEvent(e){
+	console.log('keyboardevent')
+	var key= e.key;
+	const message = {
+		type: 'keyboard',
+		val: key
+	};
 
-	var msg_json = {
-		_b: 0,
-		_x: e.movementX,
-		_y: e.movementY,
-		_w: 0
+	if(isRecordingStarted){
+		const log = {
+			message: message,
+			time: (new Date()).getTime() - recordingTimerStart
+		};
+		eventArray.push(log);
 	}
-
-	// console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
-	var msg = JSON.stringify(msg_json);
-	console.log(msg);
-	socket.emit('event_console2server', msg);
+	sendMessage(message, 'event_console2server_keyboard')
 }
 
-function keyboardEvent(event) {
-	// User has pressed 'h', meaning that we should go to home screen.
-	if (event.key == 'h') {
-		console.log("Homescreen!")
+function scrollEvent(e){
+	console.log('scroll event!')
+	console.log(e)
+}
 
-		var currentTime = recordingTimerStart - date.getTime();
-		var logString = '' + currentTime + ': homescreen';
+function touchOnStream(e){
+	var posX = $(this).offset().left;
+	console.log('posX:'+ posX);
+	var posY = $(this).offset().top;
+	console.log('posY:'+ posY);
 
-		eventLog.innerHTML += '\n';
-		eventLog.innerHTML += logString;
+	console.log('pageX:'+e.pageX);
+	console.log('pageY:'+e.pageY);
 
-		var msg_json = {
-			_b: 2,
-			_x: 0,
-			_y: 0,
-			_w: 0
-		}
-		// console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
-		var msg = JSON.stringify(msg_json);
-		console.log(msg);
-		socket.emit('event_console2server', msg);
+	var xPerc = (e.pageX - posX * 1.0) / VIDEO_STREAM_WIDTH;
+	var yPerc = (e.pageY - posY * 1.0) / VIDEO_STREAM_HEIGHT;
+
+	console.log('xPerc:'+ xPerc);
+	console.log('yPerc:'+ yPerc);
+	$('#last_event').text(
+		"touch (" + (xPerc * VIDEO_STREAM_WIDTH) + ", " + (yPerc * VIDEO_STREAM_HEIGHT) + ")")
+
+	if (xPerc < 0) {
+		xPerc = 0
 	}
 
-	// Screenshot.
-	if (event.key == 's') {
-		console.log("Screenshot!")
-
-		// var currentTime = recordingTimerStart - date.getTime();
-		// eventLog.innerHTML += '' + currentTime + ': screenshot';
-		// eventLog.innerHTML += '\n';
-
-		var msg_json = {
-			_b: 4,
-			_x: 0,
-			_y: 0,
-			_w: 0
-		}
-		// console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
-		var msg = JSON.stringify(msg_json);
-		console.log(msg);
-		socket.emit('event_console2server', msg);
+	if (yPerc < 0) {
+		yPerc = 0
 	}
 
-	// Notifications.
-	if (event.key == 'n') {
-		console.log("Notifications!")
+	const message = {
+		type: 'mouse',
+		xPercentage: xPerc,
+		yPercentage: yPerc,
+		subtype: 'touch'
+	};
 
-		// var currentTime = recordingTimerStart - date.getTime();
-		// eventLog.innerHTML += '' + currentTime + ': notification';
-		// eventLog.innerHTML += '\n';    
+	if(isRecordingStarted){
+		const log = {
+			message: message,
+			time: (new Date()).getTime() - recordingTimerStart
+		};
+		eventArray.push(log);
+		console.log(log);
+	}
+	sendMessage(message, 'event_console2server')
+}
+//
+// $('#exampleModal').on('show.bs.modal', function (event) {
+// 	var button = $(event.relatedTarget) // Button that triggered the modal
+// 	var recipient = button.data('whatever') // Extract info from data-* attributes
+// 	// If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+// 	// Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+// 	var modal = $(this)
+// 	modal.find('.modal-title').text('New message to ' + recipient)
+// 	modal.find('.modal-body input').val(recipient)
+// });
 
-		var msg_json = {
-			_b: 8,
-			_x: 0,
-			_y: 0,
-			_w: 0
-		}
-		// console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
-		var msg = JSON.stringify(msg_json);
-		console.log(msg);
-		socket.emit('event_console2server', msg);
+
+function releaseEvent(e){
+	console.log('release event')
+	var posX = $(this).offset().left;
+	console.log('posX:'+ posX);
+	var posY = $(this).offset().top;
+	console.log('posY:'+ posY);
+
+	console.log('pageX:'+e.pageX);
+	console.log('pageY:'+e.pageY);
+
+	var xPerc = (e.pageX - posX * 1.0) / VIDEO_STREAM_WIDTH;
+	var yPerc = (e.pageY - posY * 1.0) / VIDEO_STREAM_HEIGHT;
+
+	console.log('xPerc:'+ xPerc);
+	console.log('yPerc:'+ yPerc);
+	$('#last_event').text(
+		"touch (" + (xPerc * VIDEO_STREAM_WIDTH) + ", " + (yPerc * VIDEO_STREAM_HEIGHT) + ")")
+
+	if (xPerc < 0) {
+		xPerc = 0
 	}
 
-	// Control Center.
-	if (event.key == 'c') {
-		console.log("Control Center!")
-		var msg_json = {
-			_b: 16,
-			_x: 0,
-			_y: 0,
-			_w: 0
-		}
-		// console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
-		var msg = JSON.stringify(msg_json);
-		console.log(msg);
-		socket.emit('event_console2server', msg);
+	if (yPerc < 0) {
+		yPerc = 0
 	}
 
-	// Dock.
-	if (event.key == 'd') {
-		console.log("Dock!")
-		var msg_json = {
-			_b: 32,
-			_x: 0,
-			_y: 0,
-			_w: 0
-		}
-		// console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
-		var msg = JSON.stringify(msg_json);
-		console.log(msg);
-		socket.emit('event_console2server', msg);
+	const message = {
+		type: 'mouse',
+		xPercentage: xPerc,
+		yPercentage: yPerc,
+		subtype: 'release'
+	};
+
+	if(isRecordingStarted){
+		const log = {
+			message: message,
+			time: (new Date()).getTime() - recordingTimerStart
+		};
+		eventArray.push(log);
+		console.log(log);
+	}
+	sendMessage(message, 'event_console2server')
+}
+
+function pressEvent(e){
+	console.log('press event')
+	var posX = $(this).offset().left;
+	console.log('posX:'+ posX);
+	var posY = $(this).offset().top;
+	console.log('posY:'+ posY);
+
+	console.log('pageX:'+e.pageX);
+	console.log('pageY:'+e.pageY);
+
+	var xPerc = (e.pageX - posX * 1.0) / VIDEO_STREAM_WIDTH;
+	var yPerc = (e.pageY - posY * 1.0) / VIDEO_STREAM_HEIGHT;
+
+	console.log('xPerc:'+ xPerc);
+	console.log('yPerc:'+ yPerc);
+	$('#last_event').text(
+		"touch (" + (xPerc * VIDEO_STREAM_WIDTH) + ", " + (yPerc * VIDEO_STREAM_HEIGHT) + ")")
+
+	if (xPerc < 0) {
+		xPerc = 0
 	}
 
-	// Scrool Down!
-	if (event.key == 'ArrowDown') {
-		console.log("Screenshot!")
-		var msg_json = {
-			_b: 0,
-			_x: 0,
-			_y: 0,
-			_w: -1
-		}
-		// console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
-		var msg = JSON.stringify(msg_json);
-		console.log(msg);
-		socket.emit('event_console2server', msg);
+	if (yPerc < 0) {
+		yPerc = 0
 	}
 
-	// Scrool Up!
-	if (event.key == 'ArrowUp') {
-		console.log("Screenshot!")
-		var msg_json = {
-			_b: 0,
-			_x: 0,
-			_y: 0,
-			_w: 1
-		}
-		// console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
-		var msg = JSON.stringify(msg_json);
-		console.log(msg);
-		socket.emit('event_console2server', msg);
+	const message = {
+		type: 'mouse',
+		xPercentage: xPerc,
+		yPercentage: yPerc,
+		subtype: 'press'
+	};
+
+	if(isRecordingStarted){
+		const log = {
+			message: message,
+			time: (new Date()).getTime() - recordingTimerStart
+		};
+		eventArray.push(log);
+		console.log(log);
 	}
+	sendMessage(message, 'event_console2server')
+}
+
+function getScenario(){
+	var selectedSenario = document.getElementById('scenario_select').value;
+	console.log(selectedSenario);
+	$.getJSON('/scenario?name='+selectedSenario,function(data){
+		$('#replayModal').modal('toggle');
+		eventArray = data.events;
+		replay();
+	});
 
 }
 
-function sendMessage(msg_json) {
-	var msg = JSON.stringify(msg_json);
+function replay(){
+	console.log('replay started!');
+	console.log((new Date()).getTime());
+	const message = {
+		type: 'mouse',
+		xPercentage: 0,
+		yPercentage: 0,
+		subtype: 'touch'
+	};
+	sendMessage(message, 'event_console2server_calibrate');
+	var prev_action_time = 0;
+	eventArray.forEachWithCallback((event, i, next) => {
+		var message = event.message;
+		var time = event.time;
+		var eventType = message.type;
+		var subType = message.subtype;
+		var methodName;
+		var diff = time - prev_action_time;
+		console.log('diff:'+diff);
+		if(eventType=='mouse'){
+			methodName = 'event_console2server';
+		}else{
+			methodName = 'event_console2server_keyboard';
+		}
+		if(subType == 'release');
+			 diff = diff - 900
+			 console.log(diff)
+		setTimeout(() => {
+			sendMessage(message, methodName);
+			next();
+			prev_action_time = time;
+		}, diff);
+	});
+}
+
+function sendMessage(jsonMessage, methodName) {
+	const msg = JSON.stringify(jsonMessage);
 	console.log(msg);
-	socket.emit('event_console2server', msg);
+	socket.emit(methodName, msg);
 }

@@ -34,9 +34,8 @@ var identity;
 
 // The name of the room to join.
 // TODO: Change hardcoded name. This is needed in order to support multiple 
-// 		 devices at the same time. 
-var roomName = "Broadcast";
-
+// 		 devices at the same time.
+var roomName;
 var fileName = "some_download"
 
 var eventArray = [];
@@ -97,6 +96,7 @@ document.getElementById('btn-stop-recording').onclick = stopRecordingClicked
  *  from the room, if joined.
  * 
  */
+
 window.addEventListener('beforeunload', function () {
 	if (activeRoom) {
 		activeRoom.disconnect();
@@ -117,7 +117,7 @@ window.addEventListener('beforeunload', function () {
  *  
  * @param {*} room 
  */
-function roomJoined(room) {
+function roomJoined(room){
 	window.room = activeRoom = room;
 
 	console.log("Joined room: " + room + " as '" + identity + "'");
