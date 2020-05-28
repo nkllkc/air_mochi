@@ -16,6 +16,7 @@ const RecordRTC = require('recordrtc');
 var eventLog = document.getElementById('event-log');
 
 var Video = require('twilio-video');
+var FileSaver = require('file-saver');
 
 var fileName = "some_download";
 
@@ -46,6 +47,7 @@ var currentY = 0;
 var scenarios;
 
 document.getElementById('btn-start-replay').onclick = getScenario;
+document.getElementById('btn-get-log').onclick = getScenarioLog;
 
 document.getElementById('start-recording').onclick = function (){
 	console.log('recording started');
@@ -54,7 +56,7 @@ document.getElementById('start-recording').onclick = function (){
 	isRecordingStarted = true;
 	eventArray = [];
 	recordingTimerStart = (new Date()).getTime();
-	// recorder.startRecording();
+	recorder.startRecording();
 	document.getElementById('btn-stop-recording').disabled = false;
 	document.getElementById('btn-start-recording').disabled = true;
 	scenarioName = document.getElementById('message-text').value;
@@ -67,6 +69,28 @@ document.getElementById('start-recording').onclick = function (){
 	};
 	sendMessage(message, 'event_console2server_calibrate');
 };
+
+var currentLogScenarioOptions = [];
+document.getElementById('btn-log').onclick = function(){
+	$.getJSON('/scenarios',function(data){
+		scenarios  = [];
+		scenarios = data.scenarios;
+		var scenarioOptions = document.getElementById('scenario_log_select');
+		scenarios.forEach(scenario => {
+			if(currentLogScenarioOptions.includes(scenario)){
+
+			}
+			else{
+				var newOption = document.createElement("option");
+				newOption.value = scenario;
+				newOption.innerHTML = scenario;
+				scenarioOptions.options.add(newOption);
+				currentLogScenarioOptions.push(scenario);
+			}
+		});
+	});
+};
+
 var currentScenarioOptions = [];
 document.getElementById('btn-replay').onclick = function(){
 	$.getJSON('/scenarios',function(data){
@@ -86,7 +110,7 @@ document.getElementById('btn-replay').onclick = function(){
 			}
 		});
 	});
-}
+};
 
 document.getElementById('btn-stop-recording').onclick = function () {
 	this.disabled = true;
@@ -112,41 +136,42 @@ document.getElementById('btn-stop-recording').onclick = function () {
 
 	$.ajax({
 		url: '/recordsession',
-		type:"POST",
+		type: "POST",
 		data: stringEvents,
-		contentType:"application/json",
-		dataType:"json",
-		success: function(result){
+		contentType: "application/json",
+		dataType: "json",
+		success: function (result) {
 			console.log("recorded session is now sent to the server.")
 		}
-	})
-	// recorder.stopRecording(function(){
-	// 	isRecordingStarted = false;
-	// 	isStoppedRecording = true;
-	// 	var recordedBlobs = recorder.getBlob();
-	// 	// document.getElementById('preview-video').srcObject = null;
-	// 	// document.getElementById('preview-video').src = URL.createObjectURL(blob);
-	// 	// document.getElementById('preview-video').parentNode.style.display = 'block';
-	//
-	// 	// var file = new File([recordedBlobs], 'video.mp4', {
-	// 	// 	type: 'video/mp4'
-	// 	// });
-	// 	RecordRTC.invokeSaveAsDialog(recordedBlobs, fileName + ".webm");
-	// 	// let csvContent = "data:text/csv;charset=utf-8,";
-	// 	var csv = '';
-	// 	eventArray.forEach(function (element) {
-	// 		csv += element + "," + "\r\n";
-	// 	});
-	// 	console.log(csv);
-	// 	var hiddenElement = document.createElement('a');
-	// 	hiddenElement.href = 'data:text/csv;charset=utf-8,' + encodeURI(csv);
-	// 	hiddenElement.target = '_blank';
-	// 	hiddenElement.download = fileName + '.csv';
-	// 	hiddenElement.click();
-	// 	document.getElementById('btn-start-recording').disabled = false;
-	// 	// window.open(URL.createObjectURL(blob));
-	// });
-};
+	});
+	recorder.stopRecording(function () {
+		// 	isRecordingStarted = false;
+		// 	isStoppedRecording = true;
+		var recordedBlobs = recorder.getBlob();
+		// 	// document.getElementById('preview-video').srcObject = null;
+		// 	// document.getElementById('preview-video').src = URL.createObjectURL(blob);
+		// 	// document.getElementById('preview-video').parentNode.style.display = 'block';
+		//
+		var file = new File([recordedBlobs], 'video.mp4', {
+			type: 'video/mp4'
+		});
+		RecordRTC.invokeSaveAsDialog(recordedBlobs, scenarioName + ".webm");
+		// 	// let csvContent = "data:text/csv;charset=utf-8,";
+		// 	var csv = '';
+		// 	eventArray.forEach(function (element) {
+		// 		csv += element + "," + "\r\n";
+		// 	});
+		// 	console.log(csv);
+		// 	var hiddenElement = document.createElement('a');
+		// 	hiddenElement.href = 'data:text/csv;charset=utf-8,' + encodeURI(csv);
+		// 	hiddenElement.target = '_blank';
+		// 	hiddenElement.download = fileName + '.csv';
+		// 	hiddenElement.click();
+		// 	document.getElementById('btn-start-recording').disabled = false;
+		// 	// window.open(URL.createObjectURL(blob));
+		// });
+	});
+}
 
 // When we are about to transition away from this page, disconnect
 // from the room, if joined.
@@ -260,27 +285,23 @@ function attachTrack(track, container) {
 	console.log("Track Kind:" + track.kind);
 	if ("video" == track.kind) {
 		var stream = htmlMediaElement.captureStream();
-
 		recorder = RecordRTC(stream, {
 			// audio, video, canvas, gif
 			type: 'video',
-
 			// audio/webm
 			// video/webm\;codecs=h264
 			mimeType: 'video/webm\;codecs=h264',
-
 			getNativeBlob: true,
 
 			// MediaStreamRecorder, StereoAudioRecorder, WebAssemblyRecorder
 			// CanvasRecorder, GifRecorder, WhammyRecorder
 			recorderType: RecordRTC.WhammyRecorder,
-
 			// used by CanvasRecorder and WhammyRecorder
 			canvas: {
 				width: 720,
 				height: 540
 			}
-		})
+		});
 
 		// Enable recorder.
 		document.getElementById('btn-start-recording').disabled = false;
@@ -608,20 +629,6 @@ function detachParticipantTracks(participant) {
 // }
 
 
-function forEachWithCallback(callback) {
-	const arrayCopy = this;
-	let index = 0;
-	const next = () => {
-		index++;
-		if (arrayCopy.length > 0) {
-			callback(arrayCopy.shift(), index, next);
-		}
-	}
-	next();
-}
-
-Array.prototype.forEachWithCallback = forEachWithCallback;
-
 document.getElementById('phone-container').onScroll = scroll;
 
 
@@ -790,13 +797,31 @@ function pressEvent(e){
 	sendMessage(message, 'event_console2server')
 }
 
+function getScenarioLog(){
+	var selectedScenario = document.getElementById('scenario_log_select').value;
+	console.log(selectedScenario);
+	$.getJSON('/scenario?name='+selectedScenario,function(data){
+		$('#logModal').modal('toggle');
+		downloadLogFile(data.events, selectedScenario);
+	});
+}
+
+function downloadLogFile(events, name){
+	console.log("in download")
+	console.log(name)
+	var fileName = name+".JSON";
+	var content = JSON.stringify(events);
+	var blob = new Blob([content], {type: "text/plain;charset=utf-8"});
+	FileSaver.saveAs(blob, fileName);
+}
+
 function getScenario(){
-	var selectedSenario = document.getElementById('scenario_select').value;
-	console.log(selectedSenario);
-	$.getJSON('/scenario?name='+selectedSenario,function(data){
-		$('#replayModal').modal('toggle');
-		eventArray = data.events;
-		replay();
+	var selectedScenario = document.getElementById('scenario_select').value;
+	console.log(selectedScenario);
+	$('#replayModal').modal('toggle');
+	$.getJSON('/replayscenario?name='+selectedScenario,function(data){
+		// eventArray = data.events;
+		// replay();
 	});
 
 }
@@ -825,9 +850,12 @@ function replay(){
 		}else{
 			methodName = 'event_console2server_keyboard';
 		}
-		if(subType == 'release');
-			 diff = diff - 900
-			 console.log(diff)
+		if(subType == 'release'){
+			diff = diff - 200;
+		}
+		diff = diff - 900;
+
+		console.log(diff);
 		setTimeout(() => {
 			sendMessage(message, methodName);
 			next();
