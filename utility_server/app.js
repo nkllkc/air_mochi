@@ -208,7 +208,7 @@ function replay(eventArray){
     if(subType == 'release'){
       diff = diff - 300;
     }
-    diff = diff - 900;
+    diff = diff - 1000;
 
     console.log(diff);
     setTimeout(() => {
