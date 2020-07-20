@@ -58,7 +58,7 @@
                 });
             }
         };
-        xmlHttp.open("GET", "http://softarch.usc.edu:3000/devices", true);
+        xmlHttp.open("GET", "http://192.168.1.126:3000/devices", true);
         xmlHttp.setRequestHeader('Access-Control-Allow-Headers', true);
         xmlHttp.send(null);
     </script>
@@ -102,7 +102,9 @@
                 <div class="wrap-input100 validate-input" data-validate = "Password is required">
                     <!--                    <input class="input100" type="password" name="pass" placeholder="Password">-->
                     <select id="device_select" name="device_select" class="custom-select custom-select-lg" style="width: 100%">
-                        <option>Device under test</option>
+                        <option>iPhone X</option>
+                        <option>iPhone 8 </option>
+                        <option>iPhone SE</option>
                     </select>
                     <span class="focus-input100"></span>
                 </div>

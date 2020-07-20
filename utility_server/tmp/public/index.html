@@ -1,47 +1,138 @@
-<!DOCTYPE html>
-<html>
+<!--<!DOCTYPE html>-->
+<!--<html>-->
 
+<!--<head>-->
+<!--  <link rel="stylesheet" href="index.css">-->
+<!--</head>-->
+
+<!--<body>-->
+<!--&lt;!&ndash;  <h1 class="airmochi-title">AirMochi - Remotelly Test iOS Apps</h1>&ndash;&gt;-->
+
+<!--  <div class="row">-->
+<!--    <div class="column left">-->
+<!--      <div class="phone" style="display: inline-block">-->
+<!--        <div style="display: none;" class="video">-->
+<!--          <video controls autoplay playsinline id="preview-video" style="display: inline-block"></video>-->
+<!--        </div>-->
+<!--        <div id="remote-media"></div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="column right">-->
+<!--      <div class="instructions">-->
+<!--      <h2> instructions: </h2>-->
+<!--      <p>Press 'H' for going back to the homescreen.</p>-->
+<!--      <p>Press 'S' for taking a screenshot.</p>-->
+<!--      <p>Press 'N' for opening Notification tab.</p>-->
+<!--      <p>Press 'C' for opening Control Center tab. </p>-->
+<!--      <p>Press 'D' for bringing up Dock.</p>-->
+<!--      <p>Press 'ArrowDown'/'ArrowUp' to scroll down/up. </p>-->
+<!--      </div>-->
+<!--      <div class="control-buttons">-->
+<!--        </br>-->
+<!--      <button class="start-button" id="btn-start-recording">Start Recording</button>-->
+<!--      <button class="end-button" id="btn-stop-recording" disabled>Stop Recording</button>-->
+<!--      </br>-->
+<!--      <div>-->
+<!--      <p>Event log: </p>-->
+<!--      <div id="event-log"></div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--    </div>-->
+
+
+<!--</body>-->
+
+<!--</html>-->
+
+<!-- ===================== -->
+<!DOCTYPE HTML>
+<html lang="en-US">
 <head>
-  <link rel="stylesheet" href="index.css">
-</head>
+  <title>AirMochi</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<body>
-<!--  <h1 class="airmochi-title">AirMochi - Remotelly Test iOS Apps</h1>-->
+  <link rel="shortcut icon" href="images/favicon.png" />
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CLibre+Baskerville:400,400italic,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css"  href='css/clear.css' />
+  <link rel="stylesheet" type="text/css"  href='css/common.css' />
+  <link rel="stylesheet" type="text/css"  href='css/font-awesome.min.css' />
+  <link rel="stylesheet" type="text/css"  href='css/carouFredSel.css' />
+  <link rel="stylesheet" type="text/css"  href='css/sm-clean.css' />
+  <link rel="stylesheet" type="text/css"  href='index.css' />
 
-  <div class="row">
-    <div class="column left">
-      <div class="phone" style="display: inline-block">
-        <div style="display: none;" class="video">
-          <video controls autoplay playsinline id="preview-video" style="display: inline-block"></video>
-        </div>
-        <div id="remote-media"></div>
-      </div>
-    </div>
-    <div class="column right">
-      <div class="instructions">
-      <h2> instructions: </h2>
-      <p>Press 'H' for going back to the homescreen.</p>
-      <p>Press 'S' for taking a screenshot.</p>
-      <p>Press 'N' for opening Notification tab.</p> 
-      <p>Press 'C' for opening Control Center tab. </p>
-      <p>Press 'D' for bringing up Dock.</p>
-      <p>Press 'ArrowDown'/'ArrowUp' to scroll down/up. </p>
-      </div>
-      <div class="control-buttons">
-        </br>
-      <button class="start-button" id="btn-start-recording">Start Recording</button>
-      <button class="end-button" id="btn-stop-recording" disabled>Stop Recording</button>
-      </br>
-      <div>
-      <p>Event log: </p>
-      <div id="event-log"></div>
-    </div>
-  </div>
-
+  <!--[if lt IE 9]>
+  <script src="js/html5.js"></script>
   <script src="/socket.io/socket.io.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdn.webrtc-experiment.com/screenshot.js"> </script>
   <script src="index.js"></script>
-</body>
+  <![endif]-->
 
+</head>
+
+
+<body class="home blog">
+
+<!-- Home Content -->
+<div id="content" class="site-content row">
+  <div id="blog-wrapper" class="column">
+    <div class="blog-holder center-relative">
+
+
+      <article id="post-1" class="blog-item-holder featured-post">
+        <div class="entry-content relative">
+          <div class="content-1170 center-relative">
+            <div class="cat-links">
+              <ul>
+                <li>
+                  <a href="#">Tester:</a>
+                </li>
+              </ul>
+            </div>
+            <div class="entry-date published">Saghar </div>
+            <h2 class="entry-title">
+              <a href="single.html">AirMochi: Real-time application testing for mobile devices.</a>
+            </h2>
+            <div class="excerpt">
+              <h2> instructions: </h2>
+              <p>Press <span class="instructions">H</span> for going back to the homescreen.</p>
+              <p>Press <span class="instructions">S</span> for taking a screenshot.</p>
+              <p>Press <span class="instructions">N</span> for opening Notification tab.</p>
+              <p>Press <span class="instructions">C</span> for opening Control Center tab. </p>
+              <p>Press <span class="instructions">D</span> for bringing up Dock.</p>
+              <p>Press <span class="instructions">ArrowDown/ArrowUp</span> to scroll down/up. </p>
+            </div>
+            <p>Event log: </p>
+            <div id="event-log"></div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <div class="column right-col">
+    <div class="buttons">
+      <button class="start-button" id="btn-start-recording">Start Recording</button>
+      <button class="end-button" id="btn-stop-recording" disabled>Stop Recording</button>
+    </div>
+    <div class="phone-container">
+      <div class="video-container">
+        <div style="display: none;" class="video">
+          <video controls autoplay playsinline id="preview-video" style="display: inline-block" class="screen"></video>
+        </div>
+        <div id="remote-media"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdn.webrtc-experiment.com/screenshot.js"> </script>
+<script src="index.js"></script>
+
+</body>
 </html>

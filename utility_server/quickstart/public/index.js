@@ -1366,7 +1366,7 @@ function updateTrackIdsToSSRCs(sdpFormat, tracksToSSRCs, sdp) {
 
 module.exports = ChromeRTCPeerConnection;
 
-},{"../mediastream":4,"../rtcrtpsender":11,"../rtcsessiondescription/chrome":12,"../util":16,"../util/eventtarget":15,"../util/latch":17,"../util/sdp":18,"util":322}],8:[function(require,module,exports){
+},{"../mediastream":4,"../rtcrtpsender":11,"../rtcsessiondescription/chrome":12,"../util":16,"../util/eventtarget":15,"../util/latch":17,"../util/sdp":18,"util":324}],8:[function(require,module,exports){
 /* globals RTCPeerConnection */
 'use strict';
 
@@ -1699,7 +1699,7 @@ function overwriteWithInitiallyNegotiatedDtlsRole(description, dtlsRole) {
 
 module.exports = FirefoxRTCPeerConnection;
 
-},{"../rtcsessiondescription/firefox":13,"../util":16,"../util/eventtarget":15,"../util/sdp":18,"util":322}],9:[function(require,module,exports){
+},{"../rtcsessiondescription/firefox":13,"../util":16,"../util/eventtarget":15,"../util/sdp":18,"util":324}],9:[function(require,module,exports){
 'use strict';
 
 var guessBrowser = require('../util').guessBrowser;
@@ -2070,7 +2070,7 @@ function shimDataChannel(dataChannel) {
 
 module.exports = SafariRTCPeerConnection;
 
-},{"../util":16,"../util/eventtarget":15,"../util/latch":17,"../util/sdp":18,"util":322}],11:[function(require,module,exports){
+},{"../util":16,"../util/eventtarget":15,"../util/latch":17,"../util/sdp":18,"util":324}],11:[function(require,module,exports){
 'use strict';
 
 /**
@@ -2220,7 +2220,7 @@ EventTarget.prototype.removeEventListener = function removeEventListener() {
 
 module.exports = EventTarget;
 
-},{"events":68}],16:[function(require,module,exports){
+},{"events":69}],16:[function(require,module,exports){
 'use strict';
 
 /**
@@ -2902,7 +2902,7 @@ module.exports={
   "_resolved": "https://registry.npmjs.org/@twilio/webrtc/-/webrtc-4.0.0.tgz",
   "_shasum": "d170e1b9e2055728b94758085303dfa8e086c3c6",
   "_spec": "@twilio/webrtc@4.0.0",
-  "_where": "/Users/nikola/Development/air_mochi/utility_server/node_modules/twilio-video",
+  "_where": "/Users/apple/Documents/dev/ASE/2020/AirMochi-tool/air_mochi/utility_server/node_modules/twilio-video",
   "author": {
     "name": "Manjesh Malavalli",
     "email": "mmalavalli@twilio.com"
@@ -3054,7 +3054,7 @@ AbstractChainedBatch.prototype.write = function (options, callback) {
 
 module.exports = AbstractChainedBatch
 }).call(this,require('_process'))
-},{"_process":150}],21:[function(require,module,exports){
+},{"_process":152}],21:[function(require,module,exports){
 (function (process){
 /* Copyright (c) 2013 Rod Vagg, MIT License */
 
@@ -3107,7 +3107,7 @@ AbstractIterator.prototype.end = function (callback) {
 module.exports = AbstractIterator
 
 }).call(this,require('_process'))
-},{"_process":150}],22:[function(require,module,exports){
+},{"_process":152}],22:[function(require,module,exports){
 (function (Buffer,process){
 /* Copyright (c) 2013 Rod Vagg, MIT License */
 
@@ -3367,7 +3367,7 @@ module.exports.AbstractIterator     = AbstractIterator
 module.exports.AbstractChainedBatch = AbstractChainedBatch
 
 }).call(this,{"isBuffer":require("../is-buffer/index.js")},require('_process'))
-},{"../is-buffer/index.js":88,"./abstract-chained-batch":20,"./abstract-iterator":21,"_process":150,"xtend":23}],23:[function(require,module,exports){
+},{"../is-buffer/index.js":90,"./abstract-chained-batch":20,"./abstract-iterator":21,"_process":152,"xtend":23}],23:[function(require,module,exports){
 module.exports = extend
 
 function extend() {
@@ -3974,7 +3974,7 @@ BufferList.prototype.destroy = function () {
 module.exports = BufferList
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":42,"readable-stream":36,"util":322}],30:[function(require,module,exports){
+},{"buffer":42,"readable-stream":36,"util":324}],30:[function(require,module,exports){
 module.exports = Array.isArray || function (arr) {
   return Object.prototype.toString.call(arr) == '[object Array]';
 };
@@ -4072,7 +4072,7 @@ function forEach (xs, f) {
 }
 
 }).call(this,require('_process'))
-},{"./_stream_readable":33,"./_stream_writable":35,"_process":150,"core-util-is":48,"inherits":87}],32:[function(require,module,exports){
+},{"./_stream_readable":33,"./_stream_writable":35,"_process":152,"core-util-is":48,"inherits":89}],32:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -4120,7 +4120,7 @@ PassThrough.prototype._transform = function(chunk, encoding, cb) {
   cb(null, chunk);
 };
 
-},{"./_stream_transform":34,"core-util-is":48,"inherits":87}],33:[function(require,module,exports){
+},{"./_stream_transform":34,"core-util-is":48,"inherits":89}],33:[function(require,module,exports){
 (function (process){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -5106,7 +5106,7 @@ function indexOf (xs, x) {
 }
 
 }).call(this,require('_process'))
-},{"_process":150,"buffer":42,"core-util-is":48,"events":68,"inherits":87,"isarray":30,"stream":182,"string_decoder/":37}],34:[function(require,module,exports){
+},{"_process":152,"buffer":42,"core-util-is":48,"events":69,"inherits":89,"isarray":30,"stream":184,"string_decoder/":37}],34:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -5318,7 +5318,7 @@ function done(stream, er) {
   return stream.push(null);
 }
 
-},{"./_stream_duplex":31,"core-util-is":48,"inherits":87}],35:[function(require,module,exports){
+},{"./_stream_duplex":31,"core-util-is":48,"inherits":89}],35:[function(require,module,exports){
 (function (process){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -5708,7 +5708,7 @@ function endWritable(stream, state, cb) {
 }
 
 }).call(this,require('_process'))
-},{"./_stream_duplex":31,"_process":150,"buffer":42,"core-util-is":48,"inherits":87,"stream":182}],36:[function(require,module,exports){
+},{"./_stream_duplex":31,"_process":152,"buffer":42,"core-util-is":48,"inherits":89,"stream":184}],36:[function(require,module,exports){
 (function (process){
 var Stream = require('stream'); // hack to fix a circular dependency issue when used with browserify
 exports = module.exports = require('./lib/_stream_readable.js');
@@ -5723,7 +5723,7 @@ if (!process.browser && process.env.READABLE_STREAM === 'disable') {
 }
 
 }).call(this,require('_process'))
-},{"./lib/_stream_duplex.js":31,"./lib/_stream_passthrough.js":32,"./lib/_stream_readable.js":33,"./lib/_stream_transform.js":34,"./lib/_stream_writable.js":35,"_process":150,"stream":182}],37:[function(require,module,exports){
+},{"./lib/_stream_duplex.js":31,"./lib/_stream_passthrough.js":32,"./lib/_stream_readable.js":33,"./lib/_stream_transform.js":34,"./lib/_stream_writable.js":35,"_process":152,"stream":184}],37:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -6057,7 +6057,7 @@ var fs = require('level-filesystem');
 
 var db = levelup('level-filesystem', {db:leveljs});
 module.exports = fs(db);
-},{"level-filesystem":103,"level-js":109,"levelup":126}],41:[function(require,module,exports){
+},{"level-filesystem":105,"level-js":111,"levelup":128}],41:[function(require,module,exports){
 (function (Buffer){
 var toString = Object.prototype.toString
 
@@ -7928,7 +7928,7 @@ var hexSliceLookupTable = (function () {
 })()
 
 }).call(this,require("buffer").Buffer)
-},{"base64-js":28,"buffer":42,"ieee754":85}],43:[function(require,module,exports){
+},{"base64-js":28,"buffer":42,"ieee754":87}],43:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -8422,7 +8422,7 @@ function u8Concat (parts) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":42,"buffer-from":41,"inherits":87,"readable-stream":162,"typedarray":318}],48:[function(require,module,exports){
+},{"buffer":42,"buffer-from":41,"inherits":89,"readable-stream":164,"typedarray":320}],48:[function(require,module,exports){
 (function (Buffer){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -8533,7 +8533,7 @@ function objectToString(o) {
 }
 
 }).call(this,{"isBuffer":require("../../is-buffer/index.js")})
-},{"../../is-buffer/index.js":88}],49:[function(require,module,exports){
+},{"../../is-buffer/index.js":90}],49:[function(require,module,exports){
 (function (Buffer,process){
 var util              = require('util')
   , AbstractLevelDOWN = require('abstract-leveldown').AbstractLevelDOWN
@@ -8584,7 +8584,7 @@ DeferredLevelDOWN.prototype._iterator = function () {
 module.exports = DeferredLevelDOWN
 
 }).call(this,{"isBuffer":require("../is-buffer/index.js")},require('_process'))
-},{"../is-buffer/index.js":88,"_process":150,"abstract-leveldown":22,"util":322}],50:[function(require,module,exports){
+},{"../is-buffer/index.js":90,"_process":152,"abstract-leveldown":22,"util":324}],50:[function(require,module,exports){
 module.exports = (function () {
   if (typeof self !== 'undefined') {
     return self;
@@ -8607,7 +8607,7 @@ module.exports = require('./socket');
  */
 module.exports.parser = require('engine.io-parser');
 
-},{"./socket":52,"engine.io-parser":63}],52:[function(require,module,exports){
+},{"./socket":52,"engine.io-parser":64}],52:[function(require,module,exports){
 /**
  * Module dependencies.
  */
@@ -9357,7 +9357,7 @@ Socket.prototype.filterUpgrades = function (upgrades) {
   return filteredUpgrades;
 };
 
-},{"./transport":53,"./transports/index":54,"component-emitter":45,"debug":60,"engine.io-parser":63,"indexof":86,"parseqs":146,"parseuri":147}],53:[function(require,module,exports){
+},{"./transport":53,"./transports/index":54,"component-emitter":60,"debug":61,"engine.io-parser":64,"indexof":88,"parseqs":148,"parseuri":149}],53:[function(require,module,exports){
 /**
  * Module dependencies.
  */
@@ -9520,7 +9520,7 @@ Transport.prototype.onClose = function () {
   this.emit('close');
 };
 
-},{"component-emitter":45,"engine.io-parser":63}],54:[function(require,module,exports){
+},{"component-emitter":60,"engine.io-parser":64}],54:[function(require,module,exports){
 /**
  * Module dependencies
  */
@@ -10227,7 +10227,7 @@ function unloadHandler () {
   }
 }
 
-},{"../globalThis":50,"./polling":57,"component-emitter":45,"component-inherit":46,"debug":60,"xmlhttprequest-ssl":59}],57:[function(require,module,exports){
+},{"../globalThis":50,"./polling":57,"component-emitter":60,"component-inherit":46,"debug":61,"xmlhttprequest-ssl":59}],57:[function(require,module,exports){
 /**
  * Module dependencies.
  */
@@ -10474,7 +10474,7 @@ Polling.prototype.uri = function () {
   return schema + '://' + (ipv6 ? '[' + this.hostname + ']' : this.hostname) + port + this.path + query;
 };
 
-},{"../transport":53,"component-inherit":46,"debug":60,"engine.io-parser":63,"parseqs":146,"xmlhttprequest-ssl":59,"yeast":326}],58:[function(require,module,exports){
+},{"../transport":53,"component-inherit":46,"debug":61,"engine.io-parser":64,"parseqs":148,"xmlhttprequest-ssl":59,"yeast":328}],58:[function(require,module,exports){
 (function (Buffer){
 /**
  * Module dependencies.
@@ -10773,7 +10773,7 @@ WS.prototype.check = function () {
 };
 
 }).call(this,require("buffer").Buffer)
-},{"../transport":53,"buffer":42,"component-inherit":46,"debug":60,"engine.io-parser":63,"parseqs":146,"ws":39,"yeast":326}],59:[function(require,module,exports){
+},{"../transport":53,"buffer":42,"component-inherit":46,"debug":61,"engine.io-parser":64,"parseqs":148,"ws":39,"yeast":328}],59:[function(require,module,exports){
 // browser shim for xmlhttprequest module
 
 var hasCORS = require('has-cors');
@@ -10813,7 +10813,184 @@ module.exports = function (opts) {
   }
 };
 
-},{"./globalThis":50,"has-cors":83}],60:[function(require,module,exports){
+},{"./globalThis":50,"has-cors":85}],60:[function(require,module,exports){
+
+/**
+ * Expose `Emitter`.
+ */
+
+if (typeof module !== 'undefined') {
+  module.exports = Emitter;
+}
+
+/**
+ * Initialize a new `Emitter`.
+ *
+ * @api public
+ */
+
+function Emitter(obj) {
+  if (obj) return mixin(obj);
+};
+
+/**
+ * Mixin the emitter properties.
+ *
+ * @param {Object} obj
+ * @return {Object}
+ * @api private
+ */
+
+function mixin(obj) {
+  for (var key in Emitter.prototype) {
+    obj[key] = Emitter.prototype[key];
+  }
+  return obj;
+}
+
+/**
+ * Listen on the given `event` with `fn`.
+ *
+ * @param {String} event
+ * @param {Function} fn
+ * @return {Emitter}
+ * @api public
+ */
+
+Emitter.prototype.on =
+Emitter.prototype.addEventListener = function(event, fn){
+  this._callbacks = this._callbacks || {};
+  (this._callbacks['$' + event] = this._callbacks['$' + event] || [])
+    .push(fn);
+  return this;
+};
+
+/**
+ * Adds an `event` listener that will be invoked a single
+ * time then automatically removed.
+ *
+ * @param {String} event
+ * @param {Function} fn
+ * @return {Emitter}
+ * @api public
+ */
+
+Emitter.prototype.once = function(event, fn){
+  function on() {
+    this.off(event, on);
+    fn.apply(this, arguments);
+  }
+
+  on.fn = fn;
+  this.on(event, on);
+  return this;
+};
+
+/**
+ * Remove the given callback for `event` or all
+ * registered callbacks.
+ *
+ * @param {String} event
+ * @param {Function} fn
+ * @return {Emitter}
+ * @api public
+ */
+
+Emitter.prototype.off =
+Emitter.prototype.removeListener =
+Emitter.prototype.removeAllListeners =
+Emitter.prototype.removeEventListener = function(event, fn){
+  this._callbacks = this._callbacks || {};
+
+  // all
+  if (0 == arguments.length) {
+    this._callbacks = {};
+    return this;
+  }
+
+  // specific event
+  var callbacks = this._callbacks['$' + event];
+  if (!callbacks) return this;
+
+  // remove all handlers
+  if (1 == arguments.length) {
+    delete this._callbacks['$' + event];
+    return this;
+  }
+
+  // remove specific handler
+  var cb;
+  for (var i = 0; i < callbacks.length; i++) {
+    cb = callbacks[i];
+    if (cb === fn || cb.fn === fn) {
+      callbacks.splice(i, 1);
+      break;
+    }
+  }
+
+  // Remove event specific arrays for event types that no
+  // one is subscribed for to avoid memory leak.
+  if (callbacks.length === 0) {
+    delete this._callbacks['$' + event];
+  }
+
+  return this;
+};
+
+/**
+ * Emit `event` with the given args.
+ *
+ * @param {String} event
+ * @param {Mixed} ...
+ * @return {Emitter}
+ */
+
+Emitter.prototype.emit = function(event){
+  this._callbacks = this._callbacks || {};
+
+  var args = new Array(arguments.length - 1)
+    , callbacks = this._callbacks['$' + event];
+
+  for (var i = 1; i < arguments.length; i++) {
+    args[i - 1] = arguments[i];
+  }
+
+  if (callbacks) {
+    callbacks = callbacks.slice(0);
+    for (var i = 0, len = callbacks.length; i < len; ++i) {
+      callbacks[i].apply(this, args);
+    }
+  }
+
+  return this;
+};
+
+/**
+ * Return array of callbacks for `event`.
+ *
+ * @param {String} event
+ * @return {Array}
+ * @api public
+ */
+
+Emitter.prototype.listeners = function(event){
+  this._callbacks = this._callbacks || {};
+  return this._callbacks['$' + event] || [];
+};
+
+/**
+ * Check if this emitter has `event` handlers.
+ *
+ * @param {String} event
+ * @return {Boolean}
+ * @api public
+ */
+
+Emitter.prototype.hasListeners = function(event){
+  return !! this.listeners(event).length;
+};
+
+},{}],61:[function(require,module,exports){
 (function (process){
 /* eslint-env browser */
 
@@ -11081,7 +11258,7 @@ formatters.j = function (v) {
 };
 
 }).call(this,require('_process'))
-},{"./common":61,"_process":150}],61:[function(require,module,exports){
+},{"./common":62,"_process":152}],62:[function(require,module,exports){
 
 /**
  * This is the common logic for both the Node.js and web browser
@@ -11349,7 +11526,7 @@ function setup(env) {
 
 module.exports = setup;
 
-},{"ms":62}],62:[function(require,module,exports){
+},{"ms":63}],63:[function(require,module,exports){
 /**
  * Helpers.
  */
@@ -11513,7 +11690,7 @@ function plural(ms, msAbs, n, name) {
   return Math.round(ms / n) + ' ' + name + (isPlural ? 's' : '');
 }
 
-},{}],63:[function(require,module,exports){
+},{}],64:[function(require,module,exports){
 /**
  * Module dependencies.
  */
@@ -12120,7 +12297,7 @@ exports.decodePayloadAsBinary = function (data, binaryType, callback) {
   });
 };
 
-},{"./keys":64,"./utf8":65,"after":24,"arraybuffer.slice":25,"base64-arraybuffer":27,"blob":38,"has-binary2":81}],64:[function(require,module,exports){
+},{"./keys":65,"./utf8":66,"after":24,"arraybuffer.slice":25,"base64-arraybuffer":27,"blob":38,"has-binary2":83}],65:[function(require,module,exports){
 
 /**
  * Gets the keys for an object.
@@ -12141,7 +12318,7 @@ module.exports = Object.keys || function keys (obj){
   return arr;
 };
 
-},{}],65:[function(require,module,exports){
+},{}],66:[function(require,module,exports){
 /*! https://mths.be/utf8js v2.1.2 by @mathias */
 
 var stringFromCharCode = String.fromCharCode;
@@ -12353,7 +12530,7 @@ module.exports = {
 	decode: utf8decode
 };
 
-},{}],66:[function(require,module,exports){
+},{}],67:[function(require,module,exports){
 var prr = require('prr')
 
 function init (type, message, cause) {
@@ -12412,7 +12589,7 @@ module.exports = function (errno) {
   }
 }
 
-},{"prr":151}],67:[function(require,module,exports){
+},{"prr":153}],68:[function(require,module,exports){
 var all = module.exports.all = [
   {
     errno: -2,
@@ -12727,7 +12904,7 @@ all.forEach(function (error) {
 module.exports.custom = require('./custom')(module.exports)
 module.exports.create = module.exports.custom.createError
 
-},{"./custom":66}],68:[function(require,module,exports){
+},{"./custom":67}],69:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -13031,7 +13208,13 @@ function isUndefined(arg) {
   return arg === void 0;
 }
 
-},{}],69:[function(require,module,exports){
+},{}],70:[function(require,module,exports){
+(function (global){
+(function(a,b){if("function"==typeof define&&define.amd)define([],b);else if("undefined"!=typeof exports)b();else{b(),a.FileSaver={exports:{}}.exports}})(this,function(){"use strict";function b(a,b){return"undefined"==typeof b?b={autoBom:!1}:"object"!=typeof b&&(console.warn("Deprecated: Expected third argument to be a object"),b={autoBom:!b}),b.autoBom&&/^\s*(?:text\/\S*|application\/xml|\S*\/\S*\+xml)\s*;.*charset\s*=\s*utf-8/i.test(a.type)?new Blob(["\uFEFF",a],{type:a.type}):a}function c(b,c,d){var e=new XMLHttpRequest;e.open("GET",b),e.responseType="blob",e.onload=function(){a(e.response,c,d)},e.onerror=function(){console.error("could not download file")},e.send()}function d(a){var b=new XMLHttpRequest;b.open("HEAD",a,!1);try{b.send()}catch(a){}return 200<=b.status&&299>=b.status}function e(a){try{a.dispatchEvent(new MouseEvent("click"))}catch(c){var b=document.createEvent("MouseEvents");b.initMouseEvent("click",!0,!0,window,0,0,0,80,20,!1,!1,!1,!1,0,null),a.dispatchEvent(b)}}var f="object"==typeof window&&window.window===window?window:"object"==typeof self&&self.self===self?self:"object"==typeof global&&global.global===global?global:void 0,a=f.saveAs||("object"!=typeof window||window!==f?function(){}:"download"in HTMLAnchorElement.prototype?function(b,g,h){var i=f.URL||f.webkitURL,j=document.createElement("a");g=g||b.name||"download",j.download=g,j.rel="noopener","string"==typeof b?(j.href=b,j.origin===location.origin?e(j):d(j.href)?c(b,g,h):e(j,j.target="_blank")):(j.href=i.createObjectURL(b),setTimeout(function(){i.revokeObjectURL(j.href)},4E4),setTimeout(function(){e(j)},0))}:"msSaveOrOpenBlob"in navigator?function(f,g,h){if(g=g||f.name||"download","string"!=typeof f)navigator.msSaveOrOpenBlob(b(f,h),g);else if(d(f))c(f,g,h);else{var i=document.createElement("a");i.href=f,i.target="_blank",setTimeout(function(){e(i)})}}:function(a,b,d,e){if(e=e||open("","_blank"),e&&(e.document.title=e.document.body.innerText="downloading..."),"string"==typeof a)return c(a,b,d);var g="application/octet-stream"===a.type,h=/constructor/i.test(f.HTMLElement)||f.safari,i=/CriOS\/[\d]+/.test(navigator.userAgent);if((i||g&&h)&&"object"==typeof FileReader){var j=new FileReader;j.onloadend=function(){var a=j.result;a=i?a:a.replace(/^data:[^;]*;/,"data:attachment/file;"),e?e.location.href=a:location=a,e=null},j.readAsDataURL(a)}else{var k=f.URL||f.webkitURL,l=k.createObjectURL(a);e?e.location=l:location.href=l,e=null,setTimeout(function(){k.revokeObjectURL(l)},4E4)}});f.saveAs=a.saveAs=a,"undefined"!=typeof module&&(module.exports=a)});
+
+
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{}],71:[function(require,module,exports){
 
 var hasOwn = Object.prototype.hasOwnProperty;
 var toString = Object.prototype.toString;
@@ -13055,7 +13238,7 @@ module.exports = function forEach (obj, fn, ctx) {
 };
 
 
-},{}],70:[function(require,module,exports){
+},{}],72:[function(require,module,exports){
 (function (process,Buffer){
 var Writable = require('readable-stream/writable');
 var Readable = require('readable-stream/readable');
@@ -13217,29 +13400,29 @@ exports.duplex = function(opts, initWritable, initReadable) {
 	return dupl;
 };
 }).call(this,require('_process'),require("buffer").Buffer)
-},{"_process":150,"buffer":42,"readable-stream/duplex":72,"readable-stream/readable":78,"readable-stream/writable":79}],71:[function(require,module,exports){
+},{"_process":152,"buffer":42,"readable-stream/duplex":74,"readable-stream/readable":80,"readable-stream/writable":81}],73:[function(require,module,exports){
 arguments[4][30][0].apply(exports,arguments)
-},{"dup":30}],72:[function(require,module,exports){
+},{"dup":30}],74:[function(require,module,exports){
 module.exports = require("./lib/_stream_duplex.js")
 
-},{"./lib/_stream_duplex.js":73}],73:[function(require,module,exports){
+},{"./lib/_stream_duplex.js":75}],75:[function(require,module,exports){
 arguments[4][31][0].apply(exports,arguments)
-},{"./_stream_readable":75,"./_stream_writable":77,"_process":150,"core-util-is":48,"dup":31,"inherits":87}],74:[function(require,module,exports){
+},{"./_stream_readable":77,"./_stream_writable":79,"_process":152,"core-util-is":48,"dup":31,"inherits":89}],76:[function(require,module,exports){
 arguments[4][32][0].apply(exports,arguments)
-},{"./_stream_transform":76,"core-util-is":48,"dup":32,"inherits":87}],75:[function(require,module,exports){
+},{"./_stream_transform":78,"core-util-is":48,"dup":32,"inherits":89}],77:[function(require,module,exports){
 arguments[4][33][0].apply(exports,arguments)
-},{"_process":150,"buffer":42,"core-util-is":48,"dup":33,"events":68,"inherits":87,"isarray":71,"stream":182,"string_decoder/":80}],76:[function(require,module,exports){
+},{"_process":152,"buffer":42,"core-util-is":48,"dup":33,"events":69,"inherits":89,"isarray":73,"stream":184,"string_decoder/":82}],78:[function(require,module,exports){
 arguments[4][34][0].apply(exports,arguments)
-},{"./_stream_duplex":73,"core-util-is":48,"dup":34,"inherits":87}],77:[function(require,module,exports){
+},{"./_stream_duplex":75,"core-util-is":48,"dup":34,"inherits":89}],79:[function(require,module,exports){
 arguments[4][35][0].apply(exports,arguments)
-},{"./_stream_duplex":73,"_process":150,"buffer":42,"core-util-is":48,"dup":35,"inherits":87,"stream":182}],78:[function(require,module,exports){
+},{"./_stream_duplex":75,"_process":152,"buffer":42,"core-util-is":48,"dup":35,"inherits":89,"stream":184}],80:[function(require,module,exports){
 arguments[4][36][0].apply(exports,arguments)
-},{"./lib/_stream_duplex.js":73,"./lib/_stream_passthrough.js":74,"./lib/_stream_readable.js":75,"./lib/_stream_transform.js":76,"./lib/_stream_writable.js":77,"_process":150,"dup":36,"stream":182}],79:[function(require,module,exports){
+},{"./lib/_stream_duplex.js":75,"./lib/_stream_passthrough.js":76,"./lib/_stream_readable.js":77,"./lib/_stream_transform.js":78,"./lib/_stream_writable.js":79,"_process":152,"dup":36,"stream":184}],81:[function(require,module,exports){
 module.exports = require("./lib/_stream_writable.js")
 
-},{"./lib/_stream_writable.js":77}],80:[function(require,module,exports){
+},{"./lib/_stream_writable.js":79}],82:[function(require,module,exports){
 arguments[4][37][0].apply(exports,arguments)
-},{"buffer":42,"dup":37}],81:[function(require,module,exports){
+},{"buffer":42,"dup":37}],83:[function(require,module,exports){
 (function (Buffer){
 /* global Blob File */
 
@@ -13307,14 +13490,14 @@ function hasBinary (obj) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":42,"isarray":82}],82:[function(require,module,exports){
+},{"buffer":42,"isarray":84}],84:[function(require,module,exports){
 var toString = {}.toString;
 
 module.exports = Array.isArray || function (arr) {
   return toString.call(arr) == '[object Array]';
 };
 
-},{}],83:[function(require,module,exports){
+},{}],85:[function(require,module,exports){
 
 /**
  * Module exports.
@@ -13333,7 +13516,7 @@ try {
   module.exports = false;
 }
 
-},{}],84:[function(require,module,exports){
+},{}],86:[function(require,module,exports){
 /*global window:false, self:false, define:false, module:false */
 
 /**
@@ -14740,7 +14923,7 @@ try {
 
 }, this);
 
-},{}],85:[function(require,module,exports){
+},{}],87:[function(require,module,exports){
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
   var e, m
   var eLen = (nBytes * 8) - mLen - 1
@@ -14826,7 +15009,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
   buffer[offset + i - d] |= s * 128
 }
 
-},{}],86:[function(require,module,exports){
+},{}],88:[function(require,module,exports){
 
 var indexOf = [].indexOf;
 
@@ -14837,7 +15020,7 @@ module.exports = function(arr, obj){
   }
   return -1;
 };
-},{}],87:[function(require,module,exports){
+},{}],89:[function(require,module,exports){
 if (typeof Object.create === 'function') {
   // implementation from standard node.js 'util' module
   module.exports = function inherits(ctor, superCtor) {
@@ -14866,7 +15049,7 @@ if (typeof Object.create === 'function') {
   }
 }
 
-},{}],88:[function(require,module,exports){
+},{}],90:[function(require,module,exports){
 /*!
  * Determine if an object is a Buffer
  *
@@ -14889,7 +15072,7 @@ function isSlowBuffer (obj) {
   return typeof obj.readFloatLE === 'function' && typeof obj.slice === 'function' && isBuffer(obj.slice(0, 0))
 }
 
-},{}],89:[function(require,module,exports){
+},{}],91:[function(require,module,exports){
 
 /**!
  * is
@@ -15593,9 +15776,9 @@ is.string = function (value) {
 };
 
 
-},{}],90:[function(require,module,exports){
-arguments[4][82][0].apply(exports,arguments)
-},{"dup":82}],91:[function(require,module,exports){
+},{}],92:[function(require,module,exports){
+arguments[4][84][0].apply(exports,arguments)
+},{"dup":84}],93:[function(require,module,exports){
 var Buffer = require('buffer').Buffer;
 
 module.exports = isBuffer;
@@ -15605,7 +15788,7 @@ function isBuffer (o) {
     || /\[object (.+Array|Array.+)\]/.test(Object.prototype.toString.call(o));
 }
 
-},{"buffer":42}],92:[function(require,module,exports){
+},{"buffer":42}],94:[function(require,module,exports){
 (function (process,Buffer){
 var Writable = require('readable-stream/writable');
 var Readable = require('readable-stream/readable');
@@ -16000,13 +16183,13 @@ module.exports = function(db, opts) {
 	return blobs;
 };
 }).call(this,require('_process'),require("buffer").Buffer)
-},{"_process":150,"buffer":42,"level-peek":117,"once":145,"readable-stream/readable":99,"readable-stream/writable":100,"util":322}],93:[function(require,module,exports){
+},{"_process":152,"buffer":42,"level-peek":119,"once":147,"readable-stream/readable":101,"readable-stream/writable":102,"util":324}],95:[function(require,module,exports){
 arguments[4][30][0].apply(exports,arguments)
-},{"dup":30}],94:[function(require,module,exports){
+},{"dup":30}],96:[function(require,module,exports){
 arguments[4][31][0].apply(exports,arguments)
-},{"./_stream_readable":96,"./_stream_writable":98,"_process":150,"core-util-is":48,"dup":31,"inherits":87}],95:[function(require,module,exports){
+},{"./_stream_readable":98,"./_stream_writable":100,"_process":152,"core-util-is":48,"dup":31,"inherits":89}],97:[function(require,module,exports){
 arguments[4][32][0].apply(exports,arguments)
-},{"./_stream_transform":97,"core-util-is":48,"dup":32,"inherits":87}],96:[function(require,module,exports){
+},{"./_stream_transform":99,"core-util-is":48,"dup":32,"inherits":89}],98:[function(require,module,exports){
 (function (process){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -16961,7 +17144,7 @@ function indexOf (xs, x) {
 }
 
 }).call(this,require('_process'))
-},{"./_stream_duplex":94,"_process":150,"buffer":42,"core-util-is":48,"events":68,"inherits":87,"isarray":93,"stream":182,"string_decoder/":101,"util":39}],97:[function(require,module,exports){
+},{"./_stream_duplex":96,"_process":152,"buffer":42,"core-util-is":48,"events":69,"inherits":89,"isarray":95,"stream":184,"string_decoder/":103,"util":39}],99:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -17172,7 +17355,7 @@ function done(stream, er) {
   return stream.push(null);
 }
 
-},{"./_stream_duplex":94,"core-util-is":48,"inherits":87}],98:[function(require,module,exports){
+},{"./_stream_duplex":96,"core-util-is":48,"inherits":89}],100:[function(require,module,exports){
 (function (process){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -17653,7 +17836,7 @@ function endWritable(stream, state, cb) {
 }
 
 }).call(this,require('_process'))
-},{"./_stream_duplex":94,"_process":150,"buffer":42,"core-util-is":48,"inherits":87,"stream":182}],99:[function(require,module,exports){
+},{"./_stream_duplex":96,"_process":152,"buffer":42,"core-util-is":48,"inherits":89,"stream":184}],101:[function(require,module,exports){
 (function (process){
 exports = module.exports = require('./lib/_stream_readable.js');
 exports.Stream = require('stream');
@@ -17667,11 +17850,11 @@ if (!process.browser && process.env.READABLE_STREAM === 'disable') {
 }
 
 }).call(this,require('_process'))
-},{"./lib/_stream_duplex.js":94,"./lib/_stream_passthrough.js":95,"./lib/_stream_readable.js":96,"./lib/_stream_transform.js":97,"./lib/_stream_writable.js":98,"_process":150,"stream":182}],100:[function(require,module,exports){
-arguments[4][79][0].apply(exports,arguments)
-},{"./lib/_stream_writable.js":98,"dup":79}],101:[function(require,module,exports){
+},{"./lib/_stream_duplex.js":96,"./lib/_stream_passthrough.js":97,"./lib/_stream_readable.js":98,"./lib/_stream_transform.js":99,"./lib/_stream_writable.js":100,"_process":152,"stream":184}],102:[function(require,module,exports){
+arguments[4][81][0].apply(exports,arguments)
+},{"./lib/_stream_writable.js":100,"dup":81}],103:[function(require,module,exports){
 arguments[4][37][0].apply(exports,arguments)
-},{"buffer":42,"dup":37}],102:[function(require,module,exports){
+},{"buffer":42,"dup":37}],104:[function(require,module,exports){
 var errno = require('errno');
 
 Object.keys(errno.code).forEach(function(code) {
@@ -17685,7 +17868,7 @@ Object.keys(errno.code).forEach(function(code) {
 		return err;
 	};
 });
-},{"errno":67}],103:[function(require,module,exports){
+},{"errno":68}],105:[function(require,module,exports){
 (function (process,Buffer){
 var fwd = require('fwd-stream');
 var sublevel = require('level-sublevel');
@@ -18286,7 +18469,7 @@ module.exports = function(db, opts) {
 };
 
 }).call(this,require('_process'),require("buffer").Buffer)
-},{"./errno":102,"./paths":104,"./watchers":106,"_process":150,"buffer":42,"fwd-stream":70,"level-blobs":92,"level-peek":117,"level-sublevel":119,"octal":144,"once":145}],104:[function(require,module,exports){
+},{"./errno":104,"./paths":106,"./watchers":108,"_process":152,"buffer":42,"fwd-stream":72,"level-blobs":94,"level-peek":119,"level-sublevel":121,"octal":146,"once":147}],106:[function(require,module,exports){
 (function (process){
 var path = require('path');
 var once = require('once');
@@ -18406,7 +18589,7 @@ module.exports = function(db) {
 };
 
 }).call(this,require('_process'))
-},{"./errno":102,"./stat":105,"_process":150,"concat-stream":47,"octal":144,"once":145,"path":148,"xtend":325}],105:[function(require,module,exports){
+},{"./errno":104,"./stat":107,"_process":152,"concat-stream":47,"octal":146,"once":147,"path":150,"xtend":327}],107:[function(require,module,exports){
 var toDate = function(date) {
 	if (!date) return new Date();
 	if (typeof date === 'string') return new Date(date);
@@ -18458,7 +18641,7 @@ Stat.prototype.isSocket = function() {
 module.exports = function(opts) {
 	return new Stat(opts);
 };
-},{}],106:[function(require,module,exports){
+},{}],108:[function(require,module,exports){
 var events = require('events');
 
 module.exports = function() {
@@ -18511,7 +18694,7 @@ module.exports = function() {
 
 	return that;
 };
-},{"events":68}],107:[function(require,module,exports){
+},{"events":69}],109:[function(require,module,exports){
 
 module.exports = 
 function fixRange(opts) {
@@ -18531,7 +18714,7 @@ function fixRange(opts) {
 }
 
 
-},{}],108:[function(require,module,exports){
+},{}],110:[function(require,module,exports){
 var ranges = require('string-range')
 
 module.exports = function (db) {
@@ -18701,7 +18884,7 @@ module.exports = function (db) {
   }
 }
 
-},{"string-range":183}],109:[function(require,module,exports){
+},{"string-range":185}],111:[function(require,module,exports){
 (function (Buffer){
 module.exports = Level
 
@@ -18879,7 +19062,7 @@ var checkKeyValue = Level.prototype._checkKeyValue = function (obj, type) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"./iterator":110,"abstract-leveldown":22,"buffer":42,"idb-wrapper":84,"isbuffer":91,"typedarray-to-buffer":317,"util":322,"xtend":116}],110:[function(require,module,exports){
+},{"./iterator":112,"abstract-leveldown":22,"buffer":42,"idb-wrapper":86,"isbuffer":93,"typedarray-to-buffer":319,"util":324,"xtend":118}],112:[function(require,module,exports){
 var util = require('util')
 var AbstractIterator  = require('abstract-leveldown').AbstractIterator
 var ltgt = require('ltgt')
@@ -18953,7 +19136,7 @@ Iterator.prototype._next = function (callback) {
   this.callback = callback
 }
 
-},{"abstract-leveldown":22,"ltgt":141,"util":322}],111:[function(require,module,exports){
+},{"abstract-leveldown":22,"ltgt":143,"util":324}],113:[function(require,module,exports){
 var hasOwn = Object.prototype.hasOwnProperty;
 var toString = Object.prototype.toString;
 
@@ -18995,11 +19178,11 @@ module.exports = function forEach(obj, fn) {
 };
 
 
-},{}],112:[function(require,module,exports){
+},{}],114:[function(require,module,exports){
 module.exports = Object.keys || require('./shim');
 
 
-},{"./shim":114}],113:[function(require,module,exports){
+},{"./shim":116}],115:[function(require,module,exports){
 var toString = Object.prototype.toString;
 
 module.exports = function isArguments(value) {
@@ -19017,7 +19200,7 @@ module.exports = function isArguments(value) {
 };
 
 
-},{}],114:[function(require,module,exports){
+},{}],116:[function(require,module,exports){
 (function () {
 	"use strict";
 
@@ -19081,7 +19264,7 @@ module.exports = function isArguments(value) {
 }());
 
 
-},{"./foreach":111,"./isArguments":113}],115:[function(require,module,exports){
+},{"./foreach":113,"./isArguments":115}],117:[function(require,module,exports){
 module.exports = hasKeys
 
 function hasKeys(source) {
@@ -19090,7 +19273,7 @@ function hasKeys(source) {
         typeof source === "function")
 }
 
-},{}],116:[function(require,module,exports){
+},{}],118:[function(require,module,exports){
 var Keys = require("object-keys")
 var hasKeys = require("./has-keys")
 
@@ -19117,7 +19300,7 @@ function extend() {
     return target
 }
 
-},{"./has-keys":115,"object-keys":112}],117:[function(require,module,exports){
+},{"./has-keys":117,"object-keys":114}],119:[function(require,module,exports){
 var fixRange = require('level-fix-range')
 //get the first/last record in a range
 
@@ -19194,7 +19377,7 @@ function last (db, opts, cb) {
 }
 
 
-},{"level-fix-range":107}],118:[function(require,module,exports){
+},{"level-fix-range":109}],120:[function(require,module,exports){
 function addOperation (type, key, value, options) {
   var operation = {
     type: type,
@@ -19234,7 +19417,7 @@ B.write = function (cb) {
 
 module.exports = Batch
 
-},{}],119:[function(require,module,exports){
+},{}],121:[function(require,module,exports){
 (function (process){
 var EventEmitter = require('events').EventEmitter
 var next         = process.nextTick
@@ -19328,7 +19511,7 @@ module.exports   = function (_db, options) {
 
 
 }).call(this,require('_process'))
-},{"./batch":118,"./sub":123,"_process":150,"events":68,"level-fix-range":120,"level-hooks":108}],120:[function(require,module,exports){
+},{"./batch":120,"./sub":125,"_process":152,"events":69,"level-fix-range":122,"level-hooks":110}],122:[function(require,module,exports){
 var clone = require('clone')
 
 module.exports = 
@@ -19354,11 +19537,11 @@ function fixRange(opts) {
   return opts
 }
 
-},{"clone":43}],121:[function(require,module,exports){
-arguments[4][115][0].apply(exports,arguments)
-},{"dup":115}],122:[function(require,module,exports){
-arguments[4][116][0].apply(exports,arguments)
-},{"./has-keys":121,"dup":116,"object-keys":142}],123:[function(require,module,exports){
+},{"clone":43}],123:[function(require,module,exports){
+arguments[4][117][0].apply(exports,arguments)
+},{"dup":117}],124:[function(require,module,exports){
+arguments[4][118][0].apply(exports,arguments)
+},{"./has-keys":123,"dup":118,"object-keys":144}],125:[function(require,module,exports){
 var EventEmitter = require('events').EventEmitter
 var inherits     = require('util').inherits
 var ranges       = require('string-range')
@@ -19637,7 +19820,7 @@ SDB.post = function (range, hook) {
 var exports = module.exports = SubDB
 
 
-},{"./batch":118,"events":68,"level-fix-range":120,"string-range":183,"util":322,"xtend":122}],124:[function(require,module,exports){
+},{"./batch":120,"events":69,"level-fix-range":122,"string-range":185,"util":324,"xtend":124}],126:[function(require,module,exports){
 /* Copyright (c) 2012-2014 LevelUP contributors
  * See list at <https://github.com/rvagg/node-levelup#contributing>
  * MIT License
@@ -19717,7 +19900,7 @@ Batch.prototype.write = function (callback) {
 
 module.exports = Batch
 
-},{"./errors":125,"./util":128}],125:[function(require,module,exports){
+},{"./errors":127,"./util":130}],127:[function(require,module,exports){
 /* Copyright (c) 2012-2014 LevelUP contributors
  * See list at <https://github.com/rvagg/node-levelup#contributing>
  * MIT License
@@ -19741,7 +19924,7 @@ module.exports = {
   , EncodingError       : createError('EncodingError', LevelUPError)
 }
 
-},{"errno":67}],126:[function(require,module,exports){
+},{"errno":68}],128:[function(require,module,exports){
 (function (process){
 /* Copyright (c) 2012-2014 LevelUP contributors
  * See list at <https://github.com/rvagg/node-levelup#contributing>
@@ -20180,7 +20363,7 @@ module.exports.destroy = utilStatic('destroy')
 module.exports.repair  = utilStatic('repair')
 
 }).call(this,require('_process'))
-},{"./batch":124,"./errors":125,"./read-stream":127,"./util":128,"./write-stream":129,"_process":150,"deferred-leveldown":49,"events":68,"prr":131,"util":322,"xtend":139}],127:[function(require,module,exports){
+},{"./batch":126,"./errors":127,"./read-stream":129,"./util":130,"./write-stream":131,"_process":152,"deferred-leveldown":49,"events":69,"prr":133,"util":324,"xtend":141}],129:[function(require,module,exports){
 /* Copyright (c) 2012-2014 LevelUP contributors
  * See list at <https://github.com/rvagg/node-levelup#contributing>
  * MIT License <https://github.com/rvagg/node-levelup/blob/master/LICENSE.md>
@@ -20308,7 +20491,7 @@ ReadStream.prototype.toString = function () {
 
 module.exports = ReadStream
 
-},{"./errors":125,"./util":128,"readable-stream":137,"util":322,"xtend":139}],128:[function(require,module,exports){
+},{"./errors":127,"./util":130,"readable-stream":139,"util":324,"xtend":141}],130:[function(require,module,exports){
 (function (process,Buffer){
 /* Copyright (c) 2012-2014 LevelUP contributors
  * See list at <https://github.com/rvagg/node-levelup#contributing>
@@ -20494,7 +20677,7 @@ module.exports = {
 }
 
 }).call(this,require('_process'),require("buffer").Buffer)
-},{"../package.json":140,"./errors":125,"_process":150,"buffer":42,"leveldown":39,"leveldown/package":39,"semver":39,"xtend":139}],129:[function(require,module,exports){
+},{"../package.json":142,"./errors":127,"_process":152,"buffer":42,"leveldown":39,"leveldown/package":39,"semver":39,"xtend":141}],131:[function(require,module,exports){
 (function (process,global){
 /* Copyright (c) 2012-2014 LevelUP contributors
  * See list at <https://github.com/rvagg/node-levelup#contributing>
@@ -20676,9 +20859,9 @@ WriteStream.prototype.toString = function () {
 module.exports = WriteStream
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./util":128,"_process":150,"bl":29,"stream":182,"util":322,"xtend":139}],130:[function(require,module,exports){
+},{"./util":130,"_process":152,"bl":29,"stream":184,"util":324,"xtend":141}],132:[function(require,module,exports){
 arguments[4][30][0].apply(exports,arguments)
-},{"dup":30}],131:[function(require,module,exports){
+},{"dup":30}],133:[function(require,module,exports){
 /*!
   * prr
   * (c) 2013 Rod Vagg <rod@vagg.org>
@@ -20742,23 +20925,23 @@ arguments[4][30][0].apply(exports,arguments)
 
   return prr
 })
-},{}],132:[function(require,module,exports){
+},{}],134:[function(require,module,exports){
 arguments[4][31][0].apply(exports,arguments)
-},{"./_stream_readable":134,"./_stream_writable":136,"_process":150,"core-util-is":48,"dup":31,"inherits":87}],133:[function(require,module,exports){
+},{"./_stream_readable":136,"./_stream_writable":138,"_process":152,"core-util-is":48,"dup":31,"inherits":89}],135:[function(require,module,exports){
 arguments[4][32][0].apply(exports,arguments)
-},{"./_stream_transform":135,"core-util-is":48,"dup":32,"inherits":87}],134:[function(require,module,exports){
+},{"./_stream_transform":137,"core-util-is":48,"dup":32,"inherits":89}],136:[function(require,module,exports){
 arguments[4][33][0].apply(exports,arguments)
-},{"_process":150,"buffer":42,"core-util-is":48,"dup":33,"events":68,"inherits":87,"isarray":130,"stream":182,"string_decoder/":138}],135:[function(require,module,exports){
+},{"_process":152,"buffer":42,"core-util-is":48,"dup":33,"events":69,"inherits":89,"isarray":132,"stream":184,"string_decoder/":140}],137:[function(require,module,exports){
 arguments[4][34][0].apply(exports,arguments)
-},{"./_stream_duplex":132,"core-util-is":48,"dup":34,"inherits":87}],136:[function(require,module,exports){
+},{"./_stream_duplex":134,"core-util-is":48,"dup":34,"inherits":89}],138:[function(require,module,exports){
 arguments[4][35][0].apply(exports,arguments)
-},{"./_stream_duplex":132,"_process":150,"buffer":42,"core-util-is":48,"dup":35,"inherits":87,"stream":182}],137:[function(require,module,exports){
+},{"./_stream_duplex":134,"_process":152,"buffer":42,"core-util-is":48,"dup":35,"inherits":89,"stream":184}],139:[function(require,module,exports){
 arguments[4][36][0].apply(exports,arguments)
-},{"./lib/_stream_duplex.js":132,"./lib/_stream_passthrough.js":133,"./lib/_stream_readable.js":134,"./lib/_stream_transform.js":135,"./lib/_stream_writable.js":136,"_process":150,"dup":36,"stream":182}],138:[function(require,module,exports){
+},{"./lib/_stream_duplex.js":134,"./lib/_stream_passthrough.js":135,"./lib/_stream_readable.js":136,"./lib/_stream_transform.js":137,"./lib/_stream_writable.js":138,"_process":152,"dup":36,"stream":184}],140:[function(require,module,exports){
 arguments[4][37][0].apply(exports,arguments)
-},{"buffer":42,"dup":37}],139:[function(require,module,exports){
+},{"buffer":42,"dup":37}],141:[function(require,module,exports){
 arguments[4][23][0].apply(exports,arguments)
-},{"dup":23}],140:[function(require,module,exports){
+},{"dup":23}],142:[function(require,module,exports){
 module.exports={
   "_from": "levelup@^0.18.2",
   "_id": "levelup@0.18.6",
@@ -20785,7 +20968,7 @@ module.exports={
   "_resolved": "https://registry.npmjs.org/levelup/-/levelup-0.18.6.tgz",
   "_shasum": "e6a01cb089616c8ecc0291c2a9bd3f0c44e3e5eb",
   "_spec": "levelup@^0.18.2",
-  "_where": "/Users/nikola/Development/air_mochi/utility_server/node_modules/browserify-fs",
+  "_where": "/Users/apple/Documents/dev/ASE/2020/AirMochi-tool/air_mochi/utility_server/node_modules/browserify-fs",
   "browser": {
     "leveldown": false,
     "leveldown/package": false,
@@ -20916,7 +21099,7 @@ module.exports={
   "version": "0.18.6"
 }
 
-},{}],141:[function(require,module,exports){
+},{}],143:[function(require,module,exports){
 (function (Buffer){
 
 exports.compare = function (a, b) {
@@ -21085,9 +21268,9 @@ exports.filter = function (range, compare) {
 
 
 }).call(this,{"isBuffer":require("../is-buffer/index.js")})
-},{"../is-buffer/index.js":88}],142:[function(require,module,exports){
-arguments[4][112][0].apply(exports,arguments)
-},{"./shim":143,"dup":112}],143:[function(require,module,exports){
+},{"../is-buffer/index.js":90}],144:[function(require,module,exports){
+arguments[4][114][0].apply(exports,arguments)
+},{"./shim":145,"dup":114}],145:[function(require,module,exports){
 (function () {
 	"use strict";
 
@@ -21133,12 +21316,12 @@ arguments[4][112][0].apply(exports,arguments)
 }());
 
 
-},{"foreach":69,"is":89}],144:[function(require,module,exports){
+},{"foreach":71,"is":91}],146:[function(require,module,exports){
 module.exports = function (num, base) {
   return parseInt(num.toString(), base || 8)
 }
 
-},{}],145:[function(require,module,exports){
+},{}],147:[function(require,module,exports){
 var wrappy = require('wrappy')
 module.exports = wrappy(once)
 module.exports.strict = wrappy(onceStrict)
@@ -21182,7 +21365,7 @@ function onceStrict (fn) {
   return f
 }
 
-},{"wrappy":323}],146:[function(require,module,exports){
+},{"wrappy":325}],148:[function(require,module,exports){
 /**
  * Compiles a querystring
  * Returns string representation of the object
@@ -21221,7 +21404,7 @@ exports.decode = function(qs){
   return qry;
 };
 
-},{}],147:[function(require,module,exports){
+},{}],149:[function(require,module,exports){
 /**
  * Parses an URI
  *
@@ -21262,7 +21445,7 @@ module.exports = function parseuri(str) {
     return uri;
 };
 
-},{}],148:[function(require,module,exports){
+},{}],150:[function(require,module,exports){
 (function (process){
 // .dirname, .basename, and .extname methods are extracted from Node.js v8.11.1,
 // backported and transplited with Babel, with backwards-compat fixes
@@ -21568,7 +21751,7 @@ var substr = 'ab'.substr(-1) === 'b'
 ;
 
 }).call(this,require('_process'))
-},{"_process":150}],149:[function(require,module,exports){
+},{"_process":152}],151:[function(require,module,exports){
 (function (process){
 'use strict';
 
@@ -21617,7 +21800,7 @@ function nextTick(fn, arg1, arg2, arg3) {
 
 
 }).call(this,require('_process'))
-},{"_process":150}],150:[function(require,module,exports){
+},{"_process":152}],152:[function(require,module,exports){
 // shim for using process in browser
 var process = module.exports = {};
 
@@ -21803,12 +21986,12 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],151:[function(require,module,exports){
-arguments[4][131][0].apply(exports,arguments)
-},{"dup":131}],152:[function(require,module,exports){
+},{}],153:[function(require,module,exports){
+arguments[4][133][0].apply(exports,arguments)
+},{"dup":133}],154:[function(require,module,exports){
 module.exports = require('./lib/_stream_duplex.js');
 
-},{"./lib/_stream_duplex.js":153}],153:[function(require,module,exports){
+},{"./lib/_stream_duplex.js":155}],155:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -21940,7 +22123,7 @@ Duplex.prototype._destroy = function (err, cb) {
 
   pna.nextTick(cb, err);
 };
-},{"./_stream_readable":155,"./_stream_writable":157,"core-util-is":48,"inherits":87,"process-nextick-args":149}],154:[function(require,module,exports){
+},{"./_stream_readable":157,"./_stream_writable":159,"core-util-is":48,"inherits":89,"process-nextick-args":151}],156:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -21988,7 +22171,7 @@ function PassThrough(options) {
 PassThrough.prototype._transform = function (chunk, encoding, cb) {
   cb(null, chunk);
 };
-},{"./_stream_transform":156,"core-util-is":48,"inherits":87}],155:[function(require,module,exports){
+},{"./_stream_transform":158,"core-util-is":48,"inherits":89}],157:[function(require,module,exports){
 (function (process,global){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -23010,7 +23193,7 @@ function indexOf(xs, x) {
   return -1;
 }
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./_stream_duplex":153,"./internal/streams/BufferList":158,"./internal/streams/destroy":159,"./internal/streams/stream":160,"_process":150,"core-util-is":48,"events":68,"inherits":87,"isarray":90,"process-nextick-args":149,"safe-buffer":166,"string_decoder/":184,"util":39}],156:[function(require,module,exports){
+},{"./_stream_duplex":155,"./internal/streams/BufferList":160,"./internal/streams/destroy":161,"./internal/streams/stream":162,"_process":152,"core-util-is":48,"events":69,"inherits":89,"isarray":92,"process-nextick-args":151,"safe-buffer":168,"string_decoder/":186,"util":39}],158:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -23225,7 +23408,7 @@ function done(stream, er, data) {
 
   return stream.push(null);
 }
-},{"./_stream_duplex":153,"core-util-is":48,"inherits":87}],157:[function(require,module,exports){
+},{"./_stream_duplex":155,"core-util-is":48,"inherits":89}],159:[function(require,module,exports){
 (function (process,global,setImmediate){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -23915,7 +24098,7 @@ Writable.prototype._destroy = function (err, cb) {
   cb(err);
 };
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("timers").setImmediate)
-},{"./_stream_duplex":153,"./internal/streams/destroy":159,"./internal/streams/stream":160,"_process":150,"core-util-is":48,"inherits":87,"process-nextick-args":149,"safe-buffer":166,"timers":185,"util-deprecate":319}],158:[function(require,module,exports){
+},{"./_stream_duplex":155,"./internal/streams/destroy":161,"./internal/streams/stream":162,"_process":152,"core-util-is":48,"inherits":89,"process-nextick-args":151,"safe-buffer":168,"timers":187,"util-deprecate":321}],160:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -23995,7 +24178,7 @@ if (util && util.inspect && util.inspect.custom) {
     return this.constructor.name + ' ' + obj;
   };
 }
-},{"safe-buffer":166,"util":39}],159:[function(require,module,exports){
+},{"safe-buffer":168,"util":39}],161:[function(require,module,exports){
 'use strict';
 
 /*<replacement>*/
@@ -24070,13 +24253,13 @@ module.exports = {
   destroy: destroy,
   undestroy: undestroy
 };
-},{"process-nextick-args":149}],160:[function(require,module,exports){
+},{"process-nextick-args":151}],162:[function(require,module,exports){
 module.exports = require('events').EventEmitter;
 
-},{"events":68}],161:[function(require,module,exports){
+},{"events":69}],163:[function(require,module,exports){
 module.exports = require('./readable').PassThrough
 
-},{"./readable":162}],162:[function(require,module,exports){
+},{"./readable":164}],164:[function(require,module,exports){
 exports = module.exports = require('./lib/_stream_readable.js');
 exports.Stream = exports;
 exports.Readable = exports;
@@ -24085,20 +24268,20 @@ exports.Duplex = require('./lib/_stream_duplex.js');
 exports.Transform = require('./lib/_stream_transform.js');
 exports.PassThrough = require('./lib/_stream_passthrough.js');
 
-},{"./lib/_stream_duplex.js":153,"./lib/_stream_passthrough.js":154,"./lib/_stream_readable.js":155,"./lib/_stream_transform.js":156,"./lib/_stream_writable.js":157}],163:[function(require,module,exports){
+},{"./lib/_stream_duplex.js":155,"./lib/_stream_passthrough.js":156,"./lib/_stream_readable.js":157,"./lib/_stream_transform.js":158,"./lib/_stream_writable.js":159}],165:[function(require,module,exports){
 module.exports = require('./readable').Transform
 
-},{"./readable":162}],164:[function(require,module,exports){
+},{"./readable":164}],166:[function(require,module,exports){
 module.exports = require('./lib/_stream_writable.js');
 
-},{"./lib/_stream_writable.js":157}],165:[function(require,module,exports){
+},{"./lib/_stream_writable.js":159}],167:[function(require,module,exports){
 (function (process,global){
 'use strict';
 
-// Last time updated: 2020-02-26 1:11:47 PM UTC
+// Last time updated: 2020-05-17 5:04:38 PM UTC
 
 // ________________
-// RecordRTC v5.5.9
+// RecordRTC v5.6.1
 
 // Open-Sourced: https://github.com/muaz-khan/RecordRTC
 
@@ -24876,7 +25059,7 @@ function RecordRTC(mediaStream, config) {
          * @example
          * alert(recorder.version);
          */
-        version: '5.5.9'
+        version: '5.6.1'
     };
 
     if (!this) {
@@ -24894,7 +25077,7 @@ function RecordRTC(mediaStream, config) {
     return returnObject;
 }
 
-RecordRTC.version = '5.5.9';
+RecordRTC.version = '5.6.1';
 
 if (typeof module !== 'undefined' /* && !!module.exports*/ ) {
     module.exports = RecordRTC;
@@ -30019,7 +30202,7 @@ function RecordRTCPromisesHandler(mediaStream, options) {
      * @example
      * alert(recorder.version);
      */
-    this.version = '5.5.9';
+    this.version = '5.6.1';
 }
 
 if (typeof RecordRTC !== 'undefined') {
@@ -30044,7 +30227,7 @@ if (typeof RecordRTC !== 'undefined') {
  * });
  * @see {@link https://github.com/muaz-khan/RecordRTC|RecordRTC Source Code}
  * @param {MediaStream} mediaStream - MediaStream object fetched using getUserMedia API or generated using captureStreamUntilEnded or WebAudio API.
- * @param {object} config - {webAssemblyPath:'webm-wasm.wasm',workerPath: 'webm-worker.js', frameRate: 30, width: 1920, height: 1080, bitrate: 1024}
+ * @param {object} config - {webAssemblyPath:'webm-wasm.wasm',workerPath: 'webm-worker.js', frameRate: 30, width: 1920, height: 1080, bitrate: 1024, realtime: true}
  */
 function WebAssemblyRecorder(stream, config) {
     // based on: github.com/GoogleChromeLabs/webm-wasm
@@ -30060,6 +30243,7 @@ function WebAssemblyRecorder(stream, config) {
     config.height = config.height || 480;
     config.frameRate = config.frameRate || 30;
     config.bitrate = config.bitrate || 1200;
+    config.realtime = config.realtime || true;
 
     function createBufferURL(buffer, type) {
         return URL.createObjectURL(new Blob([buffer], {
@@ -30067,23 +30251,45 @@ function WebAssemblyRecorder(stream, config) {
         }));
     }
 
+    var finished;
+
     function cameraStream() {
         return new ReadableStream({
             start: function(controller) {
                 var cvs = document.createElement('canvas');
                 var video = document.createElement('video');
+                var first = true;
                 video.srcObject = stream;
+                video.muted = true;
+                video.height = config.height;
+                video.width = config.width;
+                video.volume = 0;
                 video.onplaying = function() {
                     cvs.width = config.width;
                     cvs.height = config.height;
                     var ctx = cvs.getContext('2d');
                     var frameTimeout = 1000 / config.frameRate;
-                    setTimeout(function f() {
+                    var cameraTimer = setInterval(function f() {
+                        if (finished) {
+                            clearInterval(cameraTimer);
+                            controller.close();
+                        }
+
+                        if (first) {
+                            first = false;
+                            if (config.onVideoProcessStarted) {
+                                config.onVideoProcessStarted();
+                            }
+                        }
+
                         ctx.drawImage(video, 0, 0);
-                        controller.enqueue(
-                            ctx.getImageData(0, 0, config.width, config.height)
-                        );
-                        setTimeout(f, frameTimeout);
+                        if (controller._controlledReadableStream.state !== 'closed') {
+                            try {
+                                controller.enqueue(
+                                    ctx.getImageData(0, 0, config.width, config.height)
+                                );
+                            } catch (e) {}
+                        }
                     }, frameTimeout);
                 };
                 video.play();
@@ -30095,7 +30301,10 @@ function WebAssemblyRecorder(stream, config) {
 
     function startRecording(stream, buffer) {
         if (!config.workerPath && !buffer) {
+            finished = false;
+
             // is it safe to use @latest ?
+
             fetch(
                 'https://unpkg.com/webm-wasm@latest/dist/webm-worker.js'
             ).then(function(r) {
@@ -30127,12 +30336,13 @@ function WebAssemblyRecorder(stream, config) {
                     height: config.height,
                     bitrate: config.bitrate || 1200,
                     timebaseDen: config.frameRate || 30,
-                    realtime: true
+                    realtime: config.realtime
                 });
 
                 cameraStream().pipeTo(new WritableStream({
                     write: function(image) {
-                        if (!worker) {
+                        if (finished) {
+                            console.error('Got image, but recorder is finished!');
                             return;
                         }
 
@@ -30189,14 +30399,28 @@ function WebAssemblyRecorder(stream, config) {
         isPaused = false;
     };
 
-    function terminate() {
+    function terminate(callback) {
         if (!worker) {
+            if (callback) {
+                callback();
+            }
+
             return;
         }
 
+        // Wait for null event data to indicate that the encoding is complete
+        worker.addEventListener('message', function(event) {
+            if (event.data === null) {
+                worker.terminate();
+                worker = null;
+
+                if (callback) {
+                    callback();
+                }
+            }
+        });
+
         worker.postMessage(null);
-        worker.terminate();
-        worker = null;
     }
 
     var arrayOfBuffers = [];
@@ -30212,13 +30436,17 @@ function WebAssemblyRecorder(stream, config) {
      * });
      */
     this.stop = function(callback) {
-        terminate();
+        finished = true;
 
-        this.blob = new Blob(arrayOfBuffers, {
-            type: 'video/webm'
+        var recorder = this;
+
+        terminate(function() {
+            recorder.blob = new Blob(arrayOfBuffers, {
+                type: 'video/webm'
+            });
+
+            callback(recorder.blob);
         });
-
-        callback(this.blob);
     };
 
     // for debugging
@@ -30258,7 +30486,7 @@ if (typeof RecordRTC !== 'undefined') {
 }
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"_process":150}],166:[function(require,module,exports){
+},{"_process":152}],168:[function(require,module,exports){
 /* eslint-disable node/no-deprecated-api */
 var buffer = require('buffer')
 var Buffer = buffer.Buffer
@@ -30322,7 +30550,7 @@ SafeBuffer.allocUnsafeSlow = function (size) {
   return buffer.SlowBuffer(size)
 }
 
-},{"buffer":42}],167:[function(require,module,exports){
+},{"buffer":42}],169:[function(require,module,exports){
 
 /**
  * Module dependencies.
@@ -30418,7 +30646,7 @@ exports.connect = lookup;
 exports.Manager = require('./manager');
 exports.Socket = require('./socket');
 
-},{"./manager":168,"./socket":170,"./url":171,"debug":172,"socket.io-parser":177}],168:[function(require,module,exports){
+},{"./manager":170,"./socket":172,"./url":173,"debug":174,"socket.io-parser":179}],170:[function(require,module,exports){
 
 /**
  * Module dependencies.
@@ -30993,7 +31221,7 @@ Manager.prototype.onreconnect = function () {
   this.emitAll('reconnect', attempt);
 };
 
-},{"./on":169,"./socket":170,"backo2":26,"component-bind":44,"component-emitter":45,"debug":172,"engine.io-client":51,"indexof":86,"socket.io-parser":177}],169:[function(require,module,exports){
+},{"./on":171,"./socket":172,"backo2":26,"component-bind":44,"component-emitter":45,"debug":174,"engine.io-client":51,"indexof":88,"socket.io-parser":179}],171:[function(require,module,exports){
 
 /**
  * Module exports.
@@ -31019,7 +31247,7 @@ function on (obj, ev, fn) {
   };
 }
 
-},{}],170:[function(require,module,exports){
+},{}],172:[function(require,module,exports){
 
 /**
  * Module dependencies.
@@ -31459,7 +31687,7 @@ Socket.prototype.binary = function (binary) {
   return this;
 };
 
-},{"./on":169,"component-bind":44,"component-emitter":45,"debug":172,"has-binary2":81,"parseqs":146,"socket.io-parser":177,"to-array":186}],171:[function(require,module,exports){
+},{"./on":171,"component-bind":44,"component-emitter":45,"debug":174,"has-binary2":83,"parseqs":148,"socket.io-parser":179,"to-array":188}],173:[function(require,module,exports){
 
 /**
  * Module dependencies.
@@ -31536,15 +31764,15 @@ function url (uri, loc) {
   return obj;
 }
 
-},{"debug":172,"parseuri":147}],172:[function(require,module,exports){
-arguments[4][60][0].apply(exports,arguments)
-},{"./common":173,"_process":150,"dup":60}],173:[function(require,module,exports){
+},{"debug":174,"parseuri":149}],174:[function(require,module,exports){
 arguments[4][61][0].apply(exports,arguments)
-},{"dup":61,"ms":175}],174:[function(require,module,exports){
-arguments[4][82][0].apply(exports,arguments)
-},{"dup":82}],175:[function(require,module,exports){
+},{"./common":175,"_process":152,"dup":61}],175:[function(require,module,exports){
 arguments[4][62][0].apply(exports,arguments)
-},{"dup":62}],176:[function(require,module,exports){
+},{"dup":62,"ms":177}],176:[function(require,module,exports){
+arguments[4][84][0].apply(exports,arguments)
+},{"dup":84}],177:[function(require,module,exports){
+arguments[4][63][0].apply(exports,arguments)
+},{"dup":63}],178:[function(require,module,exports){
 /*global Blob,File*/
 
 /**
@@ -31687,7 +31915,7 @@ exports.removeBlobs = function(data, callback) {
   }
 };
 
-},{"./is-buffer":178,"isarray":174}],177:[function(require,module,exports){
+},{"./is-buffer":180,"isarray":176}],179:[function(require,module,exports){
 
 /**
  * Module dependencies.
@@ -32104,7 +32332,7 @@ function error(msg) {
   };
 }
 
-},{"./binary":176,"./is-buffer":178,"component-emitter":45,"debug":179,"isarray":174}],178:[function(require,module,exports){
+},{"./binary":178,"./is-buffer":180,"component-emitter":45,"debug":181,"isarray":176}],180:[function(require,module,exports){
 (function (Buffer){
 
 module.exports = isBuf;
@@ -32128,7 +32356,7 @@ function isBuf(obj) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":42}],179:[function(require,module,exports){
+},{"buffer":42}],181:[function(require,module,exports){
 (function (process){
 /**
  * This is the web browser implementation of `debug()`.
@@ -32327,7 +32555,7 @@ function localstorage() {
 }
 
 }).call(this,require('_process'))
-},{"./debug":180,"_process":150}],180:[function(require,module,exports){
+},{"./debug":182,"_process":152}],182:[function(require,module,exports){
 
 /**
  * This is the common logic for both the Node.js and web browser
@@ -32554,7 +32782,7 @@ function coerce(val) {
   return val;
 }
 
-},{"ms":181}],181:[function(require,module,exports){
+},{"ms":183}],183:[function(require,module,exports){
 /**
  * Helpers.
  */
@@ -32708,7 +32936,7 @@ function plural(ms, n, name) {
   return Math.ceil(ms / n) + ' ' + name + 's';
 }
 
-},{}],182:[function(require,module,exports){
+},{}],184:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -32837,7 +33065,7 @@ Stream.prototype.pipe = function(dest, options) {
   return dest;
 };
 
-},{"events":68,"inherits":87,"readable-stream/duplex.js":152,"readable-stream/passthrough.js":161,"readable-stream/readable.js":162,"readable-stream/transform.js":163,"readable-stream/writable.js":164}],183:[function(require,module,exports){
+},{"events":69,"inherits":89,"readable-stream/duplex.js":154,"readable-stream/passthrough.js":163,"readable-stream/readable.js":164,"readable-stream/transform.js":165,"readable-stream/writable.js":166}],185:[function(require,module,exports){
 
 //force to a valid range
 var range = exports.range = function (obj) {
@@ -32911,7 +33139,7 @@ var satifies = exports.satisfies = function (key, range) {
 
 
 
-},{}],184:[function(require,module,exports){
+},{}],186:[function(require,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -33208,7 +33436,7 @@ function simpleWrite(buf) {
 function simpleEnd(buf) {
   return buf && buf.length ? this.write(buf) : '';
 }
-},{"safe-buffer":166}],185:[function(require,module,exports){
+},{"safe-buffer":168}],187:[function(require,module,exports){
 (function (setImmediate,clearImmediate){
 var nextTick = require('process/browser.js').nextTick;
 var apply = Function.prototype.apply;
@@ -33287,7 +33515,7 @@ exports.clearImmediate = typeof clearImmediate === "function" ? clearImmediate :
   delete immediateIds[id];
 };
 }).call(this,require("timers").setImmediate,require("timers").clearImmediate)
-},{"process/browser.js":150,"timers":185}],186:[function(require,module,exports){
+},{"process/browser.js":152,"timers":187}],188:[function(require,module,exports){
 module.exports = toArray
 
 function toArray(list, index) {
@@ -33302,7 +33530,7 @@ function toArray(list, index) {
     return array
 }
 
-},{}],187:[function(require,module,exports){
+},{}],189:[function(require,module,exports){
 'use strict';
 
 var CancelablePromise = require('./util/cancelablepromise');
@@ -33351,7 +33579,7 @@ function createCancelableRoomPromise(getLocalTracks, createLocalParticipant, cre
 }
 
 module.exports = createCancelableRoomPromise;
-},{"./util/cancelablepromise":293}],188:[function(require,module,exports){
+},{"./util/cancelablepromise":295}],190:[function(require,module,exports){
 'use strict';
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -33848,7 +34076,7 @@ function normalizeVideoCodecSettings(nameOrSettings) {
 }
 
 module.exports = connect;
-},{"./cancelableroompromise":187,"./createlocaltracks":190,"./encodingparameters":196,"./iceserversource/constant":198,"./iceserversource/nts":199,"./localparticipant":201,"./media/track/es5/localaudiotrack":203,"./media/track/es5/localdatatrack":204,"./media/track/es5/localvideotrack":205,"./networkqualityconfiguration":229,"./room":234,"./signaling/v2":247,"./util":296,"./util/cancelablepromise":293,"./util/constants":294,"./util/log":299,"@twilio/webrtc":3,"@twilio/webrtc/lib/util":16}],189:[function(require,module,exports){
+},{"./cancelableroompromise":189,"./createlocaltracks":192,"./encodingparameters":198,"./iceserversource/constant":200,"./iceserversource/nts":201,"./localparticipant":203,"./media/track/es5/localaudiotrack":205,"./media/track/es5/localdatatrack":206,"./media/track/es5/localvideotrack":207,"./networkqualityconfiguration":231,"./room":236,"./signaling/v2":249,"./util":298,"./util/cancelablepromise":295,"./util/constants":296,"./util/log":301,"@twilio/webrtc":3,"@twilio/webrtc/lib/util":16}],191:[function(require,module,exports){
 'use strict';
 
 var defaultCreateLocalTracks = require('./createlocaltracks');
@@ -33954,7 +34182,7 @@ module.exports = {
   audio: createLocalAudioTrack,
   video: createLocalVideoTrack
 };
-},{"./createlocaltracks":190,"./util/constants":294}],190:[function(require,module,exports){
+},{"./createlocaltracks":192,"./util/constants":296}],192:[function(require,module,exports){
 'use strict';
 
 var asLocalTrack = require('./util').asLocalTrack;
@@ -34095,7 +34323,7 @@ function createLocalTracks(options) {
  */
 
 module.exports = createLocalTracks;
-},{"./media/track/es5/localaudiotrack":203,"./media/track/es5/localdatatrack":204,"./media/track/es5/localvideotrack":205,"./util":296,"./util/constants":294,"./util/log":299,"./webaudio/workaround180748":313,"@twilio/webrtc":3}],191:[function(require,module,exports){
+},{"./media/track/es5/localaudiotrack":205,"./media/track/es5/localdatatrack":206,"./media/track/es5/localvideotrack":207,"./util":298,"./util/constants":296,"./util/log":301,"./webaudio/workaround180748":315,"@twilio/webrtc":3}],193:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -34176,7 +34404,7 @@ var DataTrackReceiver = function (_DataTrackTransceiver) {
  */
 
 module.exports = DataTrackReceiver;
-},{"./transceiver":193,"./transport":194}],192:[function(require,module,exports){
+},{"./transceiver":195,"./transport":196}],194:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -34334,7 +34562,7 @@ var DataTrackSender = function (_DataTrackTransceiver) {
 }(DataTrackTransceiver);
 
 module.exports = DataTrackSender;
-},{"../util":296,"./transceiver":193}],193:[function(require,module,exports){
+},{"../util":298,"./transceiver":195}],195:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -34393,7 +34621,7 @@ var DataTrackTransceiver = function (_TrackTransceiver) {
 }(TrackTransceiver);
 
 module.exports = DataTrackTransceiver;
-},{"../transceiver":290}],194:[function(require,module,exports){
+},{"../transceiver":292}],196:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -34504,7 +34732,7 @@ var DataTransport = function (_EventEmitter) {
  */
 
 module.exports = DataTransport;
-},{"events":68}],195:[function(require,module,exports){
+},{"events":69}],197:[function(require,module,exports){
 'use strict';
 
 var request = require('./request');
@@ -34573,7 +34801,7 @@ function toQueryString(params) {
 }
 
 module.exports.getConfiguration = getConfiguration;
-},{"./request":233,"./util/twilio-video-errors":309}],196:[function(require,module,exports){
+},{"./request":235,"./util/twilio-video-errors":311}],198:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -34680,7 +34908,7 @@ var EncodingParametersImpl = function (_EventEmitter) {
  */
 
 module.exports = EncodingParametersImpl;
-},{"events":68}],197:[function(require,module,exports){
+},{"events":69}],199:[function(require,module,exports){
 'use strict';
 
 var _require = require('events'),
@@ -34690,7 +34918,7 @@ var _require2 = require('./util'),
     hidePrivateAndCertainPublicPropertiesInClass = _require2.hidePrivateAndCertainPublicPropertiesInClass;
 
 module.exports = hidePrivateAndCertainPublicPropertiesInClass(EventEmitter, ['domain']);
-},{"./util":296,"events":68}],198:[function(require,module,exports){
+},{"./util":298,"events":69}],200:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -34773,7 +35001,7 @@ var ConstantIceServerSource = function (_EventEmitter) {
 }(EventEmitter);
 
 module.exports = ConstantIceServerSource;
-},{"events":68}],199:[function(require,module,exports){
+},{"events":69}],201:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -35056,7 +35284,7 @@ function poll(client) {
 }
 
 module.exports = NTSIceServerSource;
-},{"../../package.json":314,"../ecs":195,"../util":296,"../util/constants":294,"../util/log":299,"../util/timeoutpromise":308,"../util/twilio-video-errors":309,"events":68}],200:[function(require,module,exports){
+},{"../../package.json":316,"../ecs":197,"../util":298,"../util/constants":296,"../util/log":301,"../util/timeoutpromise":310,"../util/twilio-video-errors":311,"events":69}],202:[function(require,module,exports){
 'use strict';
 
 var version = require('../package.json').version;
@@ -35102,7 +35330,7 @@ Object.defineProperties(Video, {
 });
 
 module.exports = Video;
-},{"../package.json":314,"./connect":188,"./createlocaltrack":189,"./createlocaltracks":190,"./media/track/es5/localaudiotrack":203,"./media/track/es5/localdatatrack":204,"./media/track/es5/localvideotrack":205,"./util/support":306}],201:[function(require,module,exports){
+},{"../package.json":316,"./connect":190,"./createlocaltrack":191,"./createlocaltracks":192,"./media/track/es5/localaudiotrack":205,"./media/track/es5/localdatatrack":206,"./media/track/es5/localvideotrack":207,"./util/support":308}],203:[function(require,module,exports){
 'use strict';
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -35734,7 +35962,7 @@ function getTrackPublication(trackPublications, track) {
 }
 
 module.exports = LocalParticipant;
-},{"./media/track/es5/localaudiotrack":203,"./media/track/es5/localdatatrack":204,"./media/track/es5/localvideotrack":205,"./media/track/localaudiotrackpublication":208,"./media/track/localdatatrackpublication":210,"./media/track/localvideotrackpublication":214,"./participant":230,"./util":296,"./util/constants":294,"@twilio/webrtc":3}],202:[function(require,module,exports){
+},{"./media/track/es5/localaudiotrack":205,"./media/track/es5/localdatatrack":206,"./media/track/es5/localvideotrack":207,"./media/track/localaudiotrackpublication":210,"./media/track/localdatatrackpublication":212,"./media/track/localvideotrackpublication":216,"./participant":232,"./util":298,"./util/constants":296,"@twilio/webrtc":3}],204:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -35915,7 +36143,7 @@ var AudioTrack = function (_MediaTrack) {
  */
 
 module.exports = AudioTrack;
-},{"./mediatrack":215}],203:[function(require,module,exports){
+},{"./mediatrack":217}],205:[function(require,module,exports){
 // TODO(mroberts): Remove this when we go to the next major version. This is
 // only in place so that we can support ES6 classes without requiring `new`.
 'use strict';
@@ -35934,7 +36162,7 @@ function LocalAudioTrack(mediaStreamTrack, options) {
 inherits(LocalAudioTrack, LocalAudioTrackClass);
 
 module.exports = LocalAudioTrack;
-},{"../localaudiotrack":207,"util":322}],204:[function(require,module,exports){
+},{"../localaudiotrack":209,"util":324}],206:[function(require,module,exports){
 // TODO(mroberts): Remove this when we go to the next major version. This is
 // only in place so that we can support ES6 classes without requiring `new`.
 'use strict';
@@ -35953,7 +36181,7 @@ function LocalDataTrack(options) {
 inherits(LocalDataTrack, LocalDataTrackClass);
 
 module.exports = LocalDataTrack;
-},{"../localdatatrack":209,"util":322}],205:[function(require,module,exports){
+},{"../localdatatrack":211,"util":324}],207:[function(require,module,exports){
 // TODO(mroberts): Remove this when we go to the next major version. This is
 // only in place so that we can support ES6 classes without requiring `new`.
 'use strict';
@@ -35972,7 +36200,7 @@ function LocalVideoTrack(mediaStreamTrack, options) {
 inherits(LocalVideoTrack, LocalVideoTrackClass);
 
 module.exports = LocalVideoTrack;
-},{"../localvideotrack":213,"util":322}],206:[function(require,module,exports){
+},{"../localvideotrack":215,"util":324}],208:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -36097,7 +36325,7 @@ var Track = function (_EventEmitter) {
  */
 
 module.exports = Track;
-},{"../../eventemitter":197,"../../util":296,"../../util/constants":294,"../../util/log":299}],207:[function(require,module,exports){
+},{"../../eventemitter":199,"../../util":298,"../../util/constants":296,"../../util/log":301}],209:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -36246,7 +36474,7 @@ var LocalAudioTrack = function (_LocalMediaAudioTrack) {
  */
 
 module.exports = LocalAudioTrack;
-},{"./audiotrack":202,"./localmediatrack":211}],208:[function(require,module,exports){
+},{"./audiotrack":204,"./localmediatrack":213}],210:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -36295,7 +36523,7 @@ var LocalAudioTrackPublication = function (_LocalTrackPublicatio) {
 }(LocalTrackPublication);
 
 module.exports = LocalAudioTrackPublication;
-},{"./localtrackpublication":212}],209:[function(require,module,exports){
+},{"./localtrackpublication":214}],211:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -36441,7 +36669,7 @@ var LocalDataTrack = function (_Track) {
  */
 
 module.exports = LocalDataTrack;
-},{"../../data/sender":192,"./":206}],210:[function(require,module,exports){
+},{"../../data/sender":194,"./":208}],212:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -36490,7 +36718,7 @@ var LocalDataTrackPublication = function (_LocalTrackPublicatio) {
 }(LocalTrackPublication);
 
 module.exports = LocalDataTrackPublication;
-},{"./localtrackpublication":212}],211:[function(require,module,exports){
+},{"./localtrackpublication":214}],213:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -36605,7 +36833,7 @@ function mixinLocalMediaTrack(AudioOrVideoTrack) {
 }
 
 module.exports = mixinLocalMediaTrack;
-},{"./sender":225}],212:[function(require,module,exports){
+},{"./sender":227}],214:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -36701,7 +36929,7 @@ var LocalTrackPublication = function (_TrackPublication) {
 }(TrackPublication);
 
 module.exports = LocalTrackPublication;
-},{"./trackpublication":226}],213:[function(require,module,exports){
+},{"./trackpublication":228}],215:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -36840,7 +37068,7 @@ var LocalVideoTrack = function (_LocalMediaVideoTrack) {
  */
 
 module.exports = LocalVideoTrack;
-},{"./localmediatrack":211,"./videotrack":228}],214:[function(require,module,exports){
+},{"./localmediatrack":213,"./videotrack":230}],216:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -36889,7 +37117,7 @@ var LocalVideoTrackPublication = function (_LocalTrackPublicatio) {
 }(LocalTrackPublication);
 
 module.exports = LocalVideoTrackPublication;
-},{"./localtrackpublication":212}],215:[function(require,module,exports){
+},{"./localtrackpublication":214}],217:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -37183,7 +37411,7 @@ var MediaTrack = function (_Track) {
 }(Track);
 
 module.exports = MediaTrack;
-},{"./":206,"@twilio/webrtc":3}],216:[function(require,module,exports){
+},{"./":208,"@twilio/webrtc":3}],218:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -37217,7 +37445,7 @@ var MediaTrackReceiver = function (_MediaTrackTransceive) {
 }(MediaTrackTransceiver);
 
 module.exports = MediaTrackReceiver;
-},{"./transceiver":227}],217:[function(require,module,exports){
+},{"./transceiver":229}],219:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -37291,7 +37519,7 @@ var RemoteAudioTrack = function (_RemoteMediaAudioTrac) {
  */
 
 module.exports = RemoteAudioTrack;
-},{"./audiotrack":202,"./remotemediatrack":221}],218:[function(require,module,exports){
+},{"./audiotrack":204,"./remotemediatrack":223}],220:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -37372,7 +37600,7 @@ var RemoteAudioTrackPublication = function (_RemoteTrackPublicati) {
  */
 
 module.exports = RemoteAudioTrackPublication;
-},{"./remotetrackpublication":222}],219:[function(require,module,exports){
+},{"./remotetrackpublication":224}],221:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -37481,7 +37709,7 @@ var RemoteDataTrack = function (_Track) {
  */
 
 module.exports = RemoteDataTrack;
-},{"./":206}],220:[function(require,module,exports){
+},{"./":208}],222:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -37550,7 +37778,7 @@ var RemoteDataTrackPublication = function (_RemoteTrackPublicati) {
  */
 
 module.exports = RemoteDataTrackPublication;
-},{"./remotetrackpublication":222}],221:[function(require,module,exports){
+},{"./remotetrackpublication":224}],223:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -37638,7 +37866,7 @@ function mixinRemoteMediaTrack(AudioOrVideoTrack) {
  */
 
 module.exports = mixinRemoteMediaTrack;
-},{}],222:[function(require,module,exports){
+},{}],224:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -37801,7 +38029,7 @@ var RemoteTrackPublication = function (_TrackPublication) {
  */
 
 module.exports = RemoteTrackPublication;
-},{"./trackpublication":226}],223:[function(require,module,exports){
+},{"./trackpublication":228}],225:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -37876,7 +38104,7 @@ var RemoteVideoTrack = function (_RemoteMediaVideoTrac) {
  */
 
 module.exports = RemoteVideoTrack;
-},{"./remotemediatrack":221,"./videotrack":228}],224:[function(require,module,exports){
+},{"./remotemediatrack":223,"./videotrack":230}],226:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -37957,7 +38185,7 @@ var RemoteVideoTrackPublication = function (_RemoteTrackPublicati) {
  */
 
 module.exports = RemoteVideoTrackPublication;
-},{"./remotetrackpublication":222}],225:[function(require,module,exports){
+},{"./remotetrackpublication":224}],227:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -38039,7 +38267,7 @@ var MediaTrackSender = function (_MediaTrackTransceive) {
 }(MediaTrackTransceiver);
 
 module.exports = MediaTrackSender;
-},{"./transceiver":227}],226:[function(require,module,exports){
+},{"./transceiver":229}],228:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -38157,7 +38385,7 @@ var TrackPublication = function (_EventEmitter) {
  */
 
 module.exports = TrackPublication;
-},{"../../eventemitter":197,"../../util":296,"../../util/constants":294,"../../util/log":299}],227:[function(require,module,exports){
+},{"../../eventemitter":199,"../../util":298,"../../util/constants":296,"../../util/log":301}],229:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -38219,7 +38447,7 @@ var MediaTrackTransceiver = function (_TrackTransceiver) {
 }(TrackTransceiver);
 
 module.exports = MediaTrackTransceiver;
-},{"../../transceiver":290}],228:[function(require,module,exports){
+},{"../../transceiver":292}],230:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -38468,7 +38696,7 @@ function dimensionsChanged(track, elem) {
  */
 
 module.exports = VideoTrack;
-},{"./mediatrack":215}],229:[function(require,module,exports){
+},{"./mediatrack":217}],231:[function(require,module,exports){
 'use strict';
 
 var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
@@ -38565,7 +38793,7 @@ var NetworkQualityConfigurationImpl = function (_EventEmitter) {
 }(EventEmitter);
 
 module.exports = NetworkQualityConfigurationImpl;
-},{"./util":296,"./util/constants":294,"events":68}],230:[function(require,module,exports){
+},{"./util":298,"./util/constants":296,"events":69}],232:[function(require,module,exports){
 'use strict';
 
 var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
@@ -39227,7 +39455,7 @@ function reemitTrackPublicationEvents(participant, publication) {
 }
 
 module.exports = Participant;
-},{"./eventemitter":197,"./media/track/remoteaudiotrack":217,"./media/track/remoteaudiotrackpublication":218,"./media/track/remotedatatrack":219,"./media/track/remotedatatrackpublication":220,"./media/track/remotevideotrack":223,"./media/track/remotevideotrackpublication":224,"./util":296}],231:[function(require,module,exports){
+},{"./eventemitter":199,"./media/track/remoteaudiotrack":219,"./media/track/remoteaudiotrackpublication":220,"./media/track/remotedatatrack":221,"./media/track/remotedatatrackpublication":222,"./media/track/remotevideotrack":225,"./media/track/remotevideotrackpublication":226,"./util":298}],233:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -39323,7 +39551,7 @@ var QueueingEventEmitter = function (_EventEmitter) {
 }(EventEmitter);
 
 module.exports = QueueingEventEmitter;
-},{"events":68}],232:[function(require,module,exports){
+},{"events":69}],234:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -39583,7 +39811,7 @@ var RemoteParticipant = function (_Participant) {
  */
 
 module.exports = RemoteParticipant;
-},{"./participant":230}],233:[function(require,module,exports){
+},{"./participant":232}],235:[function(require,module,exports){
 'use strict';
 
 var XHR = require('xmlhttprequest').XMLHttpRequest;
@@ -39636,7 +39864,7 @@ request.get = request.bind(null, 'GET');
 request.post = request.bind(null, 'POST');
 
 module.exports = request;
-},{"xmlhttprequest":316}],234:[function(require,module,exports){
+},{"xmlhttprequest":318}],236:[function(require,module,exports){
 'use strict';
 
 var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
@@ -40137,7 +40365,7 @@ function handleSignalingEvents(room, signaling) {
 }
 
 module.exports = Room;
-},{"./eventemitter":197,"./remoteparticipant":232,"./stats/statsreport":287,"./util":296}],235:[function(require,module,exports){
+},{"./eventemitter":199,"./remoteparticipant":234,"./stats/statsreport":289,"./util":298}],237:[function(require,module,exports){
 /* eslint consistent-return:0 */
 'use strict';
 
@@ -40331,7 +40559,7 @@ var Signaling = function (_StateMachine) {
 }(StateMachine);
 
 module.exports = Signaling;
-},{"../statemachine":259,"./participant":238,"./room":242}],236:[function(require,module,exports){
+},{"../statemachine":261,"./participant":240,"./room":244}],238:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -40429,7 +40657,7 @@ var LocalParticipantSignaling = function (_ParticipantSignaling) {
 }(ParticipantSignaling);
 
 module.exports = LocalParticipantSignaling;
-},{"./participant":238}],237:[function(require,module,exports){
+},{"./participant":240}],239:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -40559,7 +40787,7 @@ function setError(publication, error) {
 }
 
 module.exports = LocalTrackPublicationSignaling;
-},{"./track":243}],238:[function(require,module,exports){
+},{"./track":245}],240:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -40780,7 +41008,7 @@ var ParticipantSignaling = function (_StateMachine) {
  */
 
 module.exports = ParticipantSignaling;
-},{"../statemachine":259,"../stats/networkqualitystats":274}],239:[function(require,module,exports){
+},{"../statemachine":261,"../stats/networkqualitystats":276}],241:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -40865,7 +41093,7 @@ var RecordingSignaling = function (_EventEmitter) {
  */
 
 module.exports = RecordingSignaling;
-},{"events":68}],240:[function(require,module,exports){
+},{"events":69}],242:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -40904,7 +41132,7 @@ var RemoteParticipantSignaling = function (_ParticipantSignaling) {
 }(ParticipantSignaling);
 
 module.exports = RemoteParticipantSignaling;
-},{"./participant":238}],241:[function(require,module,exports){
+},{"./participant":240}],243:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -40990,7 +41218,7 @@ var RemoteTrackPublicationSignaling = function (_TrackSignaling) {
 }(TrackSignaling);
 
 module.exports = RemoteTrackPublicationSignaling;
-},{"./track":243}],242:[function(require,module,exports){
+},{"./track":245}],244:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -41255,7 +41483,7 @@ function maybeUpdateState(roomSignaling) {
 }
 
 module.exports = RoomSignaling;
-},{"../statemachine":259,"../util/twilio-video-errors":309,"./recording":239}],243:[function(require,module,exports){
+},{"../statemachine":261,"../util/twilio-video-errors":311,"./recording":241}],245:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -41429,7 +41657,7 @@ var TrackSignaling = function (_EventEmitter) {
  */
 
 module.exports = TrackSignaling;
-},{"events":68}],244:[function(require,module,exports){
+},{"events":69}],246:[function(require,module,exports){
 'use strict';
 
 var CancelablePromise = require('../../util/cancelablepromise');
@@ -41548,7 +41776,7 @@ function createCancelableRoomSignalingPromise(token, wsServer, localParticipant,
 }
 
 module.exports = createCancelableRoomSignalingPromise;
-},{"../../util":296,"../../util/cancelablepromise":293,"../../util/twilio-video-errors":309,"./peerconnectionmanager":253,"./room":257,"./twilioconnectiontransport":258}],245:[function(require,module,exports){
+},{"../../util":298,"../../util/cancelablepromise":295,"../../util/twilio-video-errors":311,"./peerconnectionmanager":255,"./room":259,"./twilioconnectiontransport":260}],247:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -41636,7 +41864,7 @@ var DominantSpeakerSignaling = function (_EventEmitter) {
  */
 
 module.exports = DominantSpeakerSignaling;
-},{"events":68}],246:[function(require,module,exports){
+},{"events":69}],248:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -41722,7 +41950,7 @@ var IceBox = function () {
 }();
 
 module.exports = IceBox;
-},{"../../util/filter":295}],247:[function(require,module,exports){
+},{"../../util/filter":297}],249:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -41796,7 +42024,7 @@ var SignalingV2 = function (_Signaling) {
 }(Signaling);
 
 module.exports = SignalingV2;
-},{"../":235,"./cancelableroomsignalingpromise":244,"./localparticipant":248}],248:[function(require,module,exports){
+},{"../":237,"./cancelableroomsignalingpromise":246,"./localparticipant":250}],250:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -42083,7 +42311,7 @@ var LocalParticipantV2 = function (_LocalParticipantSign) {
  */
 
 module.exports = LocalParticipantV2;
-},{"../localparticipant":236,"./localtrackpublication":249}],249:[function(require,module,exports){
+},{"../localparticipant":238,"./localtrackpublication":251}],251:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -42175,7 +42403,7 @@ var LocalTrackPublicationV2 = function (_LocalTrackPublicatio) {
  */
 
 module.exports = LocalTrackPublicationV2;
-},{"../../util/twilio-video-errors":309,"../localtrackpublication":237}],250:[function(require,module,exports){
+},{"../../util/twilio-video-errors":311,"../localtrackpublication":239}],252:[function(require,module,exports){
 /* eslint callback-return:0 */
 'use strict';
 
@@ -42353,7 +42581,7 @@ function next(monitor) {
  */
 
 module.exports = NetworkQualityMonitor;
-},{"../../stats/peerconnectionreportfactory":277,"events":68}],251:[function(require,module,exports){
+},{"../../stats/peerconnectionreportfactory":279,"events":69}],253:[function(require,module,exports){
 'use strict';
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -42633,7 +42861,7 @@ function createNetworkQualityInputsMessage(networkQualityInputs, networkQualityR
 }
 
 module.exports = NetworkQualitySignaling;
-},{"../../util/asyncvar":292,"events":68}],252:[function(require,module,exports){
+},{"../../util/asyncvar":294,"events":69}],254:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -43868,7 +44096,7 @@ function shouldStopTransceiver(description, transceiver) {
 }
 
 module.exports = PeerConnectionV2;
-},{"../../data/receiver":191,"../../media/track/receiver":216,"../../statemachine":259,"../../util":296,"../../util/constants":294,"../../util/log":299,"../../util/sdp":300,"../../util/sdp/issue8329":301,"../../util/sdp/trackmatcher/identity":303,"../../util/sdp/trackmatcher/mid":304,"../../util/sdp/trackmatcher/ordered":305,"../../util/twilio-video-errors":309,"./icebox":246,"@twilio/webrtc":3,"@twilio/webrtc/lib/util":16,"@twilio/webrtc/lib/util/sdp":18}],253:[function(require,module,exports){
+},{"../../data/receiver":193,"../../media/track/receiver":218,"../../statemachine":261,"../../util":298,"../../util/constants":296,"../../util/log":301,"../../util/sdp":302,"../../util/sdp/issue8329":303,"../../util/sdp/trackmatcher/identity":305,"../../util/sdp/trackmatcher/mid":306,"../../util/sdp/trackmatcher/ordered":307,"../../util/twilio-video-errors":311,"./icebox":248,"@twilio/webrtc":3,"@twilio/webrtc/lib/util":16,"@twilio/webrtc/lib/util/sdp":18}],255:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -44438,7 +44666,7 @@ function updateIceConnectionState(pcm) {
 }
 
 module.exports = PeerConnectionManager;
-},{"../../media/track/sender":225,"../../queueingeventemitter":231,"../../util":296,"../../util/twilio-video-errors":309,"../../webaudio/audiocontext":311,"./peerconnection":252,"@twilio/webrtc/lib/util":16}],254:[function(require,module,exports){
+},{"../../media/track/sender":227,"../../queueingeventemitter":233,"../../util":298,"../../util/twilio-video-errors":311,"../../webaudio/audiocontext":313,"./peerconnection":254,"@twilio/webrtc/lib/util":16}],256:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -44506,7 +44734,7 @@ var RecordingV2 = function (_RecordingSignaling) {
  */
 
 module.exports = RecordingV2;
-},{"../recording":239}],255:[function(require,module,exports){
+},{"../recording":241}],257:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -44626,7 +44854,7 @@ var RemoteParticipantV2 = function (_RemoteParticipantSig) {
 }(RemoteParticipantSignaling);
 
 module.exports = RemoteParticipantV2;
-},{"../remoteparticipant":240,"./remotetrackpublication":256}],256:[function(require,module,exports){
+},{"../remoteparticipant":242,"./remotetrackpublication":258}],258:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -44684,7 +44912,7 @@ var RemoteTrackPublicationV2 = function (_RemoteTrackPublicati) {
  */
 
 module.exports = RemoteTrackPublicationV2;
-},{"../remotetrackpublication":241}],257:[function(require,module,exports){
+},{"../remotetrackpublication":243}],259:[function(require,module,exports){
 'use strict';
 
 var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
@@ -45442,7 +45670,7 @@ function replaceNullsWithDefaults(activeIceCandidatePair, peerConnectionId) {
 }
 
 module.exports = RoomV2;
-},{"../../stats/statsreport":287,"../../util":296,"../../util/twilio-video-errors":309,"../room":242,"./dominantspeakersignaling":245,"./networkqualitymonitor":250,"./networkqualitysignaling":251,"./recording":254,"./remoteparticipant":255}],258:[function(require,module,exports){
+},{"../../stats/statsreport":289,"../../util":298,"../../util/twilio-video-errors":311,"../room":244,"./dominantspeakersignaling":247,"./networkqualitymonitor":252,"./networkqualitysignaling":253,"./recording":256,"./remoteparticipant":257}],260:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -45973,7 +46201,7 @@ function setupEventListeners(transport) {
 }
 
 module.exports = TwilioConnectionTransport;
-},{"../../../package.json":314,"../../statemachine":259,"../../twilioconnection":291,"../../util":296,"../../util/insightspublisher":297,"../../util/insightspublisher/null":298,"../../util/twilio-video-errors":309,"@twilio/webrtc/lib/util/sdp":18}],259:[function(require,module,exports){
+},{"../../../package.json":316,"../../statemachine":261,"../../twilioconnection":293,"../../util":298,"../../util/insightspublisher":299,"../../util/insightspublisher/null":300,"../../util/twilio-video-errors":311,"@twilio/webrtc/lib/util/sdp":18}],261:[function(require,module,exports){
 'use strict';
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -46475,7 +46703,7 @@ function createUnreachableError(here, there) {
 }
 
 module.exports = StateMachine;
-},{"./util":296,"events":68}],260:[function(require,module,exports){
+},{"./util":298,"events":69}],262:[function(require,module,exports){
 /* eslint no-undefined:0 */
 'use strict';
 
@@ -46494,7 +46722,7 @@ function average(xs) {
 }
 
 module.exports = average;
-},{}],261:[function(require,module,exports){
+},{}],263:[function(require,module,exports){
 'use strict';
 
 /**
@@ -46565,7 +46793,7 @@ var IceReport = function () {
 }();
 
 module.exports = IceReport;
-},{}],262:[function(require,module,exports){
+},{}],264:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -46624,7 +46852,7 @@ var IceReportFactory = function () {
 }();
 
 module.exports = IceReportFactory;
-},{"./icereport":261}],263:[function(require,module,exports){
+},{"./icereport":263}],265:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -46677,7 +46905,7 @@ var LocalAudioTrackStats = function (_LocalTrackStats) {
  */
 
 module.exports = LocalAudioTrackStats;
-},{"./localtrackstats":264}],264:[function(require,module,exports){
+},{"./localtrackstats":266}],266:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -46729,7 +46957,7 @@ var LocalTrackStats = function (_TrackStats) {
 }(TrackStats);
 
 module.exports = LocalTrackStats;
-},{"./trackstats":289}],265:[function(require,module,exports){
+},{"./trackstats":291}],267:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -46818,7 +47046,7 @@ var LocalVideoTrackStats = function (_LocalTrackStats) {
 }(LocalTrackStats);
 
 module.exports = LocalVideoTrackStats;
-},{"./localtrackstats":264}],266:[function(require,module,exports){
+},{"./localtrackstats":266}],268:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -46850,7 +47078,7 @@ var NetworkQualityAudioStats = function (_NetworkQualityMediaS) {
 }(NetworkQualityMediaStats);
 
 module.exports = NetworkQualityAudioStats;
-},{"./networkqualitymediastats":270}],267:[function(require,module,exports){
+},{"./networkqualitymediastats":272}],269:[function(require,module,exports){
 'use strict';
 
 /**
@@ -46894,7 +47122,7 @@ function NetworkQualityBandwidthStats(_ref) {
 };
 
 module.exports = NetworkQualityBandwidthStats;
-},{}],268:[function(require,module,exports){
+},{}],270:[function(require,module,exports){
 'use strict';
 
 /**
@@ -46931,7 +47159,7 @@ function NetworkQualityFractionLostStats(_ref) {
 };
 
 module.exports = NetworkQualityFractionLostStats;
-},{}],269:[function(require,module,exports){
+},{}],271:[function(require,module,exports){
 'use strict';
 
 /**
@@ -46975,7 +47203,7 @@ function NetworkQualityLatencyStats(_ref) {
 };
 
 module.exports = NetworkQualityLatencyStats;
-},{}],270:[function(require,module,exports){
+},{}],272:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -47033,7 +47261,7 @@ function NetworkQualityMediaStats(_ref) {
 };
 
 module.exports = NetworkQualityMediaStats;
-},{"./networkqualityrecvstats":271,"./networkqualitysendstats":273}],271:[function(require,module,exports){
+},{"./networkqualityrecvstats":273,"./networkqualitysendstats":275}],273:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -47066,7 +47294,7 @@ var NetworkQualityRecvStats = function (_NetworkQualitySendOr) {
 }(NetworkQualitySendOrRecvStats);
 
 module.exports = NetworkQualityRecvStats;
-},{"./networkqualitysendorrecvstats":272}],272:[function(require,module,exports){
+},{"./networkqualitysendorrecvstats":274}],274:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -47117,7 +47345,7 @@ function NetworkQualitySendOrRecvStats(_ref) {
 };
 
 module.exports = NetworkQualitySendOrRecvStats;
-},{"./networkqualitybandwidthstats":267,"./networkqualityfractionloststats":268,"./networkqualitylatencystats":269}],273:[function(require,module,exports){
+},{"./networkqualitybandwidthstats":269,"./networkqualityfractionloststats":270,"./networkqualitylatencystats":271}],275:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -47150,7 +47378,7 @@ var NetworkQualitySendStats = function (_NetworkQualitySendOr) {
 }(NetworkQualitySendOrRecvStats);
 
 module.exports = NetworkQualitySendStats;
-},{"./networkqualitysendorrecvstats":272}],274:[function(require,module,exports){
+},{"./networkqualitysendorrecvstats":274}],276:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -47198,7 +47426,7 @@ function NetworkQualityStats(_ref) {
 };
 
 module.exports = NetworkQualityStats;
-},{"./networkqualityaudiostats":266,"./networkqualityvideostats":275}],275:[function(require,module,exports){
+},{"./networkqualityaudiostats":268,"./networkqualityvideostats":277}],277:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -47230,7 +47458,7 @@ var NetworkQualityVideoStats = function (_NetworkQualityMediaS) {
 }(NetworkQualityMediaStats);
 
 module.exports = NetworkQualityVideoStats;
-},{"./networkqualitymediastats":270}],276:[function(require,module,exports){
+},{"./networkqualitymediastats":272}],278:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -47329,7 +47557,7 @@ var PeerConnectionReport = function () {
 }();
 
 module.exports = PeerConnectionReport;
-},{"./receiverreport":278,"./senderreport":285}],277:[function(require,module,exports){
+},{"./receiverreport":280,"./senderreport":287}],279:[function(require,module,exports){
 'use strict';
 
 var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
@@ -47857,7 +48085,7 @@ function updateChrome(factory) {
 }
 
 module.exports = PeerConnectionReportFactory;
-},{"./icereportfactory":262,"./peerconnectionreport":276,"./receiverreportfactory":279,"./senderreportfactory":286}],278:[function(require,module,exports){
+},{"./icereportfactory":264,"./peerconnectionreport":278,"./receiverreportfactory":281,"./senderreportfactory":288}],280:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -48005,7 +48233,7 @@ var ReceiverReport = function (_SenderOrReceiverRepo) {
 }(SenderOrReceiverReport);
 
 module.exports = ReceiverReport;
-},{"./average":260,"./senderorreceiverreport":283,"./sum":288}],279:[function(require,module,exports){
+},{"./average":262,"./senderorreceiverreport":285,"./sum":290}],281:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -48071,7 +48299,7 @@ var ReceiverReportFactory = function (_SenderOrReceiverRepo) {
 }(SenderOrReceiverReportFactory);
 
 module.exports = ReceiverReportFactory;
-},{"./receiverreport":278,"./senderorreceiverreportfactory":284}],280:[function(require,module,exports){
+},{"./receiverreport":280,"./senderorreceiverreportfactory":286}],282:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -48118,7 +48346,7 @@ var RemoteAudioTrackStats = function (_RemoteTrackStats) {
 }(RemoteTrackStats);
 
 module.exports = RemoteAudioTrackStats;
-},{"./remotetrackstats":281}],281:[function(require,module,exports){
+},{"./remotetrackstats":283}],283:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -48165,7 +48393,7 @@ var RemoteTrackStats = function (_TrackStats) {
 }(TrackStats);
 
 module.exports = RemoteTrackStats;
-},{"./trackstats":289}],282:[function(require,module,exports){
+},{"./trackstats":291}],284:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -48228,7 +48456,7 @@ var RemoteVideoTrackStats = function (_RemoteTrackStats) {
 }(RemoteTrackStats);
 
 module.exports = RemoteVideoTrackStats;
-},{"./remotetrackstats":281}],283:[function(require,module,exports){
+},{"./remotetrackstats":283}],285:[function(require,module,exports){
 'use strict';
 
 /**
@@ -48266,7 +48494,7 @@ function SenderOrReceiverReport(id, trackId, bitrate) {
 };
 
 module.exports = SenderOrReceiverReport;
-},{}],284:[function(require,module,exports){
+},{}],286:[function(require,module,exports){
 'use strict';
 
 /**
@@ -48306,7 +48534,7 @@ function SenderOrReceiverReportFactory(id, trackId, initialStats) {
 };
 
 module.exports = SenderOrReceiverReportFactory;
-},{}],285:[function(require,module,exports){
+},{}],287:[function(require,module,exports){
 /* eslint no-undefined:0 */
 'use strict';
 
@@ -48406,7 +48634,7 @@ var SenderReport = function (_SenderOrReceiverRepo) {
 }(SenderOrReceiverReport);
 
 module.exports = SenderReport;
-},{"./average":260,"./senderorreceiverreport":283,"./sum":288}],286:[function(require,module,exports){
+},{"./average":262,"./senderorreceiverreport":285,"./sum":290}],288:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -48472,7 +48700,7 @@ var SenderReportFactory = function (_SenderOrReceiverRepo) {
 }(SenderOrReceiverReportFactory);
 
 module.exports = SenderReportFactory;
-},{"./senderorreceiverreportfactory":284,"./senderreport":285}],287:[function(require,module,exports){
+},{"./senderorreceiverreportfactory":286,"./senderreport":287}],289:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -48536,7 +48764,7 @@ function StatsReport(peerConnectionId, statsResponse) {
 };
 
 module.exports = StatsReport;
-},{"./localaudiotrackstats":263,"./localvideotrackstats":265,"./remoteaudiotrackstats":280,"./remotevideotrackstats":282}],288:[function(require,module,exports){
+},{"./localaudiotrackstats":265,"./localvideotrackstats":267,"./remoteaudiotrackstats":282,"./remotevideotrackstats":284}],290:[function(require,module,exports){
 'use strict';
 
 /**
@@ -48551,7 +48779,7 @@ function sum(xs) {
 }
 
 module.exports = sum;
-},{}],289:[function(require,module,exports){
+},{}],291:[function(require,module,exports){
 'use strict';
 
 /**
@@ -48611,7 +48839,7 @@ function TrackStats(trackId, statsReport) {
 };
 
 module.exports = TrackStats;
-},{}],290:[function(require,module,exports){
+},{}],292:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -48681,7 +48909,7 @@ var TrackTransceiver = function (_EventEmitter) {
  */
 
 module.exports = TrackTransceiver;
-},{"events":68}],291:[function(require,module,exports){
+},{"events":69}],293:[function(require,module,exports){
 (function (global){
 'use strict';
 
@@ -49213,7 +49441,7 @@ var TwilioConnection = function (_StateMachine) {
 
 module.exports = TwilioConnection;
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./statemachine":259,"./util":296,"./util/log":299,"./util/timeout":307,"ws":315}],292:[function(require,module,exports){
+},{"./statemachine":261,"./util":298,"./util/log":301,"./util/timeout":309,"ws":317}],294:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -49301,7 +49529,7 @@ var AsyncVar = function () {
 }();
 
 module.exports = AsyncVar;
-},{"./":296}],293:[function(require,module,exports){
+},{"./":298}],295:[function(require,module,exports){
 'use strict';
 
 /**
@@ -49449,7 +49677,7 @@ var CancelablePromise = function () {
 }();
 
 module.exports = CancelablePromise;
-},{}],294:[function(require,module,exports){
+},{}],296:[function(require,module,exports){
 'use strict';
 
 module.exports.DEFAULT_ENVIRONMENT = 'prod';
@@ -49515,7 +49743,7 @@ module.exports.typeErrors = {
 module.exports.DEFAULT_NQ_LEVEL_LOCAL = 1;
 module.exports.DEFAULT_NQ_LEVEL_REMOTE = 0;
 module.exports.MAX_NQ_LEVEL = 3;
-},{}],295:[function(require,module,exports){
+},{}],297:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -49580,7 +49808,7 @@ var Filter = function () {
 }();
 
 module.exports = Filter;
-},{}],296:[function(require,module,exports){
+},{}],298:[function(require,module,exports){
 'use strict';
 
 var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
@@ -50202,7 +50430,7 @@ exports.trackPublicationClass = trackPublicationClass;
 exports.validateLocalTrack = validateLocalTrack;
 exports.valueToJSON = valueToJSON;
 exports.withJitter = withJitter;
-},{"./constants":294}],297:[function(require,module,exports){
+},{"./constants":296}],299:[function(require,module,exports){
 (function (global){
 'use strict';
 
@@ -50492,7 +50720,7 @@ function reconnect(publisher, token, sdkName, sdkVersion, options) {
 
 module.exports = InsightsPublisher;
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"..":296,"events":68,"ws":315}],298:[function(require,module,exports){
+},{"..":298,"events":69,"ws":317}],300:[function(require,module,exports){
 // TODO(mroberts): This should be described as implementing some
 // InsightsPublisher interface.
 'use strict';
@@ -50549,7 +50777,7 @@ var InsightsPublisher = function () {
 }();
 
 module.exports = InsightsPublisher;
-},{}],299:[function(require,module,exports){
+},{}],301:[function(require,module,exports){
 /* eslint new-cap:0, no-console:0 */
 'use strict';
 
@@ -50851,7 +51079,7 @@ function validateLogLevels(levels) {
 }
 
 module.exports = Log;
-},{"./constants":294}],300:[function(require,module,exports){
+},{"./constants":296}],302:[function(require,module,exports){
 'use strict';
 
 var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
@@ -51149,7 +51377,7 @@ exports.setBitrateParameters = setBitrateParameters;
 exports.setCodecPreferences = setCodecPreferences;
 exports.setSimulcast = setSimulcast;
 exports.unifiedPlanRewriteTrackIds = unifiedPlanRewriteTrackIds;
-},{"../":296,"./simulcast":302}],301:[function(require,module,exports){
+},{"../":298,"./simulcast":304}],303:[function(require,module,exports){
 'use strict';
 
 var RTCSessionDescription = require('@twilio/webrtc').RTCSessionDescription;
@@ -51364,7 +51592,7 @@ function addFmtpAttributeForRtxPt(mediaSection, rtxPt, pt) {
 }
 
 module.exports = workaround;
-},{"./":300,"@twilio/webrtc":3}],302:[function(require,module,exports){
+},{"./":302,"@twilio/webrtc":3}],304:[function(require,module,exports){
 'use strict';
 
 var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
@@ -51702,7 +51930,7 @@ function setSimulcastInMediaSection(section, sdpFormat, trackIdsToAttributes) {
  */
 
 module.exports = setSimulcastInMediaSection;
-},{"../":296}],303:[function(require,module,exports){
+},{"../":298}],305:[function(require,module,exports){
 'use strict';
 
 /**
@@ -51745,7 +51973,7 @@ var IdentityTrackMatcher = function () {
 }();
 
 module.exports = IdentityTrackMatcher;
-},{}],304:[function(require,module,exports){
+},{}],306:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -51810,7 +52038,7 @@ var MIDTrackMatcher = function () {
 }();
 
 module.exports = MIDTrackMatcher;
-},{"../":300}],305:[function(require,module,exports){
+},{"../":302}],307:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -51952,7 +52180,7 @@ var OrderedTrackMatcher = function () {
 }();
 
 module.exports = OrderedTrackMatcher;
-},{"../":300,"../../":296}],306:[function(require,module,exports){
+},{"../":302,"../../":298}],308:[function(require,module,exports){
 /* globals RTCPeerConnection, webkitRTCPeerConnection, mozRTCPeerConnection, navigator */
 'use strict';
 
@@ -51986,7 +52214,7 @@ function isSupported() {
 }
 
 module.exports = isSupported;
-},{"@twilio/webrtc/lib/util":16}],307:[function(require,module,exports){
+},{"@twilio/webrtc/lib/util":16}],309:[function(require,module,exports){
 'use strict';
 
 /**
@@ -52074,7 +52302,7 @@ var Timeout = function () {
 }();
 
 module.exports = Timeout;
-},{}],308:[function(require,module,exports){
+},{}],310:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -52235,7 +52463,7 @@ var TimeoutPromise = function (_EventEmitter) {
  */
 
 module.exports = TimeoutPromise;
-},{"./":296,"events":68}],309:[function(require,module,exports){
+},{"./":298,"events":69}],311:[function(require,module,exports){
 'use strict';
 
 // NOTE: Do not edit this file. This code is auto-generated. Contact the
@@ -53435,7 +53663,7 @@ var ConfigurationAcquireTurnFailedError = function (_TwilioError51) {
 
 exports.ConfigurationAcquireTurnFailedError = ConfigurationAcquireTurnFailedError;
 Object.defineProperty(TwilioErrorByCode, 53501, { value: ConfigurationAcquireTurnFailedError });
-},{"./twilioerror":310}],310:[function(require,module,exports){
+},{"./twilioerror":312}],312:[function(require,module,exports){
 'use strict';
 
 /**
@@ -53507,7 +53735,7 @@ var TwilioError = function (_Error) {
 }(Error);
 
 module.exports = TwilioError;
-},{}],311:[function(require,module,exports){
+},{}],313:[function(require,module,exports){
 /* globals webkitAudioContext, AudioContext */
 'use strict';
 
@@ -53606,7 +53834,7 @@ var AudioContextFactory = function () {
 }();
 
 module.exports = new AudioContextFactory();
-},{}],312:[function(require,module,exports){
+},{}],314:[function(require,module,exports){
 'use strict';
 
 /**
@@ -53669,7 +53897,7 @@ function detectSilence(audioContext, stream, timeout) {
 }
 
 module.exports = detectSilence;
-},{}],313:[function(require,module,exports){
+},{}],315:[function(require,module,exports){
 'use strict';
 
 var detectSilence = require('./detectsilence');
@@ -53742,7 +53970,7 @@ to get a new one, but we\'ve run out of retries; returning it anyway.');
 }
 
 module.exports = workaround;
-},{"./audiocontext":311,"./detectsilence":312}],314:[function(require,module,exports){
+},{"./audiocontext":313,"./detectsilence":314}],316:[function(require,module,exports){
 module.exports={
   "_from": "twilio-video@2.0.0-beta10",
   "_id": "twilio-video@2.0.0-beta10",
@@ -53770,7 +53998,7 @@ module.exports={
   "_resolved": "https://registry.npmjs.org/twilio-video/-/twilio-video-2.0.0-beta10.tgz",
   "_shasum": "d0112629e770260f2e9cbb9868e79fe9be77700c",
   "_spec": "twilio-video@2.0.0-beta10",
-  "_where": "/Users/nikola/Development/air_mochi/utility_server",
+  "_where": "/Users/apple/Documents/dev/ASE/2020/AirMochi-tool/air_mochi/utility_server",
   "author": {
     "name": "Mark Andrus Roberts",
     "email": "mroberts@twilio.com"
@@ -53911,13 +54139,13 @@ module.exports={
   "version": "2.0.0-beta10"
 }
 
-},{}],315:[function(require,module,exports){
+},{}],317:[function(require,module,exports){
 module.exports = WebSocket;
 
-},{}],316:[function(require,module,exports){
+},{}],318:[function(require,module,exports){
 exports.XMLHttpRequest = XMLHttpRequest;
 
-},{}],317:[function(require,module,exports){
+},{}],319:[function(require,module,exports){
 (function (Buffer){
 /**
  * Convert a typed array to a Buffer without a copy
@@ -53940,7 +54168,7 @@ module.exports = function (arr) {
 }
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":42}],318:[function(require,module,exports){
+},{"buffer":42}],320:[function(require,module,exports){
 var undefined = (void 0); // Paranoia
 
 // Beyond this value, index getters/setters (i.e. array[0], array[1]) are so slow to
@@ -54572,7 +54800,7 @@ function packF32(v) { return packIEEE754(v, 8, 23); }
 
 }());
 
-},{}],319:[function(require,module,exports){
+},{}],321:[function(require,module,exports){
 (function (global){
 
 /**
@@ -54643,7 +54871,7 @@ function config (name) {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],320:[function(require,module,exports){
+},{}],322:[function(require,module,exports){
 if (typeof Object.create === 'function') {
   // implementation from standard node.js 'util' module
   module.exports = function inherits(ctor, superCtor) {
@@ -54668,14 +54896,14 @@ if (typeof Object.create === 'function') {
   }
 }
 
-},{}],321:[function(require,module,exports){
+},{}],323:[function(require,module,exports){
 module.exports = function isBuffer(arg) {
   return arg && typeof arg === 'object'
     && typeof arg.copy === 'function'
     && typeof arg.fill === 'function'
     && typeof arg.readUInt8 === 'function';
 }
-},{}],322:[function(require,module,exports){
+},{}],324:[function(require,module,exports){
 (function (process,global){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -55265,7 +55493,7 @@ function hasOwnProperty(obj, prop) {
 }
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./support/isBuffer":321,"_process":150,"inherits":320}],323:[function(require,module,exports){
+},{"./support/isBuffer":323,"_process":152,"inherits":322}],325:[function(require,module,exports){
 // Returns a wrapper function that returns a wrapped callback
 // The wrapper function should do some stuff, and return a
 // presumably different callback function.
@@ -55300,9 +55528,9 @@ function wrappy (fn, cb) {
   }
 }
 
-},{}],324:[function(require,module,exports){
-arguments[4][115][0].apply(exports,arguments)
-},{"dup":115}],325:[function(require,module,exports){
+},{}],326:[function(require,module,exports){
+arguments[4][117][0].apply(exports,arguments)
+},{"dup":117}],327:[function(require,module,exports){
 var hasKeys = require("./has-keys")
 
 module.exports = extend
@@ -55327,7 +55555,7 @@ function extend() {
     return target
 }
 
-},{"./has-keys":324}],326:[function(require,module,exports){
+},{"./has-keys":326}],328:[function(require,module,exports){
 'use strict';
 
 var alphabet = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_'.split('')
@@ -55397,10 +55625,12 @@ yeast.encode = encode;
 yeast.decode = decode;
 module.exports = yeast;
 
-},{}],327:[function(require,module,exports){
+},{}],329:[function(require,module,exports){
 'use strict';
 
-const server_location = 'http://softarch.usc.edu:3000/'
+// const server_location = 'http://softarch.usc.edu:3000/'
+const server_location = 'http://192.168.1.126:3000/'
+
 
 const fs = require('browserify-fs')
 
@@ -55409,12 +55639,14 @@ const socket = io(server_location);
 
 // import RecordRTC from 'recordrtc';
 const RecordRTC = require('recordrtc');
+// const fs = require('fs');
 
 var eventLog = document.getElementById('event-log');
 
 var Video = require('twilio-video');
+var FileSaver = require('file-saver');
 
-var fileName = "some_download"
+var fileName = "some_download";
 
 var eventArray = [];
 
@@ -55430,60 +55662,144 @@ var isRecordingStarted = false;
 var isStoppedRecording = false;
 
 var iosDevicePresent = false;
+var scenarioName;
+//
+// const VIDEO_STREAM_WIDTH = 720;
+// const VIDEO_STREAM_HEIGHT = 540;
+
+const VIDEO_STREAM_WIDTH = 240;
+const VIDEO_STREAM_HEIGHT = 426;
 
 var currentX = 0;
 var currentY = 0;
+var scenarios;
 
-document.getElementById('btn-start-recording').onclick = function () {
-	this.disabled = true;
+document.getElementById('btn-start-replay').onclick = getScenario;
+document.getElementById('btn-get-log').onclick = getScenarioLog;
 
+document.getElementById('start-recording').onclick = function (){
+	console.log('recording started');
+	// this.disabled = true;
 	isStoppedRecording = false;
 	isRecordingStarted = true;
-
 	eventArray = [];
-
 	recordingTimerStart = (new Date()).getTime();
-
 	recorder.startRecording();
 	document.getElementById('btn-stop-recording').disabled = false;
+	document.getElementById('btn-start-recording').disabled = true;
+	scenarioName = document.getElementById('message-text').value;
+	$('#exampleModal').modal('toggle');
+	const message = {
+		type: 'mouse',
+		xPercentage: 0,
+		yPercentage: 0,
+		subtype: 'touch'
+	};
+	sendMessage(message, 'event_console2server_calibrate');
+};
+
+var currentLogScenarioOptions = [];
+document.getElementById('btn-log').onclick = function(){
+	$.getJSON('/scenarios',function(data){
+		scenarios  = [];
+		scenarios = data.scenarios;
+		var scenarioOptions = document.getElementById('scenario_log_select');
+		scenarios.forEach(scenario => {
+			if(currentLogScenarioOptions.includes(scenario)){
+
+			}
+			else{
+				var newOption = document.createElement("option");
+				newOption.value = scenario;
+				newOption.innerHTML = scenario;
+				scenarioOptions.options.add(newOption);
+				currentLogScenarioOptions.push(scenario);
+			}
+		});
+	});
+};
+
+var currentScenarioOptions = [];
+document.getElementById('btn-replay').onclick = function(){
+	$.getJSON('/scenarios',function(data){
+		scenarios  = [];
+		scenarios = data.scenarios;
+		var scenarioOptions = document.getElementById('scenario_select');
+		scenarios.forEach(scenario => {
+			if(currentScenarioOptions.includes(scenario)){
+
+			}
+			else{
+				var newOption = document.createElement("option");
+				newOption.value = scenario;
+				newOption.innerHTML = scenario;
+				scenarioOptions.options.add(newOption);
+				currentScenarioOptions.push(scenario);
+			}
+		});
+	});
 };
 
 document.getElementById('btn-stop-recording').onclick = function () {
 	this.disabled = true;
+	isRecordingStarted = false;
+	isStoppedRecording = true;
+	var events = []
+	eventArray.forEach(function (element) {
+		//csv += element + "," + "\r\n";
+		events.push(element)
 
-	recorder.stopRecording(function () {
-		isRecordingStarted = false;
-		isStoppedRecording = true;
-
-		var recordedBlobs = recorder.getBlob();
-		// document.getElementById('preview-video').srcObject = null;
-		// document.getElementById('preview-video').src = URL.createObjectURL(blob);
-		// document.getElementById('preview-video').parentNode.style.display = 'block';
-
-		// var file = new File([recordedBlobs], 'video.mp4', {
-		// 	type: 'video/mp4'
-		// });
-
-		RecordRTC.invokeSaveAsDialog(recordedBlobs, fileName + ".webm");
-
-		// let csvContent = "data:text/csv;charset=utf-8,";
-		var csv = '';
-		eventArray.forEach(function (element) {
-			csv += element + "," + "\r\n";
-		});
-
-		console.log(csv);
-		var hiddenElement = document.createElement('a');
-		hiddenElement.href = 'data:text/csv;charset=utf-8,' + encodeURI(csv);
-		hiddenElement.target = '_blank';
-		hiddenElement.download = fileName + '.csv';
-		hiddenElement.click();
-
-		document.getElementById('btn-start-recording').disabled = false;
-
-		// window.open(URL.createObjectURL(blob));
 	});
-};
+	var recordedSession = {
+		name: scenarioName,
+		events: events
+	}
+	console.log(recordedSession);
+	var stringEvents = JSON.stringify(recordedSession);
+	console.log(stringEvents)
+	document.getElementById('btn-start-recording').disabled = false;
+	// $.post('/recordsession', stringEvents , function () {
+	// 	// 	console.log("recorded session is now sent to the server.")
+	// 	// });
+
+	$.ajax({
+		url: '/recordsession',
+		type: "POST",
+		data: stringEvents,
+		contentType: "application/json",
+		dataType: "json",
+		success: function (result) {
+			console.log("recorded session is now sent to the server.")
+		}
+	});
+	recorder.stopRecording(function () {
+		// 	isRecordingStarted = false;
+		// 	isStoppedRecording = true;
+		var recordedBlobs = recorder.getBlob();
+		// 	// document.getElementById('preview-video').srcObject = null;
+		// 	// document.getElementById('preview-video').src = URL.createObjectURL(blob);
+		// 	// document.getElementById('preview-video').parentNode.style.display = 'block';
+		//
+		var file = new File([recordedBlobs], 'video.mp4', {
+			type: 'video/mp4'
+		});
+		RecordRTC.invokeSaveAsDialog(recordedBlobs, scenarioName + ".webm");
+		// 	// let csvContent = "data:text/csv;charset=utf-8,";
+		// 	var csv = '';
+		// 	eventArray.forEach(function (element) {
+		// 		csv += element + "," + "\r\n";
+		// 	});
+		// 	console.log(csv);
+		// 	var hiddenElement = document.createElement('a');
+		// 	hiddenElement.href = 'data:text/csv;charset=utf-8,' + encodeURI(csv);
+		// 	hiddenElement.target = '_blank';
+		// 	hiddenElement.download = fileName + '.csv';
+		// 	hiddenElement.click();
+		// 	document.getElementById('btn-start-recording').disabled = false;
+		// 	// window.open(URL.createObjectURL(blob));
+		// });
+	});
+}
 
 // When we are about to transition away from this page, disconnect
 // from the room, if joined.
@@ -55492,6 +55808,8 @@ window.addEventListener('beforeunload', function () {
 		activeRoom.disconnect();
 	}
 });
+
+window.addEventListener( "keydown", keyboardEvent);
 
 // Obtain a token from the server in order to connect to the Room.
 // $.getJSON('/token?identity=tester', function (data){
@@ -55592,31 +55910,26 @@ function roomJoined(room) {
 // Attach the Track to the DOM.
 function attachTrack(track, container) {
 	var htmlMediaElement = track.attach();
-
 	console.log("Track Kind:" + track.kind);
 	if ("video" == track.kind) {
 		var stream = htmlMediaElement.captureStream();
-
 		recorder = RecordRTC(stream, {
 			// audio, video, canvas, gif
 			type: 'video',
-
 			// audio/webm
 			// video/webm\;codecs=h264
 			mimeType: 'video/webm\;codecs=h264',
-
 			getNativeBlob: true,
 
 			// MediaStreamRecorder, StereoAudioRecorder, WebAssemblyRecorder
 			// CanvasRecorder, GifRecorder, WhammyRecorder
 			recorderType: RecordRTC.WhammyRecorder,
-
 			// used by CanvasRecorder and WhammyRecorder
 			canvas: {
 				width: 720,
 				height: 540
 			}
-		})
+		});
 
 		// Enable recorder.
 		document.getElementById('btn-start-recording').disabled = false;
@@ -55625,38 +55938,41 @@ function attachTrack(track, container) {
 		// the device's screen.
 		var down = false;
 
-		$(htmlMediaElement).click(function (e) {
-			// e = Mouse click event.
-
-			var canvas = $(htmlMediaElement).get()[0];
-			canvas.requestPointerLock = canvas.requestPointerLock ||
-				canvas.mozRequestPointerLock ||
-				canvas.webkitRequestPointerLock;
-
-			// Ask the browser to lock the pointer)
-			canvas.requestPointerLock();
-		});
-
-		document.addEventListener('pointerlockchange', lockChangeAlert, false);
-		document.addEventListener('mozpointerlockchange', lockChangeAlert, false);
-
-		function lockChangeAlert() {
-			let canvas = $(htmlMediaElement).get()[0];
-			if (document.pointerLockElement === canvas ||
-				document.mozPointerLockElement === canvas) {
-				console.log('The pointer lock status is now locked');
-
-				document.addEventListener("mousemove", trackingEvent, true);
-				document.addEventListener("click", clickEvent, false);
-				document.addEventListener("keydown", keyboardEvent, false);
-			} else {
-				console.log('The pointer lock status is now unlocked');
-
-				document.removeEventListener("mousemove", trackingEvent, true);
-				document.removeEventListener("click", clickEvent, false);
-				document.removeEventListener("keydown", keyboardEvent, false);
-			}
-		}
+		// $(htmlMediaElement).click(function (e){
+		// 	// e = Mouse click event.
+		//
+		// 	var canvas = $(htmlMediaElement).get()[0];
+		// 	canvas.requestPointerLock = canvas.requestPointerLock ||
+		// 		canvas.mozRequestPointerLock ||
+		// 		canvas.webkitRequestPointerLock;
+		//
+		// 	// Ask the browser to lock the pointer)
+		// 	canvas.requestPointerLock();
+		// });
+		//
+		// document.addEventListener('pointerlockchange', lockChangeAlert, false);
+		// document.addEventListener('mozpointerlockchange', lockChangeAlert, false);
+		//
+		// function lockChangeAlert() {
+		// 	let canvas = $(htmlMediaElement).get()[0];
+		// 	if (document.pointerLockElement === canvas ||
+		// 		document.mozPointerLockElement === canvas) {
+		// 		console.log('The pointer lock status is now locked');
+		//
+		// 		document.addEventListener("mousemove", trackingEvent, true);
+		// 		document.addEventListener("click", clickEvent, false);
+		// 		document.addEventListener("keydown", keyboardEvent, false);
+		// 	} else {
+		// 		console.log('The pointer lock status is now unlocked');
+		//
+		// 		document.removeEventListener("mousemove", trackingEvent, true);
+		// 		document.removeEventListener("click", clickEvent, false);
+		// 		document.removeEventListener("keydown", keyboardEvent, false);
+		// 	}
+		// }
+		//$(htmlMediaElement).click(touchOnStream);
+		$(htmlMediaElement).mousedown(pressEvent);
+		$(htmlMediaElement).mouseup(releaseEvent);
 	}
 	container.appendChild(htmlMediaElement);
 }
@@ -55743,197 +56059,442 @@ function detachParticipantTracks(participant) {
 
 
 
+//
+// function clickEvent(e) {
+// 	var currentTime = (new Date()).getTime() - recordingTimerStart;
+// 	const newMessage = '' + currentTime + ':click[' + currentX + '-' + currentY + ']';
+//
+// 	if (isRecordingStarted) {
+// 		eventArray.push(newMessage);
+// 	}
+//
+// 	const previousInnerHtml = eventLog.innerHTML;
+// 	eventLog.innerHTML = newMessage;
+// 	eventLog.innerHTML += '<br/>';
+// 	eventLog.innerHTML += previousInnerHtml;
+//
+// 	var msg_json = {
+// 		_b: 1,
+// 		_x: 0,
+// 		_y: 0,
+// 		_w: 0
+// 	}
+// 	// console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
+// 	var msg = JSON.stringify(msg_json);
+// 	console.log(msg);
+// 	socket.emit('event_console2server', msg);
+// }
+//
+// function trackingEvent(e) {
+// 	var x = e.movementX
+// 	var y = e.movementY
+//
+// 	currentX += x;
+// 	currentY += y;
+//
+// 	if (currentX < 0) {
+// 		currentX = 0;
+// 	}
+// 	if (currentY < 0) {
+// 		currentY = 0;
+// 	}
+// 	if (currentX >= 720) {
+// 		currentX = 719;
+// 	}
+// 	if (currentY >= 540) {
+// 		currentY = 539;
+// 	}
+//
+// 	if (Math.sqrt(x * x + y * y) < 3) {
+// 		return
+// 	}
+//
+// 	var msg_json = {
+// 		_b: 0,
+// 		_x: e.movementX,
+// 		_y: e.movementY,
+// 		_w: 0
+// 	}
+//
+// 	// console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
+// 	var msg = JSON.stringify(msg_json);
+// 	console.log(msg);
+// 	socket.emit('event_console2server', msg);
+// }
 
-function clickEvent(e) {
-	var currentTime = (new Date()).getTime() - recordingTimerStart;
-	const newMessage = '' + currentTime + ':click[' + currentX + '-' + currentY + ']';
 
-	if (isRecordingStarted) {
-		eventArray.push(newMessage);
+
+
+// function keyboardEvent(event) {
+// 	// User has pressed 'h', meaning that we should go to home screen.
+// 	if (event.key == 'h') {
+// 		console.log("Homescreen!")
+//
+// 		var currentTime = recordingTimerStart - date.getTime();
+// 		var logString = '' + currentTime + ': homescreen';
+//
+// 		eventLog.innerHTML += '\n';
+// 		eventLog.innerHTML += logString;
+//
+// 		var msg_json = {
+// 			_b: 2,
+// 			_x: 0,
+// 			_y: 0,
+// 			_w: 0
+// 		}
+// 		// console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
+// 		var msg = JSON.stringify(msg_json);
+// 		console.log(msg);
+// 		socket.emit('event_console2server', msg);
+// 	}
+//
+// 	// Screenshot.
+// 	if (event.key == 's') {
+// 		console.log("Screenshot!")
+//
+// 		// var currentTime = recordingTimerStart - date.getTime();
+// 		// eventLog.innerHTML += '' + currentTime + ': screenshot';
+// 		// eventLog.innerHTML += '\n';
+//
+// 		var msg_json = {
+// 			_b: 4,
+// 			_x: 0,
+// 			_y: 0,
+// 			_w: 0
+// 		}
+// 		// console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
+// 		var msg = JSON.stringify(msg_json);
+// 		console.log(msg);
+// 		socket.emit('event_console2server', msg);
+// 	}
+//
+// 	// Notifications.
+// 	if (event.key == 'n') {
+// 		console.log("Notifications!")
+//
+// 		// var currentTime = recordingTimerStart - date.getTime();
+// 		// eventLog.innerHTML += '' + currentTime + ': notification';
+// 		// eventLog.innerHTML += '\n';
+//
+// 		var msg_json = {
+// 			_b: 8,
+// 			_x: 0,
+// 			_y: 0,
+// 			_w: 0
+// 		}
+// 		// console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
+// 		var msg = JSON.stringify(msg_json);
+// 		console.log(msg);
+// 		socket.emit('event_console2server', msg);
+// 	}
+//
+// 	// Control Center.
+// 	if (event.key == 'c') {
+// 		console.log("Control Center!");
+// 		var msg_json = {
+// 			_b: 16,
+// 			_x: 0,
+// 			_y: 0,
+// 			_w: 0
+// 		}
+// 		// console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
+// 		var msg = JSON.stringify(msg_json);
+// 		console.log(msg);
+// 		socket.emit('event_console2server', msg);
+// 	}
+//
+// 	// Dock.
+// 	if (event.key == 'd') {
+// 		console.log("Dock!")
+// 		var msg_json = {
+// 			_b: 32,
+// 			_x: 0,
+// 			_y: 0,
+// 			_w: 0
+// 		}
+// 		// console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
+// 		var msg = JSON.stringify(msg_json);
+// 		console.log(msg);
+// 		socket.emit('event_console2server', msg);
+// 	}
+//
+// 	// Scroll Down!
+// 	if (event.key == 'ArrowDown') {
+// 		console.log("Screenshot!")
+// 		var msg_json = {
+// 			_b: 0,
+// 			_x: 0,
+// 			_y: 0,
+// 			_w: -1
+// 		}
+// 		// console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
+// 		var msg = JSON.stringify(msg_json);
+// 		console.log(msg);
+// 		socket.emit('event_console2server', msg);
+// 	}
+//
+// 	// Scrool Up!
+// 	if (event.key == 'ArrowUp') {
+// 		console.log("Screenshot!")
+// 		var msg_json = {
+// 			_b: 0,
+// 			_x: 0,
+// 			_y: 0,
+// 			_w: 1
+// 		}
+// 		// console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
+// 		var msg = JSON.stringify(msg_json);
+// 		console.log(msg);
+// 		socket.emit('event_console2server', msg);
+// 	}
+//
+// }
+
+// function sendMessage(msg_json) {
+// 	var msg = JSON.stringify(msg_json);
+// 	console.log(msg);
+// 	socket.emit('event_console2server', msg);
+// }
+
+
+document.getElementById('phone-container').onScroll = scroll;
+
+
+function keyboardEvent(e){
+	console.log('keyboardevent')
+	var key= e.key;
+	const message = {
+		type: 'keyboard',
+		val: key
+	};
+
+	if(isRecordingStarted){
+		const log = {
+			message: message,
+			time: (new Date()).getTime() - recordingTimerStart
+		};
+		eventArray.push(log);
+	}
+	sendMessage(message, 'event_console2server_keyboard')
+}
+
+function scrollEvent(e){
+	console.log('scroll event!')
+	console.log(e)
+}
+
+function touchOnStream(e){
+	var posX = $(this).offset().left;
+	console.log('posX:'+ posX);
+	var posY = $(this).offset().top;
+	console.log('posY:'+ posY);
+
+	console.log('pageX:'+e.pageX);
+	console.log('pageY:'+e.pageY);
+
+	var xPerc = (e.pageX - posX * 1.0) / VIDEO_STREAM_WIDTH;
+	var yPerc = (e.pageY - posY * 1.0) / VIDEO_STREAM_HEIGHT;
+
+	console.log('xPerc:'+ xPerc);
+	console.log('yPerc:'+ yPerc);
+	$('#last_event').text(
+		"touch (" + (xPerc * VIDEO_STREAM_WIDTH) + ", " + (yPerc * VIDEO_STREAM_HEIGHT) + ")")
+
+	if (xPerc < 0) {
+		xPerc = 0
 	}
 
-	const previousInnerHtml = eventLog.innerHTML;
-	eventLog.innerHTML = newMessage;
-	eventLog.innerHTML += '<br/>';
-	eventLog.innerHTML += previousInnerHtml;
-
-	var msg_json = {
-		_b: 1,
-		_x: 0,
-		_y: 0,
-		_w: 0
+	if (yPerc < 0) {
+		yPerc = 0
 	}
-	// console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
-	var msg = JSON.stringify(msg_json);
+
+	const message = {
+		type: 'mouse',
+		xPercentage: xPerc,
+		yPercentage: yPerc,
+		subtype: 'touch'
+	};
+
+	if(isRecordingStarted){
+		const log = {
+			message: message,
+			time: (new Date()).getTime() - recordingTimerStart
+		};
+		eventArray.push(log);
+		console.log(log);
+	}
+	sendMessage(message, 'event_console2server')
+}
+//
+// $('#exampleModal').on('show.bs.modal', function (event) {
+// 	var button = $(event.relatedTarget) // Button that triggered the modal
+// 	var recipient = button.data('whatever') // Extract info from data-* attributes
+// 	// If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+// 	// Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+// 	var modal = $(this)
+// 	modal.find('.modal-title').text('New message to ' + recipient)
+// 	modal.find('.modal-body input').val(recipient)
+// });
+
+
+function releaseEvent(e){
+	console.log('release event')
+	var posX = $(this).offset().left;
+	console.log('posX:'+ posX);
+	var posY = $(this).offset().top;
+	console.log('posY:'+ posY);
+
+	console.log('pageX:'+e.pageX);
+	console.log('pageY:'+e.pageY);
+
+	var xPerc = (e.pageX - posX * 1.0) / VIDEO_STREAM_WIDTH;
+	var yPerc = (e.pageY - posY * 1.0) / VIDEO_STREAM_HEIGHT;
+
+	console.log('xPerc:'+ xPerc);
+	console.log('yPerc:'+ yPerc);
+	$('#last_event').text(
+		"touch (" + (xPerc * VIDEO_STREAM_WIDTH) + ", " + (yPerc * VIDEO_STREAM_HEIGHT) + ")")
+
+	if (xPerc < 0) {
+		xPerc = 0
+	}
+
+	if (yPerc < 0) {
+		yPerc = 0
+	}
+
+	const message = {
+		type: 'mouse',
+		xPercentage: xPerc,
+		yPercentage: yPerc,
+		subtype: 'release'
+	};
+
+	if(isRecordingStarted){
+		const log = {
+			message: message,
+			time: (new Date()).getTime() - recordingTimerStart
+		};
+		eventArray.push(log);
+		console.log(log);
+	}
+	sendMessage(message, 'event_console2server')
+}
+
+function pressEvent(e){
+	console.log('press event')
+	var posX = $(this).offset().left;
+	console.log('posX:'+ posX);
+	var posY = $(this).offset().top;
+	console.log('posY:'+ posY);
+
+	console.log('pageX:'+e.pageX);
+	console.log('pageY:'+e.pageY);
+
+	var xPerc = (e.pageX - posX * 1.0) / VIDEO_STREAM_WIDTH;
+	var yPerc = (e.pageY - posY * 1.0) / VIDEO_STREAM_HEIGHT;
+
+	console.log('xPerc:'+ xPerc);
+	console.log('yPerc:'+ yPerc);
+	$('#last_event').text(
+		"touch (" + (xPerc * VIDEO_STREAM_WIDTH) + ", " + (yPerc * VIDEO_STREAM_HEIGHT) + ")")
+
+	if (xPerc < 0) {
+		xPerc = 0
+	}
+
+	if (yPerc < 0) {
+		yPerc = 0
+	}
+
+	const message = {
+		type: 'mouse',
+		xPercentage: xPerc,
+		yPercentage: yPerc,
+		subtype: 'press'
+	};
+
+	if(isRecordingStarted){
+		const log = {
+			message: message,
+			time: (new Date()).getTime() - recordingTimerStart
+		};
+		eventArray.push(log);
+		console.log(log);
+	}
+	sendMessage(message, 'event_console2server')
+}
+
+function getScenarioLog(){
+	var selectedScenario = document.getElementById('scenario_log_select').value;
+	console.log(selectedScenario);
+	$.getJSON('/scenario?name='+selectedScenario,function(data){
+		$('#logModal').modal('toggle');
+		downloadLogFile(data.events, selectedScenario);
+	});
+}
+
+function downloadLogFile(events, name){
+	console.log("in download")
+	console.log(name)
+	var fileName = name+".JSON";
+	var content = JSON.stringify(events);
+	var blob = new Blob([content], {type: "text/plain;charset=utf-8"});
+	FileSaver.saveAs(blob, fileName);
+}
+
+function getScenario(){
+	var selectedScenario = document.getElementById('scenario_select').value;
+	console.log(selectedScenario);
+	$('#replayModal').modal('toggle');
+	$.getJSON('/replayscenario?name='+selectedScenario,function(data){
+		// eventArray = data.events;
+		// replay();
+	});
+
+}
+
+function replay(){
+	console.log('replay started!');
+	console.log((new Date()).getTime());
+	const message = {
+		type: 'mouse',
+		xPercentage: 0,
+		yPercentage: 0,
+		subtype: 'touch'
+	};
+	sendMessage(message, 'event_console2server_calibrate');
+	var prev_action_time = 0;
+	eventArray.forEachWithCallback((event, i, next) => {
+		var message = event.message;
+		var time = event.time;
+		var eventType = message.type;
+		var subType = message.subtype;
+		var methodName;
+		var diff = time - prev_action_time;
+		console.log('diff:'+diff);
+		if(eventType=='mouse'){
+			methodName = 'event_console2server';
+		}else{
+			methodName = 'event_console2server_keyboard';
+		}
+		if(subType == 'release'){
+			diff = diff - 200;
+		}
+		diff = diff - 900;
+
+		console.log(diff);
+		setTimeout(() => {
+			sendMessage(message, methodName);
+			next();
+			prev_action_time = time;
+		}, diff);
+	});
+}
+
+function sendMessage(jsonMessage, methodName) {
+	const msg = JSON.stringify(jsonMessage);
 	console.log(msg);
-	socket.emit('event_console2server', msg);
+	socket.emit(methodName, msg);
 }
-
-function trackingEvent(e) {
-	var x = e.movementX
-	var y = e.movementY
-
-	currentX += x;
-	currentY += y;
-
-	if (currentX < 0) {
-		currentX = 0;
-	}
-	if (currentY < 0) {
-		currentY = 0;
-	}
-	if (currentX >= 720) {
-		currentX = 719;
-	}
-	if (currentY >= 540) {
-		currentY = 539;
-	}
-
-	if (Math.sqrt(x * x + y * y) < 3) {
-		return
-	}
-
-	var msg_json = {
-		_b: 0,
-		_x: e.movementX,
-		_y: e.movementY,
-		_w: 0
-	}
-
-	// console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
-	var msg = JSON.stringify(msg_json);
-	console.log(msg);
-	socket.emit('event_console2server', msg);
-}
-
-function keyboardEvent(event) {
-	// User has pressed 'h', meaning that we should go to home screen.
-	if (event.key == 'h') {
-		console.log("Homescreen!")
-
-		var currentTime = recordingTimerStart - date.getTime();
-		var logString = '' + currentTime + ': homescreen';
-
-		eventLog.innerHTML += '\n';
-		eventLog.innerHTML += logString;
-
-		var msg_json = {
-			_b: 2,
-			_x: 0,
-			_y: 0,
-			_w: 0
-		}
-		// console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
-		var msg = JSON.stringify(msg_json);
-		console.log(msg);
-		socket.emit('event_console2server', msg);
-	}
-
-	// Screenshot.
-	if (event.key == 's') {
-		console.log("Screenshot!")
-
-		// var currentTime = recordingTimerStart - date.getTime();
-		// eventLog.innerHTML += '' + currentTime + ': screenshot';
-		// eventLog.innerHTML += '\n';
-
-		var msg_json = {
-			_b: 4,
-			_x: 0,
-			_y: 0,
-			_w: 0
-		}
-		// console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
-		var msg = JSON.stringify(msg_json);
-		console.log(msg);
-		socket.emit('event_console2server', msg);
-	}
-
-	// Notifications.
-	if (event.key == 'n') {
-		console.log("Notifications!")
-
-		// var currentTime = recordingTimerStart - date.getTime();
-		// eventLog.innerHTML += '' + currentTime + ': notification';
-		// eventLog.innerHTML += '\n';    
-
-		var msg_json = {
-			_b: 8,
-			_x: 0,
-			_y: 0,
-			_w: 0
-		}
-		// console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
-		var msg = JSON.stringify(msg_json);
-		console.log(msg);
-		socket.emit('event_console2server', msg);
-	}
-
-	// Control Center.
-	if (event.key == 'c') {
-		console.log("Control Center!")
-		var msg_json = {
-			_b: 16,
-			_x: 0,
-			_y: 0,
-			_w: 0
-		}
-		// console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
-		var msg = JSON.stringify(msg_json);
-		console.log(msg);
-		socket.emit('event_console2server', msg);
-	}
-
-	// Dock.
-	if (event.key == 'd') {
-		console.log("Dock!")
-		var msg_json = {
-			_b: 32,
-			_x: 0,
-			_y: 0,
-			_w: 0
-		}
-		// console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
-		var msg = JSON.stringify(msg_json);
-		console.log(msg);
-		socket.emit('event_console2server', msg);
-	}
-
-	// Scrool Down!
-	if (event.key == 'ArrowDown') {
-		console.log("Screenshot!")
-		var msg_json = {
-			_b: 0,
-			_x: 0,
-			_y: 0,
-			_w: -1
-		}
-		// console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
-		var msg = JSON.stringify(msg_json);
-		console.log(msg);
-		socket.emit('event_console2server', msg);
-	}
-
-	// Scrool Up!
-	if (event.key == 'ArrowUp') {
-		console.log("Screenshot!")
-		var msg_json = {
-			_b: 0,
-			_x: 0,
-			_y: 0,
-			_w: 1
-		}
-		// console.log("X position: " + msg_json._x + ", Y position: " + msg_json._y);
-		var msg = JSON.stringify(msg_json);
-		console.log(msg);
-		socket.emit('event_console2server', msg);
-	}
-
-}
-
-function sendMessage(msg_json) {
-	var msg = JSON.stringify(msg_json);
-	console.log(msg);
-	socket.emit('event_console2server', msg);
-}
-},{"browserify-fs":40,"recordrtc":165,"socket.io-client":167,"twilio-video":200}]},{},[327]);
+},{"browserify-fs":40,"file-saver":70,"recordrtc":167,"socket.io-client":169,"twilio-video":202}]},{},[329]);

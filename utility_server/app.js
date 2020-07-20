@@ -30,11 +30,15 @@ var AccessToken = require('twilio').jwt.AccessToken;
 var bodyParser = require('body-parser');
 var VideoGrant = AccessToken.VideoGrant;
 var available_devices = [];
+var scenarios = [];
 
 // Build an express app.
 const app = express();
 const server = require('http').Server(app);
 const io = require('socket.io')(server);
+const fs = require('fs')
+var cors = require('cors')
+
 
 // const server_location = 'http://softarch.usc.edu:3000/'
 // const socket = io(server_location);
@@ -42,10 +46,10 @@ const io = require('socket.io')(server);
 // Max. period that a Participant is allowed to be in a Room (currently 14400 seconds or 4 hours)
 const MAX_ALLOWED_SESSION_DURATION = 14400;
 
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-var quickstartPath = path.join(__dirname, 'tmp/public');
+var quickstartPath = path.join(__dirname, 'quickstart/public');
 app.use('/quickstart', express.static(quickstartPath));
 
 var loginpagePath = path.join(__dirname, 'views/');
@@ -56,6 +60,8 @@ app.use('/tmp', express.static(tmpPath));
 
 var deviceId;
 var name;
+
+app.use(cors());
 
 app.get('/', (req, res) => {
   res.render('index.html');
@@ -114,6 +120,19 @@ app.post('/device', function(request, response){
   })
 });
 
+app.post('/recordsession', function(request, response){
+  console.log("recordedsession");
+  console.log(request.body)
+  var name = request.body.name;
+  scenarios.push(name);
+  var filename = name + ".txt";
+  var events = request.body;
+  console.log(events);
+  fs.writeFile(filename, JSON.stringify(events), function(){
+    console.log("recorded session logged in:"+ filename);
+  });
+});
+
 app.post('/delete', function(request, response){
   var deviceId = request.body.deviceId;
   console.log(" in delete request");
@@ -123,9 +142,105 @@ app.post('/delete', function(request, response){
 });
 
 app.get('/devices', function(request, response){
+  console.log('devices');
   response.send({
     available_devices: available_devices
   })
+});
+
+app.get('/scenarios', function(request, response){
+  console.log('scenarios');
+  response.send({
+    scenarios: scenarios
+  });
+});
+
+app.get('/replayscenario', function(request, response){
+  console.log('replay-scenario');
+  var scenarioName = request.query.name;
+  var fileName = scenarioName + '.txt';
+  console.log('filename in scenario:'+fileName)
+  fs.readFile(fileName, (err, data) => {
+    if(err){
+      console.log(err)
+    }
+    else {
+      let events = JSON.parse(data);
+      replay(events.events);
+    }
+  });
+});
+
+function forEachWithCallback(callback) {
+  const arrayCopy = this;
+  let index = 0;
+  const next = () => {
+    index++;
+    if (arrayCopy.length > 0) {
+      callback(arrayCopy.shift(), index, next);
+    }
+  }
+  next();
+}
+
+Array.prototype.forEachWithCallback = forEachWithCallback;
+
+function replay(eventArray){
+  console.log('replay started!');
+  console.log((new Date()).getTime());
+  const message = {
+    type: 'mouse',
+    xPercentage: 0,
+    yPercentage: 0,
+    subtype: 'touch'
+  };
+  // sendMessage(message, 'event_console2server_calibrate');
+  io.emit('event_server2client_calibrate', JSON.stringify(message));
+  var prev_action_time = 0;
+  eventArray.forEachWithCallback((event, i, next) => {
+    var message = event.message;
+    var time = event.time;
+    var eventType = message.type;
+    var subType = message.subtype;
+    var methodName;
+    var diff = time - prev_action_time;
+    console.log('diff:'+diff);
+    if(subType == 'release'){
+      diff = diff - 300;
+    }
+    diff = diff - 1000;
+
+    console.log(diff);
+    setTimeout(() => {
+      if(eventType=='mouse'){
+        io.emit('event_server2client', JSON.stringify(message));
+      }else{
+        io.emit('event_server2client_keyboard', JSON.stringify(message));
+      }
+      next();
+      prev_action_time = time;
+    }, diff);
+  });
+}
+
+
+
+app.get('/scenario', function(request, response){
+  console.log('scenario');
+  var scenarioName = request.query.name;
+  var fileName = scenarioName + '.txt';
+  console.log('filename in scenario:'+fileName)
+  fs.readFile(fileName, (err, data) => {
+    if(err){
+      console.log(err)
+    }
+    else {
+      let events = JSON.parse(data);
+      response.send({
+        events: events.events
+      });
+    }
+  });
 });
 
 // socket.on('connect', function(){
@@ -148,6 +263,11 @@ io.on('connection', socket => {
   socket.on('event_console2server_keyboard', msg => {
     console.log('event_console2server_keyboard')
     io.emit('event_server2client_keyboard', msg);
+  });
+
+  socket.on('event_console2server_calibrate', msg => {
+    console.log('event_console2server_calibrate')
+    io.emit('event_server2client_calibrate', msg);
   });
 });
 

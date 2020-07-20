@@ -20,16 +20,17 @@
     "test": "repo-tools test app & mocha */*.test.js --timeout=30000 --exit"
   },
   "dependencies": {
+    "alert-node": "3.0.11",
     "browserify-fs": "^1.0.0",
     "dotenv": "^4.0.0",
     "ejs": "^3.1.2",
     "express": "^4.15.4",
+    "file-saver": "^2.0.2",
     "pug": "^2.0.3",
     "recordrtc": "^5.5.9",
     "socket.io": "^2.2.0",
     "twilio": "^3.19.1",
-    "twilio-video": "2.0.0-beta10",
-    "alert-node": "3.0.11"
+    "twilio-video": "2.0.0-beta10"
   },
   "devDependencies": {
     "eslint": "^6.0.0",

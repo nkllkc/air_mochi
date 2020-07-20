@@ -1,47 +1,216 @@
-<!DOCTYPE html>
-<html>
+<!--<!DOCTYPE html>-->
+<!--<html>-->
 
+<!--<head>-->
+<!--  <link rel="stylesheet" href="index.css">-->
+<!--</head>-->
+
+<!--<body>-->
+<!--&lt;!&ndash;  <h1 class="airmochi-title">AirMochi - Remotelly Test iOS Apps</h1>&ndash;&gt;-->
+
+<!--  <div class="row">-->
+<!--    <div class="column left">-->
+<!--      <div class="phone" style="display: inline-block">-->
+<!--        <div style="display: none;" class="video">-->
+<!--          <video controls autoplay playsinline id="preview-video" style="display: inline-block"></video>-->
+<!--        </div>-->
+<!--        <div id="remote-media"></div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="column right">-->
+<!--      <div class="instructions">-->
+<!--      <h2> instructions: </h2>-->
+<!--      <p>Press 'H' for going back to the homescreen.</p>-->
+<!--      <p>Press 'S' for taking a screenshot.</p>-->
+<!--      <p>Press 'N' for opening Notification tab.</p>-->
+<!--      <p>Press 'C' for opening Control Center tab. </p>-->
+<!--      <p>Press 'D' for bringing up Dock.</p>-->
+<!--      <p>Press 'ArrowDown'/'ArrowUp' to scroll down/up. </p>-->
+<!--      </div>-->
+<!--      <div class="control-buttons">-->
+<!--        </br>-->
+<!--      <button class="start-button" id="btn-start-recording">Start Recording</button>-->
+<!--      <button class="end-button" id="btn-stop-recording" disabled>Stop Recording</button>-->
+<!--      </br>-->
+<!--      <div>-->
+<!--      <p>Event log: </p>-->
+<!--      <div id="event-log"></div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--    </div>-->
+
+
+<!--</body>-->
+
+<!--</html>-->
+
+<!-- ===================== -->
+<!DOCTYPE HTML>
+<html lang="en-US">
 <head>
-  <link rel="stylesheet" href="index.css">
-</head>
+  <title>AirMochi</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<body>
-  <h1 class="airmochi-title">AirMochi - Remotelly Test iOS Apps</h1>
+  <link rel="shortcut icon" href="images/favicon.png" />
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CLibre+Baskerville:400,400italic,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css"  href='css/clear.css' />
+  <link rel="stylesheet" type="text/css"  href='css/common.css' />
+  <link rel="stylesheet" type="text/css"  href='css/font-awesome.min.css' />
+  <link rel="stylesheet" type="text/css"  href='css/carouFredSel.css' />
+  <link rel="stylesheet" type="text/css"  href='css/sm-clean.css' />
+  <link rel="stylesheet" type="text/css"  href='index.css' />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<!--  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-  <div class="row">
-    <div class="column left">
-      <div class="phone" style="display: inline-block">
-        <div style="display: none;" class="video">
-          <video controls autoplay playsinline id="preview-video" style="display: inline-block"></video>
-        </div>
-        <div id="remote-media"></div>
-      </div>
-    </div>
-    <div class="column right">
-      <div class="instructions">
-      <h2> instructions: </h2>
-      <p>Press 'H' for going back to the homescreen.</p>
-      <p>Press 'S' for taking a screenshot.</p>
-      <p>Press 'N' for opening Notification tab.</p> 
-      <p>Press 'C' for opening Control Center tab. </p>
-      <p>Press 'D' for bringing up Dock.</p>
-      <p>Press 'ArrowDown'/'ArrowUp' to scroll down/up. </p>
-      </div>
-      <div class="control-buttons">
-        </br>
-      <button class="start-button" id="btn-start-recording">Start Recording</button>
-      <button class="end-button" id="btn-stop-recording" disabled>Stop Recording</button>
-      </br>
-      <div>
-      <p>Event log: </p>
-      <div id="event-log"></div>
-    </div>
-  </div>
+  <!--[if lt IE 9]>
 
+  <script src="js/html5.js"></script>
   <script src="/socket.io/socket.io.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdn.webrtc-experiment.com/screenshot.js"> </script>
   <script src="index.js"></script>
-</body>
+  <![endif]-->
 
+</head>
+
+
+<body class="home blog">
+
+<!-- Home Content -->
+<div id="content" class="site-content row">
+  <div id="blog-wrapper" class="column">
+    <div class="blog-holder center-relative">
+
+
+      <article id="post-1" class="blog-item-holder featured-post">
+        <div class="entry-content relative">
+          <div class="content-1170 center-relative">
+            <img class="logo" src="images/AirMochi%20Web%20Logo.jpg">
+<!--            <div class="excerpt">-->
+<!--              <h2> instructions: </h2>-->
+<!--              <p>Press <span class="instructions">H</span> for going back to the homescreen.</p>-->
+<!--              <p>Press <span class="instructions">S</span> for taking a screenshot.</p>-->
+<!--              <p>Press <span class="instructions">N</span> for opening Notification tab.</p>-->
+<!--              <p>Press <span class="instructions">C</span> for opening Control Center tab. </p>-->
+<!--              <p>Press <span class="instructions">D</span> for bringing up Dock.</p>-->
+<!--              <p>Press <span class="instructions">ArrowDown/ArrowUp</span> to scroll down/up. </p>-->
+<!--            </div>-->
+            <div class="clear"></div>
+          </div>
+        </div>
+      </article>
+      <div class="buttons">
+        <!-- btn start recording-->
+        <button type="button" class="btn start-button" id="btn-start-recording" data-toggle="modal" data-target="#exampleModal">Start Recording</button>
+
+        <!-- modal for recorded scenario name -->
+        <div class="modal fade in" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"> Recording </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="message-text" class="col-form-label">Please enter a name for the scenario:</label>
+                    <textarea class="form-control" id="message-text"></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="start-recording">Start recording</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn end-button" id="btn-stop-recording" disabled>Stop Recording</button>
+
+        <button type="button" class="btn replay-button" id="btn-replay" data-toggle="modal" data-target="#replayModal">Replay</button>
+          <!-- modal for recorded scenario name -->
+          <div class="modal fade in" id="replayModal" tabindex="-1" role="dialog" aria-labelledby="replayModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="replayModalLabel"> Please choose the scenario you want to replay: </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <select id="scenario_select" name="scenario_select" class="custom-select custom-select-lg" style="width: 100%">
+                        <option>Scenarios</option>
+                      </select>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary" id="btn-start-replay">Start replay</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <button type="button" class="btn log-btn" id="btn-log" data-toggle="modal" data-target="#logModal">Get Scenario Log</button>
+        <!-- modal for recorded scenario name -->
+        <div class="modal fade in" id="logModal" tabindex="-1" role="dialog" aria-labelledby="logModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="logModalLabel"> Please choose the scenario you want to get the log file for: </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <select id="scenario_log_select" name="scenario_log_select" class="custom-select custom-select-lg" style="width: 100%">
+                      <option>Scenarios</option>
+                    </select>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="btn-get-log">Get Scenario Log</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="right-col">
+    <div class="phone-container">
+      <div class="video-container">
+        <div style="display: none;" class="video">
+          <video controls autoplay playsinline id="preview-video" style="display: inline-block" class="screen"></video>
+        </div>
+        <div id="remote-media"></div>
+      </div>
+    </div>
+<!--    <div id="event-log">-->
+<!--      <p>Event logs</p>-->
+<!--    </div>-->
+  </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://cdn.webrtc-experiment.com/screenshot.js"> </script>
+<script src="index.js"></script>
+
+</body>
 </html>
